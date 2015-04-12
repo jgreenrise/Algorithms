@@ -164,7 +164,7 @@ public class BinarySearchTree {
 	 *             if x is not found.
 	 */
 	public void remove(Comparable x) {
-		rootNode = remove(x, rootNode);
+		//rootNode = remove(x, rootNode);
 	}
 
 	public void printBST() {
