@@ -5,6 +5,23 @@ import java.util.Arrays;
 /**
  * Max heap using array
  */
+
+/*-
+ *
+ * Input array 		[4, 1, 3, 2, 16, 9, 10, 14, 8, 7]
+Max heap 		[16, 14, 10, 8, 7, 9, 3, 2, 4, 1]
+
+New array 		[16, 14, 10, 8, 7, 9, 3, 2, 4, 1, 0]
+Value added (12): 	[16, 14, 10, 8, 12, 9, 3, 2, 4, 1, 7]
+New array 		[16, 14, 10, 8, 12, 9, 3, 2, 4, 1, 7, 0]
+Value added (30): 	[30, 14, 16, 8, 12, 10, 3, 2, 4, 1, 7, 9]
+
+Before deleting 16 	[30, 14, 16, 8, 12, 10, 3, 2, 4, 1, 7, 9]
+After deleting 16 	[30, 14, 10, 8, 12, 9, 3, 2, 4, 1, 7, 0]
+Before deleting 30 	[30, 14, 10, 8, 12, 9, 3, 2, 4, 1, 7, 0]
+After deleting 16 	[14, 12, 10, 8, 7, 9, 3, 2, 4, 1, 0, 0]
+ *
+ */
 public class MaxHeap {
 
 	/**
