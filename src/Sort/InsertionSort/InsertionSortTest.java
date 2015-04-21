@@ -1,4 +1,4 @@
-package sort.insertionSort;
+package sort.InsertionSort;
 
 import static org.junit.Assert.*;
 
@@ -9,16 +9,16 @@ import org.junit.Test;
 
 public class InsertionSortTest {
 
-	InsertionSort insertionSort = null;
+	BasicInsertionSort insertionSort = null;
 
 	@Before
 	public void beforeMethodExecution() {
-		insertionSort = new InsertionSort();
+		insertionSort = new BasicInsertionSort();
 	}
 
 	/**
 	 * TEST ASCENDING ORDER
-	 */
+	 
 	
 	@Test
 	public void testExecuteInsertionSort_equal() {
@@ -62,7 +62,7 @@ public class InsertionSortTest {
 
 	/**
 	 * TEST DESCENDING ORDER
-	 */
+	 
 	
 	@Test
 	public void testExecuteInsertionSort_descending_equal() {
@@ -103,4 +103,6 @@ public class InsertionSortTest {
 		int[] response = { 60, 60, 50, 50, -10, -20, -20, -30, -40 };
 		Assert.assertArrayEquals(response, insertionSort.executeInsertionSort_descending(new int[] { -20, 60, -20, 50, -30, 50, -40, 60, -10 }));
 	}
+	
+	*/
 }
