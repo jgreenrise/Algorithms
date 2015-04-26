@@ -2,6 +2,7 @@ package tree.bst;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class BinarySearchTree {
 
@@ -245,7 +246,7 @@ public class BinarySearchTree {
 		System.out.println("Is a BST");
 
 	}
-	
+
 	public int printHeightOfTree() {
 
 		BinaryNode node = rootNode;
@@ -280,6 +281,61 @@ public class BinarySearchTree {
 
 		System.out.println("Height of tree: " + max_height);
 		return max_height;
+
+	}
+
+	/**
+	 * <root> <left> <right>
+	 */
+	private void printPreorderTraversalUsingStack() {
+		// TODO Auto-generated method stub
+
+		BinaryNode node = rootNode;
+
+		Stack<BinaryNode> stack = new Stack<BinaryNode>();
+		stack.add(node);
+
+		while (!stack.isEmpty()) {
+
+			BinaryNode tmp = stack.pop();
+			System.out.print(tmp.element + " ");
+
+			if (tmp.right_node != null)
+				stack.add(tmp.right_node);
+
+			if (tmp.left_node != null)
+				stack.add(tmp.left_node);
+
+		}
+	}
+
+	private void printPreorderUsingRecursion() {
+		// TODO Auto-generated method stub
+		printPreorder(rootNode);
+	}
+
+	private void printPreorder(BinaryNode node) {
+		System.out.print(node.element + " ");
+		if (node.left_node != null)
+			printPreorder(node.left_node);
+		if (node.right_node != null)
+			printPreorder(node.right_node);
+	}
+
+	/**
+	 * INORDER
+	 */
+	public void printInorderBSTusingRecursion() {
+		printInorder(rootNode);
+	}
+
+	public void printInorder(BinaryNode node) {
+
+		if (node != null) {
+			printInorder(node.left_node);
+			System.out.print(node.element + ", ");
+			printInorder(node.right_node);
+		}
 
 	}
 
@@ -388,11 +444,19 @@ public class BinarySearchTree {
 
 		// Height of tree
 		binarySearchTree.printHeightOfTree();
-		
+
 		binarySearchTree.remove(2);
 		binarySearchTree.printHeightOfTree();
-	}
 
-	
+		System.out.println("Pre order traversal using stack");
+		binarySearchTree.printPreorderTraversalUsingStack();
+
+		System.out.println("\nPre order traversal using recursion");
+		binarySearchTree.printPreorderUsingRecursion();
+
+		System.out.println("\nIn-order traversal using recursion");
+		binarySearchTree.printInorderBSTusingRecursion();
+
+	}
 
 }
