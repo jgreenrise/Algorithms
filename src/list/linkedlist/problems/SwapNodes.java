@@ -1,6 +1,7 @@
-package list;
+package list.linkedlist.problems;
 
-import array.SinglyLinkedList.Node;
+import list.linkedlist.single.SinglyLinkedList;
+import list.linkedlist.single.SinglyLinkedList.Node;
 
 /**
  * Given a linked list and two keys in it, swap nodes for two given keys. Nodes
@@ -21,7 +22,7 @@ import array.SinglyLinkedList.Node;
  * following cases to be handled. 1) x and y may or may not be adjacent. 2)
  * Either x or y may be a head node. 3) Either x or y may be last node. 4) x
  * and/or y may not be present in linked list.
-
+ * 
  * 
  */
 public class SwapNodes {
@@ -74,22 +75,19 @@ public class SwapNodes {
 
 	}
 
-	public static void swapNodes(list.SinglyLinkedList.Node node, int node1, int node2) {
+	public static void swapNodes(Node node, int node1, int node2) {
 
 		SinglyLinkedList list = new SinglyLinkedList();
 
-		list.SinglyLinkedList.Node head = node;
+		Node head = node;
 
-		list.SinglyLinkedList.Node src_node_parent = null;
-		list.SinglyLinkedList.Node src_node = (list).new Node(node1, null);
-		;
-		list.SinglyLinkedList.Node src_node_child = null;
+		Node src_node_parent = null;
+		Node src_node = (list).new Node(node1, null);
+		Node src_node_child = null;
 		boolean is_src_node_found = false;
 
-		list.SinglyLinkedList.Node destination_node_parent = null;
-		list.SinglyLinkedList.Node dest_node = (list).new Node(node2, null);
-		;
-		list.SinglyLinkedList.Node dest_node_child = null;
+		Node destination_node_parent = null;
+		Node dest_node = (list).new Node(node2, null);
 		boolean is_dest_node_found = false;
 
 		while (node.next_node != null) {
@@ -130,7 +128,7 @@ public class SwapNodes {
 
 			if (is_src_node_found && is_dest_node_found) {
 
-				list.SinglyLinkedList.Node node_a = head;
+				Node node_a = head;
 				while (node_a != null) {
 					System.out.print(node_a.value + ", ");
 					node_a = node_a.next_node;
