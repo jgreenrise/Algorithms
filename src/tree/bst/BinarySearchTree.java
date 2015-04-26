@@ -236,13 +236,50 @@ public class BinarySearchTree {
 			} else if (node.right_node != null
 					&& node.right_node.element.compareTo(tmp.element) > 0) {
 				queue.add(node.right_node);
-			} else if(tmp.left_node != null && tmp.right_node != null) {
+			} else if (tmp.left_node != null && tmp.right_node != null) {
 				System.out.println("Not a bst");
 				break;
 			}
 		}
-		
+
 		System.out.println("Is a BST");
+
+	}
+	
+	public int printHeightOfTree() {
+
+		BinaryNode node = rootNode;
+
+		Queue<BinaryNode> queue = new LinkedList<BinaryNode>();
+
+		// Assuming we have atleast 1 node
+		int level = 1;
+		int max_height = 1;
+		queue.add(node);
+
+		while (!queue.isEmpty()) {
+
+			BinaryNode tmp = queue.poll();
+
+			if (!(tmp.left_node == null && tmp.right_node == null)) {
+
+				level++;
+
+				if (level > max_height) {
+					max_height = level;
+				}
+
+				if (tmp.left_node != null)
+					queue.add(tmp.left_node);
+				else if (tmp.right_node != null)
+					queue.add(tmp.right_node);
+
+			}
+
+		}
+
+		System.out.println("Height of tree: " + max_height);
+		return max_height;
 
 	}
 
@@ -348,6 +385,14 @@ public class BinarySearchTree {
 		binarySearchTree.printBST();
 
 		binarySearchTree.isBST();
+
+		// Height of tree
+		binarySearchTree.printHeightOfTree();
+		
+		binarySearchTree.remove(2);
+		binarySearchTree.printHeightOfTree();
 	}
+
+	
 
 }
