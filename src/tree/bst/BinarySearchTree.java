@@ -309,6 +309,9 @@ public class BinarySearchTree {
 		}
 	}
 
+	/**
+	 * PREORDER
+	 */
 	private void printPreorderUsingRecursion() {
 		// TODO Auto-generated method stub
 		printPreorder(rootNode);
@@ -335,6 +338,25 @@ public class BinarySearchTree {
 			printInorder(node.left_node);
 			System.out.print(node.element + ", ");
 			printInorder(node.right_node);
+		}
+
+	}
+
+	/**
+	 * POST ORDER
+	 */
+
+	public void printPostOrderBSTusingRecursion() {
+		printPostOrder(rootNode);
+	}
+
+	public void printPostOrder(BinaryNode node) {
+
+		if (node != null) {
+			printInorder(node.left_node);
+			printInorder(node.right_node);
+			System.out.print(node.element + ", ");
+
 		}
 
 	}
@@ -456,6 +478,9 @@ public class BinarySearchTree {
 
 		System.out.println("\nIn-order traversal using recursion");
 		binarySearchTree.printInorderBSTusingRecursion();
+		
+		System.out.println("\nPost-order traversal using recursion");
+		binarySearchTree.printPostOrderBSTusingRecursion();
 
 	}
 
