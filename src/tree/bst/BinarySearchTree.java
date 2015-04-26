@@ -168,53 +168,82 @@ public class BinarySearchTree {
 	}
 
 	private BinaryNode remove(Comparable node_to_be_removed, BinaryNode node) {
-		
-			
-		if(node_to_be_removed.compareTo(node.element) > 0){
+
+		if (node_to_be_removed.compareTo(node.element) > 0) {
 			node.right_node = remove(node_to_be_removed, node.right_node);
-		}else if(node_to_be_removed.compareTo(node.element) < 0){
+		} else if (node_to_be_removed.compareTo(node.element) < 0) {
 			node.left_node = remove(node_to_be_removed, node.left_node);
-		}else if(node_to_be_removed.compareTo(node.element) == 0){
-			
-			if(node.left_node == null && node.right_node == null){
+		} else if (node_to_be_removed.compareTo(node.element) == 0) {
+
+			if (node.left_node == null && node.right_node == null) {
 				// Deleting leaf node
 				return null;
-			}else if(node.left_node != null && node.right_node == null){
-				//Deleting node with one child	
+			} else if (node.left_node != null && node.right_node == null) {
+				// Deleting node with one child
 				BinaryNode tmp = node;
 				tmp = null;
 				return node.left_node;
-			}else if(node.right_node != null && node.left_node == null){
+			} else if (node.right_node != null && node.left_node == null) {
+				// Deleting node with one child
 				BinaryNode tmp = node;
 				tmp = null;
 				return node.right_node;
-			}else if(node.right_node != null && node.left_node != null){
-				
+			} else if (node.right_node != null && node.left_node != null) {
+				// Deleting node with 2 child
 				BinaryNode tmp = removeAndReturnMinNodeFromBst(node.right_node);
 				removeMin(node.right_node);
 				node.element = tmp.element;
-				
 				return node;
-				
+
 			}
-			
-		}else{
+
+		} else {
 			System.out.println("Node to be removed is not found in bst.");
 			return null;
 		}
 		return node;
-		
+
 	}
 
 	private BinaryNode removeAndReturnMinNodeFromBst(BinaryNode node) {
-		
-		while(node.left_node != null){
+
+		while (node.left_node != null) {
 			node = node.left_node;
 		}
-		
+
 		BinaryNode tmp = node;
 		node = null;
 		return tmp;
+	}
+
+	private void isBST() {
+		// TODO Auto-generated method stub
+		isBST(rootNode);
+	}
+
+	private void isBST(BinaryNode node) {
+
+		Queue<BinaryNode> queue = new LinkedList<BinaryNode>();
+		queue.add(node);
+
+		while (!queue.isEmpty()) {
+
+			BinaryNode tmp = queue.poll();
+
+			if (tmp.left_node != null
+					&& node.left_node.element.compareTo(tmp.element) < 0) {
+				queue.add(node.left_node);
+			} else if (node.right_node != null
+					&& node.right_node.element.compareTo(tmp.element) > 0) {
+				queue.add(node.right_node);
+			} else if(tmp.left_node != null && tmp.right_node != null) {
+				System.out.println("Not a bst");
+				break;
+			}
+		}
+		
+		System.out.println("Is a BST");
+
 	}
 
 	public void printBST() {
@@ -293,19 +322,19 @@ public class BinarySearchTree {
 
 		// Print BST
 		binarySearchTree.printBST();
-		
+
 		// remove leaf Node
 		binarySearchTree.remove(10);
 		binarySearchTree.printBST();
-		
+
 		// remove leaf Node
 		binarySearchTree.remove(31);
 		binarySearchTree.printBST();
-		
+
 		// remove Node with 1 child
 		binarySearchTree.remove(19);
 		binarySearchTree.printBST();
-		
+
 		binarySearchTree.insert(19);
 		binarySearchTree.insert(31);
 		binarySearchTree.insert(10);
@@ -313,12 +342,12 @@ public class BinarySearchTree {
 		binarySearchTree.insert(2);
 		binarySearchTree.insert(13);
 		binarySearchTree.printBST();
-		
+
 		// Remove tree with 2 child
 		binarySearchTree.remove(11);
 		binarySearchTree.printBST();
-	}
 
-	
+		binarySearchTree.isBST();
+	}
 
 }
