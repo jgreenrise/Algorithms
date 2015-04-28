@@ -1,6 +1,11 @@
 package string.problems;
 
 /**
+ * Given a word, print out all the meaningful anagrams of that word. 
+For e.g. given aemt, the output would be mate, meat, meta, tame, team.
+ * **/
+
+/**
  * Output
  * Dictionary: {aemt=[tame, meat, team, mate, meta], aijnt=[jatin], aelpp=[apple], aaabnnn=[bannana]}
 Does word meat exists: true
