@@ -1,5 +1,21 @@
 package graph;
 
+
+/*-
+ * Output
+ 0	1	0	0	1	
+1	0	1	1	1	
+0	1	0	1	0	
+0	1	1	0	0	
+1	1	0	0	0	
+Remove edge betwen 1 and 4
+0	1	0	0	1	
+1	0	1	1	0	
+0	1	0	1	0	
+0	1	1	0	0	
+1	0	0	0	0	
+ * 
+ **/
 public class GraphAdjacencyMatrix {
 
 	private int i_number_of_vertices = 0;
