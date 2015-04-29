@@ -2,6 +2,13 @@ package list;
 
 import list.SinglyLinkedList.Node;
 
+/**
+ * Input
+4, 5, 7, 6, 1, 1, 2, 0, Size: 8
+Output
+0, 2, 1, 1, 6, 7, 5, 4, 
+ *
+ */
 public class SortLinkedList {
 
 	public static void main(String[] args) {
@@ -19,6 +26,7 @@ public class SortLinkedList {
 		list.addFirst(5);
 		list.addFirst(4);
 
+		System.out.println("Input");
 		list.printList();
 
 		Node output = sortLinkedList(list);
