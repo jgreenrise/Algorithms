@@ -4,10 +4,12 @@ import list.SinglyLinkedList.Node;
 
 /**
  * Input
-4, 5, 7, 6, 1, 1, 2, 0, Size: 8
+6, 1, 1, 2, 0, Size: 5
+
+
 Output
-0, 2, 1, 1, 6, 7, 5, 4, 
- *
+0, 1, 1, 2, 6, 
+ * 
  */
 public class SortLinkedList {
 
@@ -22,15 +24,15 @@ public class SortLinkedList {
 		list.addFirst(1);
 		list.addFirst(1);
 		list.addFirst(6);
-		list.addFirst(7);
-		list.addFirst(5);
-		list.addFirst(4);
+		// list.addFirst(7);
+		// list.addFirst(5);
+		// list.addFirst(4);
 
 		System.out.println("Input");
 		list.printList();
 
-		Node output = sortLinkedList(list);
-		
+		Node output = mergeSort(list.start);
+
 		System.out.println("Output");
 		while (output != null) {
 			System.out.print(output.value + ", ");
@@ -43,74 +45,49 @@ public class SortLinkedList {
 	 * SORT A LINKED LIST
 	 ***********************************************************/
 
-	public static Node sortLinkedList(SinglyLinkedList node) {
+	public static Node mergeSort(Node node) {
 
-		if (node.size > 1) {
-
-			int length_of_list = 1;
-
-			Node tmp = node.start;
-
-			while (tmp.next_node != null) {
-				length_of_list++;
-				tmp = tmp.next_node;
-			}
-
-			SinglyLinkedList left = left(node, length_of_list);
-			SinglyLinkedList right = right(node, length_of_list);
-
-			sortLinkedList(left);
-			sortLinkedList(right);
-			
-			return mergeLinkedList(left.start, right.start);
-			
+		if (node == null || node.next_node == null) {
+			return node;
 		}
-		return null;
 
+		Node middle = getMiddle(node);
+		Node right = middle.next_node;
+
+		// Do this to make sure that left list only travels till midpoint
+		middle.next_node = null;
+		
+//		Node tmp = node;
+//		System.out.println("\nLeft: ");
+//		while (tmp != null) {
+//			System.out.print(tmp.value + " -> ");
+//			tmp = tmp.next_node;
+//		}
+//
+//		tmp = right;
+//		System.out.println("\nRight: ");
+//		while (tmp != null) {
+//			System.out.print(tmp.value + " -> ");
+//			tmp = tmp.next_node;
+//		}
+
+		return mergeLinkedList(mergeSort(node), mergeSort(right));
 	}
 
-	private static SinglyLinkedList left(SinglyLinkedList list,
-			int length_of_list) {
+	public static Node getMiddle(Node node) {
 
-		int counter = 0;
-		SinglyLinkedList response = new SinglyLinkedList();
-		Node node = list.start;
+		if (node == null || node.next_node == null)
+			return node;
 
-		while (counter < length_of_list / 2) {
+		Node slow, fast = null;
+		slow = fast = node;
 
-			response.addFirst(node.value);
-			node = node.next_node;
-			counter++;
+		while (fast.next_node != null && fast.next_node.next_node != null) {
+			slow = slow.next_node;
+			fast = fast.next_node.next_node;
 		}
 
-		//System.out.println(response.start.value);
-		return response;
-
-	}
-
-	private static SinglyLinkedList right(SinglyLinkedList list,
-			int length_of_list) {
-
-		int start_index = length_of_list / 2;
-		int end_index = length_of_list;
-		int counter = 0;
-		SinglyLinkedList response = new SinglyLinkedList();
-		Node node = list.start;
-
-		while (counter < end_index) {
-
-			if (counter >= start_index) {
-				response.addFirst(node.value);
-			}
-
-			node = node.next_node;
-			counter++;
-
-		}
-
-		//System.out.println(response.start.value);
-		return response;
-
+		return slow;
 	}
 
 	private static Node mergeLinkedList(Node left, Node right) {
