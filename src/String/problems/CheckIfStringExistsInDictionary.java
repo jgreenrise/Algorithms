@@ -1,4 +1,4 @@
-package string.problems;
+package String.problems;
 
 /**
  * Given a word, print out all the meaningful anagrams of that word. 

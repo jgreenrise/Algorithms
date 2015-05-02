@@ -1,4 +1,4 @@
-package graph;
+package graph.matrix;
 
 
 /*-
@@ -75,15 +75,10 @@ public class GraphAdjacencyMatrix {
 		// TODO Auto-generated method stub
 		
 		for (int row = 0; row < i_number_of_vertices; row++) {
-			
 			for(int column = 0; column < i_number_of_vertices; column ++){
-				
 				System.out.print(adjacency_matrix[row][column]+"\t");
-				
 			}
-			
 			System.out.println();
-			
 		}
 		
 	}

@@ -1,6 +1,8 @@
-package list;
+package list.linkedlist;
 
-import list.SinglyLinkedList.Node;
+import list.linkedlist.single.SinglyLinkedList;
+import list.linkedlist.single.SinglyLinkedList.Node;
+
 
 /**
  * Input

@@ -1,4 +1,4 @@
-package string;
+package Array.problems;
 
 /**
  * Given a NxN matrix with 0s and 1s. Set every row that contains a 0 to all 0s and set every column that contains a 0 to all 0s.
