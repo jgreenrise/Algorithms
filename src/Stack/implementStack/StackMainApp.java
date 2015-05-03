@@ -6,7 +6,7 @@ public class StackMainApp {
 
 	public static void main(String[] args) {
 		
-		Stack words = new Stack();
+		Approach3_LinkedStack words = new Approach3_LinkedStack();
 		words.push("Santacruz");
 		words.push("Surat");
 		words.push("Belmont");
@@ -18,8 +18,9 @@ public class StackMainApp {
 		/**
 		 * Searching stack index
 		 * The index you get is the index from the top of the Stack, meaning the top element on the Stack has index 1.
-		 */
+		
 		System.out.println("Index of word to be searched: "+words.search("Surat"));
+		 */
 		
 
 	}
