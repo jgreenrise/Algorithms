@@ -3,7 +3,16 @@ package Stack.problems.sort;
 import java.util.Stack;
 
 /**
- * Time complexity: 0(N2) Limitation: Space complexity: Uses 2 stack
+ * Time complexity: 0(N2) 
+ * 
+ * Sort stack
+ * 
+Input: [10, 50, 60, 100, 70, 90, 200, 30]
+Output1
+[10, 30, 50, 60, 70, 90, 100, 200]
+Output2
+[10, 30, 50, 60, 70, 90, 100, 200]
+
  */
 public class SortStack {
 
@@ -19,6 +28,8 @@ public class SortStack {
 		numbers.push(90);
 		numbers.push(200);
 		numbers.push(30);
+		
+		System.out.println("\nInput: "+numbers.toString());
 
 		/**
 		 * Space complexity 0(2n) => O(n)
@@ -85,6 +96,8 @@ public class SortStack {
 
 			while (!output.isEmpty()
 					&& Integer.valueOf(output.peek().toString()) > value) {
+				
+				// Add elements back to input stack
 				input.push(output.pop());
 			}
 
