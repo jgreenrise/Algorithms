@@ -1,4 +1,4 @@
-package graph.bfs;
+package graph.undirected.bfs;
 
 /*-
 * *** OUTPUT ***
