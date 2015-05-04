@@ -1,4 +1,4 @@
-package graph.matrix;
+package graph.undirected.matrix;
 
 
 /*-
