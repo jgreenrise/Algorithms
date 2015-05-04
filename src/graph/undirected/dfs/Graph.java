@@ -1,4 +1,4 @@
-package graph.dfs;
+package graph.undirected.dfs;
 
 import java.util.Stack;
 
