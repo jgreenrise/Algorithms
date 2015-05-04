@@ -1,4 +1,4 @@
-package graph.adjacencyList;
+package graph.undirected.adjacencyList;
 
 import java.util.HashMap;
 import java.util.LinkedList;
