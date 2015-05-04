@@ -8,7 +8,8 @@ package graph.matrix;
 0	1	0	1	0	
 0	1	1	0	0	
 1	1	0	0	0	
-Remove edge betwen 1 and 4
+
+Remove edge between 1 and 4
 0	1	0	0	1	
 1	0	1	1	0	
 0	1	0	1	0	
@@ -80,7 +81,6 @@ public class GraphAdjacencyMatrix {
 			}
 			System.out.println();
 		}
-		
 	}
 
 	public static void main(String[] args) {
@@ -103,7 +103,7 @@ public class GraphAdjacencyMatrix {
 		System.out.println("\nRemove edge betwen 1 and 4");
 		matrix.removeEdge(1, 4);
 		matrix.printUndirectedGraph();
-
+		
 	}
 
 }
