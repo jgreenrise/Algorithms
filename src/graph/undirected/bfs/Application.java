@@ -92,7 +92,7 @@ public class Application {
 		
 		Node n50 = new Node(50);
 		// Search Node 50
-		//graph.breadthFirstSearch(n1, n50);
+		graph.breadthFirstSearch(n1, n50);
 	}
 
 }
