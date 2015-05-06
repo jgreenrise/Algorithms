@@ -4,7 +4,7 @@ public class SinglyLinkedList {
 
 	public Node start;
 	Node end;
-	int size = 0;
+	public int size = 0;
 
 	public SinglyLinkedList() {
 		start = null;
