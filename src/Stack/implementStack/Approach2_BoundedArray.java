@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
 */
 public class Approach2_BoundedArray implements Stack {
 
-	Object[] array;
+	Object [] array;
 	int size = 0;
 
 	public Approach2_BoundedArray(int size) {
