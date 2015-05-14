@@ -3,12 +3,12 @@ package Stack.implementStack;
 import java.util.NoSuchElementException;
 
 /**
-* An implementation of a stack using a fixed, non-expandable array whose
-* capacity is set in its constructor.
-*/
+ * An implementation of a stack using a fixed, non-expandable array whose
+ * capacity is set in its constructor.
+ */
 public class Approach2_BoundedArray implements Stack {
 
-	Object [] array;
+	Object[] array;
 	int size = 0;
 
 	public Approach2_BoundedArray(int size) {
@@ -50,7 +50,11 @@ public class Approach2_BoundedArray implements Stack {
 
 	@Override
 	public boolean isEmpty() {
-		return (size==0);
+		return (size == 0);
+	}
+
+	public boolean isFull() {
+		return size == array.length;
 	}
 
 }
