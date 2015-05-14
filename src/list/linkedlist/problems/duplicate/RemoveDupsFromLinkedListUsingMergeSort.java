@@ -1,7 +1,7 @@
 package list.linkedlist.problems.duplicate;
 
 import list.linkedlist.single.SinglyLinkedList;
-import list.linkedlist.single.SinglyLinkedList.Node;
+import list.linkedlist.single.Node;
 
 /**
 Input

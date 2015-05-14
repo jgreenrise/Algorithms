@@ -1,7 +1,5 @@
 package list.linkedlist.circular;
 
-import list.linkedlist.single.SinglyLinkedList.Node;
-
 public class CircularLinkedList {
 
 	Node start;

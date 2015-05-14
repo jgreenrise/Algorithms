@@ -1,7 +1,7 @@
 package list.linkedlist.problems;
 
+import list.linkedlist.single.Node;
 import list.linkedlist.single.SinglyLinkedList;
-import list.linkedlist.single.SinglyLinkedList.Node;
 
 /**
  * Given a linked list and two keys in it, swap nodes for two given keys. Nodes
@@ -82,12 +82,12 @@ public class SwapNodes {
 		Node head = node;
 
 		Node src_node_parent = null;
-		Node src_node = (list).new Node(node1, null);
+		Node src_node = new Node(node1, null);
 		Node src_node_child = null;
 		boolean is_src_node_found = false;
 
 		Node destination_node_parent = null;
-		Node dest_node = (list).new Node(node2, null);
+		Node dest_node = new Node(node2, null);
 		boolean is_dest_node_found = false;
 
 		while (node.next_node != null) {

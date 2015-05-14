@@ -1,7 +1,7 @@
 package list.linkedlist.problems;
 
 import list.linkedlist.single.SinglyLinkedList;
-import list.linkedlist.single.SinglyLinkedList.Node;
+import list.linkedlist.single.Node;
 
 /*
  * Input
@@ -89,7 +89,7 @@ public class FindKthToLastElementOfSinglyLinkedList {
 			SinglyLinkedList list, int k) {
 
 		int counter = 0;
-		list.linkedlist.single.SinglyLinkedList.Node node = list.start;
+		Node node = list.start;
 		int size_of_linkedList = list.size;
 
 		while (node.next_node != null) {
@@ -113,8 +113,8 @@ public class FindKthToLastElementOfSinglyLinkedList {
 			return 0;
 		}
 
-		list.linkedlist.single.SinglyLinkedList.Node p1 = list.start;
-		list.linkedlist.single.SinglyLinkedList.Node p2 = list.start;
+		Node p1 = list.start;
+		Node p2 = list.start;
 
 		for (int i = 0; i < k - 1; i++) {
 			if (p2 == null)
