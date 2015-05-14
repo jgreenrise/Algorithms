@@ -3,6 +3,10 @@ package list.linkedlist.problems;
 import list.linkedlist.single.Node;
 import list.linkedlist.single.SinglyLinkedList;
 
+/**
+8, 0, 8, 
+8, 0, 9, 1, 
+ */
 public class AddSingleDigitLinkedList {
 
 	public static void main(String[] args) {
