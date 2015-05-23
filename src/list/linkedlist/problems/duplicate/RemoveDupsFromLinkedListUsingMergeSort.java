@@ -74,7 +74,7 @@ public class RemoveDupsFromLinkedListUsingMergeSort {
 
 		while (fast.next_node != null && fast.next_node.next_node != null) {
 			slow = slow.next_node;
-			fast = fast.next_node.next_node;
+			fast = fast.next_node;
 		}
 
 		return slow;
