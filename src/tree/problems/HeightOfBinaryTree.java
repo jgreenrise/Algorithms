@@ -29,19 +29,20 @@ public class HeightOfBinaryTree {
 		BinaryNode n2 = new BinaryNode(2, n5, n6);
 		BinaryNode n1 = new BinaryNode(1, n2, n4);
 		
-		System.out.println(size(n1));
+		System.out.println(height(n1));
 
 	}
-
-	public static int size(BinaryNode node) {
+	
+	public static int height(BinaryNode node) {
 		if (node == null) {
 			return 0;
 		}
 
-		int left = size(node.left_node);
-		int right = size(node.right_node);
+		int left = height(node.left_node);
+		int right = height(node.right_node);
 
-		return 1 + left + right;
+		return 1 + Integer.max(left,right);
 
 	}
+
 }

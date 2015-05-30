@@ -356,7 +356,6 @@ public class BinarySearchTree {
 			printInorder(node.left_node);
 			printInorder(node.right_node);
 			System.out.print(node.element + ", ");
-
 		}
 
 	}
