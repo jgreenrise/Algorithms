@@ -2,7 +2,7 @@ package tree.bst;
 
 public class BinaryNode {
 
-	Comparable element;
+	public Comparable element;
 	public BinaryNode left_node, right_node;
 
 	public BinaryNode(Comparable element) {
