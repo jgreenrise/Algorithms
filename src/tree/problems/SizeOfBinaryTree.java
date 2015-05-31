@@ -25,7 +25,14 @@ public class SizeOfBinaryTree {
 			return 0;
 		}
 
+		/**
+		 * Find size of left tree
+		 */
 		int left = size(node.left_node);
+
+		/**
+		 * Find size of right tree
+		 */
 		int right = size(node.right_node);
 
 		return 1 + left + right;

@@ -59,19 +59,31 @@ public class LargestBSTinaBinaryTree {
 		NodeMetadata metadata_left = null;
 		NodeMetadata metadata_right = null;
 
+		/**
+		 * For handling leaf nodes
+		 */
 		if (node.left_node == null && node.right_node == null) {
 			System.out.println("Node investigated " + node.element.toString());
 			return new NodeMetadata(node, true, 1, Integer.parseInt(node.element.toString()), Integer.parseInt(node.element.toString()));
 		}
 
+		/**
+		 * Prepare metadata for left node
+		 */
 		if (node.left_node != null) {
 			metadata_left = printInorder(node.left_node, isBST, size, min, max);
 		}
 
+		/**
+		 * Prepare metadata for right node
+		 */
 		if (node.right_node != null) {
 			metadata_right = printInorder(node.right_node, isBST, size, min, max);
 		}
 
+		/**
+		 * For node with only left child
+		 */
 		if (metadata_left == null && metadata_right != null)
 			if (!metadata_right.isBST || node.element.compareTo(node.right_node.element) > 0) {
 				return new NodeMetadata(node, false, metadata_right.size, 0, 0);
@@ -80,6 +92,9 @@ public class LargestBSTinaBinaryTree {
 						Integer.parseInt(metadata_right.node.element.toString()));
 			}
 
+		/**
+		 * For node with left child
+		 */
 		if (metadata_left != null && metadata_right == null)
 			if (!metadata_left.isBST || node.element.compareTo(node.left_node.element) < 0) {
 				return new NodeMetadata(node, false, metadata_left.size, 0, 0);
@@ -88,6 +103,9 @@ public class LargestBSTinaBinaryTree {
 						Integer.parseInt(node.element.toString()));
 			}
 
+		/**
+		 * For node with left and right child
+		 */
 		if (metadata_right.isBST && metadata_left.isBST) {
 
 			if (node.element.compareTo(node.left_node.element) > 0 && node.element.compareTo(node.right_node.element) < 0) {
