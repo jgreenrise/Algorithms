@@ -6,6 +6,14 @@ import tree.bst.BinaryNode;
 
 /**
  * Time complexity: O(nlgn)
+ * 
+ * Travel postorder traversal and collect path, during each visit.
+ * 
+ * Image reference: https://8zvfla.bn1304.livefilestore.com/y2ptRP-
+ * BbRYZtzKKpco9RzKkp6VlSSZSYdp18QlQGKVBoo5fJqIYJPJuqZeogAE2xMQqJgjF4j2JkF20q4
+ * -sfqb7t6mSZ69BKSJ7uqPDwLeTKsXJlVEE
+ * -JRyXfZIjtbhtPi7nkkssGJEWkr7ry9AwwJyg-VzdcnIhpSX6YCWZ7eeh4
+ * /find_all_paths_binary_tree.jpg?psid=1
  */
 public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 
@@ -25,17 +33,17 @@ public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 		BinaryNode n1 = new BinaryNode(1, n2, n4);
 
 		ResponseBody responseBody = printAllPaths(n1, 17);
-		System.out.println("\nFinal response: "+responseBody.finalresponse);
-		
+		System.out.println("\nFinal response: " + responseBody.finalresponse);
+
 		responseBody = printAllPaths(n1, 12);
-		System.out.println("\nFinal response: "+responseBody.finalresponse);
-		
+		System.out.println("\nFinal response: " + responseBody.finalresponse);
+
 		responseBody = printAllPaths(n1, 9);
-		System.out.println("\nFinal response: "+responseBody.finalresponse);
-		
+		System.out.println("\nFinal response: " + responseBody.finalresponse);
+
 		responseBody = printAllPaths(n1, 13);
-		System.out.println("\nFinal response: "+responseBody.finalresponse);
-		
+		System.out.println("\nFinal response: " + responseBody.finalresponse);
+
 	}
 
 	private static ResponseBody printAllPaths(BinaryNode node, int sum) {
@@ -78,9 +86,9 @@ public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 		right = printAllPaths(node.right_node, sum);
 		for (String path : right.response) {
 			paths.add(path + " " + node.element.toString());
-			
+
 			String[] str_arr = path.split(" ");
-			
+
 			int value1 = 0;
 			for (String item : str_arr) {
 				value1 = value1 + Integer.parseInt(item);
