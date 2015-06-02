@@ -1,4 +1,4 @@
-package graph.problems;
+package tree.problems.printPaths;
 
 import graph.directed.bfs.Node;
 
@@ -57,6 +57,9 @@ public class PrintAllPathsWhichSumToEqualValue {
 
 	public static Node printPaths(Node node, int sum) {
 
+		/**
+		 * Stores Node, assosciated paths
+		 */
 		HashMap<Integer, LinkedList<String>> map = new HashMap<>();
 		LinkedList<String> child_paths = null;
 		StringBuilder sbr = new StringBuilder();
@@ -85,9 +88,8 @@ public class PrintAllPathsWhichSumToEqualValue {
 				for (String path : map.get(node.value))
 					child_paths.add(path + " " + String.valueOf(tmp.value));
 
-				if (tmp.adjacentNodes != null && (tmp.adjacentNodes).size() > 0) {
+				if (tmp.adjacentNodes != null && (tmp.adjacentNodes).size() > 0) 
 					child_paths.add(String.valueOf(tmp.value));
-				}
 
 				map.put(tmp.value, child_paths);
 			}

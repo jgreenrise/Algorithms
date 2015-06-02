@@ -1,4 +1,4 @@
-package graph.problems;
+package tree.problems.printPaths;
 
 import graph.directed.bfs.Node;
 

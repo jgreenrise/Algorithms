@@ -4,8 +4,6 @@ import tree.bst.BinaryNode;
 
 /**
  * Time complexity: O(n2)
- * @author JatinPatel
- *
  */
 public class IsABalancedBinaryTreeUsingHeight {
 
