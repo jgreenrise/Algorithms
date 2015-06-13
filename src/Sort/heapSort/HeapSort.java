@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 /**
  * O/p
- * Before sorting: 	[18, 16, 17, 14, 11, 12, 15, 13]
+ * Before sorting: 	[18, 16, 17, 14, 15, 12, 11, 13]
 Max heap 		[18, 16, 17, 14, 11, 12, 15, 13]
 After sorting: 		[11, 12, 13, 14, 15, 16, 17, 18]
  *
  */
 public class HeapSort {
 
-	public static int[] i_arr_input = { 18, 16, 17, 14, 11, 12, 15, 13 };
+	public static int[] i_arr_input = { 18, 16, 17, 14, 15, 12, 11, 13 };
 
 	public static void main(String[] args) {
 		System.out.println("Before sorting: \t" + Arrays.toString(i_arr_input));
