@@ -3,6 +3,7 @@ package String.problems;
 public class CheckIfTwoStringsAreAnagramsOrNot {
 
 	public static void main(String[] args) {
+		
 		// TODO Auto-generated method stub
 		String input = "at";
 		String input2 = "ta";
@@ -12,36 +13,40 @@ public class CheckIfTwoStringsAreAnagramsOrNot {
 		input2 = "cbac";
 		System.out.println(isAnagram(input, input2));
 
-		input = "temple";
-		input2 = "mplete";
-		System.out.println(isAnagramMethod2(input.toUpperCase(), input2.toUpperCase()));
+		input = "apple";
+		input2 = "APPLE";
+		System.out.println(isAnagramMethod2(input, input2));
 	}
 
 	/**
-	 * Time complexity: O(n)
-	 * Space complexity :O(n)
+	 * Time complexity: O(n) Space complexity :O(n)
+	 * ASCII KEY
+	 * http://www.asciitable.com
 	 */
 	private static boolean isAnagramMethod2(String input, String input2) {
-		int [] counts = new int[26];
+		int[] counts = new int[26];
 
-	    for (char c: input.toCharArray())
-	        counts[(int)c-65]++;
+		for (char c : input.toUpperCase().toCharArray()) {
+			System.out.println("lol "+(int) c);
+			counts[(int) c - 65]++;
+		}
 
-	    for (char c: input2.toCharArray())
-	        counts[(int)c-65]++;
+		for (char c : input2.toUpperCase().toCharArray()){
+			System.out.println("lol "+(int) c);
+			counts[(int) c - 65]--;
+		}
 
-	    for (int count: counts)
-	        if (count != 0)
-	            return false;
+		for (int count : counts)
+			if (count != 0)
+				return false;
 
-	    return true;
-	            		
+		return true;
+
 	}
 
 	/**
 	 * O(n2) time complexity or O(nlgn) time complexity, if merge sort was used.
-	 * No
-	 * extra buffer
+	 * No extra buffer
 	 */
 	private static boolean isAnagram(String input, String input2) {
 

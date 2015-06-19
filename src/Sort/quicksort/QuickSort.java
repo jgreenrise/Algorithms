@@ -6,7 +6,8 @@ public class QuickSort {
 
 	public static void main(String[] args) {
 		// int[] x = { 9, 2, 4, 7, 3, 7, 10 };
-		int[] x = { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3 };
+		//int[] x = { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3 };
+		int[] x = { 40, 2, 7, 50, 30};
 
 		int low = 0;
 		int high = x.length - 1;

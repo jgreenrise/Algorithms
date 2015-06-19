@@ -1,5 +1,6 @@
 package Array.problems;
 
+import java.util.HashMap;
 import java.util.HashSet;
 
 /**
@@ -26,30 +27,72 @@ public class FindNumberOccuringOddNumberOfTimes {
 
 		// Using hashset
 		findNumberOccuringOddNumberOfTimes_hashset(arr_i_input);
+
+		// Using HashMap
+		findNumberOccuringOddNumberOfTimes_hashMap(arr_i_input);
 	}
 
+	/**
+	 * 
+	 * TIME COMPLEXITY: 0(n)
+	 * 
+	 * Add elements to hashmap, if they don't exist in map. If elements already
+	 * exist, remove it from the last. With this approach, we have map with odd
+	 * number of times.
+	 */
+	public static void findNumberOccuringOddNumberOfTimes_hashMap(int[] input) {
+
+		HashMap map = new HashMap<>();
+
+		for (int i = 0; i < input.length; i++) {
+
+			int value = 0;
+
+			if (map.containsKey(input[i])) {
+				map.remove(input[i]);
+			} else {
+				map.put(input[i], input[i]);
+			}
+
+		}
+
+		System.out.println("Using hashmap: " + map.entrySet().iterator().next());
+
+	}
+
+	/**
+	 * TIME COMPLEXITY: 0(n)
+	 * 
+	 * Add elements to hashset, if they don't exist in map. If elements already
+	 * exist, remove it from the last. With this approach, we have map with odd
+	 * number of times.
+	 */
 	public static void findNumberOccuringOddNumberOfTimes_hashset(int[] arr_i_input) {
 
 		HashSet<Integer> set = new HashSet<Integer>();
 
 		for (int i = 0; i < arr_i_input.length; i++) {
 
-			if (i == 0) {
+			if (set.contains(arr_i_input[i]))
+				set.remove(arr_i_input[i]);
+			else
 				set.add(arr_i_input[i]);
-			} else {
 
-				if (set.contains(arr_i_input[i])) {
-					set.remove(arr_i_input[i]);
-				} else {
-					set.add(arr_i_input[i]);
-				}
-			}
 		}
 
 		System.out.println(set.iterator().next());
 
 	}
 
+	/*-
+	 * TIME COMPLEXITY: 0(n)
+	 * 
+	 * 1. Find max value. 
+	 * 2. Create aux array with array size = max value.
+	 * 3. Put the info in aux array. 
+	 * 4. Keep a count of each item in input array in aux array.
+	 * 
+	 */
 	private static void findNumberOccuringOddNumberOfTimes_method2(int[] arr_i_input) {
 
 		int max = 0;
@@ -72,23 +115,33 @@ public class FindNumberOccuringOddNumberOfTimes {
 					System.out.println(i);
 				}
 			}
-
 		}
 
 	}
 
+	/*-
+	 * TIME COMPLEXITY: 0(n)
+	 * 
+	 * The definition of the XOR (exclusive OR) operator, over bits, is that:
+
+	0 XOR 0 = 0
+	0 XOR 1 = 1
+	1 XOR 0 = 1
+	1 XOR 1 = 0
+
+	 */
 	public static void findNumberOccuringOddNumberOfTimes(int[] arr_i_input) {
 
 		int response = 0;
 
 		for (int i = 0; i < arr_i_input.length; i++) {
-			// System.out.println(arr_i_input[i]);
-			// System.out.println(response);
-			// System.out.println(response ^ arr_i_input[i]);
+			// System.out.println("XOR " + response + " XOR " + arr_i_input[i]+
+			// ": ");
 			response = response ^ arr_i_input[i];
+			// System.out.println(response);
 		}
 
-		System.out.println(response);
+		System.out.println("XOR approach: " + response);
 
 	}
 
