@@ -4,7 +4,7 @@ public class TowersOfHanoi {
 
 	public void solve(int n, String start, String end, String auxiliary) {
 
-		if (n == 0) {
+		if (n == 1) {
 			System.out.println(start + " -> " + end);
 		} else {
 			solve(n - 1, start, auxiliary, end);
