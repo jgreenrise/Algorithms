@@ -52,7 +52,7 @@ public class QuickSort2 {
 	// Reorganizes the given list so all elements less than the first are
 	// before it and all greater elements are after it.
 	public static int partition(int left, int right, int pivot) {
-		while (left < right) {
+		while (left < right) {	
 			if (a[left] == pivot || a[right] == pivot) {
 				System.out.println("Only distinct integers allowed - C321");
 			}
