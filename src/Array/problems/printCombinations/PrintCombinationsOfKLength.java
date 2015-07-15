@@ -16,7 +16,7 @@ public class PrintCombinationsOfKLength {
 
 	public static void main(String[] args) {
 		possibleStrings(3, "abc".toCharArray(), "");
-		possibleStrings_usingBinaryRepresentation(3, "abc".toCharArray(), "");
+		possibleStrings_usingBinaryRepresentation(3, "ab".toCharArray(), "");
 	}
 
 	public static void possibleStrings(int maxLength, char[] alphabet,
