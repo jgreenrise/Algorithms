@@ -131,8 +131,8 @@ public class ReverseLinkedList {
 	 * 
 	 * Time complexity: O(n) Space complexity: O(1)
 	 * 
-	 * Limitation
-	 * We have reference to TAIL of linked list
+	 * ** Limitation **
+	 * We have reference to TAIL of linked list and loose the reference of head of node
 	 */
 	private static Node reverseNode_usingRecursion(Node node) {
 
