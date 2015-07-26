@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 /**
  * O/p
- * Before sorting: 	[18, 16, 17, 14, 15, 12, 11, 13]
+ * 
+Before sorting: 	[18, 16, 17, 14, 15, 12, 11, 13]
 Max heap 		[18, 16, 17, 14, 11, 12, 15, 13]
 After sorting: 		[11, 12, 13, 14, 15, 16, 17, 18]
  *
