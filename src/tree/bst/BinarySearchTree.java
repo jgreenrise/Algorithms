@@ -283,6 +283,25 @@ public class BinarySearchTree {
 		return max_height;
 
 	}
+	
+	public int printHeightOfTree() {
+		return height(rootNode, 0);
+
+	}
+	
+	public int height(BinaryNode node, int counter){
+
+		if(node.left_node != null && node.right_node != null){
+			return Math.max (height(node.left_node, counter + 1), height(node.right_node, counter + 1));
+		}else if(node.left_node == null && node.right_node == null){
+			return counter;	
+		}else if(node.left_node != null && node.right_node == null){
+			return height(node.left_node, counter + 1);
+		}else {
+			return height(node.right_node, counter + 1);
+		}
+		
+	}
 
 	/**
 	 * <root> <left> <right>
