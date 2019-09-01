@@ -26,8 +26,7 @@ public class BinarySearchTree {
 		rootNode = insert(x, rootNode);
 	}
 
-	protected BinaryNode insert(Comparable x, BinaryNode t)
-			throws DuplicateItemException {
+	protected BinaryNode insert(Comparable x, BinaryNode t) throws DuplicateItemException {
 		if (t == null) {
 			return new BinaryNode(x);
 		} else if (x.compareTo(t.element) > 0) {
@@ -222,6 +221,10 @@ public class BinarySearchTree {
 		isBST(rootNode);
 	}
 
+	/**
+	 * This approach is not correct
+	 * @param node
+	 */
 	private void isBST(BinaryNode node) {
 
 		Queue<BinaryNode> queue = new LinkedList<BinaryNode>();
@@ -231,11 +234,9 @@ public class BinarySearchTree {
 
 			BinaryNode tmp = queue.poll();
 
-			if (tmp.left_node != null
-					&& node.left_node.element.compareTo(tmp.element) < 0) {
+			if (tmp.left_node != null && node.left_node.element.compareTo(tmp.element) < 0) {
 				queue.add(node.left_node);
-			} else if (node.right_node != null
-					&& node.right_node.element.compareTo(tmp.element) > 0) {
+			} else if (node.right_node != null && node.right_node.element.compareTo(tmp.element) > 0) {
 				queue.add(node.right_node);
 			} else if (tmp.left_node != null && tmp.right_node != null) {
 				System.out.println("Not a bst");
@@ -247,7 +248,7 @@ public class BinarySearchTree {
 
 	}
 
-	public int printHeightOfTree() {
+	public int printHeightOfTree2() {
 
 		BinaryNode node = rootNode;
 
@@ -283,24 +284,24 @@ public class BinarySearchTree {
 		return max_height;
 
 	}
-	
+
 	public int printHeightOfTree() {
 		return height(rootNode, 0);
 
 	}
-	
-	public int height(BinaryNode node, int counter){
 
-		if(node.left_node != null && node.right_node != null){
-			return Math.max (height(node.left_node, counter + 1), height(node.right_node, counter + 1));
-		}else if(node.left_node == null && node.right_node == null){
-			return counter;	
-		}else if(node.left_node != null && node.right_node == null){
+	public int height(BinaryNode node, int counter) {
+
+		if (node.left_node != null && node.right_node != null) {
+			return Math.max(height(node.left_node, counter + 1), height(node.right_node, counter + 1));
+		} else if (node.left_node == null && node.right_node == null) {
+			return counter;
+		} else if (node.left_node != null && node.right_node == null) {
 			return height(node.left_node, counter + 1);
-		}else {
+		} else {
 			return height(node.right_node, counter + 1);
 		}
-		
+
 	}
 
 	/**
@@ -379,6 +380,13 @@ public class BinarySearchTree {
 
 	}
 
+	/**
+	 * In this approach, we keep on printing elements in CURRENT-LEVEL and keep
+	 * on adding child-elements to NEXT-LEVEL
+	 * 
+	 * Until all the elements from CURRENT-LEVEL is NOT printed, we keep on
+	 * adding child elements to NEXT-LEVEL
+	 */
 	public void printBST() {
 
 		System.out.println("Root node value: " + rootNode.element);
@@ -427,12 +435,10 @@ public class BinarySearchTree {
 		binarySearchTree.printBST();
 
 		// Print minimum value
-		System.out.println("\nMinimum value: "
-				+ (binarySearchTree.findMin()).element);
+		System.out.println("\nMinimum value: " + (binarySearchTree.findMin()).element);
 
 		// Print max value
-		System.out.println("\nMaximum value: "
-				+ (binarySearchTree.findMax()).element);
+		System.out.println("\nMaximum value: " + (binarySearchTree.findMax()).element);
 
 		// Find item in a tree
 		System.out.println("\n Does 10 exists: " + (binarySearchTree.find(10)));
@@ -496,7 +502,7 @@ public class BinarySearchTree {
 
 		System.out.println("\nIn-order traversal using recursion");
 		binarySearchTree.printInorderBSTusingRecursion();
-		
+
 		System.out.println("\nPost-order traversal using recursion");
 		binarySearchTree.printPostOrderBSTusingRecursion();
 
