@@ -2,18 +2,123 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9024a9e4-81e0-4cfb-ae72-b911d8b4a12d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/String/problems/OneAway.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/hashtable/Hashtable$KeyValuePair.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/hashtable/Hashtable$KeyValuePair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/hashtable/Hashtable.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/hashtable/Hashtable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/heap/MaxHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/heap/MaxHeap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/heap/MinHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/heap/MinHeap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/problems/FindNumberOccuringOddNumberOfTimes.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/problems/FindNumberOccuringOddNumberOfTimes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/problems/FindTwoNumbersFromArrayWhichMatchesSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/problems/FindTwoNumbersFromArrayWhichMatchesSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/problems/MarkSpecificRowsAndColumnsZero.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/problems/MarkSpecificRowsAndColumnsZero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/problems/NthMostFrequentNumberInArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/problems/NthMostFrequentNumberInArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/problems/PrintAllCombinationsFromNArrayLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/problems/PrintAllCombinationsFromNArrayLists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/problems/RemoveDuplicatesFromIntegerArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/problems/RemoveDuplicatesFromIntegerArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/problems/RotateMatrixBy90Degree.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/problems/RotateMatrixBy90Degree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/problems/SecondMostRepeatingNumberInArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/problems/SecondMostRepeatingNumberInArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/problems/printCombinations/PrintCombinationsOfKLength.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/problems/printCombinations/PrintCombinationsOfKLength.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Array/problems/printCombinations/RetrieveAllPossibleCombinationsOfString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Array/problems/printCombinations/RetrieveAllPossibleCombinationsOfString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Sort/InsertionSort/BasicInsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Sort/InsertionSort/BasicInsertionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Sort/InsertionSort/InsertionSortTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Sort/InsertionSort/InsertionSortTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Sort/bubbleSort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Sort/bubbleSort/BubbleSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Sort/countingSort/CountingSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Sort/countingSort/CountingSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Sort/heapSort/HeapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Sort/heapSort/HeapSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Sort/mergeSort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Sort/mergeSort/MergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Sort/quicksort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Sort/quicksort/QuickSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Sort/selectionSort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Sort/selectionSort/SelectionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/implementStack/Approach1_LinkedListApproach.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/implementStack/Approach1_LinkedListApproach.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/implementStack/Approach2_BoundedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/implementStack/Approach2_BoundedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/implementStack/Approach3_LinkedStack$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/implementStack/Approach3_LinkedStack$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/implementStack/Approach3_LinkedStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/implementStack/Approach3_LinkedStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/implementStack/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/implementStack/Stack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/implementStack/StackMainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/implementStack/StackMainApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/problems/ComputeNumbersInString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/problems/ComputeNumbersInString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/problems/SingleArrayForKStacks$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/problems/SingleArrayForKStacks$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/problems/SingleArrayForKStacks.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/problems/SingleArrayForKStacks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/problems/queueFrom2stacks/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/problems/queueFrom2stacks/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/problems/queueFrom2stacks/QueueFromStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/problems/queueFrom2stacks/QueueFromStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/problems/returnMin/MinStack$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/problems/returnMin/MinStack$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/problems/returnMin/MinStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/problems/returnMin/MinStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/problems/returnMin/ReturnMinElementWithoutSorting$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/problems/returnMin/ReturnMinElementWithoutSorting$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/problems/returnMin/ReturnMinElementWithoutSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/problems/returnMin/ReturnMinElementWithoutSorting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/problems/sort/SortStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/problems/sort/SortStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/problems/stackOfStacks/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/problems/stackOfStacks/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/queue/iQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/queue/iQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/String/binary/AddBinaryString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/binary/AddBinaryString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/String/group/ApplicationSBTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/group/ApplicationSBTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/String/group/GroupStringsBasedUponLength.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/group/GroupStringsBasedUponLength.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/String/problems/CheckIfStringExistsInDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/problems/CheckIfStringExistsInDictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/String/problems/CheckIfStringsAreRotatedVersionOfEachOther.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/problems/CheckIfStringsAreRotatedVersionOfEachOther.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/String/problems/CheckIfTwoStringsAreAnagramsOrNot.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/problems/CheckIfTwoStringsAreAnagramsOrNot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/String/problems/ReplaceAllSpaceByPercent20.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/problems/ReplaceAllSpaceByPercent20.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/String/reverse/ReverseSentence.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/reverse/ReverseSentence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/String/reverse/ReverseString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/reverse/ReverseString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/String/reverse/ReverseStringUsingCharArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/reverse/ReverseStringUsingCharArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/String/reverse/inBuiltFunctions.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/reverse/inBuiltFunctions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/adjacencyList/AdjacencyListDirectedGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/directed/adjacencyList/AdjacencyListDirectedGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/bfs/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/directed/bfs/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/bfs/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/directed/bfs/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/bfs/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/directed/bfs/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/dfs/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/directed/dfs/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/dfs/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/directed/dfs/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/dfs/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/directed/dfs/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/matrix/AdjacencyMatrixForDirectedGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/directed/matrix/AdjacencyMatrixForDirectedGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/undirected/adjacencyList/AdjacencyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/undirected/adjacencyList/AdjacencyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/undirected/bfs/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/undirected/bfs/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/undirected/bfs/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/undirected/bfs/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/undirected/bfs/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/undirected/bfs/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/undirected/dfs/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/undirected/dfs/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/undirected/dfs/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/undirected/dfs/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/undirected/dfs/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/undirected/dfs/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/undirected/matrix/GraphAdjacencyMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/graph/undirected/matrix/GraphAdjacencyMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/SortLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/SortLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/SortTwoLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/SortTwoLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/circular/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/circular/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/circular/CircularLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/circular/CircularLinkedList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/circular/CircularLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/circular/CircularLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/clone/randomPointer/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/clone/randomPointer/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/clone/randomPointer/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/clone/randomPointer/LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/clone/randomPointer/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/clone/randomPointer/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/doubly/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/doubly/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/doubly/DoublyLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/doubly/DoublyLinkedList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/doubly/DoublyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/doubly/DoublyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/problems/AddSingleDigitLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/problems/AddSingleDigitLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/problems/DeleteNodeFromCenterOfLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/problems/DeleteNodeFromCenterOfLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/problems/FindKthToLastElementOfSinglyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/problems/FindKthToLastElementOfSinglyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/problems/ReturnCorruptedNodeInCircularlist.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/problems/ReturnCorruptedNodeInCircularlist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/problems/SwapNodes.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/problems/SwapNodes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/problems/duplicate/RemoveDupsFromLinkedListUsingLinkedHashSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/problems/duplicate/RemoveDupsFromLinkedListUsingLinkedHashSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/problems/duplicate/RemoveDupsFromLinkedListUsingMergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/problems/duplicate/RemoveDupsFromLinkedListUsingMergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/single/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/single/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/single/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/single/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/single/SinglyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/single/SinglyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/recursive/fibonacci/FibonacciMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/recursive/fibonacci/FibonacciMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/tree/bst/BinaryNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tree/bst/BinaryNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/tree/bst/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tree/bst/BinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/tree/bst/DuplicateItemException.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tree/bst/DuplicateItemException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/tree/findMaxLengthBetweenNodes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tree/findMaxLengthBetweenNodes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/tree/findMaxLengthBetweenNodes/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tree/findMaxLengthBetweenNodes/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/problems/MarkSpecificRowsAndColumnsZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/MarkSpecificRowsAndColumnsZero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/problems/StableMarriageProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/StableMarriageProblems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/problems/TowerOfHanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/problems/TowerOfHanoi.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,11 +131,36 @@
     </option>
   </component>
   <component name="ProjectId" id="1QFt19GmY4KTW4mqxv9ViiOqrMP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Array.problems" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Stack.problems" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -44,7 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.OneAway">
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
@@ -54,8 +184,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MarkSpecificRowsAndColumnsZero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.MarkSpecificRowsAndColumnsZero" />
+      <module name="Algorithms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Array.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneAway" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.problems.OneAway" />
+      <module name="Algorithms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="String.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StableMarriageProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.StableMarriageProblem" />
+      <module name="Algorithms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Array.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarkSpecificRowsAndColumnsZeroTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Array.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Array.problems" />
+      <option name="MAIN_CLASS_NAME" value="Array.problems.MarkSpecificRowsAndColumnsZeroTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,6 +264,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.OneAway" />
+        <item itemvalue="JUnit.MarkSpecificRowsAndColumnsZeroTest" />
+        <item itemvalue="Application.MarkSpecificRowsAndColumnsZero" />
+        <item itemvalue="Application.StableMarriageProblem" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -100,5 +296,24 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Array/problems/MarkSpecificRowsAndColumnsZero.java</url>
+          <line>150</line>
+          <properties class="Array.problems.MarkSpecificRowsAndColumnsZero" method="usingStringBuilderAnd2IntArrays">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/MarkSpecificRowsAndColumnsZeroTest.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

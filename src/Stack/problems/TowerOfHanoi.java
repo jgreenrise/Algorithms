@@ -1,10 +1,10 @@
 package Stack.problems;
 
-import Stack.implementSTack.BoundedArray;
+import Stack.implementStack.Approach2_BoundedArray;
 
 public class TowerOfHanoi {
 
-	private static BoundedArray[] towers;
+	private static Approach2_BoundedArray[] towers;
 
 	public static void main(String[] args) {
 
@@ -16,10 +16,10 @@ public class TowerOfHanoi {
 	public static void towersOfHanoi(int n) {
 
 		// create three stacks, tower[0] is scratch
-		towers = new BoundedArray[4];
+		towers = new Approach2_BoundedArray[4];
 
 		for (int i = 0; i <= 3; i++) {
-			towers[i] = new BoundedArray(4);
+			towers[i] = new Approach2_BoundedArray(4);
 		}
 
 		for (int d = n; d > 0; d--) {
