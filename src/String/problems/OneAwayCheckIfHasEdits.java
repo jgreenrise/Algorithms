@@ -1,6 +1,6 @@
 package String.problems;
 
-public class OneAway {
+public class OneAwayCheckIfHasEdits {
 
     public static void main(String[] args) {
         String input1 = "pale";
@@ -12,7 +12,6 @@ public class OneAway {
         input2 = "pale";
         System.out.println("\n"+input1 +" : "+ input2 + " = "+ hasEditsUsingCounter(input1, input2));
         System.out.println("Approach 2 2: "+input1 +" : "+ input2 + " = "+hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-
 
         input1 = "pales";
         input2 = "pale";
