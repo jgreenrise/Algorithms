@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9024a9e4-81e0-4cfb-ae72-b911d8b4a12d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/duplicate/RemoveDupsRecursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/String/problems/ReplaceAllSpaceByPercent20.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/problems/ReplaceAllSpaceByPercent20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/String/problems/ReplaceAllSpaceByPercent20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/problems/ReplaceAllSpaceByPercent20.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +55,9 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="Array.problems" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="list.linkedlist.problems.duplicate" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -74,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReplaceAllSpaceByPercent20">
+  <component name="RunManager" selected="Application.RemoveDupsRecursion">
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
@@ -84,13 +87,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarkSpecificRowsAndColumnsZero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.MarkSpecificRowsAndColumnsZero" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.problems.palindrome.Main" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.problems.*" />
+          <option name="PATTERN" value="String.problems.palindrome.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,13 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReplaceAllSpaceByPercent20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="String.problems.ReplaceAllSpaceByPercent20" />
+    <configuration name="RemoveDupsRecursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.duplicate.RemoveDupsRecursion" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="String.problems.*" />
+          <option name="PATTERN" value="list.linkedlist.problems.duplicate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,13 +129,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StableMarriageProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.StableMarriageProblem" />
+    <configuration name="ReplaceAllSpaceByPercent20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.problems.ReplaceAllSpaceByPercent20" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.problems.*" />
+          <option name="PATTERN" value="String.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RemoveDupsRecursion" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ReplaceAllSpaceByPercent20" />
         <item itemvalue="Application.OneAwayCheckIfHasEdits" />
         <item itemvalue="JUnit.MarkSpecificRowsAndColumnsZeroTest" />
-        <item itemvalue="Application.MarkSpecificRowsAndColumnsZero" />
-        <item itemvalue="Application.StableMarriageProblem" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +209,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
