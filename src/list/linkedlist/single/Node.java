@@ -14,4 +14,12 @@ public class Node {
 		this.value = value;
 		this.next_node = next_node;
 	}
+
+	public static void printLL(Node node){
+		while(node.next_node != null){
+			System.out.print(node.value + " > ");
+			node = node.next_node;
+		}
+		System.out.println(node.value);
+	}
 }

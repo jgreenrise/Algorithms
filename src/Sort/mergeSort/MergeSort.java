@@ -26,6 +26,7 @@ public class MergeSort {
 		System.out.println("\nODD NUMBER OF ELEMENTS");
 		input = new int[] { 10, 1, 4, 90, 43, 45, 45 };
 
+
 		System.out.println("Before sorting: " + Arrays.toString(input));
 		mergeSort(input);
 		System.out.println("After sorting: " + Arrays.toString(input));
