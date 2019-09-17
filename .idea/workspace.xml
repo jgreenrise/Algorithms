@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9024a9e4-81e0-4cfb-ae72-b911d8b4a12d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/PartitionLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/problems/DeleteNodeFromCenterOfLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/problems/DeleteNodeFromCenterOfLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/list/linkedlist/problems/DeleteNodeFromCenterOfLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/DeleteNodeFromCenterOfLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/list/linkedlist/problems/PartitionLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/PartitionLinkedList.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -236,12 +233,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/PartitionLinkedList.java</url>
-          <line>107</line>
+          <line>105</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/PartitionLinkedList.java</url>
-          <line>108</line>
+          <line>106</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>

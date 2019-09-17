@@ -9,8 +9,9 @@ public class PartitionLinkedList {
 
     public static void main(String[] args) {
         SinglyLinkedList list = new SinglyLinkedList();
+        System.out.println("Input list");
+        list.printList();
 
-        // Node to be deleted is given
         list.addFirst(1);
         list.addFirst(2);
         list.addFirst(10);
@@ -18,9 +19,6 @@ public class PartitionLinkedList {
         list.addFirst(8);
         list.addFirst(5);
         list.addFirst(3);
-
-        System.out.println("Input list");
-        list.printList();
         Node node = partitionLinkedListUsingHeadAndTailPointers(list.start, 5);
         System.out.println("Approach 1: Head and Tail approach");
         printLL(node);
