@@ -36,6 +36,7 @@ public class DeleteNodeFromCenterOfLinkedList {
 		printLL(node);
 
 
+
 	}
 
 	private static Node removeNodeFromCenterUsingPonter(Node start) {
