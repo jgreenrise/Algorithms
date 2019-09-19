@@ -10,6 +10,10 @@ public class Node {
 		next_node = null;
 	}
 
+	public Node(int value) {
+		this.value = value;
+	}
+
 	public Node(int value, Node next_node) {
 		this.value = value;
 		this.next_node = next_node;

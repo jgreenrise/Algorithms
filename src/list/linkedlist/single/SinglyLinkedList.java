@@ -12,6 +12,18 @@ public class SinglyLinkedList {
 		size = 0;
 	}
 
+	public static SinglyLinkedList createLL(int[] items) {
+		SinglyLinkedList list = new SinglyLinkedList();
+		list.start = null;
+		list.end = null;
+		list.size = items.length;
+
+		for (int item: items) {
+			list.addFirst(item);
+		}
+		return list;
+	}
+
 	/**********************************************************
 	 * ADD
 	 ***********************************************************/
