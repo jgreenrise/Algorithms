@@ -1,4 +1,4 @@
-package list.linkedlist.problems;
+package list.linkedlist.problems.sumList;
 
 import list.linkedlist.single.Node;
 import list.linkedlist.single.SinglyLinkedList;

@@ -98,7 +98,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="list.linkedlist.problems.*" />
+          <option name="PATTERN" value="list.linkedlist.problems.sumList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,7 +112,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="list.linkedlist.problems.*" />
+          <option name="PATTERN" value="list.linkedlist.problems.sumList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,12 +135,12 @@
       </method>
     </configuration>
     <configuration name="SumLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.SumLists" />
+      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.sumList.SumLists" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="list.linkedlist.problems.*" />
+          <option name="PATTERN" value="list.linkedlist.problems.sumList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,12 +149,12 @@
       </method>
     </configuration>
     <configuration name="SumListsReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.SumListsReverse" />
+      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.sumList.SumListsReverse" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="list.linkedlist.problems.*" />
+          <option name="PATTERN" value="list.linkedlist.problems.sumList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
