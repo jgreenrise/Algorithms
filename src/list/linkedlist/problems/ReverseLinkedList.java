@@ -3,6 +3,8 @@ package list.linkedlist.problems;
 import list.linkedlist.single.Node;
 import list.linkedlist.single.SinglyLinkedList;
 
+import static list.linkedlist.single.Node.printLL;
+
 
 /**
  * Output
@@ -45,59 +47,37 @@ public class ReverseLinkedList {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		SinglyLinkedList list = new SinglyLinkedList();
-
-		// Add FIRST
-		list.addFirst(10);
-		list.addFirst(24);
-		list.addFirst(62);
-		list.addLast(98);
-		list.addLast(26);
-		list.addLast(67);
-		list.add(1, 100);
-		list.add(7, 200);
-		list.add(2, 250);
-
-		System.out
-				.println("------------ APPROACH 1: using seperate linked list ---------------");
-
+		SinglyLinkedList list = null;
+		list = SinglyLinkedList.createLL(new int[] {50, 40, 30, 20, 10});
+		System.out.println("------------ APPROACH 1: using separate linked list ---------------");
 		System.out.println("Input list: ");
 		list.printList();
-
 		list = reverseLinkedList_usingExtraLInkedList(list);
-
 		System.out.println("Output list ");
 		list.printList();
 
-		System.out
-				.println("------------ APPROACH 2: using recurcsion ---------------");
-
+		System.out.println("------------ APPROACH 2: using recurcsion ---------------");
+		list = SinglyLinkedList.createLL(new int[] {50, 40, 30, 20, 10});
 		System.out.println("Input list: ");
 		list.printList();
-
 		Node response = reverseNode_usingRecursion(list.start);
+		printLL(response);
 
-		System.out
-				.println("------------ APPROACH 3: using iteration ---------------");
-
+		System.out.println("------------ APPROACH 3: using iteration ---------------");
 		System.out.println("Input list: ");
-
-		list = new SinglyLinkedList();
-		list.addLast(10);
-		list.addLast(20);
-		list.addLast(30);
-		list.addLast(40);
-
+		list = SinglyLinkedList.createLL(new int[] {50, 40, 30, 20, 10});
 		list.printList();
-
 		Node response2 = reverseLinkedList_iterativeApproach(list.start);
-
 		System.out.println("Output list");
+		printLL(response2);
 
-		while (response2 != null) {
-			System.out.print(response2.value + " -> ");
-			response2 = response2.next_node;
-		}
+		System.out.println("------------ APPROACH 4: using recursion ---------------");
+		System.out.println("Input list: ");
+		list = SinglyLinkedList.createLL(new int[] {50, 40, 30, 20, 10});
+		list.printList();
+		response = reverseRecursion(list.start, null);
+		System.out.println("Output list");
+		printLL(response);
 
 	}
 
@@ -148,9 +128,36 @@ public class ReverseLinkedList {
 			System.out.println(tmp.value + " -> " + tmp.next_node.value);
 			return tmp.next_node;
 
+
 		} else {
 			return node;
 		}
+	}
+
+	/**
+	 * RECURSION SOLUTION
+	 *
+	 * Recursion using two nodes.. Head and reversed node.
+	 *
+	 * Time complexity: O(n) Space complexity: O(n)
+	 *
+	 * ** Limitation **
+	 * Need 2 nodes
+	 */
+	public static Node reverseRecursion(Node node, Node rvNode){
+
+		if(node == null)
+			return rvNode;
+
+		Node newNode = new Node(node.value);
+
+		if(rvNode == null){
+			return reverseRecursion(node.next_node, newNode);
+		}else{
+			newNode.next_node = rvNode;
+			return reverseRecursion(node.next_node, newNode);
+		}
+
 	}
 
 	/**
@@ -176,6 +183,8 @@ public class ReverseLinkedList {
 									// 20,
 			next = node; // 10, 20 30
 			node = prev_next; // node = 20, 30 40
+
+			System.out.println(prev_next.value +" > "+node.value +" > "+next.value +" > "+prev_next.value);
 
 		}
 		node.next_node = next;

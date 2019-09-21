@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9024a9e4-81e0-4cfb-ae72-b911d8b4a12d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/SumLists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/SumListsReverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/palindrome/IsPalindromeByReverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/palindrome/IsPalindromeRecursionAndLength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/palindrome/UsingStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/single/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/single/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/single/SinglyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/single/SinglyLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/list/linkedlist/single/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/linkedlist/single/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/list/linkedlist/single/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/linkedlist/single/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/list/linkedlist/problems/ReverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/ReverseLinkedList.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +58,7 @@
       <recent name="Array.problems" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="list.linkedlist.problems.palindrome" />
       <recent name="list.linkedlist.problems" />
       <recent name="list.linkedlist.problems.duplicate" />
     </key>
@@ -82,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SumLists">
+  <component name="RunManager" selected="Application.IsPalindromeRecursionAndLength">
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
@@ -92,13 +91,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteNodeFromCenterOfLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.DeleteNodeFromCenterOfLinkedList" />
+    <configuration name="IsPalindromeByReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.palindrome.IsPalindromeByReverse" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="list.linkedlist.problems.sumList.*" />
+          <option name="PATTERN" value="list.linkedlist.problems.palindrome.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,13 +105,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PartitionLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.PartitionLinkedList" />
+    <configuration name="IsPalindromeRecursionAndLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.palindrome.IsPalindromeRecursionAndLength" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="list.linkedlist.problems.sumList.*" />
+          <option name="PATTERN" value="list.linkedlist.problems.palindrome.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,13 +119,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveDupsRecursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.duplicate.RemoveDupsRecursion" />
+    <configuration name="ReverseLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.ReverseLinkedList" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="list.linkedlist.problems.duplicate.*" />
+          <option name="PATTERN" value="list.linkedlist.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IsPalindromeRecursionAndLength" />
+        <item itemvalue="Application.IsPalindromeByReverse" />
+        <item itemvalue="Application.ReverseLinkedList" />
         <item itemvalue="Application.SumLists" />
         <item itemvalue="Application.SumListsReverse" />
-        <item itemvalue="Application.PartitionLinkedList" />
-        <item itemvalue="Application.DeleteNodeFromCenterOfLinkedList" />
-        <item itemvalue="Application.RemoveDupsRecursion" />
       </list>
     </recent_temporary>
   </component>
@@ -247,14 +246,19 @@
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/SumListsReverse.java</url>
+          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/sumList/SumListsReverse.java</url>
           <line>19</line>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/SumLists.java</url>
+          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/sumList/SumLists.java</url>
           <line>114</line>
           <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/ReverseLinkedList.java</url>
+          <line>186</line>
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
