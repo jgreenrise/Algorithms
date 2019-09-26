@@ -1,6 +1,6 @@
 package Stack.implementStack;
 
-public class Approach3_LinkedStack implements Stack {
+public class LinkedStack implements Stack {
 
 	private Node top;
 	private int size;

@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9024a9e4-81e0-4cfb-ae72-b911d8b4a12d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Stack/problems/stackOfStacks/usingArrayList/LinkedStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/problems/stackOfStacks/usingArrayList/UsingArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/problems/sort/SortStackUsing2Stacks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Stack/problems/stackOfStacks/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/implementStack/Approach3_LinkedStack$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/implementStack/Approach3_LinkedStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Stack/implementStack/StackMainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Stack/implementStack/StackMainApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/list/linkedlist/clone/randomPointer/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/list/linkedlist/clone/randomPointer/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stack/problems/stackOfStacks/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/problems/stackOfStacks/UsingVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/implementStack/Approach3_LinkedStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/implementStack/LinkedStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/implementStack/StackMainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack/implementStack/StackMainApp.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,11 +64,11 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Stack.implementStack" />
+      <recent name="Stack.problems.sort" />
       <recent name="Stack.problems.stackOfStacks.usingArrayList" />
       <recent name="Stack.problems.stackOfStacks" />
       <recent name="list.linkedlist.problems.adjacent" />
-      <recent name="list.linkedlist.problems.palindrome" />
-      <recent name="list.linkedlist.problems" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Stack.problems" />
@@ -84,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UsingArrayList">
+  <component name="RunManager" selected="Application.SortStackUsing2Stacks">
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
@@ -136,13 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.ReverseLinkedList" />
+    <configuration name="SortStackUsing2Stacks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Stack.problems.sort.SortStackUsing2Stacks" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="list.linkedlist.problems.*" />
+          <option name="PATTERN" value="Stack.problems.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortStackUsing2Stacks" />
         <item itemvalue="Application.UsingArrayList" />
         <item itemvalue="Application.IsAdjacentUsingLength" />
         <item itemvalue="Application.IsPalindromeRecursionAndLength" />
         <item itemvalue="Application.IsPalindromeByReverse" />
-        <item itemvalue="Application.ReverseLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -267,6 +269,16 @@
           <url>file://$PROJECT_DIR$/src/Stack/problems/stackOfStacks/usingArrayList/UsingArrayList.java</url>
           <line>127</line>
           <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stack/problems/sort/SortStackUsing2Stacks.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stack/problems/sort/SortStackUsing2Stacks.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="133" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

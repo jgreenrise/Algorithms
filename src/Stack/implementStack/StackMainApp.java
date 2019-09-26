@@ -1,12 +1,10 @@
 package Stack.implementStack;
 
-import java.util.Stack;
-
 public class StackMainApp {
 
 	public static void main(String[] args) {
 		
-		Approach3_LinkedStack words = new Approach3_LinkedStack();
+		LinkedStack words = new LinkedStack();
 		words.push("Santacruz");
 		words.push("Surat");
 		words.push("Belmont");
