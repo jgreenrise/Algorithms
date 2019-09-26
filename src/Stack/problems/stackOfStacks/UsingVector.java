@@ -4,7 +4,7 @@ import java.util.Vector;
 
 import Stack.implementStack.Approach2_BoundedArray;
 
-public class Client {
+public class UsingVector {
 
 	public static void main(String[] args) {
 
@@ -44,20 +44,19 @@ public class Client {
 		return ((Approach2_BoundedArray)(stacks.get(index))).pop().toString();
 	}
 
-	public static void push(Object item, Vector<Approach2_BoundedArray> stacks) {
+	public static void push(Object item, Vector<Approach2_BoundedArray> stackOfStacks) {
 
 		Approach2_BoundedArray stack = null;
 		int index = 0;
 		boolean wasNewItemAdded = false;
 
-		if (stacks.size() == 0) {
+		if (stackOfStacks.size() == 0) {
 			stack = new Approach2_BoundedArray(4);
 			index = 0;
 			stack.push(item);
-			stacks.add(index, stack);
+			stackOfStacks.add(index, stack);
 		} else {
-
-			for (Approach2_BoundedArray childStack : stacks) {
+			for (Approach2_BoundedArray childStack : stackOfStacks) {
 				if (!childStack.isFull()) {
 					wasNewItemAdded = true;
 					childStack.push(item);
@@ -70,7 +69,7 @@ public class Client {
 			if (stack == null && !wasNewItemAdded) {
 				stack = new Approach2_BoundedArray(4);
 				stack.push(item);
-				stacks.add(index, stack);
+				stackOfStacks.add(index, stack);
 			}
 		}
 
