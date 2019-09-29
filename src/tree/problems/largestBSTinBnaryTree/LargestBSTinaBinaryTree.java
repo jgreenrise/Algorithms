@@ -49,7 +49,7 @@ public class LargestBSTinaBinaryTree {
 
 		NodeMetadata left = printInorder(node.left_node, false, 0, 0, 0);
 		NodeMetadata right = printInorder(node.right_node, false, 0, 0, 0);
-		System.out.println(node.element);
+		System.out.println(node.value);
 		System.out.println("Size of largest BST: " + Integer.max(left.size, right.size));
 
 	}
@@ -63,8 +63,8 @@ public class LargestBSTinaBinaryTree {
 		 * For handling leaf nodes
 		 */
 		if (node.left_node == null && node.right_node == null) {
-			System.out.println("Node investigated " + node.element.toString());
-			return new NodeMetadata(node, true, 1, Integer.parseInt(node.element.toString()), Integer.parseInt(node.element.toString()));
+			System.out.println("Node investigated " + node.value.toString());
+			return new NodeMetadata(node, true, 1, Integer.parseInt(node.value.toString()), Integer.parseInt(node.value.toString()));
 		}
 
 		/**
@@ -85,22 +85,22 @@ public class LargestBSTinaBinaryTree {
 		 * For node with only left child
 		 */
 		if (metadata_left == null && metadata_right != null)
-			if (!metadata_right.isBST || node.element.compareTo(node.right_node.element) > 0) {
+			if (!metadata_right.isBST || node.value.compareTo(node.right_node.value) > 0) {
 				return new NodeMetadata(node, false, metadata_right.size, 0, 0);
 			} else {
-				return new NodeMetadata(node, true, metadata_right.size + 1, Integer.parseInt(node.element.toString()),
-						Integer.parseInt(metadata_right.node.element.toString()));
+				return new NodeMetadata(node, true, metadata_right.size + 1, Integer.parseInt(node.value.toString()),
+						Integer.parseInt(metadata_right.node.value.toString()));
 			}
 
 		/**
 		 * For node with left child
 		 */
 		if (metadata_left != null && metadata_right == null)
-			if (!metadata_left.isBST || node.element.compareTo(node.left_node.element) < 0) {
+			if (!metadata_left.isBST || node.value.compareTo(node.left_node.value) < 0) {
 				return new NodeMetadata(node, false, metadata_left.size, 0, 0);
 			} else {
-				return new NodeMetadata(node, true, metadata_left.size + 1, Integer.parseInt(node.element.toString()),
-						Integer.parseInt(node.element.toString()));
+				return new NodeMetadata(node, true, metadata_left.size + 1, Integer.parseInt(node.value.toString()),
+						Integer.parseInt(node.value.toString()));
 			}
 
 		/**
@@ -108,10 +108,10 @@ public class LargestBSTinaBinaryTree {
 		 */
 		if (metadata_right.isBST && metadata_left.isBST) {
 
-			if (node.element.compareTo(node.left_node.element) > 0 && node.element.compareTo(node.right_node.element) < 0) {
+			if (node.value.compareTo(node.left_node.value) > 0 && node.value.compareTo(node.right_node.value) < 0) {
 				return new NodeMetadata(node, true, metadata_left.size + metadata_right.size + 1, Integer.min(
-						Integer.parseInt(node.left_node.element.toString()), Integer.parseInt(node.right_node.element.toString())), Integer.max(
-						Integer.parseInt(node.left_node.element.toString()), Integer.parseInt(node.right_node.element.toString())));
+						Integer.parseInt(node.left_node.value.toString()), Integer.parseInt(node.right_node.value.toString())), Integer.max(
+						Integer.parseInt(node.left_node.value.toString()), Integer.parseInt(node.right_node.value.toString())));
 			} else {
 				return new NodeMetadata(node, false, Integer.max(metadata_left.size, metadata_right.size), 0, 0);
 			}

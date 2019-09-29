@@ -29,9 +29,9 @@ public class BinarySearchTree {
 	protected BinaryNode insert(Comparable x, BinaryNode t) throws DuplicateItemException {
 		if (t == null) {
 			return new BinaryNode(x);
-		} else if (x.compareTo(t.element) > 0) {
+		} else if (x.compareTo(t.value) > 0) {
 			t.right_node = insert(x, t.right_node);
-		} else if (x.compareTo(t.element) < 0) {
+		} else if (x.compareTo(t.value) < 0) {
 			t.left_node = insert(x, t.left_node);
 		} else {
 			throw new DuplicateItemException(x.toString());
@@ -100,12 +100,12 @@ public class BinarySearchTree {
 	private Comparable find(Comparable item, BinaryNode rootNode) {
 
 		while (rootNode != null) {
-			if (rootNode.element.compareTo(item) > 0)
+			if (rootNode.value.compareTo(item) > 0)
 				rootNode = rootNode.left_node;
-			else if (rootNode.element.compareTo(item) < 0)
+			else if (rootNode.value.compareTo(item) < 0)
 				rootNode = rootNode.right_node;
 			else
-				return rootNode.element;
+				return rootNode.value;
 		}
 		return null; // Not found
 	}
@@ -169,11 +169,11 @@ public class BinarySearchTree {
 
 	private BinaryNode remove(Comparable node_to_be_removed, BinaryNode node) {
 
-		if (node_to_be_removed.compareTo(node.element) > 0) {
+		if (node_to_be_removed.compareTo(node.value) > 0) {
 			node.right_node = remove(node_to_be_removed, node.right_node);
-		} else if (node_to_be_removed.compareTo(node.element) < 0) {
+		} else if (node_to_be_removed.compareTo(node.value) < 0) {
 			node.left_node = remove(node_to_be_removed, node.left_node);
-		} else if (node_to_be_removed.compareTo(node.element) == 0) {
+		} else if (node_to_be_removed.compareTo(node.value) == 0) {
 
 			if (node.left_node == null && node.right_node == null) {
 				// Deleting leaf node
@@ -192,7 +192,7 @@ public class BinarySearchTree {
 				// Deleting node with 2 child
 				BinaryNode tmp = removeAndReturnMinNodeFromBst(node.right_node);
 				removeMin(node.right_node);
-				node.element = tmp.element;
+				node.value = tmp.value;
 				return node;
 
 			}
@@ -234,9 +234,9 @@ public class BinarySearchTree {
 
 			BinaryNode tmp = queue.poll();
 
-			if (tmp.left_node != null && node.left_node.element.compareTo(tmp.element) < 0) {
+			if (tmp.left_node != null && node.left_node.value.compareTo(tmp.value) < 0) {
 				queue.add(node.left_node);
-			} else if (node.right_node != null && node.right_node.element.compareTo(tmp.element) > 0) {
+			} else if (node.right_node != null && node.right_node.value.compareTo(tmp.value) > 0) {
 				queue.add(node.right_node);
 			} else if (tmp.left_node != null && tmp.right_node != null) {
 				System.out.println("Not a bst");
@@ -318,7 +318,7 @@ public class BinarySearchTree {
 		while (!stack.isEmpty()) {
 
 			BinaryNode tmp = stack.pop();
-			System.out.print(tmp.element + " ");
+			System.out.print(tmp.value + " ");
 
 			if (tmp.right_node != null)
 				stack.add(tmp.right_node);
@@ -338,7 +338,7 @@ public class BinarySearchTree {
 	}
 
 	private void printPreorder(BinaryNode node) {
-		System.out.print(node.element + " ");
+		System.out.print(node.value + " ");
 		if (node.left_node != null)
 			printPreorder(node.left_node);
 		if (node.right_node != null)
@@ -356,7 +356,7 @@ public class BinarySearchTree {
 
 		if (node != null) {
 			printInorder(node.left_node);
-			System.out.print(node.element + ", ");
+			System.out.print(node.value + ", ");
 			printInorder(node.right_node);
 		}
 
@@ -375,7 +375,7 @@ public class BinarySearchTree {
 		if (node != null) {
 			printInorder(node.left_node);
 			printInorder(node.right_node);
-			System.out.print(node.element + ", ");
+			System.out.print(node.value + ", ");
 		}
 
 	}
@@ -389,7 +389,7 @@ public class BinarySearchTree {
 	 */
 	public void printBST() {
 
-		System.out.println("Root node value: " + rootNode.element);
+		System.out.println("Root node value: " + rootNode.value);
 
 		Queue<BinaryNode> currentLevel = new LinkedList<BinaryNode>();
 		Queue<BinaryNode> nextLevel = new LinkedList<BinaryNode>();
@@ -397,7 +397,7 @@ public class BinarySearchTree {
 
 		while (!currentLevel.isEmpty()) {
 
-			System.out.print((currentLevel.peek()).element + " ");
+			System.out.print((currentLevel.peek()).value + " ");
 			BinaryNode node = currentLevel.poll();
 
 			if (node.left_node != null)
@@ -435,10 +435,10 @@ public class BinarySearchTree {
 		binarySearchTree.printBST();
 
 		// Print minimum value
-		System.out.println("\nMinimum value: " + (binarySearchTree.findMin()).element);
+		System.out.println("\nMinimum value: " + (binarySearchTree.findMin()).value);
 
 		// Print max value
-		System.out.println("\nMaximum value: " + (binarySearchTree.findMax()).element);
+		System.out.println("\nMaximum value: " + (binarySearchTree.findMax()).value);
 
 		// Find item in a tree
 		System.out.println("\n Does 10 exists: " + (binarySearchTree.find(10)));

@@ -1,10 +1,8 @@
 package tree.problems.isBst;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
 
 import tree.bst.BinaryNode;
 import tree.bst.DuplicateItemException;
@@ -34,9 +32,9 @@ public class BinarySearchTree {
 	protected BinaryNode insert(Comparable x, BinaryNode t) throws DuplicateItemException {
 		if (t == null) {
 			return new BinaryNode(x);
-		} else if (x.compareTo(t.element) > 0) {
+		} else if (x.compareTo(t.value) > 0) {
 			t.right_node = insert(x, t.right_node);
-		} else if (x.compareTo(t.element) < 0) {
+		} else if (x.compareTo(t.value) < 0) {
 			t.left_node = insert(x, t.left_node);
 		} else {
 			throw new DuplicateItemException(x.toString());
@@ -63,9 +61,9 @@ public class BinarySearchTree {
 
 			BinaryNode tmp = queue.poll();
 
-			if (tmp.left_node != null && node.left_node.element.compareTo(tmp.element) < 0) {
+			if (tmp.left_node != null && node.left_node.value.compareTo(tmp.value) < 0) {
 				queue.add(node.left_node);
-			} else if (node.right_node != null && node.right_node.element.compareTo(tmp.element) > 0) {
+			} else if (node.right_node != null && node.right_node.value.compareTo(tmp.value) > 0) {
 				queue.add(node.right_node);
 			} else if (tmp.left_node != null && tmp.right_node != null) {
 				System.out.println("Not a bst");
@@ -79,7 +77,7 @@ public class BinarySearchTree {
 
 	public void printBST() {
 
-		System.out.println("Root node value: " + rootNode.element);
+		System.out.println("Root node value: " + rootNode.value);
 
 		Queue<BinaryNode> currentLevel = new LinkedList<BinaryNode>();
 		Queue<BinaryNode> nextLevel = new LinkedList<BinaryNode>();
@@ -87,7 +85,7 @@ public class BinarySearchTree {
 
 		while (!currentLevel.isEmpty()) {
 
-			System.out.print((currentLevel.peek()).element + " ");
+			System.out.print((currentLevel.peek()).value + " ");
 			BinaryNode node = currentLevel.poll();
 
 			if (node.left_node != null)
@@ -129,7 +127,7 @@ public class BinarySearchTree {
 
 		if (node != null) {
 			printInorder(node.left_node, array);
-			array[index++] = Integer.parseInt(node.element.toString());
+			array[index++] = Integer.parseInt(node.value.toString());
 			printInorder(node.right_node, array);
 		}
 		return array;
@@ -151,11 +149,11 @@ public class BinarySearchTree {
 		if (node != null) {
 			printInorderAndCheckForBST(node.left_node);
 
-			if (lastRecord != null && lastRecord > Integer.parseInt(node.element.toString())) {
+			if (lastRecord != null && lastRecord > Integer.parseInt(node.value.toString())) {
 				return false;
 			}
 
-			lastRecord = Integer.parseInt(node.element.toString());
+			lastRecord = Integer.parseInt(node.value.toString());
 			printInorderAndCheckForBST(node.right_node);
 		}
 

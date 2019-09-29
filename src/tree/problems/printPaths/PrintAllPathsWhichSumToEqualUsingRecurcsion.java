@@ -54,7 +54,7 @@ public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 
 		if (node.left_node == null || node.right_node == null) {
 			paths = new LinkedList<String>();
-			paths.add(node.element.toString());
+			paths.add(node.value.toString());
 			response.response = paths;
 			return response;
 		}
@@ -65,7 +65,7 @@ public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 		paths = new LinkedList<String>();
 		left = printAllPaths(node.left_node, sum);
 		for (String path : left.response) {
-			paths.add(path + " " + node.element.toString());
+			paths.add(path + " " + node.value.toString());
 
 			String[] str_arr_left = path.split(" ");
 
@@ -74,8 +74,8 @@ public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 				value1 = value1 + Integer.parseInt(item);
 			}
 
-			if (value1 + Integer.parseInt(node.element.toString()) == sum) {
-				response.finalresponse.add(path + " " + node.element.toString());
+			if (value1 + Integer.parseInt(node.value.toString()) == sum) {
+				response.finalresponse.add(path + " " + node.value.toString());
 			}
 
 		}
@@ -85,7 +85,7 @@ public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 		 */
 		right = printAllPaths(node.right_node, sum);
 		for (String path : right.response) {
-			paths.add(path + " " + node.element.toString());
+			paths.add(path + " " + node.value.toString());
 
 			String[] str_arr = path.split(" ");
 
@@ -94,15 +94,15 @@ public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 				value1 = value1 + Integer.parseInt(item);
 			}
 
-			if (value1 + Integer.parseInt(node.element.toString()) == sum) {
-				response.finalresponse.add(path + " " + node.element.toString());
+			if (value1 + Integer.parseInt(node.value.toString()) == sum) {
+				response.finalresponse.add(path + " " + node.value.toString());
 			}
 		}
 
 		/**
 		 * Add node
 		 */
-		paths.add(node.element.toString());
+		paths.add(node.value.toString());
 		response.response = paths;
 
 		System.out.println(paths);
