@@ -123,6 +123,7 @@ public class BinarySearchTree {
 
 	private static BinaryNode removeMax(BinaryNode node) {
 		if (node.right_node != null) {
+
 			node.right_node = removeMax(node.right_node);
 			return node;
 		} else {
