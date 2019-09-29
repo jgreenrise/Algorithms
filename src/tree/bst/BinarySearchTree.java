@@ -63,12 +63,6 @@ public class BinarySearchTree {
 		}
 	}
 
-	/**
-	 * Find the largest item in the tree.
-	 * 
-	 * @param rootNode
-	 * @return smallest item or null if empty.
-	 */
 	public BinaryNode findMax() {
 		return findMax(rootNode);
 	}
@@ -110,48 +104,29 @@ public class BinarySearchTree {
 		return null; // Not found
 	}
 
-	/**
-	 * Remove minimum item from the tree.
-	 * 
-	 * @throws ItemNotFoundException
-	 *             if tree is empty.
-	 */
 	public void removeMin() {
 		rootNode = removeMin(rootNode);
 	}
 
-	private BinaryNode removeMin(BinaryNode rootNode) {
-
-		if (rootNode == null)
-			return null;
-		else if (rootNode.left_node != null) {
-			rootNode.left_node = removeMin(rootNode.left_node);
-			return rootNode;
+	private BinaryNode removeMin(BinaryNode node) {
+		if (node.left_node != null) {
+			node.left_node = removeMin(node.left_node);
+			return node;
 		} else {
-			return rootNode.right_node;
+			return null;
 		}
-
 	}
 
-	/**
-	 * Remove Maximum item from the tree.
-	 * 
-	 * @throws ItemNotFoundException
-	 *             if tree is empty.
-	 */
 	public void removeMax() {
 		rootNode = removeMax(rootNode);
 	}
 
-	private BinaryNode removeMax(BinaryNode rootNode) {
-
-		if (rootNode == null)
-			return null;
-		else if (rootNode.right_node != null) {
-			rootNode.right_node = removeMax(rootNode.right_node);
-			return rootNode;
+	private static BinaryNode removeMax(BinaryNode node) {
+		if (node.right_node != null) {
+			node.right_node = removeMax(node.right_node);
+			return node;
 		} else {
-			return rootNode.left_node;
+			return null;
 		}
 	}
 
@@ -160,8 +135,6 @@ public class BinarySearchTree {
 	 * 
 	 * @param x
 	 *            the item to remove.
-	 * @throws ItemNotFoundException
-	 *             if x is not found.
 	 */
 	public void remove(Comparable x) {
 		rootNode = remove(x, rootNode);
@@ -387,7 +360,7 @@ public class BinarySearchTree {
 	 * Until all the elements from CURRENT-LEVEL is NOT printed, we keep on
 	 * adding child elements to NEXT-LEVEL
 	 */
-	public void printBST() {
+	 public void printBST() {
 
 		System.out.println("Root node value: " + rootNode.value);
 

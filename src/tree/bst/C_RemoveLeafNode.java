@@ -3,7 +3,7 @@ package tree.bst;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class B_Print {
+public class C_RemoveLeafNode {
 
     static BinaryNode rootNode;
 
@@ -34,7 +34,7 @@ public class B_Print {
     public static void main(String args[]) throws DuplicateItemException {
 
         // Adding node to bst
-        B_Print binarySearchTree = new B_Print();
+        C_RemoveLeafNode binarySearchTree = new C_RemoveLeafNode();
         binarySearchTree.insert(11);
         binarySearchTree.insert(6);
         binarySearchTree.insert(8);
@@ -50,6 +50,38 @@ public class B_Print {
         // Print BST
         binarySearchTree.printBST();
 
+        binarySearchTree.removeLeafNode(10);
+        binarySearchTree.printBST();
+
+        binarySearchTree.removeLeafNode(49);
+        binarySearchTree.printBST();
+
+        binarySearchTree.removeLeafNode(32);
+        binarySearchTree.printBST();
+    }
+
+    private void removeLeafNode(int i) {
+        try {
+            rootNode = removeLeafNode(rootNode, i);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private BinaryNode removeLeafNode(BinaryNode node, int value) throws Exception {
+
+        if (node == null) {
+            throw new Exception("Node does not exist");
+        }
+
+        if (Integer.valueOf(node.value.toString()) == value)
+            return null;
+        if (Integer.valueOf(node.value.toString()) > value) {
+            node.left_node = removeLeafNode(node.left_node, value);
+            return node;
+        }
+        node.right_node = removeLeafNode(node.right_node, value);
+        return node;
     }
 
     public void printBST() {

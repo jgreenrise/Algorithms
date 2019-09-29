@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9024a9e4-81e0-4cfb-ae72-b911d8b4a12d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tree/bst/A_Insert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/bst/B_Print.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/bst/C_RemoveLeafNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/tree/bst/BinaryNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tree/bst/BinaryNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/tree/bst/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tree/bst/BinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/bst/BinaryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/BinaryNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/bst/B_Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/B_Print.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tree/bst/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/problems/isBst/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/isBst/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/problems/largestBSTinBnaryTree/LargestBSTinaBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/largestBSTinBnaryTree/LargestBSTinaBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualUsingRecurcsion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualUsingRecurcsion.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +50,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -87,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.B_Print">
+  <component name="RunManager" selected="Application.C_RemoveLeafNode">
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
@@ -153,13 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedQueueUsingTwoNodes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stack.queue.LinkedQueueUsingTwoNodes" />
+    <configuration name="C_RemoveLeafNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.bst.C_RemoveLeafNode" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Stack.queue.*" />
+          <option name="PATTERN" value="tree.bst.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.C_RemoveLeafNode" />
         <item itemvalue="Application.B_Print" />
         <item itemvalue="Application.A_Insert" />
         <item itemvalue="Application.BinarySearchTree" />
         <item itemvalue="Application.AnimalShelter" />
-        <item itemvalue="Application.LinkedQueueUsingTwoNodes" />
       </list>
     </recent_temporary>
   </component>
@@ -285,6 +280,11 @@
           <url>file://$PROJECT_DIR$/src/Stack/problems/AnimalShelter.java</url>
           <line>111</line>
           <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/bst/C_RemoveLeafNode.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="153" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
