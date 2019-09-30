@@ -43,9 +43,6 @@ public class BinarySearchTree {
 
 	/**
 	 * Find the smallest item in the tree.
-	 * 
-	 * @param rootNode
-	 * @return smallest item or null if empty.
 	 */
 	public BinaryNode findMin() {
 		return findMin(rootNode);
@@ -79,13 +76,6 @@ public class BinarySearchTree {
 		}
 	}
 
-	/**
-	 * Find an item in the tree.
-	 * 
-	 * @param x
-	 *            the item to search for.
-	 * @return the matching item or null if not found.
-	 */
 	public Comparable find(Comparable item) {
 		// TODO Auto-generated method stub
 		return find(item, rootNode);
@@ -188,38 +178,6 @@ public class BinarySearchTree {
 		BinaryNode tmp = node;
 		node = null;
 		return tmp;
-	}
-
-	private void isBST() {
-		// TODO Auto-generated method stub
-		isBST(rootNode);
-	}
-
-	/**
-	 * This approach is not correct
-	 * @param node
-	 */
-	private void isBST(BinaryNode node) {
-
-		Queue<BinaryNode> queue = new LinkedList<BinaryNode>();
-		queue.add(node);
-
-		while (!queue.isEmpty()) {
-
-			BinaryNode tmp = queue.poll();
-
-			if (tmp.left_node != null && node.left_node.value.compareTo(tmp.value) < 0) {
-				queue.add(node.left_node);
-			} else if (node.right_node != null && node.right_node.value.compareTo(tmp.value) > 0) {
-				queue.add(node.right_node);
-			} else if (tmp.left_node != null && tmp.right_node != null) {
-				System.out.println("Not a bst");
-				break;
-			}
-		}
-
-		System.out.println("Is a BST");
-
 	}
 
 	public int printHeightOfTree2() {
@@ -459,8 +417,6 @@ public class BinarySearchTree {
 		// Remove tree with 2 child
 		binarySearchTree.remove(11);
 		binarySearchTree.printBST();
-
-		binarySearchTree.isBST();
 
 		// Height of tree
 		binarySearchTree.printHeightOfTree();
