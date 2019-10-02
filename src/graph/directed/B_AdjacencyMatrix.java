@@ -1,4 +1,4 @@
-package graph.directed.matrix;
+package graph.directed;
 
 /*-
  * 
@@ -22,12 +22,12 @@ Has edge from 3 and 5 	false
 
  * 
  */
-public class AdjacencyMatrixForDirectedGraph {
+public class B_AdjacencyMatrix {
 
 	private static int[][] matrix = null;
 	private static int i_total_nodes = 0;
 
-	public AdjacencyMatrixForDirectedGraph(int i_number_of_nodes) {
+	public B_AdjacencyMatrix(int i_number_of_nodes) {
 
 		if (i_number_of_nodes < 0)
 			throw new RuntimeException("Number of vertices must be nonnegative");
@@ -88,7 +88,7 @@ public class AdjacencyMatrixForDirectedGraph {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		AdjacencyMatrixForDirectedGraph matrix = new AdjacencyMatrixForDirectedGraph(
+		B_AdjacencyMatrix matrix = new B_AdjacencyMatrix(
 				13);
 
 		// Source node 0

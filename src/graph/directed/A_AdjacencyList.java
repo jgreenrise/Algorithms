@@ -47,12 +47,12 @@ After readding nodes
 
  **/
 
-public class A_AdjacencyListDirectedGraph {
+public class A_AdjacencyList {
 
 	int i_number_of_vertices;
 	Map<Integer, LinkedList<Integer>> map = null;
 
-	public A_AdjacencyListDirectedGraph(int i_number_of_vertices) {
+	public A_AdjacencyList(int i_number_of_vertices) {
 		this.i_number_of_vertices = i_number_of_vertices;
 
 		map = new HashMap<>();
@@ -111,7 +111,7 @@ public class A_AdjacencyListDirectedGraph {
 
 	public static void main(String args[]) {
 
-		A_AdjacencyListDirectedGraph list = new A_AdjacencyListDirectedGraph(13);
+		A_AdjacencyList list = new A_AdjacencyList(13);
 		list.setEdge(0, 1);
 		list.setEdge(0, 2);
 		list.setEdge(0, 6);
