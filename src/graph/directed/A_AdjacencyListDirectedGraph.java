@@ -1,4 +1,4 @@
-package graph.directed.adjacencyList;
+package graph.directed;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -47,12 +47,12 @@ After readding nodes
 
  **/
 
-public class AdjacencyListDirectedGraph {
+public class A_AdjacencyListDirectedGraph {
 
 	int i_number_of_vertices;
 	Map<Integer, LinkedList<Integer>> map = null;
 
-	public AdjacencyListDirectedGraph(int i_number_of_vertices) {
+	public A_AdjacencyListDirectedGraph(int i_number_of_vertices) {
 		this.i_number_of_vertices = i_number_of_vertices;
 
 		map = new HashMap<>();
@@ -111,7 +111,7 @@ public class AdjacencyListDirectedGraph {
 
 	public static void main(String args[]) {
 
-		AdjacencyListDirectedGraph list = new AdjacencyListDirectedGraph(13);
+		A_AdjacencyListDirectedGraph list = new A_AdjacencyListDirectedGraph(13);
 		list.setEdge(0, 1);
 		list.setEdge(0, 2);
 		list.setEdge(0, 6);

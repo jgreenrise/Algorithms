@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9024a9e4-81e0-4cfb-ae72-b911d8b4a12d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tree/bst/G_InOrderPrint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/bst/G_PreOrderPrint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/bst/H_PostOrderPrint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/tree/bst/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/tree/bst/BinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/bst/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/BinarySearchTree.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
