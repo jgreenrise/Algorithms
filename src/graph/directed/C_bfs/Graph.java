@@ -1,4 +1,4 @@
-package graph.directed.bfs;
+package graph.directed.C_bfs;
 
 import java.util.LinkedList;
 import java.util.Queue;

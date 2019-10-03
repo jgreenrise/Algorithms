@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9024a9e4-81e0-4cfb-ae72-b911d8b4a12d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/directed/bfs/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/directed/C_bfs/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/directed/bfs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/directed/C_bfs/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/directed/bfs/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/directed/C_bfs/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/directed/dfs/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/directed/D_dfs/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/directed/dfs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/directed/D_dfs/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/directed/dfs/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/directed/D_dfs/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualValue.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

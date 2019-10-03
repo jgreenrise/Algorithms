@@ -1,12 +1,9 @@
 package tree.problems.printPaths;
 
-import graph.directed.bfs.Node;
+import graph.directed.C_bfs.Node;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.Map;
 import java.util.Stack;
 
 /**

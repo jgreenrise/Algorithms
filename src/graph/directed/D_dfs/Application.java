@@ -1,4 +1,4 @@
-package graph.directed.bfs;
+package graph.directed.D_dfs;
 
 public class Application {
 
@@ -19,42 +19,41 @@ public class Application {
 		n1.addAssosciatedNodes(n2);
 		n1.addAssosciatedNodes(n3);
 		n1.addAssosciatedNodes(n4);
-		
+
 		n2.addAssosciatedNodes(n5);
 		n2.addAssosciatedNodes(n6);
-		
+
 		n3.addAssosciatedNodes(n11);
-		
+
 		n5.addAssosciatedNodes(n9);
 		n5.addAssosciatedNodes(n10);
-		
+
 		n4.addAssosciatedNodes(n7);
 		n4.addAssosciatedNodes(n8);
-		
+
 		n7.addAssosciatedNodes(n11);
 		n7.addAssosciatedNodes(n12);
-		
+
 		Graph graph = new Graph();
-		
+
 		// Search Node 7
 		System.out.println("\nIs there a path between Node 4 and 11");
-		//graph.breadthFirstSearch(n4, n11);
-		
+		// graph.depthFirstSearch(n4, n11);
+
 		System.out.println("\nIs there a path between Node 3 and 11");
-		//graph.breadthFirstSearch(n3, n11);
-		
+		// graph.depthFirstSearch(n3, n11);
+
 		System.out.println("\nIs there a path between Node 1 and 8");
-		//graph.breadthFirstSearch(n1, n8);
-		
+		// graph.depthFirstSearch(n1, n8);
+
 		System.out.println("\nIs there a path between Node 1 and 12");
-		//graph.breadthFirstSearch(n1, n12);
-		
+		// graph.depthFirstSearch(n1, n12);
+
 		System.out.println("\nIs there a path between Node 3 and 12");
-		//graph.breadthFirstSearch(n3, n12);
-		
+		//graph.depthFirstSearch(n3, n12);
+
 		System.out.println("\nIs there a path between Node 2 and 10");
-		graph.breadthFirstSearch(n2, n10);
-		
+		graph.depthFirstSearch(n2, n10);
 	}
 
 }
