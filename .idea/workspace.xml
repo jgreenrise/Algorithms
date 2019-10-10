@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9024a9e4-81e0-4cfb-ae72-b911d8b4a12d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/tree/problems/successor/FindSuccessorUsingParentLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/problems/successor/QuestionFindSuccessorUsingParentLink.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/problems/isBalanced/IsABalancedBinaryTreeUsingHeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/isBalanced/IsABalancedBinaryTreeUsingHeight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/adjacencyList/AdjacencyListDirectedGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/bfs/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/bfs/Graph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/bfs/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/dfs/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/dfs/Graph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/dfs/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/graph/directed/matrix/AdjacencyMatrixForDirectedGraph.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,15 +62,15 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="Array.problems" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tree.problems.successor" />
       <recent name="tree.bst" />
       <recent name="Stack.implementStack" />
       <recent name="Stack.problems.sort" />
       <recent name="Stack.problems.stackOfStacks.usingArrayList" />
-      <recent name="Stack.problems.stackOfStacks" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Stack.problems" />
@@ -79,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.H_PostOrderPrint">
+  <component name="RunManager" selected="Application.FindSuccessorUsingParentLink">
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
@@ -89,8 +98,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="E_Height" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.bst.E_Height" />
+    <configuration name="F_IsBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.bst.F_IsBST" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -103,13 +112,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="F_IsBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.bst.F_IsBST" />
+    <configuration name="FindSuccessorUsingParentLink" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.problems.successor.FindSuccessorUsingParentLink" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tree.bst.*" />
+          <option name="PATTERN" value="tree.problems.successor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -183,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FindSuccessorUsingParentLink" />
         <item itemvalue="Application.H_PostOrderPrint" />
         <item itemvalue="Application.G_PreOrderPrint" />
         <item itemvalue="Application.G_InOrderPrint" />
         <item itemvalue="Application.F_IsBST" />
-        <item itemvalue="Application.E_Height" />
       </list>
     </recent_temporary>
   </component>
@@ -287,6 +296,21 @@
           <url>file://$PROJECT_DIR$/src/tree/bst/D_RemoveAnyNode.java</url>
           <line>63</line>
           <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/successor/FindSuccessorUsingParentLink.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/successor/FindSuccessorUsingParentLink.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/successor/FindSuccessorUsingParentLink.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="178" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
