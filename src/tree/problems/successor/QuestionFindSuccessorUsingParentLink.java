@@ -2,8 +2,6 @@ package tree.problems.successor;
 
 public class QuestionFindSuccessorUsingParentLink {
 
-    static PreviousIntValue previousIntValue = null;
-
     public static class PreviousIntValue {
         int val;
 
