@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9024a9e4-81e0-4cfb-ae72-b911d8b4a12d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tree/problems/RandomTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/problems/projectDependencies/PrintProjectDependencies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/String/problems/PalindromePermutation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/String/problems/ReplaceAllSpaceByPercent20.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/String/problems/ReplaceAllSpaceByPercent20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/String/problems/ReplaceAllSpaceByPercent20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/problems/ReplaceAllSpaceByPercent20.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/problems/successor/QuestionFindSuccessorUsingParentLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/successor/QuestionFindSuccessorUsingParentLink.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,15 +57,15 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="Array.problems" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="String.problems" />
       <recent name="tree.problems.projectDependencies" />
       <recent name="tree.problems.successor" />
       <recent name="tree.bst" />
       <recent name="Stack.implementStack" />
-      <recent name="Stack.problems.sort" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Stack.problems" />
@@ -83,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReplaceAllSpaceByPercent20">
+  <component name="RunManager" selected="Application.PalindromePermutation">
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
@@ -107,8 +107,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G_PreOrderPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.bst.G_PreOrderPrint" />
+    <configuration name="H_PostOrderPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.bst.H_PostOrderPrint" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -121,13 +121,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="H_PostOrderPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.bst.H_PostOrderPrint" />
+    <configuration name="PalindromePermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.problems.PalindromePermutation" />
       <module name="Algorithms" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tree.bst.*" />
+          <option name="PATTERN" value="String.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -181,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PalindromePermutation" />
         <item itemvalue="Application.ReplaceAllSpaceByPercent20" />
         <item itemvalue="Application.RandomTree" />
         <item itemvalue="Application.FindSuccessorUsingParentLink" />
         <item itemvalue="Application.H_PostOrderPrint" />
-        <item itemvalue="Application.G_PreOrderPrint" />
       </list>
     </recent_temporary>
   </component>
