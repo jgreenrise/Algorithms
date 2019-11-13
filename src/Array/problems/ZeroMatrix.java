@@ -71,39 +71,41 @@ Output
 
  *
  */
-public class MarkSpecificRowsAndColumnsZero {
+public class ZeroMatrix {
 
     public static void main(String args[]) {
 
         System.out.println("\n*****Approach1*******\n");
         int[][] matrix = {{0, 1, 2, 0}, {3, 4, 5, 2}, {1, 3, 1, 5}};
-        mark1stRowIndexAndIstColumnIndexZero(matrix, 3, 4);
+        //mark1stRowIndexAndIstColumnIndexZero(matrix, 3, 4);
+        //modifyMatrixByMakingAllRowsAndColumnsZero_method2(matrix, 3, 4);
 
-      /*  int[][] matrix1 = {{7, 1, 2}, {5, 4, 9}, {7, 0, 3}, {1, 8, 5}};
-		usingStringBuilderAnd2IntArrays(matrix1, 4, 3);
+        int[][] matrix1 = {{7, 1, 2}, {5, 4, 9}, {7, 0, 3}, {1, 8, 5}};
+        //mark1stRowIndexAndIstColumnIndexZero(matrix1, 4, 3);
 
         int[][] matrix2 = {{0, 1, 1, 0}, {0, 1, 1, 1}, {0, 1, 1, 1}};
-		usingStringBuilderAnd2IntArrays(matrix2, 3, 4);
+        //mark1stRowIndexAndIstColumnIndexZero(matrix2, 3, 4);
 
         int[][] matrix3 = {{0, 1, 1}, {1, 1, 1}, {0, 1, 1}};
-		usingStringBuilderAnd2IntArrays(matrix3, 3, 3);*/
+        //mark1stRowIndexAndIstColumnIndexZero(matrix3, 3, 3);
 
         /**
          * Approach 2
          */
         System.out.println("\n*****Approach2*******\n");
         int[][] matrix4 = {{0, 1, 1, 0}, {0, 1, 1, 1}, {0, 1, 1, 1}};
-        //modifyMatrixByMakingAllRowsAndColumnsZero_method2(matrix4, 3, 4);
+        //
+        // modifyMatrixByMakingAllRowsAndColumnsZero_method2(matrix4, 3, 4);
 
         int[][] matrix5 = {{0, 1, 1}, {1, 1, 1}, {0, 1, 1}};
-        //modifyMatrixByMakingAllRowsAndColumnsZero_method2(matrix5, 3, 3);
+        modifyMatrixByMakingAllRowsAndColumnsZero_method2(matrix5, 3, 3);
 
     }
 
     public static int[][] mark1stRowIndexAndIstColumnIndexZero(int[][] matrix, int rows, int cols) {
 
-        // System.out.println("\nInput");
-        // printMatrix(matrix, rows, cols);
+        System.out.println("\nInput");
+        printMatrix(matrix, rows, cols);
 
         /**
          * STEP 1:
@@ -124,12 +126,11 @@ public class MarkSpecificRowsAndColumnsZero {
         // printMatrix(matrix, rows, cols);
 
         for (int row = 0; row < rows; row++) {
-            System.out.println("Matrix value: "+matrix[row][0]);
+            System.out.println("Matrix value: " + matrix[row][0]);
             if (matrix[row][0] == 0) {
                 for (int col = 0; col < cols; col++) {
                     matrix[row][col] = 0;
                 }
-                break;
             }
         }
 
@@ -138,71 +139,13 @@ public class MarkSpecificRowsAndColumnsZero {
                 for (int row = 0; row < rows; row++) {
                     matrix[row][col] = 0;
                 }
-                break;
-            }
-        }
-
-        //System.out.println("\nOutput");
-        // printMatrix(matrix, rows, cols);
-        return matrix;
-
-    }
-
-    public static void usingStringBuilderAnd2IntArrays(int[][] matrix, int rows, int cols) {
-
-        System.out.println("\nInput");
-        printMatrix(matrix, rows, cols);
-
-        /**
-         * STEP 1:
-         * 1.a Loop through all elements from matrix: Time complexity: O(M*N)
-         * 1.b Create String builder which contains row with zero value: StringBuilderRow
-         * 1.c Create String builder which contains col with zero value: StringBuilderColumn
-         */
-        StringBuilder stringBuilderRow = new StringBuilder();
-        StringBuilder stringBuilderCol = new StringBuilder();
-        for (int row = 0; row < rows; row++) {
-            for (int column = 0; column < cols; column++) {
-                if (matrix[row][column] == 0) {
-                    stringBuilderRow.append(row);
-                    stringBuilderCol.append(column);
-                }
-            }
-        }
-
-        /**
-         * STEP 2:
-         * a. Loop through all values (StringBuilderRow)
-         * b. for (row: StringBuilderRow.toArray())
-         *      c. Mark [row] [column 1] = 0
-         *      c. Mark [row] [column 2] = 0
-         *      ...
-         *      d. Mark [row] [column n] = 0
-         */
-        for (String row : stringBuilderRow.toString().split("")) {
-            for (int column = 0; column < cols; column++) {
-                matrix[Integer.valueOf(row)][column] = 0;
-            }
-        }
-
-        /**
-         * STEP 3:
-         * a. Loop through all values (StringBuilderColumn)
-         * b. for (column: StringBuilderColumn.toArray())
-         *      c. Mark [row1] [column] = 0
-         *      c. Mark [row2] [column] = 0
-         *      ...
-         *      d. Mark [rown] [column] = 0
-         */
-
-        for (String column : stringBuilderCol.toString().split("")) {
-            for (int row = 0; row < rows; row++) {
-                matrix[row][Integer.valueOf(column)] = 0;
             }
         }
 
         System.out.println("\nOutput");
         printMatrix(matrix, rows, cols);
+
+        return matrix;
 
     }
 

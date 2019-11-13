@@ -5,12 +5,11 @@ import java.util.Arrays;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
 
 import static junit.framework.TestCase.assertTrue;
 
 @RunWith(Parameterized.class)
-class MarkSpecificRowsAndColumnsZeroTest {
+class ZeroMatrixTest {
 
     @Parameterized.Parameter public int [][] input;
     @Parameterized.Parameter(1) public int [][] output;
@@ -41,7 +40,7 @@ class MarkSpecificRowsAndColumnsZeroTest {
     @Test
     public void mark1stRowIndexAndIstColumnIndexZero() {
 
-        assertTrue(equal(output, MarkSpecificRowsAndColumnsZero.mark1stRowIndexAndIstColumnIndexZero(input, rows, columns)));
+        assertTrue(equal(output, ZeroMatrix.mark1stRowIndexAndIstColumnIndexZero(input, rows, columns)));
 
     }
 
