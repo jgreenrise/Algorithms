@@ -21,13 +21,11 @@ public class IsAdjacentUsingRecursion {
 
     }
 
+    /**
+     * POSSIBLE ONLY IF LIST LENGTH IS SAME
+     */
     public static boolean does_LL_intersect(Node left, Node right){
-
         return true;
     }
-
-
-
-
 
 }

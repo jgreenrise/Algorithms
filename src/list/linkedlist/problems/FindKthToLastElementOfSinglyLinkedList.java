@@ -51,7 +51,7 @@ public class FindKthToLastElementOfSinglyLinkedList {
 		System.out.println("Find 1st element from last"
 				+ returnKthToLastElementFromLinkedList_usingPointers(list, 7));
 
-		// Approach using recurcsion
+		// Approach using recursion
 		System.out.println("\n Using recurcsion");
 		ctr = 0;
 		returnKthToLastElementFromLinkedList_usingRecurcsion(list.start, 2);
