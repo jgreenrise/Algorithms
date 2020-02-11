@@ -3,7 +3,7 @@ package tree.bst;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class A_Insert {
+public class  A_Insert {
 
     BinaryNode rootNode;
 
@@ -13,6 +13,8 @@ public class A_Insert {
         } else {
             rootNode = insert(value, rootNode);
         }
+
+
     }
 
     public BinaryNode insert(int value, BinaryNode node) {

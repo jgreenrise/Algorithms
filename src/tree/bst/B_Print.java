@@ -48,8 +48,29 @@ public class B_Print {
         binarySearchTree.insert(31);
 
         // Print BST
-        binarySearchTree.printBST();
+        binarySearchTree.printBST2();
 
+    }
+
+    public void printBST2() {
+
+        System.out.println("Root node value: " + rootNode.value);
+
+        Queue<BinaryNode> nextLevel = new LinkedList<BinaryNode>();
+        nextLevel.add(rootNode);
+
+        while (!nextLevel.isEmpty()) {
+
+            System.out.print((nextLevel.peek()).value + " ");
+            BinaryNode node = nextLevel.poll();
+
+            if (node.left_node != null)
+                nextLevel.add(node.left_node);
+
+            if (node.right_node != null)
+                nextLevel.add(node.right_node);
+
+        }
     }
 
     public void printBST() {
