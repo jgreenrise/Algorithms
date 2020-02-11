@@ -48,11 +48,13 @@ public class B_Print {
         binarySearchTree.insert(31);
 
         // Print BST
-        binarySearchTree.printBST2();
+        binarySearchTree.printUsing1Queue();
+
+        binarySearchTree.printUsing2Queue();
 
     }
 
-    public void printBST2() {
+    public void printUsing1Queue() {
 
         System.out.println("Root node value: " + rootNode.value);
 
@@ -73,7 +75,7 @@ public class B_Print {
         }
     }
 
-    public void printBST() {
+    public void printUsing2Queue() {
 
         System.out.println("Root node value: " + rootNode.value);
 

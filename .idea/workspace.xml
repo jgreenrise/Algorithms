@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf3ea153-809c-4382-89db-85a4f9de2a98" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/bst/A_Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/A_Insert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tree/bst/B_Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/B_Print.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +76,22 @@
       <screen x="0" y="23" width="1280" height="697" />
     </state>
     <state x="490" y="267" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1280.697@0.23.1280.697" timestamp="1581439186913" />
+    <state width="1238" height="163" key="GridCell.Tab.0.bottom" timestamp="1581439437749">
+      <screen x="0" y="23" width="1280" height="697" />
+    </state>
+    <state width="1238" height="163" key="GridCell.Tab.0.bottom/0.23.1280.697@0.23.1280.697" timestamp="1581439437749" />
+    <state width="1238" height="163" key="GridCell.Tab.0.center" timestamp="1581439437748">
+      <screen x="0" y="23" width="1280" height="697" />
+    </state>
+    <state width="1238" height="163" key="GridCell.Tab.0.center/0.23.1280.697@0.23.1280.697" timestamp="1581439437748" />
+    <state width="1238" height="163" key="GridCell.Tab.0.left" timestamp="1581439437747">
+      <screen x="0" y="23" width="1280" height="697" />
+    </state>
+    <state width="1238" height="163" key="GridCell.Tab.0.left/0.23.1280.697@0.23.1280.697" timestamp="1581439437747" />
+    <state width="1238" height="163" key="GridCell.Tab.0.right" timestamp="1581439437748">
+      <screen x="0" y="23" width="1280" height="697" />
+    </state>
+    <state width="1238" height="163" key="GridCell.Tab.0.right/0.23.1280.697@0.23.1280.697" timestamp="1581439437748" />
     <state x="319" y="204" key="com.intellij.ide.util.TipDialog" timestamp="1581397191221">
       <screen x="0" y="23" width="1280" height="697" />
     </state>
