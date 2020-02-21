@@ -102,8 +102,10 @@ public class BinarySearchTree {
 		if (node.left_node != null) {
 			node.left_node = removeMin(node.left_node);
 			return node;
-		} else {
+		} else if(node.left_node == null && node.right_node == null){
 			return null;
+		}else if(node.left_node == null && node.right_node != null){
+			return node.right_node;
 		}
 	}
 
