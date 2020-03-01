@@ -107,6 +107,7 @@ public class BinarySearchTree {
 		}else if(node.left_node == null && node.right_node != null){
 			return node.right_node;
 		}
+		return node;
 	}
 
 	public void removeMax() {
