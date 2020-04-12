@@ -22,7 +22,7 @@ Has edge from 3 and 5 	false
 
  * 
  */
-public class B_AdjacencyMatrix {
+public class   B_AdjacencyMatrix {
 
 	private static int[][] matrix = null;
 	private static int i_total_nodes = 0;
