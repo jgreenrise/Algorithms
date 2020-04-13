@@ -1,4 +1,4 @@
-package Array.problems;
+package Array.problems.hIndex;
 
 import java.util.Arrays;
 import java.util.Collections;
