@@ -5,21 +5,21 @@ import java.util.Queue;
 
 public class D_RemoveAnyNode {
 
-    static BinaryNode rootNode;
+    static MyBinaryNode rootNode;
     private static int maxNodeValue;
 
-    public void insert(int value) throws DuplicateItemException {
+    public void insert(int value) throws MyDuplicateItemException {
         if (rootNode == null) {
-            rootNode = new BinaryNode(value);
+            rootNode = new MyBinaryNode(value);
         } else {
             rootNode = insert(value, rootNode);
         }
     }
 
-    public BinaryNode insert(int value, BinaryNode node) {
+    public MyBinaryNode insert(int value, MyBinaryNode node) {
 
         if (node == null) {
-            return new BinaryNode(value);
+            return new MyBinaryNode(value);
         } else {
             if (node.value.compareTo(value) > 0) {
                 node.left_node = insert(value, node.left_node);
@@ -32,7 +32,7 @@ public class D_RemoveAnyNode {
     }
 
 
-    public static void main(String args[]) throws DuplicateItemException {
+    public static void main(String args[]) throws MyDuplicateItemException {
 
         // Adding node to bst
         D_RemoveAnyNode binarySearchTree = new D_RemoveAnyNode();
@@ -68,7 +68,7 @@ public class D_RemoveAnyNode {
         rootNode = removeNode(rootNode, i);
     }
 
-    private BinaryNode removeNode(BinaryNode node, int value) {
+    private MyBinaryNode removeNode(MyBinaryNode node, int value) {
 
         int nodeValue = Integer.parseInt(node.value.toString());
 
@@ -80,7 +80,7 @@ public class D_RemoveAnyNode {
             return node;
         } else {
 
-            BinaryNode maxNode = findAndRemoveMaxNode(node);
+            MyBinaryNode maxNode = findAndRemoveMaxNode(node);
             maxNode.value = maxNodeValue;
 
             return maxNode;
@@ -88,7 +88,7 @@ public class D_RemoveAnyNode {
 
     }
 
-    private BinaryNode findAndRemoveMaxNode(BinaryNode node) {
+    private MyBinaryNode findAndRemoveMaxNode(MyBinaryNode node) {
         if (node.right_node == null) {
             node.left_node = removeMaxNode(node.left_node);
             return node;
@@ -98,7 +98,7 @@ public class D_RemoveAnyNode {
         }
     }
 
-    private BinaryNode removeMaxNode(BinaryNode node) {
+    private MyBinaryNode removeMaxNode(MyBinaryNode node) {
 
         if(node.right_node != null) {
             node.right_node = removeMaxNode(node.right_node);
@@ -112,14 +112,14 @@ public class D_RemoveAnyNode {
 
         System.out.println("Root node value: " + rootNode.value);
 
-        Queue<BinaryNode> currentLevel = new LinkedList<BinaryNode>();
-        Queue<BinaryNode> nextLevel = new LinkedList<BinaryNode>();
+        Queue<MyBinaryNode> currentLevel = new LinkedList<MyBinaryNode>();
+        Queue<MyBinaryNode> nextLevel = new LinkedList<MyBinaryNode>();
         currentLevel.add(rootNode);
 
         while (!currentLevel.isEmpty()) {
 
             System.out.print((currentLevel.peek()).value + " ");
-            BinaryNode node = currentLevel.poll();
+            MyBinaryNode node = currentLevel.poll();
 
             if (node.left_node != null)
                 nextLevel.add(node.left_node);

@@ -5,20 +5,20 @@ import java.util.Queue;
 
 public class H_PostOrderPrint {
 
-    static BinaryNode rootNode;
+    static MyBinaryNode rootNode;
 
-    public void insert(int value) throws DuplicateItemException {
+    public void insert(int value) throws MyDuplicateItemException {
         if (rootNode == null) {
-            rootNode = new BinaryNode(value);
+            rootNode = new MyBinaryNode(value);
         } else {
             rootNode = insert(value, rootNode);
         }
     }
 
-    public BinaryNode insert(int value, BinaryNode node) {
+    public MyBinaryNode insert(int value, MyBinaryNode node) {
 
         if (node == null) {
-            return new BinaryNode(value);
+            return new MyBinaryNode(value);
         } else {
             if (node.value.compareTo(value) > 0) {
                 node.left_node = insert(value, node.left_node);
@@ -30,8 +30,9 @@ public class H_PostOrderPrint {
         }
     }
 
+    static StringBuilder stringBuilder = new StringBuilder();
 
-    public static void main(String args[]) throws DuplicateItemException {
+    public static void main(String args[]) throws MyDuplicateItemException {
 
         // Adding node to bst
         H_PostOrderPrint binarySearchTree = new H_PostOrderPrint();
@@ -53,9 +54,13 @@ public class H_PostOrderPrint {
         System.out.println("Printing In order: ");
 
         binarySearchTree.printPostOrder(rootNode);
+
+        System.out.println("String builder value: "+ stringBuilder.toString());
     }
 
-    private void printPostOrder(BinaryNode node) {
+
+
+    private void printPostOrder(MyBinaryNode node) {
 
         if(node.left_node != null){
             printPostOrder(node.left_node);
@@ -65,6 +70,7 @@ public class H_PostOrderPrint {
             printPostOrder(node.right_node);
         }
 
+        stringBuilder.append(node.value);
         System.out.println(node.value);
 
     }
@@ -73,14 +79,14 @@ public class H_PostOrderPrint {
 
         System.out.println("Root node value: " + rootNode.value);
 
-        Queue<BinaryNode> currentLevel = new LinkedList<BinaryNode>();
-        Queue<BinaryNode> nextLevel = new LinkedList<BinaryNode>();
+        Queue<MyBinaryNode> currentLevel = new LinkedList<MyBinaryNode>();
+        Queue<MyBinaryNode> nextLevel = new LinkedList<MyBinaryNode>();
         currentLevel.add(rootNode);
 
         while (!currentLevel.isEmpty()) {
 
             System.out.print((currentLevel.peek()).value + " ");
-            BinaryNode node = currentLevel.poll();
+            MyBinaryNode node = currentLevel.poll();
 
             if (node.left_node != null)
                 nextLevel.add(node.left_node);

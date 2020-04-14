@@ -1,18 +1,19 @@
 package tree.bst;
 
-public class BinaryNode {
+public class MyBinaryNode {
 
 	public Comparable value;
-	public BinaryNode left_node, right_node;
+	public MyBinaryNode left_node, right_node;
+    public boolean isVisited;
 
-	public BinaryNode(Comparable value) {
+	public MyBinaryNode(Comparable value) {
 		super();
 		this.value = value;
 		this.left_node = null;
 		this.right_node = null;
 	}
 	
-	public BinaryNode(Comparable value, BinaryNode left, BinaryNode right) {
+	public MyBinaryNode(Comparable value, MyBinaryNode left, MyBinaryNode right) {
 		super();
 		this.value = value;
 		this.left_node = left;

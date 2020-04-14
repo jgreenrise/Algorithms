@@ -1,6 +1,6 @@
 package tree.problems.isBalanced;
 
-import tree.bst.BinaryNode;
+import tree.bst.MyBinaryNode;
 
 /**
  * Time complexity: O(n)
@@ -9,18 +9,18 @@ public class IsABalancedBinaryTreeUsingRecursion {
 
 	public static void main(String[] args) {
 
-		BinaryNode n7 = new BinaryNode(7);
-		BinaryNode n8 = new BinaryNode(8);
-		BinaryNode n4 = new BinaryNode(4, n7, n8);
-		BinaryNode n6 = new BinaryNode(6);
-		BinaryNode n5 = new BinaryNode(5);
-		BinaryNode n2 = new BinaryNode(2, n5, n6);
-		BinaryNode n1 = new BinaryNode(1, n2, n4);
+		MyBinaryNode n7 = new MyBinaryNode(7);
+		MyBinaryNode n8 = new MyBinaryNode(8);
+		MyBinaryNode n4 = new MyBinaryNode(4, n7, n8);
+		MyBinaryNode n6 = new MyBinaryNode(6);
+		MyBinaryNode n5 = new MyBinaryNode(5);
+		MyBinaryNode n2 = new MyBinaryNode(2, n5, n6);
+		MyBinaryNode n1 = new MyBinaryNode(1, n2, n4);
 
 		System.out.println(isBalancedBinaryTree(n1));
 
-		BinaryNode n10 = new BinaryNode(10);
-		BinaryNode n11 = new BinaryNode(11);
+		MyBinaryNode n10 = new MyBinaryNode(10);
+		MyBinaryNode n11 = new MyBinaryNode(11);
 		n6.left_node = n10;
 		n10.left_node = n11;
 
@@ -32,7 +32,7 @@ public class IsABalancedBinaryTreeUsingRecursion {
 
 	}
 
-	private static boolean isBalancedBinaryTree(BinaryNode node) {
+	private static boolean isBalancedBinaryTree(MyBinaryNode node) {
 
 		int left = printInorder(node.left_node, 0);
 		int right = printInorder(node.right_node, 0);
@@ -52,7 +52,7 @@ public class IsABalancedBinaryTreeUsingRecursion {
 
 	}
 
-	private static int printInorder(BinaryNode node, int depth) {
+	private static int printInorder(MyBinaryNode node, int depth) {
 
 		int left = 0, right = 0;
 

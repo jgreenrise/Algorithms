@@ -7,20 +7,20 @@ import static java.lang.Integer.max;
 
 public class E_Height {
 
-    static BinaryNode rootNode;
+    static MyBinaryNode rootNode;
 
-    public void insert(int value) throws DuplicateItemException {
+    public void insert(int value) throws MyDuplicateItemException {
         if (rootNode == null) {
-            rootNode = new BinaryNode(value);
+            rootNode = new MyBinaryNode(value);
         } else {
             rootNode = insert(value, rootNode);
         }
     }
 
-    public BinaryNode insert(int value, BinaryNode node) {
+    public MyBinaryNode insert(int value, MyBinaryNode node) {
 
         if (node == null) {
-            return new BinaryNode(value);
+            return new MyBinaryNode(value);
         } else {
             if (node.value.compareTo(value) > 0) {
                 node.left_node = insert(value, node.left_node);
@@ -33,7 +33,7 @@ public class E_Height {
     }
 
 
-    public static void main(String args[]) throws DuplicateItemException {
+    public static void main(String args[]) throws MyDuplicateItemException {
 
         // Adding node to bst
         E_Height binarySearchTree = new E_Height();
@@ -55,7 +55,7 @@ public class E_Height {
         System.out.println("Height of tree" + height(rootNode));
     }
 
-    public static int height(BinaryNode node){
+    public static int height(MyBinaryNode node){
 
         if(node.left_node == null && node.right_node == null){
             return 1;
@@ -73,14 +73,14 @@ public class E_Height {
 
         System.out.println("Root node value: " + rootNode.value);
 
-        Queue<BinaryNode> currentLevel = new LinkedList<BinaryNode>();
-        Queue<BinaryNode> nextLevel = new LinkedList<BinaryNode>();
+        Queue<MyBinaryNode> currentLevel = new LinkedList<MyBinaryNode>();
+        Queue<MyBinaryNode> nextLevel = new LinkedList<MyBinaryNode>();
         currentLevel.add(rootNode);
 
         while (!currentLevel.isEmpty()) {
 
             System.out.print((currentLevel.peek()).value + " ");
-            BinaryNode node = currentLevel.poll();
+            MyBinaryNode node = currentLevel.poll();
 
             if (node.left_node != null)
                 nextLevel.add(node.left_node);

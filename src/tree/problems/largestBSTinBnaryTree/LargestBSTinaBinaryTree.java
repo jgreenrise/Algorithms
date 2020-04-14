@@ -1,6 +1,6 @@
 package tree.problems.largestBSTinBnaryTree;
 
-import tree.bst.BinaryNode;
+import tree.bst.MyBinaryNode;
 
 /**
  * Given a binary tree, find size of largest binary search subtree in this
@@ -17,35 +17,35 @@ public class LargestBSTinaBinaryTree {
 		/**
 		 * Left tree
 		 */
-		BinaryNode n15 = new BinaryNode(15);
-		BinaryNode n10 = new BinaryNode(10);
-		BinaryNode n25 = new BinaryNode(25);
-		BinaryNode n19 = new BinaryNode(19, null, n15);
-		BinaryNode n20 = new BinaryNode(20, n10, n25);
-		BinaryNode n18 = new BinaryNode(18, n19, n20);
+		MyBinaryNode n15 = new MyBinaryNode(15);
+		MyBinaryNode n10 = new MyBinaryNode(10);
+		MyBinaryNode n25 = new MyBinaryNode(25);
+		MyBinaryNode n19 = new MyBinaryNode(19, null, n15);
+		MyBinaryNode n20 = new MyBinaryNode(20, n10, n25);
+		MyBinaryNode n18 = new MyBinaryNode(18, n19, n20);
 
 		/**
 		 * Right tree
 		 */
-		BinaryNode n22 = new BinaryNode(22);
-		BinaryNode n40 = new BinaryNode(40);
-		BinaryNode n55 = new BinaryNode(55);
-		BinaryNode n70 = new BinaryNode(70);
-		BinaryNode n21 = new BinaryNode(21, null, n22);
-		BinaryNode n35 = new BinaryNode(35, n21, n40);
-		BinaryNode n60 = new BinaryNode(60, n55, n70);
-		BinaryNode n50 = new BinaryNode(50, n35, n60);
+		MyBinaryNode n22 = new MyBinaryNode(22);
+		MyBinaryNode n40 = new MyBinaryNode(40);
+		MyBinaryNode n55 = new MyBinaryNode(55);
+		MyBinaryNode n70 = new MyBinaryNode(70);
+		MyBinaryNode n21 = new MyBinaryNode(21, null, n22);
+		MyBinaryNode n35 = new MyBinaryNode(35, n21, n40);
+		MyBinaryNode n60 = new MyBinaryNode(60, n55, n70);
+		MyBinaryNode n50 = new MyBinaryNode(50, n35, n60);
 
 		/**
 		 * Root node
 		 */
-		BinaryNode n24 = new BinaryNode(24, n18, n50);
+		MyBinaryNode n24 = new MyBinaryNode(24, n18, n50);
 
 		printPostOrderTraversal(n24);
 
 	}
 
-	private static void printPostOrderTraversal(BinaryNode node) {
+	private static void printPostOrderTraversal(MyBinaryNode node) {
 
 		NodeMetadata left = printInorder(node.left_node, false, 0, 0, 0);
 		NodeMetadata right = printInorder(node.right_node, false, 0, 0, 0);
@@ -54,7 +54,7 @@ public class LargestBSTinaBinaryTree {
 
 	}
 
-	private static NodeMetadata printInorder(BinaryNode node, boolean isBST, int size, int min, int max) {
+	private static NodeMetadata printInorder(MyBinaryNode node, boolean isBST, int size, int min, int max) {
 
 		NodeMetadata metadata_left = null;
 		NodeMetadata metadata_right = null;

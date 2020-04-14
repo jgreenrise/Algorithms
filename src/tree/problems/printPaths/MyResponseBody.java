@@ -2,7 +2,7 @@ package tree.problems.printPaths;
 
 import java.util.LinkedList;
 
-public class ResponseBody {
+public class MyResponseBody {
 	
 	public LinkedList<String> finalresponse = new LinkedList<String>();
 	

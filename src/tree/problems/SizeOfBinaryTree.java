@@ -1,6 +1,6 @@
 package tree.problems;
 
-import tree.bst.BinaryNode;
+import tree.bst.MyBinaryNode;
 
 /**
  * Output
@@ -9,18 +9,18 @@ public class SizeOfBinaryTree {
 
 	public static void main(String[] args) {
 
-		BinaryNode n4 = new BinaryNode(4);
-		BinaryNode n8 = new BinaryNode(8);
-		BinaryNode n5 = new BinaryNode(5);
-		BinaryNode n7 = new BinaryNode(7, null, n4);
-		BinaryNode n6 = new BinaryNode(6, n8, n7);
-		BinaryNode n10 = new BinaryNode(10, n5, n6);
+		MyBinaryNode n4 = new MyBinaryNode(4);
+		MyBinaryNode n8 = new MyBinaryNode(8);
+		MyBinaryNode n5 = new MyBinaryNode(5);
+		MyBinaryNode n7 = new MyBinaryNode(7, null, n4);
+		MyBinaryNode n6 = new MyBinaryNode(6, n8, n7);
+		MyBinaryNode n10 = new MyBinaryNode(10, n5, n6);
 
 		System.out.println(size(n10));
 
 	}
 
-	public static int size(BinaryNode node) {
+	public static int size(MyBinaryNode node) {
 		if (node == null) {
 			return 0;
 		}

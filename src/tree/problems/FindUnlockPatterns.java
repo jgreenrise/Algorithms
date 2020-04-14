@@ -121,7 +121,7 @@ public class FindUnlockPatterns {
 
     }
 
-
+    //                  dfs(2, (1,2), )
     private static int dfs(TreeNode node, LinkedHashSet<String> ignoreList, int lengthOfKey, TreeNode primaryNode) {
 
         int totComb = 0;
@@ -130,7 +130,7 @@ public class FindUnlockPatterns {
             int i = 0;
             while (i < node.getSiblings().size()) {
 
-                // Get sibling node
+                // Get sibling node // 2
                 TreeNode siblingNode = (TreeNode) node.getSiblings().get(i);
 
                 // Add to ignore list

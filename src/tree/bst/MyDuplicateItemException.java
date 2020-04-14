@@ -4,12 +4,12 @@ package tree.bst;
  * Exception class for duplicate item errors
  * in search tree insertions.
  */
-public class DuplicateItemException extends Exception {
+public class MyDuplicateItemException extends Exception {
 
 	/**
 	 * Construct this exception object.
 	 */
-	public DuplicateItemException() {
+	public MyDuplicateItemException() {
 		super();
 	}
 
@@ -19,7 +19,7 @@ public class DuplicateItemException extends Exception {
 	 * @param message
 	 *            the error message.
 	 */
-	public DuplicateItemException(String message) {
+	public MyDuplicateItemException(String message) {
 		super(message);
 	}
 

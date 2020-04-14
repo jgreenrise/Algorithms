@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import tree.bst.BinaryNode;
-import tree.bst.DuplicateItemException;
+import tree.bst.MyBinaryNode;
+import tree.bst.MyDuplicateItemException;
 
 public class BinarySearchTree {
 
-	protected static BinaryNode rootNode;
+	protected static MyBinaryNode rootNode;
 
 	public BinarySearchTree() {
 		rootNode = null;
@@ -22,22 +22,22 @@ public class BinarySearchTree {
 	 * 
 	 * @param x
 	 *            the item to insert.
-	 * @throws DuplicateItemException
+	 * @throws MyDuplicateItemException
 	 *             if x is already present.
 	 */
-	public void insert(Comparable x) throws DuplicateItemException {
+	public void insert(Comparable x) throws MyDuplicateItemException {
 		rootNode = insert(x, rootNode);
 	}
 
-	protected BinaryNode insert(Comparable x, BinaryNode t) throws DuplicateItemException {
+	protected MyBinaryNode insert(Comparable x, MyBinaryNode t) throws MyDuplicateItemException {
 		if (t == null) {
-			return new BinaryNode(x);
+			return new MyBinaryNode(x);
 		} else if (x.compareTo(t.value) > 0) {
 			t.right_node = insert(x, t.right_node);
 		} else if (x.compareTo(t.value) < 0) {
 			t.left_node = insert(x, t.left_node);
 		} else {
-			throw new DuplicateItemException(x.toString());
+			throw new MyDuplicateItemException(x.toString());
 		}
 		return t;
 	}
@@ -52,14 +52,14 @@ public class BinarySearchTree {
 	 * 
 	 * @param node
 	 */
-	private void isBST(BinaryNode node) {
+	private void isBST(MyBinaryNode node) {
 
-		Queue<BinaryNode> queue = new LinkedList<BinaryNode>();
+		Queue<MyBinaryNode> queue = new LinkedList<MyBinaryNode>();
 		queue.add(node);
 
 		while (!queue.isEmpty()) {
 
-			BinaryNode tmp = queue.poll();
+			MyBinaryNode tmp = queue.poll();
 
 			if (tmp.left_node != null && node.left_node.value.compareTo(tmp.value) < 0) {
 				queue.add(node.left_node);
@@ -79,14 +79,14 @@ public class BinarySearchTree {
 
 		System.out.println("Root node value: " + rootNode.value);
 
-		Queue<BinaryNode> currentLevel = new LinkedList<BinaryNode>();
-		Queue<BinaryNode> nextLevel = new LinkedList<BinaryNode>();
+		Queue<MyBinaryNode> currentLevel = new LinkedList<MyBinaryNode>();
+		Queue<MyBinaryNode> nextLevel = new LinkedList<MyBinaryNode>();
 		currentLevel.add(rootNode);
 
 		while (!currentLevel.isEmpty()) {
 
 			System.out.print((currentLevel.peek()).value + " ");
-			BinaryNode node = currentLevel.poll();
+			MyBinaryNode node = currentLevel.poll();
 
 			if (node.left_node != null)
 				nextLevel.add(node.left_node);
@@ -123,7 +123,7 @@ public class BinarySearchTree {
 
 	}
 
-	private static int[] printInorder(BinaryNode node, int[] array) {
+	private static int[] printInorder(MyBinaryNode node, int[] array) {
 
 		if (node != null) {
 			printInorder(node.left_node, array);
@@ -144,7 +144,7 @@ public class BinarySearchTree {
 		return printInorderAndCheckForBST(rootNode);
 	}
 
-	private static boolean printInorderAndCheckForBST(BinaryNode node) {
+	private static boolean printInorderAndCheckForBST(MyBinaryNode node) {
 
 		if (node != null) {
 			printInorderAndCheckForBST(node.left_node);
@@ -161,7 +161,7 @@ public class BinarySearchTree {
 
 	}
 
-	public static void main(String args[]) throws DuplicateItemException {
+	public static void main(String args[]) throws MyDuplicateItemException {
 
 		// Adding node to bst
 		BinarySearchTree binarySearchTree = new BinarySearchTree();

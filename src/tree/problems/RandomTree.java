@@ -67,31 +67,51 @@ public class RandomTree {
         return getRandomNode(root, count);
     }
 
-    // Recursive method. Binary search through tree to find the index. We use
-    // the number of children to determine which direction to go
     private int getRandomNode(Node curr, int count) {
         if (count == children(curr.left)) return curr.val;
         if (count < children(curr.left)) return getRandomNode(curr.left, count);
-
-        // The new index becomes the index of the same node but now within the
-        // subtree rather than the whole tree
         return getRandomNode(curr.right, count - children(curr.left) - 1);
     }
 
-    // Return the number of nodes in a given subtree
     private int children(Node n) {
         if (n == null) return 0;
         return n.children + 1;
     }
 
+    public int getRandomNodeMethod2() {
+        if (root == null) throw new NullPointerException();
+        return getRandomNodeMethod2(root);
+    }
+
+    private int getRandomNodeMethod2(Node node) {
+
+        if(node.left == null && node.right == null){
+            return node.val;
+        }
+
+        int rand = new Random().nextInt(node.children);;
+
+        if(node.left.children+1 == rand){
+            return node.val;
+        }else if(rand < node.left.children+1){
+            return getRandomNodeMethod2(node.left);
+        }else{
+            return getRandomNodeMethod2(node.right);
+        }
+
+    }
+
     // Sample test cases
+''
+    // Generates the tree:
+    //        4
+    //      /   \
+    //     2     6
+    //    / \   / \
+    //   1   3 5   7
+
     public static void main(String[] args) {
-        // Generates the tree:
-        //        4
-        //      /   \
-        //     2     6
-        //    / \   / \
-        //   1   3 5   7
+
 
         RandomTree t = new RandomTree(0);
         t.addNode(4);
@@ -111,5 +131,9 @@ public class RandomTree {
         assert t.getRandomNode() == 5;
         assert t.getRandomNode() == 1;
         System.out.println("Passed all tests");
+
+        for (int i = 0; i < 100; i++) {
+            System.out.println(t.getRandomNodeMethod2());
+        }
     }
 }
