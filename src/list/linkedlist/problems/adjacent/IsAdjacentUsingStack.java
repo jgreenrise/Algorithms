@@ -1,6 +1,6 @@
 package list.linkedlist.problems.adjacent;
 
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
 public class IsAdjacentUsingStack {
@@ -21,7 +21,7 @@ public class IsAdjacentUsingStack {
 
     }
 
-    public static boolean does_LL_intersect(Node left, Node right){
+    public static boolean does_LL_intersect(ListNode left, ListNode right){
 
         return true;
     }

@@ -102,7 +102,6 @@ public class RandomTree {
     }
 
     // Sample test cases
-''
     // Generates the tree:
     //        4
     //      /   \

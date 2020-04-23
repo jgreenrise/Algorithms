@@ -1,9 +1,9 @@
 package list.linkedlist.problems;
 
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
-import static list.linkedlist.single.Node.printLL;
+import static list.linkedlist.single.ListNode.printLL;
 
 
 /**
@@ -60,14 +60,14 @@ public class ReverseLinkedList {
 		list = SinglyLinkedList.createLL(new int[] {50, 40, 30, 20, 10});
 		System.out.println("Input list: ");
 		list.printList();
-		Node response = reverseNode_usingRecursion(list.start);
+		ListNode response = reverseNode_usingRecursion(list.start);
 		printLL(response);
 
 		System.out.println("------------ APPROACH 3: using iteration ---------------");
 		System.out.println("Input list: ");
 		list = SinglyLinkedList.createLL(new int[] {50, 40, 30, 20, 10});
 		list.printList();
-		Node response2 = reverseLinkedList_iterativeApproach(list.start);
+		ListNode response2 = reverseLinkedList_iterativeApproach(list.start);
 		System.out.println("Output list");
 		printLL(response2);
 
@@ -90,15 +90,15 @@ public class ReverseLinkedList {
 	private static SinglyLinkedList reverseLinkedList_usingExtraLInkedList(
 			SinglyLinkedList list) {
 
-		Node node = list.start;
+		ListNode node = list.start;
 		SinglyLinkedList reverse = new SinglyLinkedList();
 
-		while (node.next_node != null) {
-			reverse.addFirst(node.value);
-			node = node.next_node;
+		while (node.next != null) {
+			reverse.addFirst(node.val);
+			node = node.next;
 		}
 
-		reverse.addFirst(node.value);
+		reverse.addFirst(node.val);
 
 		return reverse;
 	}
@@ -114,19 +114,19 @@ public class ReverseLinkedList {
 	 * ** Limitation **
 	 * We have reference to TAIL of linked list and loose the reference of head of node
 	 */
-	private static Node reverseNode_usingRecursion(Node node) {
+	private static ListNode reverseNode_usingRecursion(ListNode node) {
 
-		if (node != null && node.next_node != null) {
+		if (node != null && node.next != null) {
 
-			Node tmp = reverseNode_usingRecursion(node.next_node);
+			ListNode tmp = reverseNode_usingRecursion(node.next);
 
 			// Remove previous references if any
-			tmp.next_node = null;
-			node.next_node = null;
+			tmp.next = null;
+			node.next = null;
 
-			tmp.next_node = node;
-			System.out.println(tmp.value + " -> " + tmp.next_node.value);
-			return tmp.next_node;
+			tmp.next = node;
+			System.out.println(tmp.val + " -> " + tmp.next.val);
+			return tmp.next;
 
 
 		} else {
@@ -144,18 +144,18 @@ public class ReverseLinkedList {
 	 * ** Limitation **
 	 * Need 2 nodes
 	 */
-	public static Node reverseRecursion(Node node, Node rvNode){
+	public static ListNode reverseRecursion(ListNode node, ListNode rvNode){
 
 		if(node == null)
 			return rvNode;
 
-		Node newNode = new Node(node.value);
+		ListNode newNode = new ListNode(node.val);
 
 		if(rvNode == null){
-			return reverseRecursion(node.next_node, newNode);
+			return reverseRecursion(node.next, newNode);
 		}else{
-			newNode.next_node = rvNode;
-			return reverseRecursion(node.next_node, newNode);
+			newNode.next = rvNode;
+			return reverseRecursion(node.next, newNode);
 		}
 
 	}
@@ -171,23 +171,23 @@ public class ReverseLinkedList {
 	 * Advantage
 	 * We have reference to the head of list
 	 */
-	private static Node reverseLinkedList_iterativeApproach(Node node) {
+	private static ListNode reverseLinkedList_iterativeApproach(ListNode node) {
 
-		Node next = null;
-		Node prev_next = null;
+		ListNode next = null;
+		ListNode prev_next = null;
 
-		while (node.next_node != null) {
+		while (node.next != null) {
 
-			prev_next = node.next_node; // 20, 30, 40
-			node.next_node = next; // 10.next = null, 20.next = 10, 30.next =
+			prev_next = node.next; // 20, 30, 40
+			node.next = next; // 10.next = null, 20.next = 10, 30.next =
 									// 20,
 			next = node; // 10, 20 30
 			node = prev_next; // node = 20, 30 40
 
-			System.out.println(prev_next.value +" > "+node.value +" > "+next.value +" > "+prev_next.value);
+			System.out.println(prev_next.val +" > "+node.val +" > "+next.val +" > "+prev_next.val);
 
 		}
-		node.next_node = next;
+		node.next = next;
 
 		return node;
 

@@ -1,5 +1,7 @@
 package tree.bst;
 
+import tree.problems.dfs.PrintDFSTree;
+
 public class MyBinaryNode {
 
 	public Comparable value;

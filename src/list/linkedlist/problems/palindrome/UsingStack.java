@@ -1,61 +1,89 @@
 package list.linkedlist.problems.palindrome;
 
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
 import java.util.Stack;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class UsingStack {
 
     public static void main(String[] args) {
 
-        //  100 > 200 > 300 > 400
-        SinglyLinkedList node = SinglyLinkedList.createLL(new int[] {1, 2, 3, 2, 1});
-        System.out.println("Is palindrome: "+ isPalindromeUsingStack(node.start));
+        SinglyLinkedList node = SinglyLinkedList.createLL(new int[]{1, 2, 3, 2, 1});
+        System.out.println("Input Value - Odd elems: "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
 
-        node = SinglyLinkedList.createLL(new int[] {1, 2, 3, 4, 2, 1});
-        System.out.println("Is palindrome: "+ isPalindromeUsingStack(node.start));
+        node = SinglyLinkedList.createLL(new int[]{1, 2, 1});
+        System.out.println("Input Value - Odd elems "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
 
-        node = SinglyLinkedList.createLL(new int[] {1, 2, 3, 4, 3, 2, 1});
-        System.out.println("Is palindrome: "+ isPalindromeUsingStack(node.start));
+        node = SinglyLinkedList.createLL(new int[]{1, 2, 3, 4, 3, 2, 1});
+        System.out.println("Input Value - Odd elems "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
+
+        node = SinglyLinkedList.createLL(new int[]{1, 2, 3, 4, 2, 1});
+        System.out.println("Input Value - Odd elems - Negative Test case "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
+
+        node = SinglyLinkedList.createLL(new int[]{1, 2, 2, 1});
+        System.out.println("Input Value - Even elems "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
+
+        node = SinglyLinkedList.createLL(new int[]{1, 2, 1, 1, 2, 1});
+        System.out.println("Input Value - Even elems "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
+
+        node = SinglyLinkedList.createLL(new int[]{1, 2, 1, 1, 2, 3});
+        System.out.println("Input Value - Even elems - Negative Test case "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
     }
 
-    public static boolean isPalindromeUsingStack(Node node){
+    public static boolean isPalindrome(ListNode node) {
 
-        Node slow = node;
-        Node fast = node;
-        Stack<Node> stack = new Stack<>();
+        // Expected Business Requirement
+        if (node == null || node.next == null)    return true;
 
-        while(slow.next_node != null && fast.next_node.next_node != null){
-            stack.push(slow);
-            slow = slow.next_node;
-            fast = fast.next_node.next_node;
+        // Handle negative scenarios
+        if(node.next.next == null){
+            // Compare 1st and 2nd element (0 -> 0)
+            return node.val == node.next.val;
         }
 
-        if(fast.next_node != null){
-            stack.add(slow.next_node);
-        }else{
-            slow = slow.next_node;
+        // 1. Add Nodes to stack from Start to Center (Including center)
+        ListNode slow = node;
+        ListNode fast = node;
+        ListNode centerNode = null;
+        Stack<ListNode> stack = new Stack<>();
+        stack.add(node);
+        while (slow.next != null && fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            stack.add(slow);
         }
 
-        return compareStackWithSlowElements(slow, stack);
+        // 2. Detect if has odd number of nodes
+        boolean hasOddNumberOfNode = fast.next == null;
+
+        // 3. Remove Center Elements from Stack (If Odd number of nodes exist)
+        if (hasOddNumberOfNode) {
+            // Remove Center element from stack
+            stack.pop();
+        }
+
+        // 4. Get reference to center node
+        centerNode = slow.next;
+
+        // 5. Compare between Stack and Original Node.
+        return compareStackAndNode(stack, centerNode);
     }
 
-    private static boolean compareStackWithSlowElements(Node slow, Stack stack) {
+    private static boolean compareStackAndNode(Stack<ListNode> stack, ListNode node) {
 
-        boolean isPalindrome = false;
-
-        while (slow != null){
-            if(slow.value == ((Node) stack.pop()).value){
-                isPalindrome = true;
-            }else{
-                isPalindrome = false;
-                break;
+        while (!stack.isEmpty()) {
+            ListNode pop = stack.pop();
+            if (pop.val != node.val) {
+                return false;
             }
-
-            slow = slow.next_node;
+            node = node.next;
         }
 
-        return isPalindrome;
+        return true;
     }
+
 }

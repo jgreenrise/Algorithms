@@ -1,35 +1,56 @@
 package tree.problems.dfs;
 
-import tree.bst.MyBinaryNode;
-
 import java.util.Stack;
 
 public class PrintDFSTree {
 
+    public static class Node {
+
+        public Comparable value;
+        public Node left_node, right_node;
+        public boolean isVisited;
+
+        public Node(Comparable value) {
+            super();
+            this.value = value;
+            this.left_node = null;
+            this.right_node = null;
+        }
+
+        public Node(Comparable value, Node left, Node right) {
+            super();
+            this.value = value;
+            this.left_node = left;
+            this.right_node = right;
+        }
+
+    }
+
+
     public static void main(String[] args) {
 
-        MyBinaryNode n5 = new MyBinaryNode(5);
-        MyBinaryNode n6 = new MyBinaryNode(6);
-        MyBinaryNode n7 = new MyBinaryNode(7);
-        MyBinaryNode n8 = new MyBinaryNode(8);
-        MyBinaryNode n2 = new MyBinaryNode(2, n5, n6);
-        MyBinaryNode n4 = new MyBinaryNode(4, n7, n8);
-        MyBinaryNode n1 = new MyBinaryNode(1, n2, n4);
+        Node n5 = new Node(5);
+        Node n6 = new Node(6);
+        Node n7 = new Node(7);
+        Node n8 = new Node(8);
+        Node n2 = new Node(2, n5, n6);
+        Node n4 = new Node(4, n7, n8);
+        Node n1 = new Node(1, n2, n4);
 
 		System.out.println(printdepthFirstSearch(n1));
 
     }
 
-    public static StringBuilder printdepthFirstSearch(MyBinaryNode sourceNode) {
+    public static StringBuilder printdepthFirstSearch(Node sourceNode) {
 
-        Stack<MyBinaryNode> stack = new Stack<MyBinaryNode>();
+        Stack<Node> stack = new Stack<Node>();
         stack.add(sourceNode);
         sourceNode.isVisited = true;
         StringBuilder stringBuilder = new StringBuilder();
 
         while (!stack.isEmpty()) {
 
-            MyBinaryNode pop = stack.pop();
+            Node pop = stack.pop();
             pop.isVisited = true;
 
             stringBuilder.append(" " + pop.value);

@@ -1,6 +1,6 @@
 package list.linkedlist.problems;
 
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
 /**
@@ -40,46 +40,46 @@ public class AddSingleDigitLinkedList {
 	 * PRINT
 	 **********************************************	*************/
 
-	public static void printList(Node start) {
+	public static void printList(ListNode start) {
 
-		Node node = start;
+		ListNode node = start;
 
 		while (node != null) {
-			System.out.print(node.value + ", ");
-			node = node.next_node;
+			System.out.print(node.val + ", ");
+			node = node.next;
 		}
 
 		System.out.println("\n");
 
 	}
 
-	public static Node addLinkedList(Node left, Node right) {
+	public static ListNode addLinkedList(ListNode left, ListNode right) {
 
 		int carry = 0;
-		Node response = null;
-		Node node = null;
+		ListNode response = null;
+		ListNode node = null;
 		int sum = 0;
-		Node top = null;
+		ListNode top = null;
 
 		while (left != null || right != null || carry != 0) {
 
 			sum = 0;
 
 			if (left != null && right != null) {
-				sum = left.value + right.value;
-				left = left.next_node;
-				right = right.next_node;
+				sum = left.val + right.val;
+				left = left.next;
+				right = right.next;
 			} else if (left == null && right != null) {
-				sum = right.value;
-				right = right.next_node;
+				sum = right.val;
+				right = right.next;
 			} else if (left != null && right == null) {
-				sum = left.value;
-				left = left.next_node;
+				sum = left.val;
+				left = left.next;
 			}else{
 				
 			}
 
-			node = new Node((sum + carry) % 10, null);
+			node = new ListNode((sum + carry) % 10, null);
 
 			if (sum + carry / 10 > 0)
 				carry = sum / 10;
@@ -90,8 +90,8 @@ public class AddSingleDigitLinkedList {
 				response = node;
 				top = node;
 			} else {
-				response.next_node = node;
-				response = response.next_node;
+				response.next = node;
+				response = response.next;
 			}
 
 		}

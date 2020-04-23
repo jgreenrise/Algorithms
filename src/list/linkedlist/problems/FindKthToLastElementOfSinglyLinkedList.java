@@ -1,7 +1,7 @@
 package list.linkedlist.problems;
 
 import list.linkedlist.single.SinglyLinkedList;
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 
 /*
  * Input
@@ -69,14 +69,14 @@ public class FindKthToLastElementOfSinglyLinkedList {
 	 * 
 	 */
 	private static int returnKthToLastElementFromLinkedList_usingRecurcsion(
-			Node node, int pos) {
+            ListNode node, int pos) {
 
 		if (node != null) {
 			returnKthToLastElementFromLinkedList_usingRecurcsion(
-					node.next_node, pos);
+					node.next, pos);
 			ctr++;
 			if (pos == ctr) {
-				System.out.println("Kth element from last" + node.value);
+				System.out.println("Kth element from last" + node.val);
 			}
 		}
 		return 0;
@@ -89,18 +89,18 @@ public class FindKthToLastElementOfSinglyLinkedList {
 			SinglyLinkedList list, int k) {
 
 		int counter = 0;
-		Node node = list.start;
+		ListNode node = list.start;
 		int size_of_linkedList = list.size;
 
-		while (node.next_node != null) {
+		while (node.next != null) {
 			if (counter == list.size - k) {
 				break;
 			}
 			counter++;
-			node = node.next_node;
+			node = node.next;
 		}
 
-		return node.value;
+		return node.val;
 	}
 
 	/**
@@ -113,21 +113,21 @@ public class FindKthToLastElementOfSinglyLinkedList {
 			return 0;
 		}
 
-		Node p1 = list.start;
-		Node p2 = list.start;
+		ListNode p1 = list.start;
+		ListNode p2 = list.start;
 
 		for (int i = 0; i < k - 1; i++) {
 			if (p2 == null)
 				return 0;
 
-			p2 = p2.next_node;
+			p2 = p2.next;
 		}
 
-		while (p2.next_node != null) {
-			p1 = p1.next_node;
-			p2 = p2.next_node;
+		while (p2.next != null) {
+			p1 = p1.next;
+			p2 = p2.next;
 		}
-		return p1.value;
+		return p1.val;
 	}
 
 }

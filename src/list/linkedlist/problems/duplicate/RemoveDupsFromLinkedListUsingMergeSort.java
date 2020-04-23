@@ -1,7 +1,7 @@
 package list.linkedlist.problems.duplicate;
 
 import list.linkedlist.single.SinglyLinkedList;
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 
 /**
 Input
@@ -36,12 +36,12 @@ public class RemoveDupsFromLinkedListUsingMergeSort {
 		System.out.println("Input");
 		list.printList();
 
-		Node output = mergeSort(list.start);
+		ListNode output = mergeSort(list.start);
 
 		System.out.println("Output");
 		while (output != null) {
-			System.out.print(output.value + ", ");
-			output = output.next_node;
+			System.out.print(output.val + ", ");
+			output = output.next;
 		}
 
 	}
@@ -50,37 +50,37 @@ public class RemoveDupsFromLinkedListUsingMergeSort {
 	 * SORT A LINKED LIST
 	 ***********************************************************/
 
-	public static Node mergeSort(Node node) {
+	public static ListNode mergeSort(ListNode node) {
 
-		if (node == null || node.next_node == null) {
+		if (node == null || node.next == null) {
 			return node;
 		}
 
-		Node middle = getMiddle(node);
-		Node right = middle.next_node;
+		ListNode middle = getMiddle(node);
+		ListNode right = middle.next;
 
 		// Do this to make sure that left list only travels till midpoint
-		middle.next_node = null;
+		middle.next = null;
 		return mergeLinkedList(mergeSort(node), mergeSort(right));
 	}
 
-	public static Node getMiddle(Node node) {
+	public static ListNode getMiddle(ListNode node) {
 
-		if (node == null || node.next_node == null)
+		if (node == null || node.next == null)
 			return node;
 
-		Node slow, fast = null;
+		ListNode slow, fast = null;
 		slow = fast = node;
 
-		while (fast.next_node != null && fast.next_node.next_node != null) {
-			slow = slow.next_node;
-			fast = fast.next_node;
+		while (fast.next != null && fast.next.next != null) {
+			slow = slow.next;
+			fast = fast.next;
 		}
 
 		return slow;
 	}
 
-	private static Node mergeLinkedList(Node left, Node right) {
+	private static ListNode mergeLinkedList(ListNode left, ListNode right) {
 
 		if (left == null) {
 			return right;
@@ -90,18 +90,18 @@ public class RemoveDupsFromLinkedListUsingMergeSort {
 			return left;
 		}
 
-		if (left.value > right.value) {
-			right.next_node = mergeLinkedList(left, right.next_node);
+		if (left.val > right.val) {
+			right.next = mergeLinkedList(left, right.next);
 			return right;
-		} else if (left.value < right.value) {
-			left.next_node = mergeLinkedList(left.next_node, right);
+		} else if (left.val < right.val) {
+			left.next = mergeLinkedList(left.next, right);
 			return left;
 		} else {
-			if (left.next_node != null) {
-				left = mergeLinkedList(left.next_node, right);
+			if (left.next != null) {
+				left = mergeLinkedList(left.next, right);
 				return left;
-			} else if (right.next_node != null) {
-				right = mergeLinkedList(left, right.next_node);
+			} else if (right.next != null) {
+				right = mergeLinkedList(left, right.next);
 				return right;
 			} else{
 				return left;

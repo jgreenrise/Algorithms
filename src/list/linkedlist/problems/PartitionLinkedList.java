@@ -1,9 +1,9 @@
 package list.linkedlist.problems;
 
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
-import static list.linkedlist.single.Node.printLL;
+import static list.linkedlist.single.ListNode.printLL;
 
 public class PartitionLinkedList {
 
@@ -19,7 +19,7 @@ public class PartitionLinkedList {
         list.addFirst(8);
         list.addFirst(5);
         list.addFirst(3);
-        Node node = partitionLinkedListUsingHeadAndTailPointers(list.start, 5);
+        ListNode node = partitionLinkedListUsingHeadAndTailPointers(list.start, 5);
         System.out.println("Approach 1: Head and Tail approach");
         printLL(node);
 
@@ -36,74 +36,74 @@ public class PartitionLinkedList {
         printLL(node);
     }
 
-    private static Node partitionLinkedListUsingWhileAndIfLoop(Node node, int partition) {
+    private static ListNode partitionLinkedListUsingWhileAndIfLoop(ListNode node, int partition) {
 
-        Node lowNode = null;
-        Node highNode = null;
+        ListNode lowNode = null;
+        ListNode highNode = null;
 
         while (node != null) {
-            Node nodeToBeAdded = new Node();
-            nodeToBeAdded.value = node.value;
+            ListNode nodeToBeAdded = new ListNode();
+            nodeToBeAdded.val = node.val;
 
-            if (node.value < partition) {
+            if (node.val < partition) {
                 if (lowNode == null) {
                     lowNode = nodeToBeAdded;
                 } else {
-                    nodeToBeAdded.next_node = lowNode;
+                    nodeToBeAdded.next = lowNode;
                     lowNode = nodeToBeAdded;
                 }
             } else {
                 if (highNode == null) {
                     highNode = nodeToBeAdded;
                 } else {
-                    nodeToBeAdded.next_node = highNode;
+                    nodeToBeAdded.next = highNode;
                     highNode = nodeToBeAdded;
                 }
             }
-            node = node.next_node;
+            node = node.next;
         }
 
-        Node original = lowNode;
+        ListNode original = lowNode;
 
-        while (lowNode.next_node != null) {
-            lowNode = lowNode.next_node;
+        while (lowNode.next != null) {
+            lowNode = lowNode.next;
         }
-        lowNode.next_node = highNode;
+        lowNode.next = highNode;
 
         return original;
     }
 
-    private static Node partitionLinkedListUsingHeadAndTailPointers(Node node, int partition) {
+    private static ListNode partitionLinkedListUsingHeadAndTailPointers(ListNode node, int partition) {
 
-        Node lowNode = null;
-        Node highNode = null;
-        Node startLowNode = null;
+        ListNode lowNode = null;
+        ListNode highNode = null;
+        ListNode startLowNode = null;
 
         while (node != null) {
 
-            Node newNode = new Node();
-            newNode.value = node.value;
+            ListNode newNode = new ListNode();
+            newNode.val = node.val;
 
-            if (node.value < partition) {
+            if (node.val < partition) {
                 if (lowNode == null) {
                     lowNode = newNode;
                     startLowNode = lowNode;
                 } else {
-                    lowNode.next_node = newNode;
+                    lowNode.next = newNode;
                     lowNode = newNode;
                 }
             } else {
                 if (highNode == null) {
                     highNode = newNode;
                 } else {
-                    newNode.next_node = highNode;
+                    newNode.next = highNode;
                     highNode = newNode;
                 }
             }
-            node = node.next_node;
+            node = node.next;
         }
 
-        lowNode.next_node = highNode;
+        lowNode.next = highNode;
         return startLowNode;
 
     }

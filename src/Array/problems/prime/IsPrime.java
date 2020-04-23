@@ -8,7 +8,7 @@ public class IsPrime {
 		/**
 		 * Approach 1
 		 */
-		System.out.println(isPrime(7));
+		System.out.println(isPrime(47));
 		System.out.println(isPrime(10));
 		System.out.println(isPrime(37));
 		System.out.println(isPrime(50));
@@ -23,19 +23,22 @@ public class IsPrime {
 
 	}
 	
-	private static boolean isPrime(int item){
-		if(item < 2){
-			return false;
-		}
-		
-		for(int i=2; i<=item; i++){
-			if(item % 2 == 0){
-				return false;
+	private static boolean isPrime(int num){
+
+		boolean flag = false;
+		for(int i = 2; i <= num/2; ++i)
+		{
+			// condition for nonprime number
+			if(num % i == 0)
+			{
+				flag = true;
+				break;
 			}
 		}
-		
-		return true;
-		
+
+		return flag;
+
+
 	}
 	
 	private static boolean isPrime2(int item){

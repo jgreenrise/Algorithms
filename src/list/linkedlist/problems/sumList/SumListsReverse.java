@@ -1,9 +1,9 @@
 package list.linkedlist.problems.sumList;
 
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
-import static list.linkedlist.single.Node.printLL;
+import static list.linkedlist.single.ListNode.printLL;
 
 public class SumListsReverse {
 
@@ -15,34 +15,34 @@ public class SumListsReverse {
 
         // O/P = 9 > 1 > 2
 
-        Node node = null;
+        ListNode node = null;
         node = sumLL(list1.start, list2.start);
         System.out.println("Recursion");
         printLL(node);
 
     }
 
-    private static Node sumLL(Node leftNode, Node rightNode) {
+    private static ListNode sumLL(ListNode leftNode, ListNode rightNode) {
 
         if(leftNode == null || rightNode == null)
             return null;
 
         int carryOver = 0;
-        Node newNode = new Node();
-        newNode.next_node = sumLL(leftNode.next_node, rightNode.next_node);
+        ListNode newNode = new ListNode();
+        newNode.next = sumLL(leftNode.next, rightNode.next);
 
-        if(newNode.next_node == null){
+        if(newNode.next == null){
             carryOver = 0;
         }else{
-            int totalOfNextNode = newNode.next_node.value;
+            int totalOfNextNode = newNode.next.val;
             if (totalOfNextNode > 9){
 
-                newNode.next_node.value = totalOfNextNode % 10;
+                newNode.next.val = totalOfNextNode % 10;
                 carryOver = 1;
             }
         }
 
-        newNode.value = leftNode.value + rightNode.value + carryOver;
+        newNode.val = leftNode.val + rightNode.val + carryOver;
         return newNode;
     }
 

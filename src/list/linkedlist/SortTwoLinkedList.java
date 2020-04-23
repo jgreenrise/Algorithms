@@ -1,7 +1,7 @@
 package list.linkedlist;
 
 import list.linkedlist.single.SinglyLinkedList;
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 
 
 /**
@@ -36,35 +36,35 @@ public class SortTwoLinkedList {
 		System.out.println("Input list 2");
 		list2.printList();
 
-		Node output = mergeLinkedList(
+		ListNode output = mergeLinkedList(
 				list.start, list2.start);
 
 		System.out.println("Output");
 		while (output != null) {
-			System.out.print(output.value + ", ");
-			output = output.next_node;
+			System.out.print(output.val + ", ");
+			output = output.next;
 		}
 
 	}
 
-	public static Node mergeLinkedList(
-			Node left,
-			Node right) {
+	public static ListNode mergeLinkedList(
+			ListNode left,
+			ListNode right) {
 
 		if (left == null)
 			return right;
 		if (right == null)
 			return left;
 
-		if (left.value > right.value) {
+		if (left.val > right.val) {
 			
 			/**
 			 * Order of argument doesn't matter. It can be vice versa too.
 			 */
-			right.next_node = mergeLinkedList(left, right.next_node);
+			right.next = mergeLinkedList(left, right.next);
 			return right;
 		} else {
-			left.next_node = mergeLinkedList(left.next_node, right);
+			left.next = mergeLinkedList(left.next, right);
 			return left;
 		}
 	}

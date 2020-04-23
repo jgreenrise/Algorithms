@@ -2,7 +2,7 @@ package list.linkedlist.problems;
 
 import java.util.HashSet;
 
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 
 public class ReturnCorruptedNodeInCircularlist {
 
@@ -14,23 +14,23 @@ public class ReturnCorruptedNodeInCircularlist {
 	 * Approach 1 Time complexity: O(n) Space complexity: O(n), since we are
 	 * using hashset to store values
 	 */
-	private static Node returnCorruptedNode(Node node) {
+	private static ListNode returnCorruptedNode(ListNode node) {
 
 		if (node == null)
 			return null;
 
-		if (node.next_node == null) {
+		if (node.next == null) {
 			return node;
 		}
 
 		HashSet<Integer> nodes = new HashSet<>();
 
-		while (node.next_node != null && !nodes.contains(node.value)) {
-			nodes.add(node.value);
-			node = node.next_node;
+		while (node.next != null && !nodes.contains(node.val)) {
+			nodes.add(node.val);
+			node = node.next;
 		}
 
-		if (nodes.contains(node.value)) {
+		if (nodes.contains(node.val)) {
 			return node;
 		} else {
 			System.out.println("No corrupted node detected.");
@@ -43,25 +43,25 @@ public class ReturnCorruptedNodeInCircularlist {
 	 * Time complexity: O(n)
 	 * Space complexity: O(1)
 	 */
-	private static Node returnCorruptedNode_usingcounter(Node node) {
+	private static ListNode returnCorruptedNode_usingcounter(ListNode node) {
 
 		if (node == null)
 			return null;
 
-		if (node.next_node == null) {
+		if (node.next == null) {
 			return node;
 		}
 
-		Node slow = node;
-		Node fast = node;
+		ListNode slow = node;
+		ListNode fast = node;
 
 		/**
 		 * Slow by speed 1
 		 * Fast by speed 2
 		 */
-		while (slow != fast && fast.next_node != null && fast.next_node.next_node != null) {
-			slow = slow.next_node;
-			fast = fast.next_node.next_node;
+		while (slow != fast && fast.next != null && fast.next.next != null) {
+			slow = slow.next;
+			fast = fast.next.next;
 		}
 
 		/**
@@ -73,8 +73,8 @@ public class ReturnCorruptedNodeInCircularlist {
 		 * Slow & fast by speed 1
 		 */
 		while (slow != fast) {
-			slow = slow.next_node;
-			fast = fast.next_node;
+			slow = slow.next;
+			fast = fast.next;
 		}
 
 		return slow;

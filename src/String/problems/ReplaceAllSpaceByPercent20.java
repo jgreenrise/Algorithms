@@ -1,44 +1,66 @@
 package String.problems;
 
+import java.util.Arrays;
+
 public class ReplaceAllSpaceByPercent20 {
 
 	public static void main(String[] args) {
-		String input = "Mr John Smith     ";
-		System.out.println(replaceUsingStringBuilder(input.trim()));
+		String input = "Mr John Smith";
+		int length = 13;
+		System.out.println("\nInput String: "+input);
+		System.out.println("Using String Builder "+replaceUsingStringBuilder(input.trim()));
+		System.out.println("Using char array: "+URLify(input, 13));
 
-		System.out.println(replaceInPlaceFromBackwards(input.toCharArray(), 13));
+		input = "Mr John  Smith";
+		length = 14;
+		System.out.println("\nInput String - Multiple Space: "+input);
+		System.out.println("Using String Builder "+replaceUsingStringBuilder(input.trim()));
+		System.out.println("Using char array: "+URLify(input, 13));
+
+		input = "Mr John Smith ";
+		length = 14;
+		System.out.println("\nInput String - Space at the end: "+input);
+		System.out.println("Using String Builder "+replaceUsingStringBuilder(input.trim()));
+		System.out.println("Using char array: "+URLify(input, 13));
+
+		input = "  ";
+		length = 2;
+		System.out.println("\nInput String - With only spaces: "+input);
+		System.out.println("Using String Builder "+replaceUsingStringBuilder(input.trim()));
+		System.out.println("Using char array: "+URLify(input, 13));
 
 	}
 
-	private static String replaceInPlaceFromBackwards(char[] input, int trueLenght) {
+	public static String URLify(String input, int length){
 
-		int countNoOfSpaces = 0;
+		int countNumberOfSpaces = 0;
+		char [] chars = input.toCharArray();
 
-		for (int i = 0; i < trueLenght; i++) {
-			if(input[i] == ' '){
-				countNoOfSpaces++;
+		for (char aChar : chars) {
+			if (aChar == ' ') {
+				countNumberOfSpaces++;
 			}
 		}
 
-		int index = trueLenght + countNoOfSpaces * 2;
+		String [] out = new String [chars.length - countNumberOfSpaces + 3 * countNumberOfSpaces];
+		int counterOut = out.length-1;
+		boolean isSpaceChar = false;
 
-		for (int i = trueLenght-1; i >= 0; i--) {
-
-				if(input[i] == ' '){
-					input[index-1] = '0';
-					input[index-2] = '2';
-					input[index-3] = '%';
-					index = index - 3;
-				}else{
-					input[index-1] = input[i];
-					index = index -1;
+		for(int j = chars.length - 1; j >= 0; j--){
+			if(chars[j] != ' '){
+				isSpaceChar = false;
+				out[counterOut--] = String.valueOf(chars[j]);
+			}else{
+				if(!isSpaceChar){
+					isSpaceChar = true;
+					out[counterOut--] = "O";
+					out[counterOut--] = "2";
+					out[counterOut--] = "%";
 				}
+			}
 		}
 
-		System.out.println(input);
-
-		return input.toString();
-
+		return Arrays.toString(out);
 
 	}
 

@@ -1,9 +1,9 @@
 package list.linkedlist.problems;
 
 import list.linkedlist.single.SinglyLinkedList;
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 
-import static list.linkedlist.single.Node.printLL;
+import static list.linkedlist.single.ListNode.printLL;
 
 public class DeleteNodeFromCenterOfLinkedList {
 
@@ -20,7 +20,7 @@ public class DeleteNodeFromCenterOfLinkedList {
 		list.addFirst(50);
 		System.out.println("Input list");
 		list.printList();
-		Node node = removeNodeFromCenterOfLinkedList(list, 30);
+		ListNode node = removeNodeFromCenterOfLinkedList(list, 30);
 		System.out.println("Approach 1");
 		printLL(node);
 
@@ -39,37 +39,37 @@ public class DeleteNodeFromCenterOfLinkedList {
 
 	}
 
-	private static Node removeNodeFromCenterUsingPonter(Node start) {
+	private static ListNode removeNodeFromCenterUsingPonter(ListNode start) {
 
-		Node slow = start;
+		ListNode slow = start;
 
 
-		Node fast = slow;
-		Node slowParent = slow;
-		Node original = slow;
+		ListNode fast = slow;
+		ListNode slowParent = slow;
+		ListNode original = slow;
 
-		while(slow.next_node != null && fast.next_node != null){
+		while(slow.next != null && fast.next != null){
 			slowParent = slow;
-			slow = slow.next_node;
-			fast = fast.next_node.next_node;
+			slow = slow.next;
+			fast = fast.next.next;
 		}
 
-		slowParent.next_node = slow.next_node;
+		slowParent.next = slow.next;
 		return original;
 
 	}
 
-	private static Node removeNodeFromCenterOfLinkedList(SinglyLinkedList list, int nodeToBeDeleted) {
+	private static ListNode removeNodeFromCenterOfLinkedList(SinglyLinkedList list, int nodeToBeDeleted) {
 
-		Node original = list.start;
-		Node node = original;
+		ListNode original = list.start;
+		ListNode node = original;
 
-		while (node.next_node != null) {
-			if(node.next_node.value == nodeToBeDeleted){
-				node.next_node = node.next_node.next_node;
+		while (node.next != null) {
+			if(node.next.val == nodeToBeDeleted){
+				node.next = node.next.next;
 				break;
 			}
-			node = node.next_node;
+			node = node.next;
 		}
 
 		return original;

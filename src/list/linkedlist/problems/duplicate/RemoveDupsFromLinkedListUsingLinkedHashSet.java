@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 import list.linkedlist.single.SinglyLinkedList;
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 
 /**
 Input
@@ -45,13 +45,13 @@ public class RemoveDupsFromLinkedListUsingLinkedHashSet {
 		System.out.println("Input");
 		list.printList();
 		
-		Node node = list.start;
+		ListNode node = list.start;
 		
-		while(node.next_node != null){
-			linkedHashSet.add(node.value);
-			node = node.next_node;
+		while(node.next != null){
+			linkedHashSet.add(node.val);
+			node = node.next;
 		}
-		linkedHashSet.add(node.value);
+		linkedHashSet.add(node.val);
 
 		System.out.println("Output");
 		Iterator<Integer> iterator = linkedHashSet.iterator();

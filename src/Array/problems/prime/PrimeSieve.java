@@ -1,5 +1,8 @@
 package Array.problems.prime;
 
+/**
+ * Sieve of Eratosthenes
+ */
 public class PrimeSieve {
 	public static void main(String[] args) {
 		int N = 30;

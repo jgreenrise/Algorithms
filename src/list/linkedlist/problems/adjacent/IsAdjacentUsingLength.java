@@ -1,6 +1,6 @@
 package list.linkedlist.problems.adjacent;
 
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
 public class IsAdjacentUsingLength {
@@ -21,18 +21,18 @@ public class IsAdjacentUsingLength {
 
     }
 
-    public static boolean does_LL_intersect(Node left, Node right){
+    public static boolean does_LL_intersect(ListNode left, ListNode right){
         int lengthLeft = length(left);
         int lengthRight = length(right);
 
         if(lengthLeft > lengthRight){
             while(lengthLeft != lengthRight){
-                left = left.next_node;
+                left = left.next;
                 lengthLeft = lengthLeft - 1;
             }
         }else if(lengthLeft < lengthRight){
             while(lengthRight != lengthLeft){
-                right = right.next_node;
+                right = right.next;
                 lengthRight = lengthRight - 1;
             }
         }
@@ -41,14 +41,14 @@ public class IsAdjacentUsingLength {
 
     }
 
-    public static boolean does_LL_ofEqualLength_intersect(Node left, Node right){
+    public static boolean does_LL_ofEqualLength_intersect(ListNode left, ListNode right){
 
         int counter = 0;
-        Node intersectingNode = null;
+        ListNode intersectingNode = null;
 
         while(left != null){
 
-            if(left.value == right.value){
+            if(left.val == right.val){
                 if(counter == 0)
                     intersectingNode = left;
                 counter = counter + 1;
@@ -57,14 +57,14 @@ public class IsAdjacentUsingLength {
                 intersectingNode = null;
             }
 
-            left = left.next_node;
-            right = right.next_node;
+            left = left.next;
+            right = right.next;
         }
 
         boolean isIntersecting = (intersectingNode != null && counter > 1) ? true : false;
 
         if(isIntersecting){
-            System.out.println("Is adjacent at node : "+intersectingNode.value);
+            System.out.println("Is adjacent at node : "+intersectingNode.val);
         }else{
             System.out.println("Not adjacent");
         }
@@ -73,11 +73,11 @@ public class IsAdjacentUsingLength {
 
     }
 
-    public static int length(Node node){
+    public static int length(ListNode node){
         int length= 0;
         while(node != null){
             length ++;
-            node = node.next_node;
+            node = node.next;
         }
         return length;
     }

@@ -1,56 +1,99 @@
 package list.linkedlist.problems.palindrome;
 
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
 public class IsPalindromeRecursionAndLength {
 
     public static void main(String[] args) {
 
-        //  100 > 200 > 300 > 400
-        SinglyLinkedList node = SinglyLinkedList.createLL(new int[] {1, 2, 3, 2, 1});
-        System.out.println("Is palindrome: "+isPalindrome(node.start));
+        SinglyLinkedList node = SinglyLinkedList.createLL(new int[]{1, 2, 3, 2, 1});
+        System.out.println("Input Value - Odd elems: "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
 
-        node = SinglyLinkedList.createLL(new int[] {1, 2, 3, 4, 2, 1});
-        System.out.println("Is palindrome: "+isPalindrome(node.start));
+        node = SinglyLinkedList.createLL(new int[]{1, 2, 1});
+        System.out.println("Input Value - Odd elems "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
 
-        node = SinglyLinkedList.createLL(new int[] {1, 2, 3, 4, 3, 2, 1});
-        System.out.println("Is palindrome: "+isPalindrome(node.start));
+        node = SinglyLinkedList.createLL(new int[]{1, 2, 3, 4, 3, 2, 1});
+        System.out.println("Input Value - Odd elems "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
+
+        node = SinglyLinkedList.createLL(new int[]{1, 2, 3, 4, 2, 1});
+        System.out.println("Input Value - Odd elems - Negative Test case "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
+
+        node = SinglyLinkedList.createLL(new int[]{1, 0, 0});
+        System.out.println("Input Value - Odd elems - Negative Test case "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
+
+        node = SinglyLinkedList.createLL(new int[]{1, 2, 2, 1});
+        System.out.println("Input Value - Even elems "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
+
+        node = SinglyLinkedList.createLL(new int[]{1, 2, 1, 1, 2, 1});
+        System.out.println("Input Value - Even elems "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
+
+        node = SinglyLinkedList.createLL(new int[]{1, 2, 1, 1, 2, 3});
+        System.out.println("Input Value - Even elems - Negative Test case "+node.printLL()+"\tIs palindrome: " + isPalindrome(node.start));
     }
 
-    public static boolean isPalindrome(Node node){
+    public static boolean isPalindrome(ListNode node){
 
-        // Reverse LL AND find length of LL
-        Node original = node;
+        // Expected Business Requirement
+        if (node == null || node.next == null)    return true;
 
-        int length= 0;
-        while(node != null){
-            length ++;
-            node = node.next_node;
+        // Handle negative scenarios
+        if(node.next.next == null){
+            // Compare 1st and 2nd element (0 -> 0)
+            return node.val == node.next.val;
         }
 
-        Node head = findSiblingNode(original, length, 0);
-        return head == null ? false: true;
+        ListNode original = node;
+
+        // Counter till center of node and detech whether we have odd/even number of nodes
+        ListNode slow = node;
+        ListNode fast = node;
+        int counter = 0;
+        while(slow.next != null && fast.next != null && fast.next.next != null)
+        {
+            slow = slow.next;
+            fast = fast.next.next;
+            counter ++;
+        }
+
+        // 1,0,0
+        if(counter == 1 && fast.next == null){
+            return fast.val == original.val;
+        }
+
+        // Detect if has ODD number of nodes
+        boolean hasOddNumberOfNodes = fast.next == null;
+
+        ListNode listNode = isPalindrome(counter, hasOddNumberOfNodes, original, 0);
+
+        return listNode != null;
     }
 
-    private static Node findSiblingNode(Node head, int length, int counter) {
+    private static ListNode isPalindrome(int counter, boolean hasOddNodes, ListNode node, int origCounter) {
+        ListNode left = node;
+        ListNode right = null;
 
-        if(counter != length / 2){
-            Node sibling = findSiblingNode(head.next_node, length, counter+1);
-
-            if(sibling == null)
-                return null;
-
-            if(sibling.value == head.value){
-                if(counter == 0){
-                    return head;
-                }
-                return sibling.next_node;
-            }else{
-                return null;
+        if(origCounter == counter){
+            if(hasOddNodes){
+                return node.next;
             }
+            right = node.next;
         }else{
-            return head.next_node;
+            right = isPalindrome(counter, hasOddNodes, node.next, origCounter + 1);
+        }
+
+        if(right == null){
+            return right;
+        }
+
+        if(left.val == right.val){
+            if(right.next == null){
+                // For last Node
+                return right;
+            }
+            return right.next;
+        }else{
+            return null;
         }
 
     }

@@ -1,6 +1,6 @@
 package list.linkedlist.problems;
 
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
 /**
@@ -75,51 +75,51 @@ public class SwapNodes {
 
 	}
 
-	public static void swapNodes(Node node, int node1, int node2) {
+	public static void swapNodes(ListNode node, int node1, int node2) {
 
 		SinglyLinkedList list = new SinglyLinkedList();
 
-		Node head = node;
+		ListNode head = node;
 
-		Node src_node_parent = null;
-		Node src_node = new Node(node1, null);
-		Node src_node_child = null;
+		ListNode src_node_parent = null;
+		ListNode src_node = new ListNode(node1, null);
+		ListNode src_node_child = null;
 		boolean is_src_node_found = false;
 
-		Node destination_node_parent = null;
-		Node dest_node = new Node(node2, null);
+		ListNode destination_node_parent = null;
+		ListNode dest_node = new ListNode(node2, null);
 		boolean is_dest_node_found = false;
 
-		while (node.next_node != null) {
+		while (node.next != null) {
 
 			if (!is_src_node_found) {
-				if (node1 == (node.value)) {
+				if (node1 == (node.val)) {
 
-					src_node_child = node.next_node;
+					src_node_child = node.next;
 					is_src_node_found = true;
 
 					// src node is not head
 					if (src_node_parent != null) {
-						src_node_parent.next_node = dest_node;
+						src_node_parent.next = dest_node;
 					} else {
 						head = dest_node;
 					}
-					dest_node.next_node = src_node_child;
+					dest_node.next = src_node_child;
 
 					destination_node_parent = dest_node;
-					node = node.next_node;
+					node = node.next;
 				} else {
 					src_node_parent = node;
 				}
 			}
 
 			if (is_src_node_found && !is_dest_node_found) {
-				if (node2 == (node.value)) {
+				if (node2 == (node.val)) {
 
 					is_dest_node_found = true;
 
-					destination_node_parent.next_node = src_node;
-					src_node.next_node = node.next_node;
+					destination_node_parent.next = src_node;
+					src_node.next = node.next;
 
 				} else {
 					destination_node_parent = node;
@@ -128,17 +128,17 @@ public class SwapNodes {
 
 			if (is_src_node_found && is_dest_node_found) {
 
-				Node node_a = head;
+				ListNode node_a = head;
 				while (node_a != null) {
-					System.out.print(node_a.value + ", ");
-					node_a = node_a.next_node;
+					System.out.print(node_a.val + ", ");
+					node_a = node_a.next;
 				}
 
 				System.out.println("\n");
 
 				break;
 			} else {
-				node = node.next_node;
+				node = node.next;
 			}
 
 		}

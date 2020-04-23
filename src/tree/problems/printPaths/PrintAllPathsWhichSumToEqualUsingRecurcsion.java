@@ -7,13 +7,6 @@ import tree.bst.MyBinaryNode;
 /**
  * Time complexity: O(nlgn)
  * 
- * Travel postorder traversal and collect path, during each visit.
- * 
- * Image reference: https://8zvfla.bn1304.livefilestore.com/y2ptRP-
- * BbRYZtzKKpco9RzKkp6VlSSZSYdp18QlQGKVBoo5fJqIYJPJuqZeogAE2xMQqJgjF4j2JkF20q4
- * -sfqb7t6mSZ69BKSJ7uqPDwLeTKsXJlVEE
- * -JRyXfZIjtbhtPi7nkkssGJEWkr7ry9AwwJyg-VzdcnIhpSX6YCWZ7eeh4
- * /find_all_paths_binary_tree.jpg?psid=1
  */
 public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 

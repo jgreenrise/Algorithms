@@ -2,8 +2,8 @@ package list.linkedlist.single;
 
 public class SinglyLinkedList {
 
-	public Node start;
-	Node end;
+	public ListNode start;
+	ListNode end;
 	public int size = 0;
 
 	public SinglyLinkedList() {
@@ -30,14 +30,14 @@ public class SinglyLinkedList {
 
 	public void addFirst(int val) {
 
-		Node newNode = new Node(val, null);
+		ListNode newNode = new ListNode(val, null);
 		size++;
 
 		if (start == null) {
 			start = newNode;
 			end = newNode;
 		} else {
-			newNode.next_node = start;
+			newNode.next = start;
 			start = newNode;
 		}
 
@@ -45,14 +45,14 @@ public class SinglyLinkedList {
 
 	public void addLast(int val) {
 
-		Node newNode = new Node(val, null);
+		ListNode newNode = new ListNode(val, null);
 		size++;
 
 		if (start == null) {
 			start = newNode;
 			end = newNode;
 		} else {
-			end.next_node = newNode;
+			end.next = newNode;
 			end = newNode;
 		}
 
@@ -60,8 +60,8 @@ public class SinglyLinkedList {
 
 	public void add(int index, int val) {
 
-		Node newNode = new Node(val, null);
-		Node pointer = start;
+		ListNode newNode = new ListNode(val, null);
+		ListNode pointer = start;
 
 		for (int i = 1; i < (size + 1); i++) {
 
@@ -73,17 +73,17 @@ public class SinglyLinkedList {
 				break;
 			} else {
 				System.out.println("Index: " + i + ", pointer value: "
-						+ pointer.value);
+						+ pointer.val);
 
 				if (i == index) {
-					Node tmp = pointer.next_node;
-					pointer.next_node = newNode;
-					newNode.next_node = tmp;
+					ListNode tmp = pointer.next;
+					pointer.next = newNode;
+					newNode.next = tmp;
 					size++;
 					break;
 				}
 
-				pointer = pointer.next_node;
+				pointer = pointer.next;
 
 			}
 		}
@@ -97,7 +97,7 @@ public class SinglyLinkedList {
 
 		if (start != null) {
 
-			Node tmp = start.next_node;
+			ListNode tmp = start.next;
 			start = null;
 			start = tmp;
 			size--;
@@ -108,21 +108,21 @@ public class SinglyLinkedList {
 
 	public void removeLast() {
 
-		Node pointer = start;
+		ListNode pointer = start;
 		for (int i = 1; i < size; i++) {
 
 			if (i == size - 1) {
-				pointer.next_node = null;
+				pointer.next = null;
 				size--;
 				break;
 			}
-			pointer = pointer.next_node;
+			pointer = pointer.next;
 		}
 	}
 
 	public void removeAtIndex(int index) {
 
-		Node pointer = start;
+		ListNode pointer = start;
 
 		for (int i = 1; i < (size + 1); i++) {
 
@@ -135,13 +135,13 @@ public class SinglyLinkedList {
 			} else {
 
 				if (index == i) {
-					System.out.println("***" + pointer.value);
-					pointer.next_node = (pointer.next_node).next_node;
+					System.out.println("***" + pointer.val);
+					pointer.next = (pointer.next).next;
 					size--;
 					break;
 				}
 
-				pointer = pointer.next_node;
+				pointer = pointer.next;
 
 			}
 		}
@@ -154,18 +154,31 @@ public class SinglyLinkedList {
 
 	public void printList() {
 
-		Node node = start;
+		ListNode node = start;
 
 		// System.out.println("list: ");
 
 		while (node != null) {
-			System.out.print(node.value + ", ");
-			node = node.next_node;
+			System.out.print(node.val + ", ");
+			node = node.next;
 		}
 		System.out.println("Size: " + size);
 
 		System.out.println("\n");
 
+	}
+
+	public String printLL() {
+
+		ListNode node = start;
+		StringBuilder sbr = new StringBuilder();
+
+		while (node != null) {
+			sbr.append(node.val +" ");
+			node = node.next;
+		}
+
+		return sbr.reverse().toString();
 	}
 
 	/**********************************************************

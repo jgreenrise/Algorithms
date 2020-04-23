@@ -1,9 +1,8 @@
 package list.linkedlist.problems.duplicate;
 
-import list.linkedlist.single.Node;
+import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
-import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 public class RemoveDupsRecursion {
@@ -27,45 +26,45 @@ public class RemoveDupsRecursion {
 		System.out.println("Input");
 		list.printList();
 
-		Node node = removeDupsUsingRecursion(list.start);
+		ListNode node = removeDupsUsingRecursion(list.start);
 		printLL(node);
 
 	}
 
-	private static Node removeDupsUsingRecursion(Node start) {
+	private static ListNode removeDupsUsingRecursion(ListNode start) {
 
 		// 1. Assign a parent Node
-		Node parent = start;
-		while(parent.next_node != null){
+		ListNode parent = start;
+		while(parent.next != null){
 
 			// 2. Remove dups from child nodes using recursion
-			parent.next_node = removeDupsFromRemainingNodes(parent.value, parent.next_node);
+			parent.next = removeDupsFromRemainingNodes(parent.val, parent.next);
 
 			// 3. Assign next node as parent Node.
-			parent = parent.next_node;
+			parent = parent.next;
 		}
 		return start;
 
 	}
 
-	private static Node removeDupsFromRemainingNodes(int value, Node node) {
+	private static ListNode removeDupsFromRemainingNodes(int value, ListNode node) {
 
 		if(node == null)
 			return null;
 
-		if(node.value == value)
-			return removeDupsFromRemainingNodes(value, node.next_node);
+		if(node.val == value)
+			return removeDupsFromRemainingNodes(value, node.next);
 
-		node.next_node = removeDupsFromRemainingNodes(value, node.next_node);
+		node.next = removeDupsFromRemainingNodes(value, node.next);
 		return node;
 	}
 
-	public static void printLL(Node node){
-		while(node.next_node != null){
-			System.out.print(node.value + " > ");
-			node = node.next_node;
+	public static void printLL(ListNode node){
+		while(node.next != null){
+			System.out.print(node.val + " > ");
+			node = node.next;
 		}
-		System.out.println(node.value);
+		System.out.println(node.val);
 	}
 
 }
