@@ -18,7 +18,7 @@ public class Application {
 	// Main method.
 	public static void main(String[] args) {
 		// Pushing data in the linked list.
-		LinkedList list = new LinkedList(new Node(5));
+		LinkedList<ListNode> list = new LinkedList<ListNode>(new ListNode(5));
 		list.push(4);
 		list.push(3);
 		list.push(2);
@@ -36,7 +36,7 @@ public class Application {
 		list.print();
 
 		// Making a clone of the original linked list.
-		LinkedList clone = list.clone();
+		LinkedList<ListNode> clone = list.clone();
 
 		System.out.println("\nCloned linked list");
 		clone.print();

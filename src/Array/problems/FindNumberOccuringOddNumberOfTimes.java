@@ -17,19 +17,59 @@ public class FindNumberOccuringOddNumberOfTimes {
 	public static void main(String[] args) {
 
 		// int[] arr_i_input = { 2, 3, 5, 4, 5, 2, 4, 3, 5, 2, 4, 4, 2 };
-		int[] arr_i_input = { 1, 2, 3, 2, 3, 1, 3 };
+		//int[] arr_i_input = { 1, 2, 3, 2, 3, 1, 3 };
+		int[] arr_i_input = { 4,1,2,1,2};
+
+		// INt array
+		System.out.println(singleNumber(arr_i_input));
 
 		// USing XOR
 		findNumberOccuringOddNumberOfTimes(arr_i_input);
-
-		// Using partial counting sort
-		findNumberOccuringOddNumberOfTimes_method2(arr_i_input);
 
 		// Using hashset
 		findNumberOccuringOddNumberOfTimes_hashset(arr_i_input);
 
 		// Using HashMap
-		findNumberOccuringOddNumberOfTimes_hashMap(arr_i_input);
+		findNumberOccuringOddNumberOfTimes_hashMap(arr_i_input);*/
+	}
+
+	public static int singleNumber(int[] nums) {
+
+		if(nums.length == 1){
+			return nums[0];
+		}
+
+		// 1. Loop through elements
+		for(int i =0; i < nums.length; i++){
+
+			if(nums[i] == Integer.MIN_VALUE){
+				continue;
+			}
+
+			// 2. save item at index i
+			int item = nums[i];
+			nums[i] = 1;
+
+			for(int k = i+1; k < nums.length; k++){
+				if(nums[k] == item){
+
+					// 3. If equal to ITEM, assign MIN value
+					nums[k] = Integer.MIN_VALUE;
+
+					// 4. Increase counter at Index I and not K
+					nums[i]++;
+				}
+			}
+
+			// 5 Check item at index has odd number of elments
+			if(nums[i]%2 != 0){
+				return item;
+			}
+
+		}
+
+		return 0;
+
 	}
 
 	/**
@@ -87,9 +127,9 @@ public class FindNumberOccuringOddNumberOfTimes {
 	/*-
 	 * TIME COMPLEXITY: 0(n)
 	 * 
-	 * 1. Find max value. 
-	 * 2. Create aux array with array size = max value.
-	 * 3. Put the info in aux array. 
+	 * 1. TC: O(n)	Find max value
+	 * 2. SC: O(n)	Create aux array with array size = max value.
+	 * 3. TC: O(n)	Put the info in aux array.
 	 * 4. Keep a count of each item in input array in aux array.
 	 * 
 	 */

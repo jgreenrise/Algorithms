@@ -29,6 +29,6 @@ public class QuestionIsLLPalindrome {
     }
 
     private static String isPalindrome(ListNode start) {
-
+        return null;
     }
 }
