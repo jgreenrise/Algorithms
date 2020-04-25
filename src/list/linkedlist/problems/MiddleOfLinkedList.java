@@ -3,6 +3,9 @@ package list.linkedlist.problems;
 import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
+/**
+ * https://leetcode.com/problems/middle-of-the-linked-list/submissions/
+ */
 public class MiddleOfLinkedList {
 
     public static void main(String[] args) {
