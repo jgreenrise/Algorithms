@@ -30,7 +30,7 @@ public class FindNumberOccuringOddNumberOfTimes {
 		findNumberOccuringOddNumberOfTimes_hashset(arr_i_input);
 
 		// Using HashMap
-		findNumberOccuringOddNumberOfTimes_hashMap(arr_i_input);*/
+		findNumberOccuringOddNumberOfTimes_hashMap(arr_i_input);
 	}
 
 	public static int singleNumber(int[] nums) {
