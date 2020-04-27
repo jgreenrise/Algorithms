@@ -14,10 +14,10 @@ public class PalindromePermutation {
         System.out.println(usingHashSet(str_input));
         System.out.println(usingASCIIIntArray(str_input));
         System.out.println(usingSort(str_input));
+
         // Using HashMap not coded
-        // > Added to map Key > if does not exist
-        // > if exist delete the key
-        // Check Map size
+
+        // Using XOR
 
     }
 
