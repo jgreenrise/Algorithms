@@ -7,38 +7,38 @@ public class OneAwayCheckIfHasEdits {
         String input2 = "ple";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
         System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively2(input1, input2, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
 
         input1 = "ple";
         input2 = "pale";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
         System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
         // Input2 length > Input 1 length
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively2(input2, input1, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input2, input1, 0, input1.length() == input2.length()));
 
         input1 = "pales";
         input2 = "pale";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
         System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursively2(input2, input1, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input2, input1, 0, input1.length() == input2.length()));
 
         input1 = "pale";
         input2 = "bale";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
         System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively2(input1, input2, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
 
         input1 = "pale";
         input2 = "bake";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
         System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursively2(input1, input2, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
 
         input1 = "ppalem";
         input2 = "palem";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
         System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursively2(input1, input2, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
 
         input1 = "palem";
         input2 = "ppalem";
@@ -46,18 +46,18 @@ public class OneAwayCheckIfHasEdits {
         System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
 
         // Input 2 lenght > input 1 length
-        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursively2(input2, input1, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input2, input1, 0, input1.length() == input2.length()));
 
         input1 = "apple";
         input2 = "aple";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
         System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursively2(input1, input2, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
 
     }
 
     // Left string length >= right string length
-    private static boolean hasEditsRecursively2(String left, String right, int counter, boolean isLengthEqual) {
+    private static boolean hasEditsRecursivelyConcise(String left, String right, int counter, boolean isLengthEqual) {
 
         // Diff between length > 1
         if (Math.abs(left.length() - right.length()) > 1) return false;
@@ -76,7 +76,7 @@ public class OneAwayCheckIfHasEdits {
 
             if (isLengthEqual && left.length() == 1)
                 return true;
-            return  hasEditsRecursively2(left.substring(1), right.substring(1), counter, left.length() == right.length());
+            return  hasEditsRecursivelyConcise(left.substring(1), right.substring(1), counter, left.length() == right.length());
 
         } else {
 
@@ -86,9 +86,9 @@ public class OneAwayCheckIfHasEdits {
                 return false;
 
             if (isLengthEqual) {
-                return hasEditsRecursively2(left.substring(1),right.substring(1),counter,left.length() == right.length());
+                return hasEditsRecursivelyConcise(left.substring(1),right.substring(1),counter,left.length() == right.length());
             }
-            return hasEditsRecursively2(left.substring(1),right,counter,left.length() == right.length());
+            return hasEditsRecursivelyConcise(left.substring(1),right,counter,left.length() == right.length());
         }
 
     }
