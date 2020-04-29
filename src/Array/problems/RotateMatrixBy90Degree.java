@@ -64,12 +64,12 @@ public class RotateMatrixBy90Degree {
 				{ 13, 14, 15, 16 } };
 
 		System.out.println("\n Input");
-		printUndirectedGraph(matrix);
+		printMatrix(matrix);
 
 		rotate(matrix);
 
 		System.out.println("\n Final output");
-		printUndirectedGraph(matrix);
+		printMatrix(matrix);
 
 		// 5 by 5
 		matrix = new int[][] { { 1, 2, 3, 4, 13 }, { 5, 6, 7, 8, 14 },
@@ -77,23 +77,23 @@ public class RotateMatrixBy90Degree {
 				{ 18, 19, 20, 21, 22 } };
 
 		System.out.println("\n Input");
-		printUndirectedGraph(matrix);
+		printMatrix(matrix);
 
 		rotate(matrix);
 
 		System.out.println("\n Final output");
-		printUndirectedGraph(matrix);
+		printMatrix(matrix);
 
 		// 2 by 2
 		matrix = new int[][] { { 1, 2 }, { 3, 4 } };
 
 		System.out.println("\n Input");
-		printUndirectedGraph(matrix);
+		printMatrix(matrix);
 
 		rotate(matrix);
 
 		System.out.println("\n Final output");
-		printUndirectedGraph(matrix);
+		printMatrix(matrix);
 
 		// 6 by 6
 		matrix = new int[][] { { 1, 2, 3, 4, 13, 20 }, { 5, 6, 7, 8, 91, 14 },
@@ -101,16 +101,16 @@ public class RotateMatrixBy90Degree {
 				{ 18, 19, 20, 47, 21, 22 }, { 180, 109, 202, 470, 28, 68 } };
 
 		System.out.println("\n Input");
-		printUndirectedGraph(matrix);
+		printMatrix(matrix);
 
 		rotate(matrix);
 
 		System.out.println("\n Final output");
-		printUndirectedGraph(matrix);
+		printMatrix(matrix);
 
 	}
 
-	private static void printUndirectedGraph(int[][] matrix) {
+	private static void printMatrix(int[][] matrix) {
 		// TODO Auto-generated method stub
 
 		for (int row = 0; row < matrix.length; row++) {

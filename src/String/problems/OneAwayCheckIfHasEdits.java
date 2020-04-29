@@ -54,6 +54,12 @@ public class OneAwayCheckIfHasEdits {
         System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
         System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
 
+        input1 = "ab";
+        input2 = "b";
+        System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
+        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
+        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
+
     }
 
     // Left string length >= right string length
@@ -76,7 +82,7 @@ public class OneAwayCheckIfHasEdits {
 
             if (isLengthEqual && left.length() == 1)
                 return true;
-            return  hasEditsRecursivelyConcise(left.substring(1), right.substring(1), counter, left.length() == right.length());
+            return hasEditsRecursivelyConcise(left.substring(1), right.substring(1), counter, left.length() == right.length());
 
         } else {
 
@@ -86,9 +92,9 @@ public class OneAwayCheckIfHasEdits {
                 return false;
 
             if (isLengthEqual) {
-                return hasEditsRecursivelyConcise(left.substring(1),right.substring(1),counter,left.length() == right.length());
+                return hasEditsRecursivelyConcise(left.substring(1), right.substring(1), counter, left.length() == right.length());
             }
-            return hasEditsRecursivelyConcise(left.substring(1),right,counter,left.length() == right.length());
+            return hasEditsRecursivelyConcise(left.substring(1), right, counter, left.length() == right.length());
         }
 
     }
@@ -201,10 +207,12 @@ public class OneAwayCheckIfHasEdits {
             }
 
             if (i == 0 && counter == 1) {
-                if (left.substring(i + 1).equals(right.substring(i + 1))) {
-                    return true;
-                } else {
-                    return false;
+                if (i + 1 < left.length() && i + 1 < right.length()) {
+                    if (left.substring(i + 1).equals(right.substring(i + 1))) {
+                        return true;
+                    } else {
+                        return false;
+                    }
                 }
             }
         }
