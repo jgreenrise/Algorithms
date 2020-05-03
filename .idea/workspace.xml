@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf3ea153-809c-4382-89db-85a4f9de2a98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Array/problems/MinStepsToMakeTwoStringsAnagram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/RotateMatrixBy90Degree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/RotateMatrixBy90Degree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/Sandbox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort/InsertionSort/InsertionSortTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/String/problems/OneAwayCheckIfHasEdits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/problems/OneAwayCheckIfHasEdits.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +46,7 @@
       <recent name="tree.problems" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.StockSellAndBuy2">
     <configuration name="MiddleOfLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.MiddleOfLinkedList" />
       <module name="Algorithms" />
@@ -91,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OneAwayCheckIfHasEdits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="String.problems.OneAwayCheckIfHasEdits" />
+    <configuration name="Sandbox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.Sandbox" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="String.problems.*" />
+          <option name="PATTERN" value="list.linkedlist.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PalindromePermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="String.problems.PalindromePermutation" />
+    <configuration name="StockSellAndBuy2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.StockSellAndBuy2" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="String.problems.*" />
+          <option name="PATTERN" value="Array.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StockSellAndBuy2" />
+        <item itemvalue="Application.Sandbox" />
+        <item itemvalue="Application.MiddleOfLinkedList" />
         <item itemvalue="Application.MinStepsToMakeTwoStringsAnagram" />
         <item itemvalue="Application.MostFrequentNumberInArray" />
-        <item itemvalue="Application.OneAwayCheckIfHasEdits" />
-        <item itemvalue="Application.PalindromePermutation" />
-        <item itemvalue="Application.MiddleOfLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +159,10 @@
     <state x="455" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1600.797@0.23.1600.797" timestamp="1587690224984" />
     <state x="582" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1588129881513" />
     <state x="728" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1587611793260" />
+    <state x="762" y="303" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1588211322613">
+      <screen x="0" y="23" width="2048" height="1049" />
+    </state>
+    <state x="762" y="303" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1588211322613" />
     <state x="779" y="383" width="937" height="573" key="#xdebugger.evaluate" timestamp="1588129593041">
       <screen x="0" y="23" width="2048" height="1049" />
     </state>
@@ -184,42 +183,46 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state width="1878" height="434" key="GridCell.Tab.-1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1586551612059" />
-    <state width="2006" height="351" key="GridCell.Tab.0.bottom" timestamp="1588129721467">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state width="1398" height="111" key="GridCell.Tab.0.bottom" timestamp="1588468678335">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1238" height="279" key="GridCell.Tab.0.bottom/0.23.1280.617@0.23.1280.617" timestamp="1586923563183" />
-    <state width="1398" height="397" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1588126570908" />
+    <state width="1398" height="111" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1588468678335" />
     <state width="1558" height="257" key="GridCell.Tab.0.bottom/0.23.1600.797@0.23.1600.797" timestamp="1587754293793" />
     <state width="1878" height="397" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217641" />
-    <state width="2006" height="351" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1588129721467" />
+    <state width="2006" height="345" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1588211822033" />
     <state width="2518" height="323" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1587611949566" />
-    <state width="2006" height="351" key="GridCell.Tab.0.center" timestamp="1588129721466">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state width="2006" height="221" key="GridCell.Tab.0.bottom/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
+    <state width="1398" height="111" key="GridCell.Tab.0.center" timestamp="1588468678334">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1238" height="279" key="GridCell.Tab.0.center/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
-    <state width="1398" height="397" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1588126570905" />
+    <state width="1398" height="111" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1588468678334" />
     <state width="1558" height="257" key="GridCell.Tab.0.center/0.23.1600.797@0.23.1600.797" timestamp="1587754293792" />
     <state width="1878" height="397" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
-    <state width="2006" height="351" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1588129721466" />
+    <state width="2006" height="345" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1588211822033" />
     <state width="2518" height="323" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1587611949565" />
-    <state width="2006" height="351" key="GridCell.Tab.0.left" timestamp="1588129721465">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state width="2006" height="221" key="GridCell.Tab.0.center/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
+    <state width="1398" height="111" key="GridCell.Tab.0.left" timestamp="1588468678334">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1238" height="279" key="GridCell.Tab.0.left/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
-    <state width="1398" height="397" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1588126571080" />
+    <state width="1398" height="111" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1588468678334" />
     <state width="1558" height="257" key="GridCell.Tab.0.left/0.23.1600.797@0.23.1600.797" timestamp="1587754293791" />
     <state width="1878" height="397" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217689" />
-    <state width="2006" height="351" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1588129721465" />
+    <state width="2006" height="345" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1588211822085" />
     <state width="2518" height="323" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1587611949564" />
-    <state width="2006" height="351" key="GridCell.Tab.0.right" timestamp="1588129721466">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state width="2006" height="221" key="GridCell.Tab.0.left/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865105" />
+    <state width="1398" height="111" key="GridCell.Tab.0.right" timestamp="1588468678335">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1238" height="279" key="GridCell.Tab.0.right/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
-    <state width="1398" height="397" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1588126570907" />
+    <state width="1398" height="111" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1588468678335" />
     <state width="1558" height="257" key="GridCell.Tab.0.right/0.23.1600.797@0.23.1600.797" timestamp="1587754293792" />
     <state width="1878" height="397" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
-    <state width="2006" height="351" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1588129721466" />
+    <state width="2006" height="345" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1588211822033" />
     <state width="2518" height="323" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1587611949566" />
+    <state width="2006" height="221" key="GridCell.Tab.0.right/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
     <state x="71" y="23" width="1878" height="434" key="GridCell.Tab.1.bottom" timestamp="1586551609302">
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
@@ -264,10 +267,12 @@
       <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state x="100" y="123" width="1848" height="849" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1588127378882" />
-    <state x="456" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1587628794849">
-      <screen x="0" y="23" width="1920" height="1097" />
+    <state x="342" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1588466391728">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
+    <state x="342" y="192" key="com.intellij.ide.util.TipDialog/0.23.1440.797@0.23.1440.797" timestamp="1588466391728" />
     <state x="456" y="256" key="com.intellij.ide.util.TipDialog/0.23.1920.1097@0.23.1920.1097" timestamp="1587628794849" />
+    <state x="486" y="246" key="com.intellij.ide.util.TipDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1588169125067" />
     <state x="71" y="23" width="1849" height="691" key="dock-window-1" timestamp="1586551055189">
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
@@ -280,11 +285,11 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state x="71" y="23" width="1849" height="283" key="dock-window-3/0.23.1920.1097@0.23.1920.1097" timestamp="1586551522093" />
-    <state x="295" y="23" width="866" height="681" key="find.popup" timestamp="1588126248138">
-      <screen x="0" y="23" width="1440" height="797" />
+    <state x="420" y="23" width="1232" height="897" key="find.popup" timestamp="1588292855032">
+      <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state x="295" y="23" width="866" height="681" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1588126248138" />
-    <state x="420" y="23" width="1232" height="897" key="find.popup/0.23.2048.1049@0.23.2048.1049" timestamp="1587772031013" />
+    <state x="420" y="23" width="1232" height="897" key="find.popup/0.23.2048.1049@0.23.2048.1049" timestamp="1588292855032" />
     <state x="904" y="412" width="673" height="708" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1585371867654" />
     <state x="354" y="152" key="new project wizard" timestamp="1585869615241">
       <screen x="0" y="23" width="2048" height="1049" />
@@ -294,10 +299,10 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state x="667" y="197" key="refactoring.ChangeSignatureDialog/0.23.1920.1097@0.23.1920.1097" timestamp="1586548034411" />
-    <state x="469" y="201" width="670" height="492" key="search.everywhere.popup" timestamp="1588109236292">
+    <state x="469" y="201" width="670" height="492" key="search.everywhere.popup" timestamp="1588466398420">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="469" y="201" width="670" height="492" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1588109236292" />
+    <state x="469" y="201" width="670" height="492" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1588466398420" />
     <state x="625" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1920.1097@0.23.1920.1097" timestamp="1587628803934" />
   </component>
   <component name="XDebuggerManager">
@@ -454,16 +459,6 @@
           <option name="timeStamp" value="259" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/MiddleOfLinkedList.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="266" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/MiddleOfLinkedList.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="267" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/PalindromePermutation.java</url>
           <line>37</line>
           <option name="timeStamp" value="273" />
@@ -492,6 +487,31 @@
           <url>file://$PROJECT_DIR$/src/Array/problems/MinStepsToMakeTwoStringsAnagram.java</url>
           <line>48</line>
           <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/Sandbox.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/Sandbox.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="326" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/Sandbox.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="327" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/Sandbox.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="328" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/Sandbox.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="329" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
