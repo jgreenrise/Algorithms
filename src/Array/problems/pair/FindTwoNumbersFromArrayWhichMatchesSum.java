@@ -1,6 +1,8 @@
-package Array.problems;
+package Array.problems.pair;
 
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * http://www.careercup.com/question?id=5727163577794560
@@ -21,9 +23,10 @@ public class FindTwoNumbersFromArrayWhichMatchesSum {
 		// TODO Auto-generated method stub
 		
 		int [] input = new int []{10, 20, 30, 9, 21,45, 55};
-		int sum = 30;
+		int target = 30;
 		
-		printPairs(input, sum);
+		printPairs(input, target);
+		System.out.println(Arrays.toString(twoSum(input, target)));
 
 	}
 
@@ -40,6 +43,37 @@ public class FindTwoNumbersFromArrayWhichMatchesSum {
 				System.out.println("Pair: "+j+","+(sum-j));
 			}
 		}
+	}
+
+	public static int[] twoSum(int[] nums, int target) {
+
+		int [] output = new int [2];
+		Set<String> set = new HashSet();
+		for(int j=0;j<nums.length; j++){
+			String str = String.valueOf(nums[j]);
+			set.add(str);
+		}
+
+		int temp =0;
+		for(int j=0;j<nums.length; j++){
+			int intDiff = target - nums[j];
+			String strDiff = String.valueOf(intDiff);
+			if(set.contains(strDiff)){
+				output[0] = j;
+				temp = target - nums[j];
+				break;
+			}
+		}
+
+		for(int j=0;j<nums.length; j++){
+			if(nums[j] == temp){
+				output[1] = j;
+				break;
+			}
+		}
+
+		return output;
+
 	}
 
 

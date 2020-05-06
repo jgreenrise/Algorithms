@@ -49,12 +49,7 @@ public class ReverseLinkedList {
 
 		SinglyLinkedList list = null;
 		list = SinglyLinkedList.createLL(new int[] {50, 40, 30, 20, 10});
-		System.out.println("------------ APPROACH 1: using separate linked list ---------------");
-		System.out.println("Input list: ");
-		list.printList();
-		list = reverseLinkedList_usingExtraLInkedList(list);
-		System.out.println("Output list ");
-		list.printList();
+
 
 		System.out.println("------------ APPROACH 2: using recurcsion ---------------");
 		list = SinglyLinkedList.createLL(new int[] {50, 40, 30, 20, 10});
@@ -65,9 +60,9 @@ public class ReverseLinkedList {
 
 		System.out.println("------------ APPROACH 3: using iteration ---------------");
 		System.out.println("Input list: ");
-		list = SinglyLinkedList.createLL(new int[] {50, 40, 30, 20, 10});
+		list = SinglyLinkedList.createLL(new int[] {5,4,3,2,1});
 		list.printList();
-		ListNode response2 = reverseLinkedList_iterativeApproach(list.start);
+		ListNode response2 = reverseRecursionMultipleNextStatements(list.start);
 		System.out.println("Output list");
 		printLL(response2);
 
@@ -79,28 +74,6 @@ public class ReverseLinkedList {
 		System.out.println("Output list");
 		printLL(response);
 
-	}
-
-	/**
-	 * CREATE A SEPERATE LINKED LIST AND KEEP ON ADDING ITEMS AT THE FIRST OF
-	 * NEWLY CREATED LINKEDLIST
-	 * 
-	 * Time complexity: O(n) Space complexity: O(n)
-	 */
-	private static SinglyLinkedList reverseLinkedList_usingExtraLInkedList(
-			SinglyLinkedList list) {
-
-		ListNode node = list.start;
-		SinglyLinkedList reverse = new SinglyLinkedList();
-
-		while (node.next != null) {
-			reverse.addFirst(node.val);
-			node = node.next;
-		}
-
-		reverse.addFirst(node.val);
-
-		return reverse;
 	}
 
 	/**
@@ -171,26 +144,21 @@ public class ReverseLinkedList {
 	 * Advantage
 	 * We have reference to the head of list
 	 */
-	private static ListNode reverseLinkedList_iterativeApproach(ListNode node) {
+	public static ListNode reverseRecursionMultipleNextStatements(ListNode head) {
 
-		ListNode next = null;
-		ListNode prev_next = null;
+		if(head.next == null){
+			return head;
+		}else{
+			ListNode rev = reverseRecursionMultipleNextStatements(head.next);
 
-		while (node.next != null) {
+			// This changes reference of rev pointer > rev.next = next;
+			head.next.next = head;
 
-			prev_next = node.next; // 20, 30, 40
-			node.next = next; // 10.next = null, 20.next = 10, 30.next =
-									// 20,
-			next = node; // 10, 20 30
-			node = prev_next; // node = 20, 30 40
+			// Remove reference to current node
+			head.next = null;
 
-			System.out.println(prev_next.val +" > "+node.val +" > "+next.val +" > "+prev_next.val);
-
+			return rev;
 		}
-		node.next = next;
-
-		return node;
-
 	}
 
 }

@@ -3,7 +3,7 @@ package Array.problems;
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
  */
-public class StockSellAndBuy2 {
+public class StockSellAndBuy122 {
     public static void main(String[] args) {
 
         int[] arr_i_input = {7, 1, 5, 3, 6, 4};
