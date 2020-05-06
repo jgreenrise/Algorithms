@@ -5,27 +5,27 @@ import java.util.Queue;
 
 public class D_RemoveAnyNode {
 
-    static MyBinaryNode rootNode;
+    static TreeNode rootNode;
     private static int maxNodeValue;
 
     public void insert(int value) throws MyDuplicateItemException {
         if (rootNode == null) {
-            rootNode = new MyBinaryNode(value);
+            rootNode = new TreeNode(value);
         } else {
             rootNode = insert(value, rootNode);
         }
     }
 
-    public MyBinaryNode insert(int value, MyBinaryNode node) {
+    public TreeNode insert(int value, TreeNode node) {
 
         if (node == null) {
-            return new MyBinaryNode(value);
+            return new TreeNode(value);
         } else {
             if (node.value.compareTo(value) > 0) {
-                node.left_node = insert(value, node.left_node);
+                node.left = insert(value, node.left);
                 return node;
             } else {
-                node.right_node = insert(value, node.right_node);
+                node.right = insert(value, node.right);
                 return node;
             }
         }
@@ -68,19 +68,19 @@ public class D_RemoveAnyNode {
         rootNode = removeNode(rootNode, i);
     }
 
-    private MyBinaryNode removeNode(MyBinaryNode node, int value) {
+    private TreeNode removeNode(TreeNode node, int value) {
 
         int nodeValue = Integer.parseInt(node.value.toString());
 
         if (nodeValue < value) {
-            node.right_node = removeNode(node.right_node, value);
+            node.right = removeNode(node.right, value);
             return node;
         } else if (nodeValue > value) {
-            node.left_node = removeNode(node.left_node, value);
+            node.left = removeNode(node.left, value);
             return node;
         } else {
 
-            MyBinaryNode maxNode = findAndRemoveMaxNode(node);
+            TreeNode maxNode = findAndRemoveMaxNode(node);
             maxNode.value = maxNodeValue;
 
             return maxNode;
@@ -88,20 +88,20 @@ public class D_RemoveAnyNode {
 
     }
 
-    private MyBinaryNode findAndRemoveMaxNode(MyBinaryNode node) {
-        if (node.right_node == null) {
-            node.left_node = removeMaxNode(node.left_node);
+    private TreeNode findAndRemoveMaxNode(TreeNode node) {
+        if (node.right == null) {
+            node.left = removeMaxNode(node.left);
             return node;
         } else {
-            node.right_node = removeMaxNode(node.right_node);
+            node.right = removeMaxNode(node.right);
             return node;
         }
     }
 
-    private MyBinaryNode removeMaxNode(MyBinaryNode node) {
+    private TreeNode removeMaxNode(TreeNode node) {
 
-        if(node.right_node != null) {
-            node.right_node = removeMaxNode(node.right_node);
+        if(node.right != null) {
+            node.right = removeMaxNode(node.right);
             return node;
         }
         maxNodeValue = Integer.parseInt(node.value.toString());
@@ -112,20 +112,20 @@ public class D_RemoveAnyNode {
 
         System.out.println("Root node value: " + rootNode.value);
 
-        Queue<MyBinaryNode> currentLevel = new LinkedList<MyBinaryNode>();
-        Queue<MyBinaryNode> nextLevel = new LinkedList<MyBinaryNode>();
+        Queue<TreeNode> currentLevel = new LinkedList<TreeNode>();
+        Queue<TreeNode> nextLevel = new LinkedList<TreeNode>();
         currentLevel.add(rootNode);
 
         while (!currentLevel.isEmpty()) {
 
             System.out.print((currentLevel.peek()).value + " ");
-            MyBinaryNode node = currentLevel.poll();
+            TreeNode node = currentLevel.poll();
 
-            if (node.left_node != null)
-                nextLevel.add(node.left_node);
+            if (node.left != null)
+                nextLevel.add(node.left);
 
-            if (node.right_node != null)
-                nextLevel.add(node.right_node);
+            if (node.right != null)
+                nextLevel.add(node.right);
 
             if (currentLevel.isEmpty()) {
                 System.out.println();

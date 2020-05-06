@@ -1,6 +1,6 @@
 package tree.problems;
 
-import tree.bst.MyBinaryNode;
+import tree.bst.TreeNode;
 
 /**
  * Output
@@ -9,37 +9,37 @@ public class HeightOfBinaryTree {
 
 	public static void main(String[] args) {
 
-		MyBinaryNode n4 = new MyBinaryNode(4);
-		MyBinaryNode n8 = new MyBinaryNode(8);
-		MyBinaryNode n5 = new MyBinaryNode(5);
-		MyBinaryNode n7 = new MyBinaryNode(7, null, n4);
-		MyBinaryNode n6 = new MyBinaryNode(6, n8, n7);
-		MyBinaryNode n10 = new MyBinaryNode(10, n5, n6);
+		TreeNode n4 = new TreeNode(4);
+		TreeNode n8 = new TreeNode(8);
+		TreeNode n5 = new TreeNode(5);
+		TreeNode n7 = new TreeNode(7, null, n4);
+		TreeNode n6 = new TreeNode(6, n8, n7);
+		TreeNode n10 = new TreeNode(10, n5, n6);
 		System.out.println(height(n10));
 
-		MyBinaryNode n11 = new MyBinaryNode(11);
-		MyBinaryNode n12 = new MyBinaryNode(12);
-		n7 = new MyBinaryNode(7, n11, n12);
-		n8 = new MyBinaryNode(8);
-		n4 = new MyBinaryNode(4, n7, n8);
-		MyBinaryNode n9 = new MyBinaryNode(9);
-		n10 = new MyBinaryNode(10);
-		n5 = new MyBinaryNode(5, n9, n10);
-		n6 = new MyBinaryNode(6);
-		MyBinaryNode n2 = new MyBinaryNode(2, n5, n6);
-		MyBinaryNode n1 = new MyBinaryNode(1, n2, n4);
+		TreeNode n11 = new TreeNode(11);
+		TreeNode n12 = new TreeNode(12);
+		n7 = new TreeNode(7, n11, n12);
+		n8 = new TreeNode(8);
+		n4 = new TreeNode(4, n7, n8);
+		TreeNode n9 = new TreeNode(9);
+		n10 = new TreeNode(10);
+		n5 = new TreeNode(5, n9, n10);
+		n6 = new TreeNode(6);
+		TreeNode n2 = new TreeNode(2, n5, n6);
+		TreeNode n1 = new TreeNode(1, n2, n4);
 
 		System.out.println(height(n1));
 
 	}
 
-	public static int height(MyBinaryNode node) {
+	public static int height(TreeNode node) {
 		if (node == null) {
 			return 0;
 		}
 
-		int left = height(node.left_node);
-		int right = height(node.right_node);
+		int left = height(node.left);
+		int right = height(node.right);
 
 		return 1 + Integer.max(left, right);
 

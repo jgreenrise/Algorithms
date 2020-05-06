@@ -5,26 +5,26 @@ import java.util.Queue;
 
 public class G_InOrderPrint {
 
-    static MyBinaryNode rootNode;
+    static TreeNode rootNode;
 
     public void insert(int value) throws MyDuplicateItemException {
         if (rootNode == null) {
-            rootNode = new MyBinaryNode(value);
+            rootNode = new TreeNode(value);
         } else {
             rootNode = insert(value, rootNode);
         }
     }
 
-    public MyBinaryNode insert(int value, MyBinaryNode node) {
+    public TreeNode insert(int value, TreeNode node) {
 
         if (node == null) {
-            return new MyBinaryNode(value);
+            return new TreeNode(value);
         } else {
             if (node.value.compareTo(value) > 0) {
-                node.left_node = insert(value, node.left_node);
+                node.left = insert(value, node.left);
                 return node;
             } else {
-                node.right_node = insert(value, node.right_node);
+                node.right = insert(value, node.right);
                 return node;
             }
         }
@@ -55,16 +55,16 @@ public class G_InOrderPrint {
         binarySearchTree.printInOrder(rootNode);
     }
 
-    private void printInOrder(MyBinaryNode node) {
+    private void printInOrder(TreeNode node) {
 
-        if(node.left_node != null){
-            printInOrder(node.left_node);
+        if(node.left != null){
+            printInOrder(node.left);
         }
 
         System.out.println(node.value);
 
-        if(node.right_node != null){
-            printInOrder(node.right_node);
+        if(node.right != null){
+            printInOrder(node.right);
         }
 
     }
@@ -73,8 +73,8 @@ public class G_InOrderPrint {
 
         System.out.println("Root node value: " + rootNode.value);
 
-        Queue<MyBinaryNode> currentLevel = new LinkedList<MyBinaryNode>();
-        Queue<MyBinaryNode> nextLevel = new LinkedList<MyBinaryNode>();
+        Queue<TreeNode> currentLevel = new LinkedList<TreeNode>();
+        Queue<TreeNode> nextLevel = new LinkedList<TreeNode>();
         currentLevel.add(rootNode);
 
 
@@ -82,13 +82,13 @@ public class G_InOrderPrint {
         while (!currentLevel.isEmpty()) {
 
             System.out.print((currentLevel.peek()).value + " ");
-            MyBinaryNode node = currentLevel.poll();
+            TreeNode node = currentLevel.poll();
 
-            if (node.left_node != null)
-                nextLevel.add(node.left_node);
+            if (node.left != null)
+                nextLevel.add(node.left);
 
-            if (node.right_node != null)
-                nextLevel.add(node.right_node);
+            if (node.right != null)
+                nextLevel.add(node.right);
 
             if (currentLevel.isEmpty()) {
                 System.out.println();

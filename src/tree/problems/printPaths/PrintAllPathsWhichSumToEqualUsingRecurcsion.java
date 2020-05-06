@@ -2,7 +2,7 @@ package tree.problems.printPaths;
 
 import java.util.LinkedList;
 
-import tree.bst.MyBinaryNode;
+import tree.bst.TreeNode;
 
 /**
  * Time complexity: O(nlgn)
@@ -13,17 +13,17 @@ public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		MyBinaryNode n9 = new MyBinaryNode(9);
-		MyBinaryNode n10 = new MyBinaryNode(10);
-		MyBinaryNode n11 = new MyBinaryNode(11);
-		MyBinaryNode n12 = new MyBinaryNode(12);
-		MyBinaryNode n8 = new MyBinaryNode(8);
-		MyBinaryNode n5 = new MyBinaryNode(5, n9, n10);
-		MyBinaryNode n6 = new MyBinaryNode(6);
-		MyBinaryNode n7 = new MyBinaryNode(7, n11, n12);
-		MyBinaryNode n4 = new MyBinaryNode(4, n7, n8);
-		MyBinaryNode n2 = new MyBinaryNode(2, n5, n6);
-		MyBinaryNode n1 = new MyBinaryNode(1, n2, n4);
+		TreeNode n9 = new TreeNode(9);
+		TreeNode n10 = new TreeNode(10);
+		TreeNode n11 = new TreeNode(11);
+		TreeNode n12 = new TreeNode(12);
+		TreeNode n8 = new TreeNode(8);
+		TreeNode n5 = new TreeNode(5, n9, n10);
+		TreeNode n6 = new TreeNode(6);
+		TreeNode n7 = new TreeNode(7, n11, n12);
+		TreeNode n4 = new TreeNode(4, n7, n8);
+		TreeNode n2 = new TreeNode(2, n5, n6);
+		TreeNode n1 = new TreeNode(1, n2, n4);
 
 		MyResponseBody myResponseBody = printAllPaths(n1, 17);
 		System.out.println("\nFinal response: " + myResponseBody.finalresponse);
@@ -39,13 +39,13 @@ public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 
 	}
 
-	private static MyResponseBody printAllPaths(MyBinaryNode node, int sum) {
+	private static MyResponseBody printAllPaths(TreeNode node, int sum) {
 
 		MyResponseBody response = new MyResponseBody();
 		LinkedList<String> paths = null;
 		MyResponseBody left, right = null;
 
-		if (node.left_node == null || node.right_node == null) {
+		if (node.left == null || node.right == null) {
 			paths = new LinkedList<String>();
 			paths.add(node.value.toString());
 			response.response = paths;
@@ -56,7 +56,7 @@ public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 		 * Add left child
 		 */
 		paths = new LinkedList<String>();
-		left = printAllPaths(node.left_node, sum);
+		left = printAllPaths(node.left, sum);
 		for (String path : left.response) {
 			paths.add(path + " " + node.value.toString());
 
@@ -76,7 +76,7 @@ public class PrintAllPathsWhichSumToEqualUsingRecurcsion {
 		/**
 		 * Add right child
 		 */
-		right = printAllPaths(node.right_node, sum);
+		right = printAllPaths(node.right, sum);
 		for (String path : right.response) {
 			paths.add(path + " " + node.value.toString());
 

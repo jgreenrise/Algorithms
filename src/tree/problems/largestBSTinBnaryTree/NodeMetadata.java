@@ -1,11 +1,11 @@
 package tree.problems.largestBSTinBnaryTree;
 
-import tree.bst.MyBinaryNode;
+import tree.bst.TreeNode;
 
 public class NodeMetadata {
 
-	public NodeMetadata(MyBinaryNode node, boolean isBST, int size, int min,
-                        int max) {
+	public NodeMetadata(TreeNode node, boolean isBST, int size, int min,
+						int max) {
 		this.node = node;
 		this.isBST = isBST;
 		this.size = size;
@@ -13,7 +13,7 @@ public class NodeMetadata {
 		this.min = min;
 	}
 
-	public MyBinaryNode node;
+	public TreeNode node;
 	public boolean isBST;
 	public int size;
 	public int min;

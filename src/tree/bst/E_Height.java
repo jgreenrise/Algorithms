@@ -7,26 +7,26 @@ import static java.lang.Integer.max;
 
 public class E_Height {
 
-    static MyBinaryNode rootNode;
+    static TreeNode rootNode;
 
     public void insert(int value) throws MyDuplicateItemException {
         if (rootNode == null) {
-            rootNode = new MyBinaryNode(value);
+            rootNode = new TreeNode(value);
         } else {
             rootNode = insert(value, rootNode);
         }
     }
 
-    public MyBinaryNode insert(int value, MyBinaryNode node) {
+    public TreeNode insert(int value, TreeNode node) {
 
         if (node == null) {
-            return new MyBinaryNode(value);
+            return new TreeNode(value);
         } else {
             if (node.value.compareTo(value) > 0) {
-                node.left_node = insert(value, node.left_node);
+                node.left = insert(value, node.left);
                 return node;
             } else {
-                node.right_node = insert(value, node.right_node);
+                node.right = insert(value, node.right);
                 return node;
             }
         }
@@ -55,16 +55,16 @@ public class E_Height {
         System.out.println("Height of tree" + height(rootNode));
     }
 
-    public static int height(MyBinaryNode node){
+    public static int height(TreeNode node){
 
-        if(node.left_node == null && node.right_node == null){
+        if(node.left == null && node.right == null){
             return 1;
-        }else if(node.left_node == null){
-            return 1 + height(node.right_node);
-        }else if(node.right_node == null){
-            return 1 + height(node.left_node);
+        }else if(node.left == null){
+            return 1 + height(node.right);
+        }else if(node.right == null){
+            return 1 + height(node.left);
         }else{
-            return 1 + max(height(node.left_node), height(node.right_node));
+            return 1 + max(height(node.left), height(node.right));
         }
 
     }
@@ -73,20 +73,20 @@ public class E_Height {
 
         System.out.println("Root node value: " + rootNode.value);
 
-        Queue<MyBinaryNode> currentLevel = new LinkedList<MyBinaryNode>();
-        Queue<MyBinaryNode> nextLevel = new LinkedList<MyBinaryNode>();
+        Queue<TreeNode> currentLevel = new LinkedList<TreeNode>();
+        Queue<TreeNode> nextLevel = new LinkedList<TreeNode>();
         currentLevel.add(rootNode);
 
         while (!currentLevel.isEmpty()) {
 
             System.out.print((currentLevel.peek()).value + " ");
-            MyBinaryNode node = currentLevel.poll();
+            TreeNode node = currentLevel.poll();
 
-            if (node.left_node != null)
-                nextLevel.add(node.left_node);
+            if (node.left != null)
+                nextLevel.add(node.left);
 
-            if (node.right_node != null)
-                nextLevel.add(node.right_node);
+            if (node.right != null)
+                nextLevel.add(node.right);
 
             if (currentLevel.isEmpty()) {
                 System.out.println();

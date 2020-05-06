@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import tree.bst.MyBinaryNode;
+import tree.bst.TreeNode;
 import tree.bst.MyDuplicateItemException;
 
 public class BinarySearchTree {
 
-	protected static MyBinaryNode rootNode;
+	protected static TreeNode rootNode;
 
 	public BinarySearchTree() {
 		rootNode = null;
@@ -29,13 +29,13 @@ public class BinarySearchTree {
 		rootNode = insert(x, rootNode);
 	}
 
-	protected MyBinaryNode insert(Comparable x, MyBinaryNode t) throws MyDuplicateItemException {
+	protected TreeNode insert(Comparable x, TreeNode t) throws MyDuplicateItemException {
 		if (t == null) {
-			return new MyBinaryNode(x);
+			return new TreeNode(x);
 		} else if (x.compareTo(t.value) > 0) {
-			t.right_node = insert(x, t.right_node);
+			t.right = insert(x, t.right);
 		} else if (x.compareTo(t.value) < 0) {
-			t.left_node = insert(x, t.left_node);
+			t.left = insert(x, t.left);
 		} else {
 			throw new MyDuplicateItemException(x.toString());
 		}
@@ -52,20 +52,20 @@ public class BinarySearchTree {
 	 * 
 	 * @param node
 	 */
-	private void isBST(MyBinaryNode node) {
+	private void isBST(TreeNode node) {
 
-		Queue<MyBinaryNode> queue = new LinkedList<MyBinaryNode>();
+		Queue<TreeNode> queue = new LinkedList<TreeNode>();
 		queue.add(node);
 
 		while (!queue.isEmpty()) {
 
-			MyBinaryNode tmp = queue.poll();
+			TreeNode tmp = queue.poll();
 
-			if (tmp.left_node != null && node.left_node.value.compareTo(tmp.value) < 0) {
-				queue.add(node.left_node);
-			} else if (node.right_node != null && node.right_node.value.compareTo(tmp.value) > 0) {
-				queue.add(node.right_node);
-			} else if (tmp.left_node != null && tmp.right_node != null) {
+			if (tmp.left != null && node.left.value.compareTo(tmp.value) < 0) {
+				queue.add(node.left);
+			} else if (node.right != null && node.right.value.compareTo(tmp.value) > 0) {
+				queue.add(node.right);
+			} else if (tmp.left != null && tmp.right != null) {
 				System.out.println("Not a bst");
 				break;
 			}
@@ -79,20 +79,20 @@ public class BinarySearchTree {
 
 		System.out.println("Root node value: " + rootNode.value);
 
-		Queue<MyBinaryNode> currentLevel = new LinkedList<MyBinaryNode>();
-		Queue<MyBinaryNode> nextLevel = new LinkedList<MyBinaryNode>();
+		Queue<TreeNode> currentLevel = new LinkedList<TreeNode>();
+		Queue<TreeNode> nextLevel = new LinkedList<TreeNode>();
 		currentLevel.add(rootNode);
 
 		while (!currentLevel.isEmpty()) {
 
 			System.out.print((currentLevel.peek()).value + " ");
-			MyBinaryNode node = currentLevel.poll();
+			TreeNode node = currentLevel.poll();
 
-			if (node.left_node != null)
-				nextLevel.add(node.left_node);
+			if (node.left != null)
+				nextLevel.add(node.left);
 
-			if (node.right_node != null)
-				nextLevel.add(node.right_node);
+			if (node.right != null)
+				nextLevel.add(node.right);
 
 			if (currentLevel.isEmpty()) {
 				System.out.println();
@@ -123,12 +123,12 @@ public class BinarySearchTree {
 
 	}
 
-	private static int[] printInorder(MyBinaryNode node, int[] array) {
+	private static int[] printInorder(TreeNode node, int[] array) {
 
 		if (node != null) {
-			printInorder(node.left_node, array);
+			printInorder(node.left, array);
 			array[index++] = Integer.parseInt(node.value.toString());
-			printInorder(node.right_node, array);
+			printInorder(node.right, array);
 		}
 		return array;
 
@@ -144,17 +144,17 @@ public class BinarySearchTree {
 		return printInorderAndCheckForBST(rootNode);
 	}
 
-	private static boolean printInorderAndCheckForBST(MyBinaryNode node) {
+	private static boolean printInorderAndCheckForBST(TreeNode node) {
 
 		if (node != null) {
-			printInorderAndCheckForBST(node.left_node);
+			printInorderAndCheckForBST(node.left);
 
 			if (lastRecord != null && lastRecord > Integer.parseInt(node.value.toString())) {
 				return false;
 			}
 
 			lastRecord = Integer.parseInt(node.value.toString());
-			printInorderAndCheckForBST(node.right_node);
+			printInorderAndCheckForBST(node.right);
 		}
 
 		return true;

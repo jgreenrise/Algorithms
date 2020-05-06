@@ -3,9 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="bf3ea153-809c-4382-89db-85a4f9de2a98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/FindTwoNumbersFromArrayWhichMatchesSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/pair/FindTwoNumbersFromArrayWhichMatchesSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/StockSellAndBuy2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/StockSellAndBuy122.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/list/linkedlist/problems/ReverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/ReverseLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/bst/A_Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/A_Insert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/bst/B_Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/B_Print.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/bst/C_RemoveLeafNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/C_RemoveLeafNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/bst/D_RemoveAnyNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/D_RemoveAnyNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/bst/E_Height.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/E_Height.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/bst/F_IsBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/F_IsBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/bst/G_InOrderPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/G_InOrderPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/bst/G_PreOrderPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/G_PreOrderPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/bst/H_PostOrderPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/H_PostOrderPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/bst/MyBinaryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/problems/HeightOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/HeightOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/problems/SizeOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/SizeOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/problems/SortedArrayToBinaryTreeOfMinimumHeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/SortedArrayToBinaryTreeOfMinimumHeight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/problems/isBalanced/IsABalancedBinaryTreeUsingHeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/isBalanced/IsABalancedBinaryTreeUsingHeight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/problems/isBalanced/IsABalancedBinaryTreeUsingRecursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/isBalanced/IsABalancedBinaryTreeUsingRecursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/problems/isBst/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/isBst/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/problems/largestBSTinBnaryTree/LargestBSTinaBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/largestBSTinBnaryTree/LargestBSTinaBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/problems/largestBSTinBnaryTree/NodeMetadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/largestBSTinBnaryTree/NodeMetadata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualUsingRecurcsion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualUsingRecurcsion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +60,20 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tree.problems" />
       <recent name="Array" />
       <recent name="String.problems" />
       <recent name="Array.problems.pair" />
       <recent name="Array.problems" />
-      <recent name="tree.problems.dfs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaxSubArray">
-    <configuration name="FindIndexOfTwoNumbersFromArrayWhichMatchesSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.pair.FindIndexOfTwoNumbersFromArrayWhichMatchesSum" />
+  <component name="RunManager" selected="Application.DiamterOfBinaryTree">
+    <configuration name="DiamterOfBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.problems.DiamterOfBinaryTree" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.problems.pair.*" />
+          <option name="PATTERN" value="tree.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,8 +81,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindTwoNumbersFromArrayWhichMatchesSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.pair.FindTwoNumbersFromArrayWhichMatchesSum" />
+    <configuration name="FindIndexOfTwoNumbersFromArrayWhichMatchesSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.pair.FindIndexOfTwoNumbersFromArrayWhichMatchesSum" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
@@ -119,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DiamterOfBinaryTree" />
         <item itemvalue="Application.MaxSubArray" />
         <item itemvalue="Application.ReverseLinkedList" />
         <item itemvalue="Application.ValidParanthesis" />
         <item itemvalue="Application.FindIndexOfTwoNumbersFromArrayWhichMatchesSum" />
-        <item itemvalue="Application.FindTwoNumbersFromArrayWhichMatchesSum" />
       </list>
     </recent_temporary>
   </component>
@@ -188,42 +204,46 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state width="1878" height="434" key="GridCell.Tab.-1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1586551612059" />
-    <state width="1558" height="167" key="GridCell.Tab.0.bottom" timestamp="1588743418226">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state width="1558" height="202" key="GridCell.Tab.0.bottom" timestamp="1588798293098">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
+    <state width="1558" height="202" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1588798293098" />
     <state width="1238" height="279" key="GridCell.Tab.0.bottom/0.23.1280.617@0.23.1280.617" timestamp="1586923563183" />
     <state width="1398" height="160" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1588468827620" />
-    <state width="1558" height="167" key="GridCell.Tab.0.bottom/0.23.1600.797@0.23.1600.797" timestamp="1588710212969" />
+    <state width="1558" height="167" key="GridCell.Tab.0.bottom/0.23.1600.797@0.23.1600.797" timestamp="1588750099624" />
     <state width="1878" height="397" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217641" />
     <state width="1558" height="167" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1588743418226" />
     <state width="2518" height="323" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1587611949566" />
     <state width="2006" height="221" key="GridCell.Tab.0.bottom/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
-    <state width="1558" height="167" key="GridCell.Tab.0.center" timestamp="1588743418226">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state width="1558" height="202" key="GridCell.Tab.0.center" timestamp="1588798293096">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
+    <state width="1558" height="202" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1588798293096" />
     <state width="1238" height="279" key="GridCell.Tab.0.center/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
     <state width="1398" height="160" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1588468827619" />
-    <state width="1558" height="167" key="GridCell.Tab.0.center/0.23.1600.797@0.23.1600.797" timestamp="1588710212968" />
+    <state width="1558" height="167" key="GridCell.Tab.0.center/0.23.1600.797@0.23.1600.797" timestamp="1588750099623" />
     <state width="1878" height="397" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
     <state width="1558" height="167" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1588743418226" />
     <state width="2518" height="323" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1587611949565" />
     <state width="2006" height="221" key="GridCell.Tab.0.center/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
-    <state width="1558" height="167" key="GridCell.Tab.0.left" timestamp="1588743418226">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state width="1558" height="202" key="GridCell.Tab.0.left" timestamp="1588798293096">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
+    <state width="1558" height="202" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1588798293096" />
     <state width="1238" height="279" key="GridCell.Tab.0.left/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
     <state width="1398" height="160" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1588468827619" />
-    <state width="1558" height="167" key="GridCell.Tab.0.left/0.23.1600.797@0.23.1600.797" timestamp="1588710212968" />
+    <state width="1558" height="325" key="GridCell.Tab.0.left/0.23.1600.797@0.23.1600.797" timestamp="1588798072084" />
     <state width="1878" height="397" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217689" />
     <state width="1558" height="167" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1588743418226" />
     <state width="2518" height="323" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1587611949564" />
     <state width="2006" height="221" key="GridCell.Tab.0.left/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865105" />
-    <state width="1558" height="167" key="GridCell.Tab.0.right" timestamp="1588743418226">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state width="1558" height="202" key="GridCell.Tab.0.right" timestamp="1588798293097">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
+    <state width="1558" height="202" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1588798293097" />
     <state width="1238" height="279" key="GridCell.Tab.0.right/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
     <state width="1398" height="160" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1588468827620" />
-    <state width="1558" height="167" key="GridCell.Tab.0.right/0.23.1600.797@0.23.1600.797" timestamp="1588710212969" />
+    <state width="1558" height="167" key="GridCell.Tab.0.right/0.23.1600.797@0.23.1600.797" timestamp="1588750099623" />
     <state width="1878" height="397" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
     <state width="1558" height="167" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1588743418226" />
     <state width="2518" height="323" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1587611949566" />
@@ -272,11 +292,11 @@
       <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state x="100" y="123" width="1848" height="849" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1588127378882" />
-    <state x="380" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1588695020731">
+    <state x="380" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1588797835959">
       <screen x="0" y="23" width="1600" height="797" />
     </state>
     <state x="342" y="192" key="com.intellij.ide.util.TipDialog/0.23.1440.797@0.23.1440.797" timestamp="1588466391728" />
-    <state x="380" y="192" key="com.intellij.ide.util.TipDialog/0.23.1600.797@0.23.1600.797" timestamp="1588695020731" />
+    <state x="380" y="192" key="com.intellij.ide.util.TipDialog/0.23.1600.797@0.23.1600.797" timestamp="1588797835959" />
     <state x="456" y="256" key="com.intellij.ide.util.TipDialog/0.23.1920.1097@0.23.1920.1097" timestamp="1587628794849" />
     <state x="486" y="246" key="com.intellij.ide.util.TipDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1588169125067" />
     <state x="71" y="23" width="1849" height="691" key="dock-window-1" timestamp="1586551055189">
@@ -550,6 +570,11 @@
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/ReverseLinkedList.java</url>
           <line>64</line>
           <option name="timeStamp" value="391" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/DiamterOfBinaryTree.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="392" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

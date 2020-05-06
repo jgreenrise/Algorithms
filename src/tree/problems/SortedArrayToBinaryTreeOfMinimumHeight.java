@@ -1,6 +1,6 @@
 package tree.problems;
 
-import tree.bst.MyBinaryNode;
+import tree.bst.TreeNode;
 
 /*-
  * 1. make the mid element of array as root element.
@@ -14,7 +14,7 @@ public class SortedArrayToBinaryTreeOfMinimumHeight {
 		// TODO Auto-generated method stub
 
 		int[] arr_i_input = { 100, 120, 150, 170, 180, 190, 250 };
-		MyBinaryNode response = createBinaryTreeWithMinimumHeight(arr_i_input, 0, arr_i_input.length-1);
+		TreeNode response = createBinaryTreeWithMinimumHeight(arr_i_input, 0, arr_i_input.length-1);
 		System.out.println(response);
 		
 	}
@@ -22,23 +22,23 @@ public class SortedArrayToBinaryTreeOfMinimumHeight {
 	/**
 	 * Time complexity: O(n)
 	 */
-	private static MyBinaryNode createBinaryTreeWithMinimumHeight(int[] arr, int i_index_start, int i_index_end) {
+	private static TreeNode createBinaryTreeWithMinimumHeight(int[] arr, int i_index_start, int i_index_end) {
 
 		if (i_index_end - i_index_start < 1) {
-			return new MyBinaryNode(arr[i_index_start]);
+			return new TreeNode(arr[i_index_start]);
 		}
 
 		/**
 		 * Find the middle element and make it parent node
 		 */
 		int mid = (int) Math.floor((i_index_start + i_index_end) / 2);
-		MyBinaryNode node = new MyBinaryNode(arr[mid]);
+		TreeNode node = new TreeNode(arr[mid]);
 		
 		/**
 		 * Child nodes
 		 */
-		node.left_node = createBinaryTreeWithMinimumHeight(arr, i_index_start, mid - 1);
-		node.right_node = createBinaryTreeWithMinimumHeight(arr, mid + 1, i_index_end);
+		node.left = createBinaryTreeWithMinimumHeight(arr, i_index_start, mid - 1);
+		node.right = createBinaryTreeWithMinimumHeight(arr, mid + 1, i_index_end);
 		
 		return node;
 	}
