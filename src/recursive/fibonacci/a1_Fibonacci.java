@@ -1,6 +1,6 @@
 package recursive.fibonacci;
 
-public class Fibonacci1 {
+public class a1_Fibonacci {
 
 	/**
 	 * @param args
