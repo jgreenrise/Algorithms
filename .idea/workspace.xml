@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bf3ea153-809c-4382-89db-85a4f9de2a98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/problems/TowersOfHanoi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/problems/TowerOfHanoi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack/problems/TowersOfHanoi.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +45,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="recursive.fibonacci.a8_towerOfHanoi" />
       <recent name="recursive.fibonacci.a7_recursiveMultiply" />
       <recent name="recursive.fibonacci" />
       <recent name="recursive.fibonacci.a4_magicIndex" />
       <recent name="recursive.fibonacci.a3_robotIngrid" />
-      <recent name="recursive.fibonacci.climbingstairs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.c_RecursiveMultiply_Smart">
+  <component name="RunManager" selected="Application.TOHUsingStack">
     <configuration name="B_ClimbingStairs_SpaceEffecient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="recursive.fibonacci.B_ClimbingStairs_SpaceEffecient" />
       <module name="Algorithms" />
@@ -63,12 +66,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="a5_SubSetOfStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursive.fibonacci.a5_SubSetOfStrings" />
+    <configuration name="NumberOfMovesRequired" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursive.fibonacci.a8_towerOfHanoi.NumberOfMovesRequired" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="recursive.fibonacci.a7_recursiveMultiply.*" />
+          <option name="PATTERN" value="recursive.fibonacci.a8_towerOfHanoi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="a_RecursiveMultiply" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursive.fibonacci.a7_recursiveMultiply.a_RecursiveMultiply" />
+    <configuration name="TOHUsingStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursive.fibonacci.a8_towerOfHanoi.TOHUsingStack" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="recursive.fibonacci.a7_recursiveMultiply.*" />
+          <option name="PATTERN" value="recursive.fibonacci.a8_towerOfHanoi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TOHUsingStack" />
+        <item itemvalue="Application.NumberOfMovesRequired" />
         <item itemvalue="Application.c_RecursiveMultiply_Smart" />
         <item itemvalue="Application.b_RecursiveMultiply_Addition_Memo" />
         <item itemvalue="Application.b_RecursiveMultiply_Addition" />
-        <item itemvalue="Application.a_RecursiveMultiply" />
-        <item itemvalue="Application.a5_SubSetOfStrings" />
       </list>
     </recent_temporary>
   </component>
@@ -209,8 +212,8 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state width="1878" height="434" key="GridCell.Tab.-1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1586551612059" />
-    <state width="1398" height="181" key="GridCell.Tab.0.bottom" timestamp="1589923545027">
-      <screen x="620" y="923" width="1440" height="797" />
+    <state width="1558" height="281" key="GridCell.Tab.0.bottom" timestamp="1589933717276">
+      <screen x="0" y="23" width="1600" height="797" />
     </state>
     <state width="1398" height="413" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1589002646265" />
     <state width="1558" height="191" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1588917898031" />
@@ -218,15 +221,15 @@
     <state width="2518" height="230" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1589150161506" />
     <state width="1238" height="279" key="GridCell.Tab.0.bottom/0.23.1280.617@0.23.1280.617" timestamp="1586923563183" />
     <state width="1398" height="346" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1589897460651" />
-    <state width="640" height="430" key="GridCell.Tab.0.bottom/0.23.1600.797@0.23.1600.797" timestamp="1588970945392" />
+    <state width="1558" height="281" key="GridCell.Tab.0.bottom/0.23.1600.797@0.23.1600.797" timestamp="1589933717276" />
     <state width="1638" height="477" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1589919892791" />
     <state width="1878" height="397" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217641" />
     <state width="1741" height="346" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1589819404678" />
     <state width="2507" height="190" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
     <state width="2006" height="221" key="GridCell.Tab.0.bottom/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
-    <state width="1398" height="181" key="GridCell.Tab.0.bottom/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923545027" />
-    <state width="1398" height="181" key="GridCell.Tab.0.center" timestamp="1589923545026">
-      <screen x="620" y="923" width="1440" height="797" />
+    <state width="1398" height="181" key="GridCell.Tab.0.bottom/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711257" />
+    <state width="1558" height="281" key="GridCell.Tab.0.center" timestamp="1589933717275">
+      <screen x="0" y="23" width="1600" height="797" />
     </state>
     <state width="1398" height="413" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1589002646263" />
     <state width="1558" height="191" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1588917898030" />
@@ -234,15 +237,15 @@
     <state width="2518" height="230" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1589150161505" />
     <state width="1238" height="279" key="GridCell.Tab.0.center/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
     <state width="1398" height="346" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1589897460650" />
-    <state width="640" height="430" key="GridCell.Tab.0.center/0.23.1600.797@0.23.1600.797" timestamp="1588970945391" />
+    <state width="1558" height="281" key="GridCell.Tab.0.center/0.23.1600.797@0.23.1600.797" timestamp="1589933717275" />
     <state width="1638" height="477" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1589919892790" />
     <state width="1878" height="397" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
     <state width="1741" height="346" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1589819404677" />
     <state width="2507" height="190" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306600" />
     <state width="2006" height="221" key="GridCell.Tab.0.center/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
-    <state width="1398" height="181" key="GridCell.Tab.0.center/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923545026" />
-    <state width="1398" height="181" key="GridCell.Tab.0.left" timestamp="1589923545026">
-      <screen x="620" y="923" width="1440" height="797" />
+    <state width="1398" height="181" key="GridCell.Tab.0.center/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711256" />
+    <state width="1558" height="281" key="GridCell.Tab.0.left" timestamp="1589933717321">
+      <screen x="0" y="23" width="1600" height="797" />
     </state>
     <state width="1398" height="413" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1589002646262" />
     <state width="1558" height="191" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1588917898029" />
@@ -250,15 +253,15 @@
     <state width="2518" height="569" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1589150161559" />
     <state width="1238" height="279" key="GridCell.Tab.0.left/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
     <state width="1398" height="346" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1589897460710" />
-    <state width="640" height="430" key="GridCell.Tab.0.left/0.23.1600.797@0.23.1600.797" timestamp="1588970945391" />
+    <state width="1558" height="281" key="GridCell.Tab.0.left/0.23.1600.797@0.23.1600.797" timestamp="1589933717321" />
     <state width="1638" height="477" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1589919892846" />
     <state width="1878" height="397" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217689" />
     <state width="1741" height="346" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1589819404728" />
     <state width="2507" height="190" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306599" />
     <state width="2006" height="221" key="GridCell.Tab.0.left/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865105" />
-    <state width="1398" height="181" key="GridCell.Tab.0.left/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923545026" />
-    <state width="1398" height="181" key="GridCell.Tab.0.right" timestamp="1589923545027">
-      <screen x="620" y="923" width="1440" height="797" />
+    <state width="1398" height="181" key="GridCell.Tab.0.left/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711255" />
+    <state width="1558" height="281" key="GridCell.Tab.0.right" timestamp="1589933717276">
+      <screen x="0" y="23" width="1600" height="797" />
     </state>
     <state width="1398" height="413" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1589002646264" />
     <state width="1558" height="191" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1588917898031" />
@@ -266,13 +269,13 @@
     <state width="2518" height="230" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1589150161506" />
     <state width="1238" height="279" key="GridCell.Tab.0.right/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
     <state width="1398" height="346" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1589897460650" />
-    <state width="640" height="430" key="GridCell.Tab.0.right/0.23.1600.797@0.23.1600.797" timestamp="1588970945392" />
+    <state width="1558" height="281" key="GridCell.Tab.0.right/0.23.1600.797@0.23.1600.797" timestamp="1589933717276" />
     <state width="1638" height="477" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1589919892791" />
     <state width="1878" height="397" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
     <state width="1741" height="346" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1589819404677" />
     <state width="2507" height="190" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
     <state width="2006" height="221" key="GridCell.Tab.0.right/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
-    <state width="1398" height="181" key="GridCell.Tab.0.right/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923545027" />
+    <state width="1398" height="181" key="GridCell.Tab.0.right/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711257" />
     <state x="71" y="23" width="1878" height="434" key="GridCell.Tab.1.bottom" timestamp="1586551609302">
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
@@ -347,22 +350,23 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state x="71" y="23" width="1849" height="283" key="dock-window-3/0.23.1920.1097@0.23.1920.1097" timestamp="1586551522093" />
-    <state x="420" y="23" width="1232" height="897" key="find.popup" timestamp="1589677649934">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state x="328" y="23" width="963" height="682" key="find.popup" timestamp="1589933894590">
+      <screen x="0" y="23" width="1600" height="797" />
     </state>
     <state x="525" y="0" width="1541" height="1233" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1589149868264" />
     <state x="295" y="23" width="866" height="681" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1588126248138" />
-    <state x="328" y="23" width="963" height="682" key="find.popup/0.23.1600.797@0.23.1600.797" timestamp="1588808178358" />
+    <state x="328" y="23" width="963" height="682" key="find.popup/0.23.1600.797@0.23.1600.797" timestamp="1589933894590" />
     <state x="420" y="23" width="1232" height="897" key="find.popup/0.23.2048.1049@0.23.2048.1049" timestamp="1589677649934" />
     <state x="904" y="412" width="673" height="708" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1585371867654" />
     <state x="354" y="152" key="new project wizard" timestamp="1585869615241">
       <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state x="354" y="152" key="new project wizard/0.23.2048.1049@0.23.2048.1049" timestamp="1585869615241" />
-    <state x="711" y="189" key="refactoring.ChangeSignatureDialog" timestamp="1589681620153">
-      <screen x="0" y="23" width="2048" height="1049" />
+    <state x="555" y="72" key="refactoring.ChangeSignatureDialog" timestamp="1589933023917">
+      <screen x="0" y="23" width="1600" height="797" />
     </state>
     <state x="889" y="228" key="refactoring.ChangeSignatureDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1589148306289" />
+    <state x="555" y="72" key="refactoring.ChangeSignatureDialog/0.23.1600.797@0.23.1600.797" timestamp="1589933023917" />
     <state x="667" y="197" key="refactoring.ChangeSignatureDialog/0.23.1920.1097@0.23.1920.1097" timestamp="1586548034411" />
     <state x="711" y="189" key="refactoring.ChangeSignatureDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1589681620153" />
     <state x="667" y="257" width="953" height="648" key="search.everywhere.popup" timestamp="1589819490127">
@@ -985,6 +989,41 @@
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a7_recursiveMultiply/b_RecursiveMultiply_Addition_Memo.java</url>
           <line>10</line>
           <option name="timeStamp" value="907" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="918" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="919" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="920" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="921" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="922" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="923" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="924" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
