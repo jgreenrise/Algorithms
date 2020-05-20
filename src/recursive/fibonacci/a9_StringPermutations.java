@@ -9,7 +9,7 @@ public class a9_StringPermutations {
     public static void main(String[] args) {
 
         a9_StringPermutations class1 = new a9_StringPermutations();
-        String[] subsets = {"ABC", "123"};
+        String[] subsets = {"ABC", "123", "AABBBBC"};
 
         for (String str : subsets) {
             System.out.println("Permutations: "+class1.permute(str));
