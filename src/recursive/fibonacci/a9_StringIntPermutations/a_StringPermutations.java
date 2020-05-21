@@ -1,14 +1,13 @@
-package recursive.fibonacci;
+package recursive.fibonacci.a9_StringIntPermutations;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
-public class a9_StringPermutations {
+public class a_StringPermutations {
 
     public static void main(String[] args) {
 
-        a9_StringPermutations class1 = new a9_StringPermutations();
+        a_StringPermutations class1 = new a_StringPermutations();
         String[] subsets = {"ABC", "123", "AABBBBC"};
 
         for (String str : subsets) {

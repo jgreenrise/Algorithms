@@ -1,12 +1,12 @@
-package recursive.fibonacci;
+package recursive.fibonacci.a9_StringIntPermutations;
 
 import java.util.*;
 
-public class a9_StringPermutationsWithDups {
+public class b_StringPermutationsWithDups {
 
     public static void main(String[] args) {
 
-        a9_StringPermutationsWithDups class1 = new a9_StringPermutationsWithDups();
+        b_StringPermutationsWithDups class1 = new b_StringPermutationsWithDups();
         String[] subsets = {"ABCC", "1233", "DDEEEEFFF", "aaaaaaaaaaaaaaa"};
 
         for (String str : subsets) {
