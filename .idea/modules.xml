@@ -3,6 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Algorithms.iml" filepath="$PROJECT_DIR$/Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Java/Memory/Memory.iml" filepath="$PROJECT_DIR$/../Java/Memory/Memory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Java/Multithread/Multithread.iml" filepath="$PROJECT_DIR$/../Java/Multithread/Multithread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Java/SpringReactiveProgramming/src/main/main.iml" filepath="$PROJECT_DIR$/../Java/SpringReactiveProgramming/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/semaphore_kafka.iml" filepath="$PROJECT_DIR$/.idea/modules/semaphore_kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/semaphore_kafka.main.iml" filepath="$PROJECT_DIR$/.idea/modules/semaphore_kafka.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/semaphore_kafka.test.iml" filepath="$PROJECT_DIR$/.idea/modules/semaphore_kafka.test.iml" />
     </modules>
   </component>
 </project>
