@@ -3,6 +3,8 @@ package list.linkedlist.problems;
 import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
+import java.util.Arrays;
+
 import static list.linkedlist.single.ListNode.printLL;
 
 public class Sandbox {
@@ -10,45 +12,15 @@ public class Sandbox {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 
-        SinglyLinkedList list = null;
-        list = SinglyLinkedList.createLL(new int[] {3,5,10,2,8,2,1});
-        System.out.println("------------ APPROACH 1: using separate linked list ---------------");
-        System.out.println("Input list: ");
-        list.printList();
-        ListNode output = partition(list.start, 5);
-        System.out.println("Output list ");
-        list.printList();
+
+        //[21,47,80,4,3,24,87,12,22,11,48,6,89,80,74,71,74,55,58,56,4,98,40,66,49,53,62,27,3,66,78,24,48,69,88,12,80,63,98,65,46,35,72,5,64,72,7,29,37,3,2,75,44,93,79,78,13,39,85,26,15,41,87,47,29,93,41,74,6,48,17,89,27,61,2,68,99,57,45,73,25,33,38,32,58]
+        int [] ints = {1,39,6,81,85,10,38,22,0,89,57,93,58,69,65,80,84,24,27,54,37,36,26,88,2,7,24,36,51,5,74,57,45,56,55,67,25,33,78,49,16,79,74,80,36,27,89,49,64,73,96,60,92,31,98,72,22,31,0,93,70,87,80,66,75,69,81,52,94,90,51,90,74,36,58,38,50,9,64,55,4,21,49,60,65,47,67,8,38,83};
+
+        Arrays.sort(ints);
+
+        System.out.println(Arrays.toString(ints));
 
     }
 
-    public static ListNode partition(ListNode node, int x) {
 
-        return partition2(node, x);
-
-    }
-
-    public static ListNode partition2(ListNode node, int x)
-    {
-        ListNode left = null;
-        ListNode right = null;
-        ListNode center = null;
-
-        if(node == null)
-            return null;
-
-        if(node.val < x){
-            left = new ListNode(node.val);
-            left.next = partition2(node.next,  x);
-            return left;
-        }else if(node.val > x){
-            right = new ListNode(node.val);
-            right.next = partition2(node.next,  x);
-            return right;
-        }else{
-            center = new ListNode(node.val);
-            center.next = partition2(node.next,  x);
-            return center;
-        }
-
-    }
 }
