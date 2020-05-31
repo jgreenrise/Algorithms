@@ -215,12 +215,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="722" />
-    <option name="y" value="94" />
-    <option name="width" value="1355" />
-    <option name="height" value="959" />
-  </component>
   <component name="ProjectId" id="1Zk1vKqgarUkaPmbz2lvocjxrGK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -242,27 +236,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="recursive.fibonacci" />
       <recent name="Array.problems" />
+      <recent name="recursive.fibonacci" />
       <recent name="Array.problems.threesum" />
       <recent name="String.problems" />
       <recent name="com.example.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.a12_numberOfIslands">
-    <configuration name="LongestPalindromeString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="String.problems.LongestPalindromeString" />
-      <module name="Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="String.problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TrappingRainWater">
     <configuration name="MissingNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array.problems.MissingNumber" />
       <module name="Algorithms" />
@@ -302,6 +283,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TrappingRainWater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.TrappingRainWater" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Array.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="a12_numberOfIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="recursive.fibonacci.a12_numberOfIslands" />
       <module name="Algorithms" />
@@ -316,19 +310,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LongestPalindromeString" />
       <item itemvalue="Application.ThreeSum" />
       <item itemvalue="Application.MissingNumber" />
       <item itemvalue="Application.Sandbox" />
       <item itemvalue="Application.a12_numberOfIslands" />
+      <item itemvalue="Application.TrappingRainWater" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TrappingRainWater" />
         <item itemvalue="Application.a12_numberOfIslands" />
         <item itemvalue="Application.Sandbox" />
         <item itemvalue="Application.MissingNumber" />
         <item itemvalue="Application.ThreeSum" />
-        <item itemvalue="Application.LongestPalindromeString" />
       </list>
     </recent_temporary>
   </component>
@@ -390,14 +384,19 @@
     </state>
     <state x="625" y="276" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1680.947@0.23.1680.947" timestamp="1589955344454" />
     <state x="762" y="303" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1588211322613" />
-    <state x="848" y="397" width="618" height="398" key="#xdebugger.evaluate" timestamp="1590546418736">
+    <state x="393" y="260" key="#org.jetbrains.debugger.memory.view.InstancesWindow" timestamp="1590760341323">
       <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="393" y="260" key="#org.jetbrains.debugger.memory.view.InstancesWindow/0.23.1680.947@0.23.1680.947" timestamp="1590760341323" />
+    <state x="683" y="417" width="997" height="590" key="#xdebugger.evaluate" timestamp="1590883965116">
+      <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state x="596" y="203" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1589002374748" />
     <state x="1074" y="203" key="#xdebugger.evaluate/0.0.1600.900@0.0.1600.900" timestamp="1588917580409" />
     <state x="48" y="579" width="1074" height="573" key="#xdebugger.evaluate/0.0.2048.1152@0.0.2048.1152" timestamp="1589230301657" />
     <state x="808" y="348" key="#xdebugger.evaluate/0.23.1600.797@0.23.1600.797" timestamp="1589942782602" />
-    <state x="848" y="397" key="#xdebugger.evaluate/0.23.1680.947@0.23.1680.947" timestamp="1590546418736" />
+    <state x="75" y="185" key="#xdebugger.evaluate/0.23.1680.947@0.23.1680.947" timestamp="1590873615201" />
+    <state x="683" y="417" width="997" height="590" key="#xdebugger.evaluate/0.23.1680.984@0.23.1680.984" timestamp="1590883965116" />
     <state x="1034" y="451" width="618" height="398" key="#xdebugger.evaluate/0.23.2048.1049@0.23.2048.1049" timestamp="1589819364505" />
     <state x="12" y="25" width="2034" height="1045" maximized="true" key="DiffContextDialog" timestamp="1589518043745">
       <screen x="0" y="23" width="2048" height="1049" />
@@ -419,8 +418,8 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state width="1878" height="434" key="GridCell.Tab.-1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1586551612059" />
-    <state width="1638" height="217" key="GridCell.Tab.0.bottom" timestamp="1590723106817">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state width="1638" height="371" key="GridCell.Tab.0.bottom" timestamp="1590888698335">
+      <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1398" height="413" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1589002646265" />
     <state width="1558" height="191" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1588917898031" />
@@ -429,14 +428,15 @@
     <state width="1238" height="279" key="GridCell.Tab.0.bottom/0.23.1280.617@0.23.1280.617" timestamp="1586923563183" />
     <state width="1398" height="346" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1589897460651" />
     <state width="1558" height="247" key="GridCell.Tab.0.bottom/0.23.1600.797@0.23.1600.797" timestamp="1589944324940" />
-    <state width="1638" height="217" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1590723106817" />
+    <state width="1638" height="315" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1590874120607" />
+    <state width="1638" height="371" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1590888698335" />
     <state width="1878" height="397" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217641" />
     <state width="1992" height="218" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="2507" height="190" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
     <state width="2006" height="221" key="GridCell.Tab.0.bottom/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
     <state width="1398" height="181" key="GridCell.Tab.0.bottom/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711257" />
-    <state width="1638" height="217" key="GridCell.Tab.0.center" timestamp="1590723106816">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state width="1638" height="371" key="GridCell.Tab.0.center" timestamp="1590888698335">
+      <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1398" height="413" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1589002646263" />
     <state width="1558" height="191" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1588917898030" />
@@ -445,14 +445,15 @@
     <state width="1238" height="279" key="GridCell.Tab.0.center/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
     <state width="1398" height="346" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1589897460650" />
     <state width="1558" height="247" key="GridCell.Tab.0.center/0.23.1600.797@0.23.1600.797" timestamp="1589944324939" />
-    <state width="1638" height="217" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1590723106816" />
+    <state width="1638" height="315" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1590874120604" />
+    <state width="1638" height="371" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1590888698335" />
     <state width="1878" height="397" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
     <state width="1992" height="218" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="2507" height="190" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306600" />
     <state width="2006" height="221" key="GridCell.Tab.0.center/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
     <state width="1398" height="181" key="GridCell.Tab.0.center/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711256" />
-    <state width="1638" height="217" key="GridCell.Tab.0.left" timestamp="1590723106816">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state width="1638" height="371" key="GridCell.Tab.0.left" timestamp="1590888698334">
+      <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1398" height="413" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1589002646262" />
     <state width="1558" height="191" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1588917898029" />
@@ -461,14 +462,15 @@
     <state width="1238" height="279" key="GridCell.Tab.0.left/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
     <state width="1398" height="346" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1589897460710" />
     <state width="1558" height="247" key="GridCell.Tab.0.left/0.23.1600.797@0.23.1600.797" timestamp="1589944324939" />
-    <state width="1638" height="217" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1590723106816" />
+    <state width="1638" height="315" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1590874120816" />
+    <state width="1638" height="371" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1590888698334" />
     <state width="1878" height="397" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217689" />
     <state width="1992" height="218" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="2507" height="190" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306599" />
     <state width="2006" height="221" key="GridCell.Tab.0.left/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865105" />
     <state width="1398" height="181" key="GridCell.Tab.0.left/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711255" />
-    <state width="1638" height="217" key="GridCell.Tab.0.right" timestamp="1590723106817">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state width="1638" height="371" key="GridCell.Tab.0.right" timestamp="1590888698335">
+      <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1398" height="413" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1589002646264" />
     <state width="1558" height="191" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1588917898031" />
@@ -477,7 +479,8 @@
     <state width="1238" height="279" key="GridCell.Tab.0.right/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
     <state width="1398" height="346" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1589897460650" />
     <state width="1558" height="247" key="GridCell.Tab.0.right/0.23.1600.797@0.23.1600.797" timestamp="1589944324940" />
-    <state width="1638" height="217" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1590723106817" />
+    <state width="1638" height="315" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1590874120606" />
+    <state width="1638" height="371" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1590888698335" />
     <state width="1878" height="397" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
     <state width="1992" height="218" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="2507" height="190" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
@@ -1222,18 +1225,68 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a12_numberOfIslands.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1068" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="1111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="1112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="1139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="1147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="1150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="1151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="1152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="1153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
           <line>34</line>
-          <option name="timeStamp" value="1059" />
+          <option name="timeStamp" value="1155" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a12_numberOfIslands.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="1060" />
+          <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="1156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a12_numberOfIslands.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1061" />
+          <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1157" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
