@@ -18,7 +18,6 @@
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursive/fibonacci/a12_numberOfIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recursive/fibonacci/a12_numberOfIslands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/AppConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/SpringMvcInitializer.java" beforeDir="false" />
@@ -236,46 +235,20 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Array.problems" />
+      <recent name="recursive.fibonacci.a14RottenOranges" />
       <recent name="recursive.fibonacci" />
+      <recent name="Array.problems" />
       <recent name="Array.problems.threesum" />
       <recent name="String.problems" />
-      <recent name="com.example.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TrappingRainWater">
-    <configuration name="MissingNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.MissingNumber" />
-      <module name="Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Array.problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.a14_rottenOrange_WithMultipleRottenOranges">
     <configuration name="Sandbox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="list.linkedlist.problems.Sandbox" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="list.linkedlist.problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreeSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.threesum.ThreeSum" />
-      <module name="Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Array.problems.threesum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -301,7 +274,33 @@
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="recursive.fibonacci.*" />
+          <option name="PATTERN" value="recursive.fibonacci.a14RottenOranges.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="a14_rottenOrange_WithMultipleRottenOranges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursive.fibonacci.a14RottenOranges.a14_rottenOrange_WithMultipleRottenOranges" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="recursive.fibonacci.a14RottenOranges.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="a14_rottenOrange_WithOnly1RottenOrange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursive.fibonacci.a14RottenOranges.a14_rottenOrange_WithOnly1RottenOrange" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="recursive.fibonacci.a14RottenOranges.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -310,19 +309,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ThreeSum" />
-      <item itemvalue="Application.MissingNumber" />
       <item itemvalue="Application.Sandbox" />
       <item itemvalue="Application.a12_numberOfIslands" />
       <item itemvalue="Application.TrappingRainWater" />
+      <item itemvalue="Application.a14_rottenOrange_WithOnly1RottenOrange" />
+      <item itemvalue="Application.a14_rottenOrange_WithMultipleRottenOranges" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.a14_rottenOrange_WithMultipleRottenOranges" />
+        <item itemvalue="Application.a14_rottenOrange_WithOnly1RottenOrange" />
         <item itemvalue="Application.TrappingRainWater" />
         <item itemvalue="Application.a12_numberOfIslands" />
         <item itemvalue="Application.Sandbox" />
-        <item itemvalue="Application.MissingNumber" />
-        <item itemvalue="Application.ThreeSum" />
       </list>
     </recent_temporary>
   </component>
@@ -388,7 +387,7 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="393" y="260" key="#org.jetbrains.debugger.memory.view.InstancesWindow/0.23.1680.947@0.23.1680.947" timestamp="1590760341323" />
-    <state x="683" y="417" width="997" height="590" key="#xdebugger.evaluate" timestamp="1590883965116">
+    <state x="683" y="417" width="997" height="590" key="#xdebugger.evaluate" timestamp="1590970871202">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state x="596" y="203" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1589002374748" />
@@ -396,7 +395,7 @@
     <state x="48" y="579" width="1074" height="573" key="#xdebugger.evaluate/0.0.2048.1152@0.0.2048.1152" timestamp="1589230301657" />
     <state x="808" y="348" key="#xdebugger.evaluate/0.23.1600.797@0.23.1600.797" timestamp="1589942782602" />
     <state x="75" y="185" key="#xdebugger.evaluate/0.23.1680.947@0.23.1680.947" timestamp="1590873615201" />
-    <state x="683" y="417" width="997" height="590" key="#xdebugger.evaluate/0.23.1680.984@0.23.1680.984" timestamp="1590883965116" />
+    <state x="683" y="417" width="997" height="590" key="#xdebugger.evaluate/0.23.1680.984@0.23.1680.984" timestamp="1590970871202" />
     <state x="1034" y="451" width="618" height="398" key="#xdebugger.evaluate/0.23.2048.1049@0.23.2048.1049" timestamp="1589819364505" />
     <state x="12" y="25" width="2034" height="1045" maximized="true" key="DiffContextDialog" timestamp="1589518043745">
       <screen x="0" y="23" width="2048" height="1049" />
@@ -418,7 +417,7 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state width="1878" height="434" key="GridCell.Tab.-1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1586551612059" />
-    <state width="1638" height="371" key="GridCell.Tab.0.bottom" timestamp="1590888698335">
+    <state width="1638" height="234" key="GridCell.Tab.0.bottom" timestamp="1590971902205">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1398" height="413" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1589002646265" />
@@ -429,13 +428,13 @@
     <state width="1398" height="346" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1589897460651" />
     <state width="1558" height="247" key="GridCell.Tab.0.bottom/0.23.1600.797@0.23.1600.797" timestamp="1589944324940" />
     <state width="1638" height="315" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1590874120607" />
-    <state width="1638" height="371" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1590888698335" />
+    <state width="1638" height="234" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1590971902205" />
     <state width="1878" height="397" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217641" />
     <state width="1992" height="218" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="2507" height="190" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
     <state width="2006" height="221" key="GridCell.Tab.0.bottom/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
     <state width="1398" height="181" key="GridCell.Tab.0.bottom/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711257" />
-    <state width="1638" height="371" key="GridCell.Tab.0.center" timestamp="1590888698335">
+    <state width="1638" height="234" key="GridCell.Tab.0.center" timestamp="1590971902204">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1398" height="413" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1589002646263" />
@@ -446,13 +445,13 @@
     <state width="1398" height="346" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1589897460650" />
     <state width="1558" height="247" key="GridCell.Tab.0.center/0.23.1600.797@0.23.1600.797" timestamp="1589944324939" />
     <state width="1638" height="315" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1590874120604" />
-    <state width="1638" height="371" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1590888698335" />
+    <state width="1638" height="234" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1590971902204" />
     <state width="1878" height="397" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
     <state width="1992" height="218" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="2507" height="190" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306600" />
     <state width="2006" height="221" key="GridCell.Tab.0.center/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
     <state width="1398" height="181" key="GridCell.Tab.0.center/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711256" />
-    <state width="1638" height="371" key="GridCell.Tab.0.left" timestamp="1590888698334">
+    <state width="1638" height="234" key="GridCell.Tab.0.left" timestamp="1590971902204">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1398" height="413" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1589002646262" />
@@ -463,13 +462,13 @@
     <state width="1398" height="346" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1589897460710" />
     <state width="1558" height="247" key="GridCell.Tab.0.left/0.23.1600.797@0.23.1600.797" timestamp="1589944324939" />
     <state width="1638" height="315" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1590874120816" />
-    <state width="1638" height="371" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1590888698334" />
+    <state width="1638" height="234" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1590971902204" />
     <state width="1878" height="397" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217689" />
     <state width="1992" height="218" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="2507" height="190" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306599" />
     <state width="2006" height="221" key="GridCell.Tab.0.left/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865105" />
     <state width="1398" height="181" key="GridCell.Tab.0.left/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711255" />
-    <state width="1638" height="371" key="GridCell.Tab.0.right" timestamp="1590888698335">
+    <state width="1638" height="234" key="GridCell.Tab.0.right" timestamp="1590971902204">
       <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state width="1398" height="413" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1589002646264" />
@@ -480,7 +479,7 @@
     <state width="1398" height="346" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1589897460650" />
     <state width="1558" height="247" key="GridCell.Tab.0.right/0.23.1600.797@0.23.1600.797" timestamp="1589944324940" />
     <state width="1638" height="315" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1590874120606" />
-    <state width="1638" height="371" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1590888698335" />
+    <state width="1638" height="234" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1590971902204" />
     <state width="1878" height="397" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
     <state width="1992" height="218" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="2507" height="190" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
@@ -560,25 +559,27 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state x="71" y="23" width="1849" height="283" key="dock-window-3/0.23.1920.1097@0.23.1920.1097" timestamp="1586551522093" />
-    <state x="344" y="23" width="1012" height="811" key="find.popup" timestamp="1590722125780">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state x="344" y="23" width="1012" height="843" key="find.popup" timestamp="1590969737278">
+      <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state x="525" y="0" width="1541" height="1233" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1589149868264" />
     <state x="295" y="23" width="866" height="681" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1588126248138" />
     <state x="328" y="23" width="963" height="682" key="find.popup/0.23.1600.797@0.23.1600.797" timestamp="1589933894590" />
     <state x="344" y="23" width="1012" height="811" key="find.popup/0.23.1680.947@0.23.1680.947" timestamp="1590722125780" />
+    <state x="344" y="23" width="1012" height="843" key="find.popup/0.23.1680.984@0.23.1680.984" timestamp="1590969737278" />
     <state x="420" y="23" width="1232" height="897" key="find.popup/0.23.2048.1049@0.23.2048.1049" timestamp="1589677649934" />
     <state x="904" y="412" width="673" height="708" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1585371867654" />
     <state x="354" y="152" key="new project wizard" timestamp="1585869615241">
       <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state x="354" y="152" key="new project wizard/0.23.2048.1049@0.23.2048.1049" timestamp="1585869615241" />
-    <state x="583" y="81" key="refactoring.ChangeSignatureDialog" timestamp="1590035856307">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state x="583" y="83" key="refactoring.ChangeSignatureDialog" timestamp="1590970986897">
+      <screen x="0" y="23" width="1680" height="984" />
     </state>
     <state x="889" y="228" key="refactoring.ChangeSignatureDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1589148306289" />
     <state x="555" y="72" key="refactoring.ChangeSignatureDialog/0.23.1600.797@0.23.1600.797" timestamp="1589933023917" />
     <state x="583" y="81" key="refactoring.ChangeSignatureDialog/0.23.1680.947@0.23.1680.947" timestamp="1590035856307" />
+    <state x="583" y="83" key="refactoring.ChangeSignatureDialog/0.23.1680.984@0.23.1680.984" timestamp="1590970986897" />
     <state x="667" y="197" key="refactoring.ChangeSignatureDialog/0.23.1920.1097@0.23.1920.1097" timestamp="1586548034411" />
     <state x="711" y="189" key="refactoring.ChangeSignatureDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1589681620153" />
     <state x="547" y="234" width="782" height="585" key="search.everywhere.popup" timestamp="1590675751495">
@@ -1287,6 +1288,41 @@
           <url>file://$PROJECT_DIR$/src/Array/problems/TrappingRainWater.java</url>
           <line>33</line>
           <option name="timeStamp" value="1157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a14RottenOranges/a14_rottenOrange_WithOnly1RottenOrange.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="1172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a14RottenOranges/a14_rottenOrange_WithMultipleRottenOranges.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="1173" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a14RottenOranges/a14_rottenOrange_WithMultipleRottenOranges.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="1179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a14RottenOranges/a14_rottenOrange_WithMultipleRottenOranges.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="1188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a14RottenOranges/a14_rottenOrange_WithMultipleRottenOranges.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="1189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a14RottenOranges/a14_rottenOrange_WithMultipleRottenOranges.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="1191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a14RottenOranges/a14_rottenOrange_WithMultipleRottenOranges.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="1195" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
