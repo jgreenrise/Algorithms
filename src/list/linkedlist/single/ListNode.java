@@ -19,6 +19,15 @@ public class ListNode {
 		this.next = next;
 	}
 
+	public ListNode(int[] nums) {
+		ListNode out = new ListNode(nums[0]);
+		for (int i = 0; i < nums.length; i++) {
+			ListNode nn = new ListNode(nums[i]);
+
+		}
+
+	}
+
 	public static void printLL(ListNode node){
 		while(node.next != null){
 			System.out.print(node.val + " > ");
@@ -26,4 +35,8 @@ public class ListNode {
 		}
 		System.out.println(node.val);
 	}
+
+
+
+
 }

@@ -1,0 +1,279 @@
+package list.linkedlist.problems;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * https://leetcode.com/problems/copy-list-with-random-pointer/
+ */
+public class CopyListRandomPointer {
+
+    public static void main(String[] args) {
+
+        Node node7 = new Node(7);
+        Node node13 = new Node(13);
+        Node node11 = new Node(11);
+        Node node10 = new Node(10);
+        Node node1 = new Node(1);
+
+        node13.random = node7;
+        node10.random = node11;
+        node11.random = node1;
+        node1.random = node7;
+
+        node7.next = node13;
+        node13.next = node11;
+        node11.next = node10;
+        node10.next = node1;
+
+        CopyListRandomPointer class1 = new CopyListRandomPointer();
+
+        /*System.out.println("Hashmap and iteration: " + class1.printLL(class1.iteration(node7)));
+
+        System.out.println("Recursive: " + class1.printLL(class1.copyRandomListRecursive(node7)));
+
+        System.out.println("Iteration - recursive: " + class1.printLL(class1.iterationRecursive(node7)));*/
+
+        System.out.println("Weaving: " + class1.printLL(class1.copyRandomList(node7)));
+    }
+
+    public Node copyRandomList(Node head) {
+
+        if (head == null) {
+            return null;
+        }
+
+        // Creating a new weaved list of original and copied nodes.
+        Node ptr = head;
+        while (ptr != null) {
+
+            // Cloned node
+            Node newNode = new Node(ptr.val);
+
+            // Inserting the cloned node just next to the original node.
+            // If A->B->C is the original linked list,
+            // Linked list after weaving cloned nodes would be A->A'->B->B'->C->C'
+            newNode.next = ptr.next;
+            ptr.next = newNode;
+            ptr = newNode.next;
+        }
+
+
+        ptr = head;
+        while (ptr != null) {
+            ptr.next.random = (ptr.random != null) ? ptr.random.next : null;
+            ptr = ptr.next.next;
+        }
+
+        // Unweave list
+        Node oldList = head;        // a> b >c
+        Node newList = head.next;   // a#> b# >c#
+        Node out = head.next;
+        while(oldList != null){
+
+            oldList.next = oldList.next.next;
+            newList.next = (newList.next != null) ? newList.next.next : null;
+            oldList  = oldList.next;
+            newList = newList.next;
+
+
+
+        }
+
+        return out;
+
+
+    }
+
+    Map<Node, Node> hashMap2 = new HashMap<>();
+
+    public Node iterationRecursive(Node head) {
+
+        if (head == null) {
+            return null;
+        }
+
+        Node oldNode = head;
+        Node newNode = new Node(head.val);
+        hashMap2.put(head, newNode);
+
+        while (oldNode != null) {
+            newNode.next = getClonedNode(oldNode.next);
+            newNode.random = getClonedNode(oldNode.random);
+
+            oldNode = oldNode.next;
+            newNode = newNode.next;
+        }
+
+        return hashMap2.get(head);
+    }
+
+    private Node getClonedNode(Node next) {
+
+        if (next == null)
+            return null;
+        if (hashMap2.containsKey(next)) {
+            return hashMap2.get(next);
+        } else {
+            Node nn = new Node(next.val);
+            hashMap2.put(next, nn);
+            return nn;
+        }
+    }
+
+    Map<Node, Node> hashMap = new HashMap<>();
+
+    /**
+     * RECURSIVE
+     */
+    public Node copyRandomListRecursive(Node head) {
+
+        if (head == null) {
+            return null;
+        }
+
+        if (hashMap.containsKey(head)) {
+            return hashMap.get(head);
+        }
+
+
+        Node nn = new Node(head.val);
+        hashMap.put(head, nn);
+
+        nn.next = copyRandomList(head.next);
+        nn.random = copyRandomList(head.random);
+
+        return nn;
+
+    }
+
+    private Node printLL(Node node) {
+
+        while (node.next != null) {
+            System.out.print(node.val + " > ");
+            node = node.next;
+        }
+        System.out.println(node.val);
+        return node;
+
+    }
+
+    /**
+     * HASHMAP AND ITERATION
+     */
+    public Node iteration(Node head) {
+
+        Node orig = head;
+        int size = getLLSize(head);
+        int[] nums = fillIntArrayWithRandomPointers(head, size);
+        Map<Node, Node> map = new HashMap();
+
+        Node out = null;
+        Node origOut = null;
+        int counter = 0;
+
+        while (head != null) {
+            if (out == null) {
+                out = new Node(head.val);
+                origOut = out;
+            } else {
+                Node tmp = new Node(head.val);
+                out.next = tmp;
+                out = out.next;
+            }
+
+            //map.put(head.val, out);
+            map.put(head, out);
+            head = head.next;
+        }
+
+        // Rollback to starting position
+        head = orig;
+        out = origOut;
+        origOut = out;
+
+        counter = 0;
+        while (head != null && out != null) {
+            if (head.random != null) {
+                Node childNode = map.get(head.random);
+                out.random = childNode;
+            }
+            head = head.next;
+            out = out.next;
+            counter++;
+        }
+
+        return origOut;
+
+    }
+
+    int[] fillIntArrayWithRandomPointers(Node head, int length) {
+
+        Node slow = head;
+        int[] out = new int[length];
+        int j = 0;
+
+        while (slow != null) {
+            out[j++] = slow.val;
+            slow = slow.next;
+        }
+        return out;
+    }
+
+    int getLLSize(Node head) {
+
+        Node slow = head;
+        int counter = 0;
+
+        while (slow.next != null) {
+            slow = slow.next;
+            counter++;
+        }
+
+        return counter + 1;
+
+    }
+
+
+    public static class Node {
+
+        public int val;
+        public Node next;
+        public Node random;
+        public int index;
+
+        public Node() {
+            val = 0;
+            next = null;
+        }
+
+        public Node(int val) {
+            this.val = val;
+        }
+
+        public Node(int val, Node next) {
+            this.val = val;
+            this.next = next;
+        }
+
+        public Node(int[] nums) {
+            Node out = new Node(nums[0]);
+            for (int i = 0; i < nums.length; i++) {
+                Node nn = new Node(nums[i]);
+
+            }
+
+        }
+
+        public static void printLL(Node node) {
+            while (node.next != null) {
+                System.out.print(node.val + " > ");
+                node = node.next;
+            }
+            System.out.println(node.val);
+        }
+
+
+    }
+
+}

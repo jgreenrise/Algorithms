@@ -1,4 +1,4 @@
-package String.problems;
+package String.problems.anagrams;
 
 public class CheckIfTwoStringsAreAnagramsOrNot {
 

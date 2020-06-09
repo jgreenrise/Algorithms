@@ -6,13 +6,13 @@ package Array.problems;
 public class StockSellAndBuy121 {
     public static void main(String[] args) {
 
-        //int[] arr_i_input = {7, 1, 5, 3, 6, 4};
-        int[] arr_i_input = {2,1,2,1,0,1,2};
+        int[] arr_i_input = {7, 1, 5, 3, 6, 4};
+        //int[] arr_i_input = {2,1,2,1,0,1,2};
         //int[] arr_i_input = {2,1,4};
         //int[] arr_i_input = { 1,2,3,4,5};
 
-        System.out.println(maxProfit(arr_i_input));
-        System.out.println(usingValleyPeakApproach(arr_i_input));
+        System.out.println(bruteforce(arr_i_input));
+        //System.out.println(usingValleyPeakApproach(arr_i_input));
     }
 
     public static int usingValleyPeakApproach(int[] prices) {
@@ -36,7 +36,7 @@ public class StockSellAndBuy121 {
         return profit;
     }
 
-    public static int maxProfit(int[] prices) {
+    public static int bruteforce(int[] prices) {
 
         int maxProfit = 0;
 

@@ -58,20 +58,6 @@ public class SortLinkedList {
 		// Do this to make sure that left list only travels till midpoint
 		middle.next = null;
 		
-//		Node tmp = node;
-//		System.out.println("\nLeft: ");
-//		while (tmp != null) {
-//			System.out.print(tmp.value + " -> ");
-//			tmp = tmp.next_node;
-//		}
-//
-//		tmp = right;
-//		System.out.println("\nRight: ");
-//		while (tmp != null) {
-//			System.out.print(tmp.value + " -> ");
-//			tmp = tmp.next_node;
-//		}
-
 		return mergeLinkedList(mergeSort(node), mergeSort(right));
 	}
 
