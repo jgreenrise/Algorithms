@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 /**
  * https://leetcode.com/problems/word-search-ii/
  */
-public class Solution {
+public class F_WordSearch2_20200612 {
 
     public static void main(String args[]) {
 
@@ -37,20 +37,20 @@ public class Solution {
         words = new String[]{"ab","cb","ad","bd","ac","ca","da","bc","db","adcb","dabc","abb","acb"};
 */
 
-        Solution class1 = new Solution();
+        F_WordSearch2_20200612 class1 = new F_WordSearch2_20200612();
         System.out.println(class1.findWords(board, words));
 
     }
 
     public final TrieNode root;
 
-    public Solution(){
+    public F_WordSearch2_20200612(){
         root = new TrieNode();
     }
 
     public List<String> findWords(char[][] board, String[] words) {
 
-        Solution class1 = new Solution();
+        F_WordSearch2_20200612 class1 = new F_WordSearch2_20200612();
         int index = 0;
         for(String word: words){
             class1.insert(word, index++);
