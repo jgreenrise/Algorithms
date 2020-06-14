@@ -245,7 +245,7 @@
       <recent name="Pair" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.G_ConcatenatedWords">
+  <component name="RunManager" selected="Application.G_ConcatenatedWords_20200613">
     <configuration name="C_CheckWordExists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tree.trie.C_CheckWordExists" />
       <module name="Algorithms" />
@@ -298,8 +298,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="G_ConcatenatedWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.trie.G_ConcatenatedWords" />
+    <configuration name="G_ConcatenatedWords_20200613" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.trie.G_ConcatenatedWords_20200613" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
@@ -316,11 +316,11 @@
       <item itemvalue="Application.D_DeleteWord" />
       <item itemvalue="Application.E_LongestWordInDictionary" />
       <item itemvalue="Application.F_WordSearch2_20200612" />
-      <item itemvalue="Application.G_ConcatenatedWords" />
+      <item itemvalue="Application.G_ConcatenatedWords_20200613" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.G_ConcatenatedWords" />
+        <item itemvalue="Application.G_ConcatenatedWords_20200613" />
         <item itemvalue="Application.F_WordSearch2_20200612" />
         <item itemvalue="Application.E_LongestWordInDictionary" />
         <item itemvalue="Application.D_DeleteWord" />

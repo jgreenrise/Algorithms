@@ -2,12 +2,12 @@ package tree.trie;
 
 import java.util.*;
 
-public class G_ConcatenatedWords {
+public class G_ConcatenatedWords_20200613 {
 
     public static void main(String args[]) {
 
         String[] words = {"cat","cats","catsdogcats","dog","dogcatsdog","hippopotamuses","rat","ratcatdogcat"};
-        G_ConcatenatedWords class1 = new G_ConcatenatedWords();
+        G_ConcatenatedWords_20200613 class1 = new G_ConcatenatedWords_20200613();
         //String[] words = {"cat", "dog", "catdog", "cats", "dogcat", "catsdog"};
         //String[] words = {"cat", "dog", "cats", "catsdog"};
         System.out.println(class1.findAllConcatenatedWordsInADict(words));
@@ -15,13 +15,13 @@ public class G_ConcatenatedWords {
 
     public TrieNode root;
 
-    public G_ConcatenatedWords() {
+    public G_ConcatenatedWords_20200613() {
         root = new TrieNode();
     }
 
     public List<String> findAllConcatenatedWordsInADict(String[] words) {
 
-        G_ConcatenatedWords class1 = new G_ConcatenatedWords();
+        G_ConcatenatedWords_20200613 class1 = new G_ConcatenatedWords_20200613();
         TrieNode curr = class1.root;
         List<String> out = new ArrayList();
         Arrays.sort(words, (a, b) -> Integer.compare(a.length(), b.length()));
