@@ -2,6 +2,9 @@ package tree.trie;
 
 import java.util.*;
 
+/**
+ *
+ */
 public class G_ConcatenatedWords_20200613 {
 
     public static void main(String args[]) {
