@@ -18,7 +18,6 @@
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/trie/G_ConcatenatedWords_20200613.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/trie/G_ConcatenatedWords_20200613.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/AppConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/SpringMvcInitializer.java" beforeDir="false" />
@@ -236,17 +235,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Array.problems" />
       <recent name="Array.problems.calculator" />
       <recent name="Array.problems.wordbreak2" />
       <recent name="tree.trie" />
       <recent name="tree.problems.topologicalSort" />
-      <recent name="Array.problems" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Pair" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.B_BasicCalculator2_II_UsingStack">
+  <component name="RunManager" selected="Application.ProductOfArrayExceptSelf_2020_06_18">
     <configuration name="A_BasicCalculator2_II_UsiingForLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array.problems.calculator.A_BasicCalculator2_II_UsiingForLoop" />
       <module name="Algorithms" />
@@ -299,12 +298,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordBreakUsingBackTracking_NavigateFromLeft" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.wordbreak2.WordBreakUsingBackTracking_NavigateFromLeft" />
+    <configuration name="ProductOfArrayExceptSelf_2020_06_18" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.ProductOfArrayExceptSelf_2020_06_18" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.problems.wordbreak2.*" />
+          <option name="PATTERN" value="Array.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -313,19 +312,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.WordBreakUsingBackTracking_NavigateFromLeft" />
       <item itemvalue="Application.BasicCalculator2_II_Queue" />
       <item itemvalue="Application.BasicCalculator2_II_Queue_Copied" />
       <item itemvalue="Application.A_BasicCalculator2_II_UsiingForLoop" />
       <item itemvalue="Application.B_BasicCalculator2_II_UsingStack" />
+      <item itemvalue="Application.ProductOfArrayExceptSelf_2020_06_18" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProductOfArrayExceptSelf_2020_06_18" />
         <item itemvalue="Application.B_BasicCalculator2_II_UsingStack" />
         <item itemvalue="Application.BasicCalculator2_II_Queue" />
         <item itemvalue="Application.A_BasicCalculator2_II_UsiingForLoop" />
         <item itemvalue="Application.BasicCalculator2_II_Queue_Copied" />
-        <item itemvalue="Application.WordBreakUsingBackTracking_NavigateFromLeft" />
       </list>
     </recent_temporary>
   </component>
@@ -432,8 +431,8 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state width="1878" height="434" key="GridCell.Tab.-1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1586551612059" />
-    <state width="811" height="331" key="GridCell.Tab.0.bottom" timestamp="1592448328169">
-      <screen x="620" y="1463" width="1920" height="1134" />
+    <state width="809" height="988" key="GridCell.Tab.0.bottom" timestamp="1592532069081">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1592450507828">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -453,7 +452,7 @@
     <state width="1638" height="332" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1590547642631" />
     <state width="1638" height="223" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1591221847530" />
     <state width="1878" height="397" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217641" />
-    <state width="1878" height="462" key="GridCell.Tab.0.bottom/0.23.1920.1134@0.23.1920.1134" timestamp="1592274165088" />
+    <state width="809" height="988" key="GridCell.Tab.0.bottom/0.23.1920.1134@0.23.1920.1134" timestamp="1592532069081" />
     <state width="1992" height="218" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.bottom/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147116" />
     <state width="2507" height="190" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
@@ -463,8 +462,8 @@
     <state width="811" height="331" key="GridCell.Tab.0.bottom/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328169" />
     <state width="1558" height="310" key="GridCell.Tab.0.bottom/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288287545" />
     <state width="1398" height="181" key="GridCell.Tab.0.bottom/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711257" />
-    <state width="811" height="331" key="GridCell.Tab.0.center" timestamp="1592448328168">
-      <screen x="620" y="1463" width="1920" height="1134" />
+    <state width="809" height="988" key="GridCell.Tab.0.center" timestamp="1592532069080">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1592450507827">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -484,7 +483,7 @@
     <state width="1638" height="332" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1590547642630" />
     <state width="1638" height="223" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1591221847529" />
     <state width="1878" height="397" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
-    <state width="1878" height="462" key="GridCell.Tab.0.center/0.23.1920.1134@0.23.1920.1134" timestamp="1592274165087" />
+    <state width="809" height="988" key="GridCell.Tab.0.center/0.23.1920.1134@0.23.1920.1134" timestamp="1592532069080" />
     <state width="1992" height="218" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.center/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147115" />
     <state width="2507" height="190" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306600" />
@@ -494,8 +493,8 @@
     <state width="811" height="331" key="GridCell.Tab.0.center/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328168" />
     <state width="1558" height="310" key="GridCell.Tab.0.center/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288287544" />
     <state width="1398" height="181" key="GridCell.Tab.0.center/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711256" />
-    <state width="811" height="331" key="GridCell.Tab.0.left" timestamp="1592448328167">
-      <screen x="620" y="1463" width="1920" height="1134" />
+    <state width="809" height="988" key="GridCell.Tab.0.left" timestamp="1592532069144">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1592450507827">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -515,7 +514,7 @@
     <state width="1638" height="332" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1590547642630" />
     <state width="1638" height="223" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1591221847528" />
     <state width="1878" height="397" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217689" />
-    <state width="1878" height="462" key="GridCell.Tab.0.left/0.23.1920.1134@0.23.1920.1134" timestamp="1592274165086" />
+    <state width="809" height="988" key="GridCell.Tab.0.left/0.23.1920.1134@0.23.1920.1134" timestamp="1592532069144" />
     <state width="1992" height="218" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.left/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147114" />
     <state width="2507" height="190" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306599" />
@@ -525,8 +524,8 @@
     <state width="811" height="331" key="GridCell.Tab.0.left/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328167" />
     <state width="635" height="776" key="GridCell.Tab.0.left/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592317825230" />
     <state width="1398" height="181" key="GridCell.Tab.0.left/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711255" />
-    <state width="811" height="331" key="GridCell.Tab.0.right" timestamp="1592448328169">
-      <screen x="620" y="1463" width="1920" height="1134" />
+    <state width="809" height="988" key="GridCell.Tab.0.right" timestamp="1592532069156">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1592450507828">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -546,7 +545,7 @@
     <state width="1638" height="332" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1590547642630" />
     <state width="1638" height="223" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1591221847529" />
     <state width="1878" height="397" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
-    <state width="1878" height="462" key="GridCell.Tab.0.right/0.23.1920.1134@0.23.1920.1134" timestamp="1592274165088" />
+    <state width="809" height="988" key="GridCell.Tab.0.right/0.23.1920.1134@0.23.1920.1134" timestamp="1592532069156" />
     <state width="1992" height="218" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.right/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147115" />
     <state width="2507" height="190" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
@@ -1755,6 +1754,36 @@
           <url>file://$PROJECT_DIR$/src/Array/problems/calculator/A_BasicCalculator2_II_UsiingForLoop.java</url>
           <line>78</line>
           <option name="timeStamp" value="1738" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/ProductOfArrayExceptSelf_2020_06_18.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="1744" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/ProductOfArrayExceptSelf_2020_06_18.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1745" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/ProductOfArrayExceptSelf_2020_06_18.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1746" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/ProductOfArrayExceptSelf_2020_06_18.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1747" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/ProductOfArrayExceptSelf_2020_06_18.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1748" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/ProductOfArrayExceptSelf_2020_06_18.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1749" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
