@@ -245,20 +245,7 @@
       <recent name="Pair" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PartitionLabels_2020_06_20">
-    <configuration name="A_BasicCalculator2_II_UsiingForLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.calculator.A_BasicCalculator2_II_UsiingForLoop" />
-      <module name="Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Array.problems.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SearchA2DMatrix_2_June_22_2020">
     <configuration name="B_BasicCalculator2_II_UsingStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array.problems.calculator.B_BasicCalculator2_II_UsingStack" />
       <module name="Algorithms" />
@@ -311,20 +298,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchA2DMatrix_2_June_22_2020" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.SearchA2DMatrix_2_June_22_2020" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Array.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.BasicCalculator2_II_Queue" />
-      <item itemvalue="Application.A_BasicCalculator2_II_UsiingForLoop" />
       <item itemvalue="Application.B_BasicCalculator2_II_UsingStack" />
       <item itemvalue="Application.ProductOfArrayExceptSelf_2020_06_18" />
       <item itemvalue="Application.PartitionLabels_2020_06_20" />
+      <item itemvalue="Application.SearchA2DMatrix_2_June_22_2020" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SearchA2DMatrix_2_June_22_2020" />
         <item itemvalue="Application.PartitionLabels_2020_06_20" />
         <item itemvalue="Application.ProductOfArrayExceptSelf_2020_06_18" />
         <item itemvalue="Application.B_BasicCalculator2_II_UsingStack" />
         <item itemvalue="Application.BasicCalculator2_II_Queue" />
-        <item itemvalue="Application.A_BasicCalculator2_II_UsiingForLoop" />
       </list>
     </recent_temporary>
   </component>
@@ -431,7 +431,7 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state width="1878" height="434" key="GridCell.Tab.-1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1586551612059" />
-    <state width="662" height="362" key="GridCell.Tab.0.bottom" timestamp="1592718490836">
+    <state width="779" height="380" key="GridCell.Tab.0.bottom" timestamp="1592887416965">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1592450507828">
@@ -442,7 +442,7 @@
     <state width="811" height="1271" key="GridCell.Tab.0.bottom.inPresentationMode/620.1463.1920.1134/0.23.2560.1417@0.23.2560.1417" timestamp="1592450507828" />
     <state width="1398" height="413" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1589002646265" />
     <state width="1558" height="376" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1591936579087" />
-    <state width="662" height="362" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1592718490836" />
+    <state width="779" height="380" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1592887416965" />
     <state width="2006" height="174" key="GridCell.Tab.0.bottom/0.0.2048.1152@0.0.2048.1152" timestamp="1589231081798" />
     <state width="2518" height="230" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1589150161506" />
     <state width="1238" height="279" key="GridCell.Tab.0.bottom/0.23.1280.617@0.23.1280.617" timestamp="1586923563183" />
@@ -462,7 +462,7 @@
     <state width="811" height="331" key="GridCell.Tab.0.bottom/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328169" />
     <state width="1558" height="310" key="GridCell.Tab.0.bottom/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288287545" />
     <state width="1398" height="181" key="GridCell.Tab.0.bottom/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711257" />
-    <state width="662" height="362" key="GridCell.Tab.0.center" timestamp="1592718490835">
+    <state width="779" height="380" key="GridCell.Tab.0.center" timestamp="1592887416963">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1592450507827">
@@ -473,7 +473,7 @@
     <state width="811" height="1271" key="GridCell.Tab.0.center.inPresentationMode/620.1463.1920.1134/0.23.2560.1417@0.23.2560.1417" timestamp="1592450507827" />
     <state width="1398" height="413" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1589002646263" />
     <state width="1558" height="376" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1591936579086" />
-    <state width="662" height="362" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1592718490835" />
+    <state width="779" height="380" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1592887416963" />
     <state width="2006" height="174" key="GridCell.Tab.0.center/0.0.2048.1152@0.0.2048.1152" timestamp="1589231081797" />
     <state width="2518" height="230" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1589150161505" />
     <state width="1238" height="279" key="GridCell.Tab.0.center/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
@@ -493,7 +493,7 @@
     <state width="811" height="331" key="GridCell.Tab.0.center/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328168" />
     <state width="1558" height="310" key="GridCell.Tab.0.center/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288287544" />
     <state width="1398" height="181" key="GridCell.Tab.0.center/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711256" />
-    <state width="662" height="362" key="GridCell.Tab.0.left" timestamp="1592718490834">
+    <state width="779" height="380" key="GridCell.Tab.0.left" timestamp="1592887416962">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1592450507827">
@@ -504,7 +504,7 @@
     <state width="811" height="1271" key="GridCell.Tab.0.left.inPresentationMode/620.1463.1920.1134/0.23.2560.1417@0.23.2560.1417" timestamp="1592450507827" />
     <state width="1398" height="413" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1589002646262" />
     <state width="1558" height="376" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1591936579085" />
-    <state width="662" height="362" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1592718490834" />
+    <state width="779" height="380" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1592887416962" />
     <state width="2006" height="174" key="GridCell.Tab.0.left/0.0.2048.1152@0.0.2048.1152" timestamp="1589231081795" />
     <state width="2518" height="569" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1589150161559" />
     <state width="1238" height="279" key="GridCell.Tab.0.left/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
@@ -524,7 +524,7 @@
     <state width="811" height="331" key="GridCell.Tab.0.left/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328167" />
     <state width="635" height="776" key="GridCell.Tab.0.left/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592317825230" />
     <state width="1398" height="181" key="GridCell.Tab.0.left/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711255" />
-    <state width="662" height="362" key="GridCell.Tab.0.right" timestamp="1592718490836">
+    <state width="779" height="380" key="GridCell.Tab.0.right" timestamp="1592887416964">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1592450507828">
@@ -535,7 +535,7 @@
     <state width="811" height="1271" key="GridCell.Tab.0.right.inPresentationMode/620.1463.1920.1134/0.23.2560.1417@0.23.2560.1417" timestamp="1592450507828" />
     <state width="1398" height="413" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1589002646264" />
     <state width="1558" height="376" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1591936579087" />
-    <state width="662" height="362" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1592718490836" />
+    <state width="779" height="380" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1592887416964" />
     <state width="2006" height="174" key="GridCell.Tab.0.right/0.0.2048.1152@0.0.2048.1152" timestamp="1589231081798" />
     <state width="2518" height="230" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1589150161506" />
     <state width="1238" height="279" key="GridCell.Tab.0.right/0.23.1280.617@0.23.1280.617" timestamp="1586923563182" />
@@ -634,10 +634,10 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state x="71" y="23" width="1849" height="283" key="dock-window-3/0.23.1920.1097@0.23.1920.1097" timestamp="1586551522093" />
-    <state x="393" y="0" width="1157" height="1029" key="find.popup" timestamp="1592717980855">
+    <state x="393" y="0" width="1157" height="1029" key="find.popup" timestamp="1592886603481">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="393" y="0" width="1157" height="1029" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1592717980855" />
+    <state x="393" y="0" width="1157" height="1029" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1592886603481" />
     <state x="525" y="0" width="1541" height="1233" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1589149868264" />
     <state x="295" y="23" width="866" height="681" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1588126248138" />
     <state x="328" y="23" width="963" height="682" key="find.popup/0.23.1600.797@0.23.1600.797" timestamp="1589933894590" />
@@ -1763,13 +1763,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/PartitionLabels_2020_06_20.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="1753" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Array/problems/PartitionLabels_2020_06_20.java</url>
           <line>46</line>
           <option name="timeStamp" value="1754" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/SearchA2DMatrix_2_June_22_2020.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="1755" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/SearchA2DMatrix_2_June_22_2020.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="1756" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/SearchA2DMatrix_2_June_22_2020.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="1757" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/SearchA2DMatrix_2_June_22_2020.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="1758" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
