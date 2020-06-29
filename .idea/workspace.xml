@@ -17,6 +17,8 @@
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/classes/com/example/demo/b_SemaphoreKafka_WhenLoadIncreases.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/AppConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/SpringMvcInitializer.java" beforeDir="false" />
@@ -150,9 +152,6 @@
       <change beforePath="$PROJECT_DIR$/../src/test/java/mb/service/UserDetailsServiceTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/test/resources/log4j.xml" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/bin/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,23 +205,6 @@
       </state>
     </system>
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Array/problems/MeetingRooms_2_2020_06_24.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1347#1356#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -230,64 +212,12 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Meetingr</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/Array/problems/MeetingRooms_2_2020_06_24.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="792" />
-    <option name="y" value="23" />
-    <option name="width" value="1256" />
-    <option name="height" value="1092" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Zk1vKqgarUkaPmbz2lvocjxrGK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Array" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -316,19 +246,7 @@
       <recent name="Pair" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.MeetingRooms_2_2020_06_24">
+  <component name="RunManager" selected="Application.SearchSuggestionSystem_20200629">
     <configuration name="MeetingRooms_2_2020_06_24" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array.problems.MeetingRooms_2_2020_06_24" />
       <module name="Algorithms" />
@@ -355,8 +273,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductOfArrayExceptSelf_2020_06_18" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.ProductOfArrayExceptSelf_2020_06_18" />
+    <configuration name="SearchA2DMatrix_2_June_22_2020" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.SearchA2DMatrix_2_June_22_2020" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
@@ -368,8 +286,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchA2DMatrix_2_June_22_2020" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.SearchA2DMatrix_2_June_22_2020" />
+    <configuration name="SearchSuggestionSystem_20200629" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.SearchSuggestionSystem_20200629" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
@@ -395,19 +313,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ProductOfArrayExceptSelf_2020_06_18" />
       <item itemvalue="Application.PartitionLabels_2020_06_20" />
       <item itemvalue="Application.SearchA2DMatrix_2_June_22_2020" />
       <item itemvalue="Application.SpiralMaTRIX_June_24_2020" />
       <item itemvalue="Application.MeetingRooms_2_2020_06_24" />
+      <item itemvalue="Application.SearchSuggestionSystem_20200629" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SearchSuggestionSystem_20200629" />
         <item itemvalue="Application.MeetingRooms_2_2020_06_24" />
         <item itemvalue="Application.SpiralMaTRIX_June_24_2020" />
         <item itemvalue="Application.SearchA2DMatrix_2_June_22_2020" />
         <item itemvalue="Application.PartitionLabels_2020_06_20" />
-        <item itemvalue="Application.ProductOfArrayExceptSelf_2020_06_18" />
       </list>
     </recent_temporary>
   </component>
@@ -433,35 +351,6 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="792" y="23" width="1256" height="1092" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.44509345" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41783568" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36172345" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32998997" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-    </layout>
-  </component>
   <component name="WindowStateProjectService">
     <state x="624" y="214" key="#Inspections" timestamp="1586888896571">
       <screen x="0" y="23" width="2048" height="1049" />
@@ -482,17 +371,17 @@
     </state>
     <state x="731" y="424" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1680.947@0.23.1680.947" timestamp="1590545915476" />
     <state x="731" y="440" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1680.984@0.23.1680.984" timestamp="1591221797424" />
-    <state x="1114" y="589" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1584292620213" />
     <state x="518" y="149" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1587690365060">
       <screen x="0" y="23" width="1600" height="797" />
     </state>
     <state x="518" y="149" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.23.1600.797@0.23.1600.797" timestamp="1587690365060" />
-    <state x="582" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591752711712">
-      <screen x="0" y="0" width="2048" height="1152" />
+    <state x="546" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593472338452">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state x="582" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2048.1152@0.0.2048.1152" timestamp="1591752711712" />
     <state x="409" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.797@0.23.1440.797" timestamp="1586878327264" />
     <state x="455" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1600.797@0.23.1600.797" timestamp="1587690224984" />
+    <state x="546" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.1134@0.23.1920.1134" timestamp="1593472338452" />
     <state x="582" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1589679048007" />
     <state x="728" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1587611793260" />
     <state x="1029" y="923" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589920091616" />
@@ -502,8 +391,8 @@
     <state x="625" y="276" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1680.947@0.23.1680.947" timestamp="1589955344454" />
     <state x="762" y="303" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1588211322613" />
     <state x="595" y="240" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592285747848" />
-    <state x="1138" y="281" width="474" height="681" key="#xdebugger.evaluate" timestamp="1592718001657">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="1345" y="165" width="474" height="681" key="#xdebugger.evaluate" timestamp="1593381394039">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state x="596" y="203" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1589002374748" />
     <state x="1074" y="203" key="#xdebugger.evaluate/0.0.1600.900@0.0.1600.900" timestamp="1591931395675" />
@@ -512,7 +401,7 @@
     <state x="808" y="348" key="#xdebugger.evaluate/0.23.1600.797@0.23.1600.797" timestamp="1589942782602" />
     <state x="905" y="292" key="#xdebugger.evaluate/0.23.1600.834@0.23.1600.834" timestamp="1592173277970" />
     <state x="848" y="397" key="#xdebugger.evaluate/0.23.1680.947@0.23.1680.947" timestamp="1590546418736" />
-    <state x="1345" y="165" width="575" height="864" key="#xdebugger.evaluate/0.23.1920.1134@0.23.1920.1134" timestamp="1592273162326" />
+    <state x="1345" y="165" width="575" height="864" key="#xdebugger.evaluate/0.23.1920.1134@0.23.1920.1134" timestamp="1593381394039" />
     <state x="1034" y="451" width="618" height="398" key="#xdebugger.evaluate/0.23.2048.1049@0.23.2048.1049" timestamp="1589819364505" />
     <state x="1214" y="277" key="#xdebugger.evaluate/0.23.2048.1086@0.23.2048.1086" timestamp="1591931026104" />
     <state x="1029" y="175" key="#xdebugger.evaluate/620.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1592343449532" />
@@ -543,8 +432,8 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state width="1878" height="434" key="GridCell.Tab.-1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1586551612059" />
-    <state width="813" height="380" key="GridCell.Tab.0.bottom" timestamp="1593054667034">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1645" height="331" key="GridCell.Tab.0.bottom" timestamp="1593381841749">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1592450507828">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -564,7 +453,7 @@
     <state width="1638" height="332" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1590547642631" />
     <state width="1638" height="223" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1591221847530" />
     <state width="1878" height="397" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217641" />
-    <state width="813" height="380" key="GridCell.Tab.0.bottom/0.23.1920.1134@0.23.1920.1134" timestamp="1593052661158" />
+    <state width="1645" height="331" key="GridCell.Tab.0.bottom/0.23.1920.1134@0.23.1920.1134" timestamp="1593381841749" />
     <state width="1992" height="218" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.bottom/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147116" />
     <state width="2507" height="190" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
@@ -574,8 +463,8 @@
     <state width="811" height="331" key="GridCell.Tab.0.bottom/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328169" />
     <state width="1558" height="310" key="GridCell.Tab.0.bottom/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288287545" />
     <state width="1398" height="181" key="GridCell.Tab.0.bottom/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711257" />
-    <state width="813" height="380" key="GridCell.Tab.0.center" timestamp="1593054667032">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1645" height="331" key="GridCell.Tab.0.center" timestamp="1593381841748">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1592450507827">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -595,7 +484,7 @@
     <state width="1638" height="332" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1590547642630" />
     <state width="1638" height="223" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1591221847529" />
     <state width="1878" height="397" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
-    <state width="813" height="380" key="GridCell.Tab.0.center/0.23.1920.1134@0.23.1920.1134" timestamp="1593052661157" />
+    <state width="1645" height="331" key="GridCell.Tab.0.center/0.23.1920.1134@0.23.1920.1134" timestamp="1593381841748" />
     <state width="1992" height="218" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.center/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147115" />
     <state width="2507" height="190" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306600" />
@@ -605,8 +494,8 @@
     <state width="811" height="331" key="GridCell.Tab.0.center/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328168" />
     <state width="1558" height="310" key="GridCell.Tab.0.center/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288287544" />
     <state width="1398" height="181" key="GridCell.Tab.0.center/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711256" />
-    <state width="813" height="380" key="GridCell.Tab.0.left" timestamp="1593054667032">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1645" height="331" key="GridCell.Tab.0.left" timestamp="1593381841747">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1592450507827">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -626,7 +515,7 @@
     <state width="1638" height="332" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1590547642630" />
     <state width="1638" height="223" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1591221847528" />
     <state width="1878" height="397" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217689" />
-    <state width="813" height="380" key="GridCell.Tab.0.left/0.23.1920.1134@0.23.1920.1134" timestamp="1593052661154" />
+    <state width="1645" height="331" key="GridCell.Tab.0.left/0.23.1920.1134@0.23.1920.1134" timestamp="1593381841747" />
     <state width="1992" height="218" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.left/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147114" />
     <state width="2507" height="190" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306599" />
@@ -636,8 +525,8 @@
     <state width="811" height="331" key="GridCell.Tab.0.left/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328167" />
     <state width="635" height="776" key="GridCell.Tab.0.left/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592317825230" />
     <state width="1398" height="181" key="GridCell.Tab.0.left/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711255" />
-    <state width="813" height="380" key="GridCell.Tab.0.right" timestamp="1593054667033">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1645" height="331" key="GridCell.Tab.0.right" timestamp="1593381841748">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1592450507828">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -657,7 +546,7 @@
     <state width="1638" height="332" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1590547642630" />
     <state width="1638" height="223" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1591221847529" />
     <state width="1878" height="397" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
-    <state width="813" height="380" key="GridCell.Tab.0.right/0.23.1920.1134@0.23.1920.1134" timestamp="1593052661157" />
+    <state width="1645" height="331" key="GridCell.Tab.0.right/0.23.1920.1134@0.23.1920.1134" timestamp="1593381841748" />
     <state width="1992" height="218" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.right/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147115" />
     <state width="2507" height="190" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
@@ -671,22 +560,18 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state x="71" y="23" width="1878" height="434" key="GridCell.Tab.1.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1586551609302" />
-    <state width="1638" height="304" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1584292784002" />
     <state x="71" y="23" width="1878" height="434" key="GridCell.Tab.1.center" timestamp="1586551609301">
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state x="71" y="23" width="1878" height="434" key="GridCell.Tab.1.center/0.23.1920.1097@0.23.1920.1097" timestamp="1586551609301" />
-    <state width="1638" height="304" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1584292784001" />
     <state x="71" y="23" width="1878" height="434" key="GridCell.Tab.1.left" timestamp="1586551609301">
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state x="71" y="23" width="1878" height="434" key="GridCell.Tab.1.left/0.23.1920.1097@0.23.1920.1097" timestamp="1586551609301" />
-    <state width="1638" height="304" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1584292784000" />
     <state x="71" y="23" width="1878" height="434" key="GridCell.Tab.1.right" timestamp="1586551609302">
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state x="71" y="23" width="1878" height="434" key="GridCell.Tab.1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1586551609302" />
-    <state width="1638" height="304" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1584292784001" />
     <state x="71" y="23" width="1849" height="267" key="GridCell.Tab.2.bottom" timestamp="1586551467373">
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
@@ -713,10 +598,10 @@
       <screen x="0" y="23" width="2048" height="1049" />
     </state>
     <state x="509" y="123" width="1425" height="848" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1589671836349" />
-    <state x="714" y="1571" width="1733" height="918" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592447373083">
-      <screen x="620" y="1463" width="1920" height="1134" />
+    <state x="94" y="131" width="1733" height="918" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593381327424">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
-    <state x="94" y="131" width="1733" height="918" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.1134@0.23.1920.1134" timestamp="1592013267273" />
+    <state x="94" y="131" width="1733" height="918" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.1134@0.23.1920.1134" timestamp="1593381327424" />
     <state x="100" y="123" width="1848" height="849" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1589672047172" />
     <state x="714" y="1571" width="1733" height="918" key="com.intellij.history.integration.ui.views.FileHistoryDialog/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592447373083" />
     <state x="486" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1591928611898">
@@ -788,811 +673,676 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Stack/queue/LinkedQueueUsingTwoNodes.java</url>
           <line>22</line>
-          <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/FindUnlockPatterns.java</url>
           <line>116</line>
-          <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/FindUnlockPatterns.java</url>
           <line>149</line>
-          <properties />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/hIndex/HindexUsingBucketSort.java</url>
           <line>53</line>
-          <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/hIndex/HindexUsingBucketSort.java</url>
           <line>45</line>
-          <properties />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/hIndex/HindexUsingBucketSort.java</url>
           <line>47</line>
-          <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/hIndex/HindexUsingBucketSort.java</url>
           <line>43</line>
-          <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/hIndex/HindexUsingBucketSort.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/bst/H_PostOrderPrint.java</url>
           <line>60</line>
-          <properties />
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/RandomTree.java</url>
           <line>112</line>
-          <properties />
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualUsingRecurcsion.java</url>
           <line>36</line>
-          <properties />
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualUsingRecurcsion.java</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualUsingRecurcsion.java</url>
           <line>71</line>
-          <properties />
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualUsingRecurcsion.java</url>
           <line>90</line>
-          <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualUsingRecurcsion.java</url>
           <line>91</line>
-          <properties />
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualUsingRecurcsion.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualUsingRecurcsion.java</url>
           <line>95</line>
-          <properties />
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualValue.java</url>
           <line>94</line>
-          <properties />
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualValue.java</url>
           <line>59</line>
-          <properties />
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualValue.java</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/palindrome/IsPalindromeByReverse.java</url>
           <line>35</line>
-          <properties />
           <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/palindrome/IsPalindromeByReverse.java</url>
           <line>52</line>
-          <properties />
           <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/palindrome/IsPalindromeByReverse.java</url>
           <line>64</line>
-          <properties />
           <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/palindrome/IsPalindromeRecursionAndLength.java</url>
           <line>58</line>
-          <properties />
           <option name="timeStamp" value="182" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/FindNumberOccuringOddNumberOfTimes.java</url>
           <line>186</line>
-          <properties />
           <option name="timeStamp" value="254" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/MiddleOfLinkedList.java</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="259" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/PalindromePermutation.java</url>
           <line>58</line>
-          <properties />
           <option name="timeStamp" value="273" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/OneAwayCheckIfHasEdits.java</url>
           <line>112</line>
-          <properties />
           <option name="timeStamp" value="276" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MinStepsToMakeTwoStringsAnagram.java</url>
           <line>11</line>
-          <properties />
           <option name="timeStamp" value="309" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MinStepsToMakeTwoStringsAnagram.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="310" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MinStepsToMakeTwoStringsAnagram.java</url>
           <line>48</line>
-          <properties />
           <option name="timeStamp" value="313" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/Sandbox.java</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="326" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/pair/FindIndexOfTwoNumbersFromArrayWhichMatchesSum.java</url>
           <line>20</line>
-          <properties />
           <option name="timeStamp" value="367" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/pair/FindIndexOfTwoNumbersFromArrayWhichMatchesSum.java</url>
           <line>69</line>
-          <properties />
           <option name="timeStamp" value="377" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/pair/FindIndexOfTwoNumbersFromArrayWhichMatchesSum.java</url>
           <line>75</line>
-          <properties />
           <option name="timeStamp" value="379" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/pair/FindIndexOfTwoNumbersFromArrayWhichMatchesSum.java</url>
           <line>92</line>
-          <properties />
           <option name="timeStamp" value="380" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/pair/FindIndexOfTwoNumbersFromArrayWhichMatchesSum.java</url>
           <line>96</line>
-          <properties />
           <option name="timeStamp" value="382" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/ReverseLinkedList.java</url>
           <line>59</line>
-          <properties />
           <option name="timeStamp" value="391" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/DiamterOfBinaryTree.java</url>
           <line>15</line>
-          <properties />
           <option name="timeStamp" value="392" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AddStrings.java</url>
           <line>35</line>
-          <properties />
           <option name="timeStamp" value="401" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AddStrings.java</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="408" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AddStrings.java</url>
           <line>19</line>
-          <properties />
           <option name="timeStamp" value="409" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AddStrings.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="410" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AddStrings.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="411" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AddStrings.java</url>
           <line>43</line>
-          <properties />
           <option name="timeStamp" value="412" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/PalindromeDeleteOneChar.java</url>
           <line>51</line>
-          <properties />
           <option name="timeStamp" value="530" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/PalindromeDeleteOneChar.java</url>
           <line>39</line>
-          <properties />
           <option name="timeStamp" value="539" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MergeSortedArray.java</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="573" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MergeSortedArray.java</url>
           <line>20</line>
-          <properties />
           <option name="timeStamp" value="575" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MergeSortedArray.java</url>
           <line>51</line>
-          <properties />
           <option name="timeStamp" value="576" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MergeSortedArray.java</url>
           <line>52</line>
-          <properties />
           <option name="timeStamp" value="577" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MergeSortedArray.java</url>
           <line>53</line>
-          <properties />
           <option name="timeStamp" value="578" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MergeSortedArray.java</url>
           <line>35</line>
-          <properties />
           <option name="timeStamp" value="579" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MergeSortedArray.java</url>
           <line>39</line>
-          <properties />
           <option name="timeStamp" value="580" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MergeSortedArray.java</url>
           <line>40</line>
-          <properties />
           <option name="timeStamp" value="581" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MergeSortedArray.java</url>
           <line>42</line>
-          <properties />
           <option name="timeStamp" value="582" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MergeSortedArray.java</url>
           <line>47</line>
-          <properties />
           <option name="timeStamp" value="583" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MergeSortedArray.java</url>
           <line>46</line>
-          <properties />
           <option name="timeStamp" value="584" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MergeSortedArray.java</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="585" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/MostCommonWord.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="595" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/MostCommonWord.java</url>
           <line>37</line>
-          <properties />
           <option name="timeStamp" value="596" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/MostCommonWord.java</url>
           <line>45</line>
-          <properties />
           <option name="timeStamp" value="597" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/MostCommonWord.java</url>
           <line>49</line>
-          <properties />
           <option name="timeStamp" value="598" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/MostCommonWord.java</url>
           <line>53</line>
-          <properties />
           <option name="timeStamp" value="599" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/MostCommonWord.java</url>
           <line>87</line>
-          <properties />
           <option name="timeStamp" value="603" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AlienDictionary.java</url>
           <line>70</line>
-          <properties />
           <option name="timeStamp" value="613" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AlienDictionary.java</url>
           <line>72</line>
-          <properties />
           <option name="timeStamp" value="614" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AlienDictionary.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="618" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AlienDictionary.java</url>
           <line>55</line>
-          <properties />
           <option name="timeStamp" value="619" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AlienDictionary.java</url>
           <line>64</line>
-          <properties />
           <option name="timeStamp" value="620" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AlienDictionary.java</url>
           <line>57</line>
-          <properties />
           <option name="timeStamp" value="622" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AlienDictionary.java</url>
           <line>60</line>
-          <properties />
           <option name="timeStamp" value="623" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/AlienDictionary.java</url>
           <line>66</line>
-          <properties />
           <option name="timeStamp" value="624" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>47</line>
-          <properties />
           <option name="timeStamp" value="659" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>45</line>
-          <properties />
           <option name="timeStamp" value="660" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>64</line>
-          <properties />
           <option name="timeStamp" value="661" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="662" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>61</line>
-          <properties />
           <option name="timeStamp" value="663" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>51</line>
-          <properties />
           <option name="timeStamp" value="664" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>53</line>
-          <properties />
           <option name="timeStamp" value="667" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>54</line>
-          <properties />
           <option name="timeStamp" value="668" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>57</line>
-          <properties />
           <option name="timeStamp" value="669" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="670" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>24</line>
-          <properties />
           <option name="timeStamp" value="671" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="672" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="673" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="674" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>22</line>
-          <properties />
           <option name="timeStamp" value="675" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/RomanToInteger.java</url>
           <line>30</line>
-          <properties />
           <option name="timeStamp" value="676" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a3_robotIngrid/a3_RobotInGrid_getTotalPaths.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="750" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a3_robotIngrid/a3_RobotInGrid_getTotalPaths.java</url>
           <line>49</line>
-          <properties />
           <option name="timeStamp" value="751" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a3_robotIngrid/a3_RobotInGrid_getTotalPaths.java</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="752" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a4_magicIndex/MagicIndex.java</url>
           <line>69</line>
-          <properties />
           <option name="timeStamp" value="782" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a4_magicIndex/MagicIndex.java</url>
           <line>89</line>
-          <properties />
           <option name="timeStamp" value="785" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a4_magicIndex/MagicIndex.java</url>
           <line>86</line>
-          <properties />
           <option name="timeStamp" value="786" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a4_magicIndex/MagicIndex.java</url>
           <line>91</line>
-          <properties />
           <option name="timeStamp" value="787" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a4_magicIndex/MagicIndex.java</url>
           <line>93</line>
-          <properties />
           <option name="timeStamp" value="788" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a4_magicIndex/MagicIndex.java</url>
           <line>88</line>
-          <properties />
           <option name="timeStamp" value="789" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a5_SubSetOfStrings.java</url>
           <line>90</line>
-          <properties />
           <option name="timeStamp" value="804" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a7_recursiveMultiply/a_RecursiveMultiply.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="885" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a7_recursiveMultiply/a_RecursiveMultiply.java</url>
           <line>130</line>
-          <properties />
           <option name="timeStamp" value="886" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a7_recursiveMultiply/a_RecursiveMultiply.java</url>
           <line>11</line>
-          <properties />
           <option name="timeStamp" value="887" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a7_recursiveMultiply/b_RecursiveMultiply_Addition_Memo.java</url>
           <line>10</line>
-          <properties />
           <option name="timeStamp" value="907" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
           <line>46</line>
-          <properties />
           <option name="timeStamp" value="918" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="919" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
           <line>38</line>
-          <properties />
           <option name="timeStamp" value="920" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
           <line>41</line>
-          <properties />
           <option name="timeStamp" value="921" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="922" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="923" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a8_towerOfHanoi/TOHUsingStack.java</url>
           <line>34</line>
-          <properties />
           <option name="timeStamp" value="924" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a10_parens/a_Parens.java</url>
           <line>51</line>
-          <properties />
           <option name="timeStamp" value="950" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a12_coins/b_coins_matrix.java</url>
           <line>39</line>
-          <properties />
           <option name="timeStamp" value="967" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a12_coins/b_coins_matrix.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="971" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a12_coins/b_coins_matrix.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="974" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../system_design/semaphore_kafka/src/main/java/com/example/demo/a_SemaphoreKafkaApplication.java</url>
           <line>120</line>
-          <properties />
           <option name="timeStamp" value="975" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/Sandbox.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="976" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/CopyListRandomPointer.java</url>
           <line>91</line>
-          <properties />
           <option name="timeStamp" value="1034" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/CopyListRandomPointer.java</url>
           <line>107</line>
-          <properties />
           <option name="timeStamp" value="1044" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/CopyListRandomPointer.java</url>
           <line>82</line>
-          <properties />
           <option name="timeStamp" value="1052" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="1058" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
           <line>24</line>
-          <properties />
           <option name="timeStamp" value="1059" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="1060" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="1061" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="1062" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="1063" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
           <line>19</line>
-          <properties />
           <option name="timeStamp" value="1064" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
           <line>42</line>
-          <properties />
           <option name="timeStamp" value="1065" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
           <line>43</line>
-          <properties />
           <option name="timeStamp" value="1066" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="1067" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
           <line>46</line>
-          <properties />
           <option name="timeStamp" value="1068" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
           <line>54</line>
-          <properties />
           <option name="timeStamp" value="1069" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/kMostFrequent/NthMostFrequentNumberInArray.java</url>
           <line>53</line>
-          <properties />
           <option name="timeStamp" value="1234" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/kMostFrequent/NthMostFrequentNumberInArray.java</url>
           <line>72</line>
-          <properties />
           <option name="timeStamp" value="1237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/kMostFrequent/NthMostFrequentNumberInArray.java</url>
           <line>103</line>
-          <properties />
           <option name="timeStamp" value="1240" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/kMostFrequent/NthMostFrequentNumberInArray.java</url>
           <line>98</line>
-          <properties />
           <option name="timeStamp" value="1241" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1606,547 +1356,456 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/kMostFrequent/NthMostFrequentNumberInArray.java</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="1244" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/kMostFrequent/NthMostFrequentNumberInArray.java</url>
           <line>134</line>
-          <properties />
           <option name="timeStamp" value="1246" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/kMostFrequent/NthMostFrequentNumberInArray.java</url>
           <line>122</line>
-          <properties />
           <option name="timeStamp" value="1248" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/kMostFrequent/TopKFrequentWords.java</url>
           <line>65</line>
-          <properties />
           <option name="timeStamp" value="1261" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/kMostFrequent/TopKFrequentWords.java</url>
           <line>64</line>
-          <properties />
           <option name="timeStamp" value="1267" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java</url>
           <line>112</line>
-          <properties />
           <option name="timeStamp" value="1268" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java</url>
           <line>140</line>
-          <properties />
           <option name="timeStamp" value="1273" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java</url>
           <line>146</line>
-          <properties />
           <option name="timeStamp" value="1274" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java</url>
           <line>152</line>
-          <properties />
           <option name="timeStamp" value="1288" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java</url>
           <line>128</line>
-          <properties />
           <option name="timeStamp" value="1290" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java</url>
           <line>99</line>
-          <properties />
           <option name="timeStamp" value="1291" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java</url>
           <line>134</line>
-          <properties />
           <option name="timeStamp" value="1292" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java</url>
           <line>120</line>
-          <properties />
           <option name="timeStamp" value="1293" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java</url>
           <line>81</line>
-          <properties />
           <option name="timeStamp" value="1294" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java</url>
           <line>80</line>
-          <properties />
           <option name="timeStamp" value="1295" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java</url>
           <line>77</line>
-          <properties />
           <option name="timeStamp" value="1305" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/anagrams/GroupAnagrams_2020_06_04.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="1307" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/LetterCombinations_2020_06_04.java</url>
           <line>42</line>
-          <properties />
           <option name="timeStamp" value="1308" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/LetterCombinations_2020_06_04.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="1309" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/LetterCombinations_2020_06_04.java</url>
           <line>24</line>
-          <properties />
           <option name="timeStamp" value="1311" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/LetterCombinations_2020_06_04.java</url>
           <line>27</line>
-          <properties />
           <option name="timeStamp" value="1312" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/LetterCombinations_2020_06_04.java</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="1313" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/String/problems/LetterCombinations_2020_06_04.java</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="1314" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/AlienDictionaryOrder_20200608.java</url>
           <line>101</line>
-          <properties />
           <option name="timeStamp" value="1349" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/AlienDictionaryOrder_20200608.java</url>
           <line>96</line>
-          <properties />
           <option name="timeStamp" value="1352" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/BuildOrder_20200608.java</url>
           <line>68</line>
-          <properties />
           <option name="timeStamp" value="1364" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
           <line>46</line>
-          <properties />
           <option name="timeStamp" value="1378" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
           <line>81</line>
-          <properties />
           <option name="timeStamp" value="1380" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
           <line>80</line>
-          <properties />
           <option name="timeStamp" value="1381" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
           <line>65</line>
-          <properties />
           <option name="timeStamp" value="1386" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
           <line>57</line>
-          <properties />
           <option name="timeStamp" value="1387" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
           <line>52</line>
-          <properties />
           <option name="timeStamp" value="1394" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
           <line>66</line>
-          <properties />
           <option name="timeStamp" value="1401" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
           <line>60</line>
-          <properties />
           <option name="timeStamp" value="1402" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
           <line>61</line>
-          <properties />
           <option name="timeStamp" value="1403" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_dfs_20200608.java</url>
           <line>86</line>
-          <properties />
           <option name="timeStamp" value="1404" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_dfs_20200608.java</url>
           <line>55</line>
-          <properties />
           <option name="timeStamp" value="1406" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_dfs_20200608.java</url>
           <line>102</line>
-          <properties />
           <option name="timeStamp" value="1407" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_dfs_20200608.java</url>
           <line>106</line>
-          <properties />
           <option name="timeStamp" value="1408" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_dfs_20200608.java</url>
           <line>112</line>
-          <properties />
           <option name="timeStamp" value="1409" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_II_bfs_20200608.java</url>
           <line>92</line>
-          <properties />
           <option name="timeStamp" value="1411" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_II_bfs_20200608.java</url>
           <line>96</line>
-          <properties />
           <option name="timeStamp" value="1412" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_II_bfs_20200608.java</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="1413" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/A_Insert.java</url>
           <line>16</line>
-          <properties />
           <option name="timeStamp" value="1431" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/D_DeleteWord.java</url>
           <line>22</line>
-          <properties />
           <option name="timeStamp" value="1443" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/D_DeleteWord.java</url>
           <line>54</line>
-          <properties />
           <option name="timeStamp" value="1451" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/D_DeleteWord.java</url>
           <line>13</line>
-          <properties />
           <option name="timeStamp" value="1452" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/E_LongestWordInDictionary.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="1488" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/E_LongestWordInDictionary.java</url>
           <line>35</line>
-          <properties />
           <option name="timeStamp" value="1489" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/F_WordSearch2_20200612.java</url>
           <line>76</line>
-          <properties />
           <option name="timeStamp" value="1517" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/F_WordSearch2_20200612.java</url>
           <line>107</line>
-          <properties />
           <option name="timeStamp" value="1539" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/F_WordSearch2_20200612.java</url>
           <line>102</line>
-          <properties />
           <option name="timeStamp" value="1540" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/F_WordSearch2_20200612.java</url>
           <line>99</line>
-          <properties />
           <option name="timeStamp" value="1541" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/H_AnalyzeWebsitesByUser.java</url>
           <line>72</line>
-          <properties />
           <option name="timeStamp" value="1586" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/H_AnalyzeWebsitesByUser.java</url>
           <line>37</line>
-          <properties />
           <option name="timeStamp" value="1590" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/H_AnalyzeWebsitesByUser.java</url>
           <line>39</line>
-          <properties />
           <option name="timeStamp" value="1591" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/H_AnalyzeWebsitesByUser.java</url>
           <line>46</line>
-          <properties />
           <option name="timeStamp" value="1592" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/H_AnalyzeWebsitesByUser.java</url>
           <line>48</line>
-          <properties />
           <option name="timeStamp" value="1593" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/H_AnalyzeWebsitesByUser.java</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="1594" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/H_AnalyzeWebsitesByUser.java</url>
           <line>63</line>
-          <properties />
           <option name="timeStamp" value="1595" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/H_AnalyzeWebsitesByUser.java</url>
           <line>45</line>
-          <properties />
           <option name="timeStamp" value="1596" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/Solution.java</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="1599" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/Solution.java</url>
           <line>49</line>
-          <properties />
           <option name="timeStamp" value="1600" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/Solution.java</url>
           <line>65</line>
-          <properties />
           <option name="timeStamp" value="1607" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/Solution.java</url>
           <line>66</line>
-          <properties />
           <option name="timeStamp" value="1608" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/Solution.java</url>
           <line>64</line>
-          <properties />
           <option name="timeStamp" value="1610" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/Solution.java</url>
           <line>48</line>
-          <properties />
           <option name="timeStamp" value="1611" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/Solution.java</url>
           <line>53</line>
-          <properties />
           <option name="timeStamp" value="1614" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/trie/Solution.java</url>
           <line>45</line>
-          <properties />
           <option name="timeStamp" value="1615" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/wordbreak2/WordBreakUsingBackTracking.java</url>
           <line>64</line>
-          <properties />
           <option name="timeStamp" value="1630" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/wordbreak2/WordBreakUsingBackTracking.java</url>
           <line>65</line>
-          <properties />
           <option name="timeStamp" value="1631" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/wordbreak2/WordBreakUsingBackTracking.java</url>
           <line>63</line>
-          <properties />
           <option name="timeStamp" value="1635" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/wordbreak2/WordBreakUsingBackTracking.java</url>
           <line>52</line>
-          <properties />
           <option name="timeStamp" value="1637" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/wordbreak2/WordBreakUsingBackTracking.java</url>
           <line>53</line>
-          <properties />
           <option name="timeStamp" value="1638" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/wordbreak2/WordBreakUsingBackTracking.java</url>
           <line>46</line>
-          <properties />
           <option name="timeStamp" value="1639" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/wordbreak2/WordBreakUsingBackTracking.java</url>
           <line>51</line>
-          <properties />
           <option name="timeStamp" value="1640" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/wordbreak2/WordBreakUsingBackTracking.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="1641" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/calculator/A_BasicCalculator2_II_UsiingForLoop.java</url>
           <line>91</line>
-          <properties />
           <option name="timeStamp" value="1736" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/calculator/A_BasicCalculator2_II_UsiingForLoop.java</url>
           <line>84</line>
-          <properties />
           <option name="timeStamp" value="1737" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/calculator/A_BasicCalculator2_II_UsiingForLoop.java</url>
           <line>78</line>
-          <properties />
           <option name="timeStamp" value="1738" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/PartitionLabels_2020_06_20.java</url>
           <line>20</line>
-          <properties />
           <option name="timeStamp" value="1751" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/PartitionLabels_2020_06_20.java</url>
           <line>46</line>
-          <properties />
           <option name="timeStamp" value="1754" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/SearchA2DMatrix_2_June_22_2020.java</url>
           <line>118</line>
-          <properties />
           <option name="timeStamp" value="1755" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/SearchA2DMatrix_2_June_22_2020.java</url>
           <line>119</line>
-          <properties />
           <option name="timeStamp" value="1756" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/SearchA2DMatrix_2_June_22_2020.java</url>
           <line>87</line>
-          <properties />
           <option name="timeStamp" value="1757" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/SearchA2DMatrix_2_June_22_2020.java</url>
           <line>94</line>
-          <properties />
           <option name="timeStamp" value="1758" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/SpiralMaTRIX_June_24_2020.java</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="1759" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/SpiralMaTRIX_June_24_2020.java</url>
           <line>20</line>
-          <properties />
           <option name="timeStamp" value="1770" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/SpiralMaTRIX_June_24_2020.java</url>
           <line>55</line>
-          <properties />
           <option name="timeStamp" value="1772" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MeetingRooms_2_2020_06_24.java</url>
           <line>13</line>
-          <properties />
           <option name="timeStamp" value="1779" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/MeetingRooms_2_2020_06_24.java</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="1780" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2157,21 +1816,33 @@
           </properties>
           <option name="timeStamp" value="1781" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/Solution.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1813" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/Solution.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="1814" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/Solution.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="1815" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/Solution.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="1817" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/Solution.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="1819" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Array/problems/MeetingRooms_2_2020_06_24.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1347#1356#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
