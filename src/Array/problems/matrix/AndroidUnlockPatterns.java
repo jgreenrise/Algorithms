@@ -1,6 +1,9 @@
-package tree.problems;
+package Array.problems.matrix;
 
-public class Solution {
+/**
+ * https://leetcode.com/problems/android-unlock-patterns/
+ */
+public class AndroidUnlockPatterns {
 
     public static void main(String [] args){
         System.out.println(numberOfPatterns(2,2));

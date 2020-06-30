@@ -1,4 +1,4 @@
-package Array.problems;
+package Array.problems.matrix;
 
 /*-
  * 
