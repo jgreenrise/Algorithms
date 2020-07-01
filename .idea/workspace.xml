@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf3ea153-809c-4382-89db-85a4f9de2a98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/recursive/fibonacci/a15_islands/a12_numberOfIslands.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/classes/META-INF/semaphore_kafka.main.kotlin_module" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/classes/com/example/demo/a_SemaphoreKafkaApplication$CellPhone.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/classes/com/example/demo/a_SemaphoreKafkaApplication$ConsumerSemaphore.class" afterDir="false" />
@@ -18,8 +19,8 @@
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/RotateMatrixBy90Degree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/matrix/RotateMatrixBy90Degree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/problems/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/matrix/AndroidUnlockPatterns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/problems/SearchSuggestionSystem_20200629.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/SearchSuggestionSystem_20200629.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recursive/fibonacci/a12_numberOfIslands.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/AppConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/SpringMvcInitializer.java" beforeDir="false" />
@@ -237,32 +238,20 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="recursive.fibonacci.a15_islands" />
       <recent name="Array.problems" />
       <recent name="Array.problems.calculator" />
       <recent name="Array.problems.wordbreak2" />
       <recent name="tree.trie" />
-      <recent name="tree.problems.topologicalSort" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="recursive.fibonacci.a15_islands" />
       <recent name="Pair" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="Application.a12_numberOfDistinctIslands">
     <configuration name="MeetingRooms_2_2020_06_24" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array.problems.MeetingRooms_2_2020_06_24" />
-      <module name="Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Array.problems.matrix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchA2DMatrix_2_June_22_2020" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.SearchA2DMatrix_2_June_22_2020" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
@@ -287,8 +276,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.problems.Solution" />
+    <configuration name="SubtreeOfAnothertree_20200630" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.problems.SubtreeOfAnothertree_20200630" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
@@ -300,12 +289,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpiralMaTRIX_June_24_2020" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.SpiralMaTRIX_June_24_2020" />
+    <configuration name="a12_numberOfDistinctIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursive.fibonacci.a15_islands.a12_numberOfDistinctIslands" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.problems.matrix.*" />
+          <option name="PATTERN" value="recursive.fibonacci.a15_islands.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="a12_numberOfIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursive.fibonacci.a15_islands.a12_numberOfIslands" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="recursive.fibonacci.a15_islands.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -314,19 +316,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SearchA2DMatrix_2_June_22_2020" />
-      <item itemvalue="Application.SpiralMaTRIX_June_24_2020" />
       <item itemvalue="Application.MeetingRooms_2_2020_06_24" />
       <item itemvalue="Application.SearchSuggestionSystem_20200629" />
-      <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.SubtreeOfAnothertree_20200630" />
+      <item itemvalue="Application.a12_numberOfIslands" />
+      <item itemvalue="Application.a12_numberOfDistinctIslands" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.a12_numberOfDistinctIslands" />
+        <item itemvalue="Application.a12_numberOfIslands" />
+        <item itemvalue="Application.SubtreeOfAnothertree_20200630" />
         <item itemvalue="Application.SearchSuggestionSystem_20200629" />
         <item itemvalue="Application.MeetingRooms_2_2020_06_24" />
-        <item itemvalue="Application.SpiralMaTRIX_June_24_2020" />
-        <item itemvalue="Application.SearchA2DMatrix_2_June_22_2020" />
       </list>
     </recent_temporary>
   </component>
@@ -393,8 +395,8 @@
     <state x="625" y="276" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1680.947@0.23.1680.947" timestamp="1589955344454" />
     <state x="762" y="303" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1588211322613" />
     <state x="595" y="240" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592285747848" />
-    <state x="1345" y="165" width="474" height="681" key="#xdebugger.evaluate" timestamp="1593381394039">
-      <screen x="0" y="23" width="1920" height="1134" />
+    <state x="1965" y="1317" width="474" height="681" key="#xdebugger.evaluate" timestamp="1593570576973">
+      <screen x="620" y="1175" width="1920" height="1134" />
     </state>
     <state x="596" y="203" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1589002374748" />
     <state x="1074" y="203" key="#xdebugger.evaluate/0.0.1600.900@0.0.1600.900" timestamp="1591931395675" />
@@ -407,6 +409,7 @@
     <state x="1034" y="451" width="618" height="398" key="#xdebugger.evaluate/0.23.2048.1049@0.23.2048.1049" timestamp="1589819364505" />
     <state x="1214" y="277" key="#xdebugger.evaluate/0.23.2048.1086@0.23.2048.1086" timestamp="1591931026104" />
     <state x="1029" y="175" key="#xdebugger.evaluate/620.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1592343449532" />
+    <state x="1965" y="1317" key="#xdebugger.evaluate/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593570576973" />
     <state x="1286" y="219" key="#xdebugger.evaluate/620.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1592345779943" />
     <state x="1585" y="1635" width="474" height="681" key="#xdebugger.evaluate/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592446175388" />
     <state x="493" y="236" key="#xdebugger.evaluate/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288215670" />
@@ -434,8 +437,8 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state width="1878" height="434" key="GridCell.Tab.-1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1586551612059" />
-    <state width="1878" height="276" key="GridCell.Tab.0.bottom" timestamp="1593548740331">
-      <screen x="620" y="1175" width="1920" height="1134" />
+    <state width="1878" height="276" key="GridCell.Tab.0.bottom" timestamp="1593579276145">
+      <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1592450507828">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -460,14 +463,15 @@
     <state width="1583" height="271" key="GridCell.Tab.0.bottom/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147116" />
     <state width="2507" height="190" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
     <state width="692" height="1028" key="GridCell.Tab.0.bottom/620.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1592344145724" />
-    <state width="1878" height="276" key="GridCell.Tab.0.bottom/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593548740331" />
+    <state width="1878" height="276" key="GridCell.Tab.0.bottom/620.1175.1920.1134/0.23.2048.1129@0.23.2048.1129" timestamp="1593579276145" />
+    <state width="1878" height="276" key="GridCell.Tab.0.bottom/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593571051041" />
     <state width="2518" height="331" key="GridCell.Tab.0.bottom/620.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1592353834103" />
     <state width="2006" height="221" key="GridCell.Tab.0.bottom/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
     <state width="811" height="331" key="GridCell.Tab.0.bottom/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328169" />
     <state width="1558" height="310" key="GridCell.Tab.0.bottom/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288287545" />
     <state width="1398" height="181" key="GridCell.Tab.0.bottom/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711257" />
-    <state width="1878" height="276" key="GridCell.Tab.0.center" timestamp="1593548740329">
-      <screen x="620" y="1175" width="1920" height="1134" />
+    <state width="1878" height="276" key="GridCell.Tab.0.center" timestamp="1593579276144">
+      <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1592450507827">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -492,14 +496,15 @@
     <state width="1583" height="271" key="GridCell.Tab.0.center/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147115" />
     <state width="2507" height="190" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306600" />
     <state width="692" height="1028" key="GridCell.Tab.0.center/620.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1592344145722" />
-    <state width="1878" height="276" key="GridCell.Tab.0.center/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593548740329" />
+    <state width="1878" height="276" key="GridCell.Tab.0.center/620.1175.1920.1134/0.23.2048.1129@0.23.2048.1129" timestamp="1593579276144" />
+    <state width="1878" height="276" key="GridCell.Tab.0.center/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593571051040" />
     <state width="2518" height="331" key="GridCell.Tab.0.center/620.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1592353834101" />
     <state width="2006" height="221" key="GridCell.Tab.0.center/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
     <state width="811" height="331" key="GridCell.Tab.0.center/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328168" />
     <state width="1558" height="310" key="GridCell.Tab.0.center/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288287544" />
     <state width="1398" height="181" key="GridCell.Tab.0.center/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711256" />
-    <state width="1878" height="276" key="GridCell.Tab.0.left" timestamp="1593548740329">
-      <screen x="620" y="1175" width="1920" height="1134" />
+    <state width="1878" height="412" key="GridCell.Tab.0.left" timestamp="1593579276191">
+      <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1592450507827">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -524,14 +529,15 @@
     <state width="1583" height="271" key="GridCell.Tab.0.left/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147114" />
     <state width="2507" height="190" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306599" />
     <state width="692" height="1028" key="GridCell.Tab.0.left/620.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1592344145778" />
-    <state width="1878" height="276" key="GridCell.Tab.0.left/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593548740329" />
+    <state width="1878" height="412" key="GridCell.Tab.0.left/620.1175.1920.1134/0.23.2048.1129@0.23.2048.1129" timestamp="1593579276191" />
+    <state width="1878" height="276" key="GridCell.Tab.0.left/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593571051039" />
     <state width="2518" height="331" key="GridCell.Tab.0.left/620.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1592353834100" />
     <state width="2006" height="221" key="GridCell.Tab.0.left/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865105" />
     <state width="811" height="331" key="GridCell.Tab.0.left/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328167" />
     <state width="635" height="776" key="GridCell.Tab.0.left/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592317825230" />
     <state width="1398" height="181" key="GridCell.Tab.0.left/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711255" />
-    <state width="1878" height="276" key="GridCell.Tab.0.right" timestamp="1593548740330">
-      <screen x="620" y="1175" width="1920" height="1134" />
+    <state width="1878" height="412" key="GridCell.Tab.0.right" timestamp="1593579276199">
+      <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1592450507828">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -556,7 +562,8 @@
     <state width="1583" height="271" key="GridCell.Tab.0.right/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147115" />
     <state width="2507" height="190" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
     <state width="692" height="1028" key="GridCell.Tab.0.right/620.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1592344145787" />
-    <state width="1878" height="276" key="GridCell.Tab.0.right/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593548740330" />
+    <state width="1878" height="412" key="GridCell.Tab.0.right/620.1175.1920.1134/0.23.2048.1129@0.23.2048.1129" timestamp="1593579276199" />
+    <state width="1878" height="276" key="GridCell.Tab.0.right/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593571051040" />
     <state width="2518" height="331" key="GridCell.Tab.0.right/620.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1592353834102" />
     <state width="2006" height="221" key="GridCell.Tab.0.right/620.1463.1680.947/0.23.2560.1417@0.23.2560.1417" timestamp="1588443865106" />
     <state width="811" height="331" key="GridCell.Tab.0.right/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328169" />
@@ -637,8 +644,8 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state x="71" y="23" width="1849" height="283" key="dock-window-3/0.23.1920.1097@0.23.1920.1097" timestamp="1586551522093" />
-    <state x="313" y="23" width="1158" height="974" key="find.popup" timestamp="1593546722628">
-      <screen x="0" y="23" width="1920" height="1134" />
+    <state x="933" y="1175" width="1158" height="974" key="find.popup" timestamp="1593571173184">
+      <screen x="620" y="1175" width="1920" height="1134" />
     </state>
     <state x="393" y="0" width="1157" height="1029" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1592886603481" />
     <state x="525" y="0" width="1541" height="1233" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1589149868264" />
@@ -646,10 +653,11 @@
     <state x="328" y="23" width="963" height="682" key="find.popup/0.23.1600.797@0.23.1600.797" timestamp="1589933894590" />
     <state x="344" y="23" width="1012" height="811" key="find.popup/0.23.1680.947@0.23.1680.947" timestamp="1590112064435" />
     <state x="344" y="23" width="1012" height="843" key="find.popup/0.23.1680.984@0.23.1680.984" timestamp="1591221784049" />
-    <state x="313" y="23" width="1158" height="974" key="find.popup/0.23.1920.1134@0.23.1920.1134" timestamp="1593546722628" />
+    <state x="313" y="23" width="1158" height="974" key="find.popup/0.23.1920.1134@0.23.1920.1134" timestamp="1593562268720" />
     <state x="420" y="23" width="1232" height="897" key="find.popup/0.23.2048.1049@0.23.2048.1049" timestamp="1589677649934" />
     <state x="419" y="23" width="1235" height="932" key="find.popup/0.23.2048.1086@0.23.2048.1086" timestamp="1591928916997" />
     <state x="904" y="412" width="673" height="708" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1585371867654" />
+    <state x="933" y="1175" width="1158" height="974" key="find.popup/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593571173184" />
     <state x="332" y="148" key="new project wizard" timestamp="1591647670650">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -1828,29 +1836,24 @@
           <option name="timeStamp" value="1813" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Array/problems/SearchSuggestionSystem_20200629.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="1814" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Array/problems/SearchSuggestionSystem_20200629.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="1815" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Array/problems/SearchSuggestionSystem_20200629.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="1817" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Array/problems/SearchSuggestionSystem_20200629.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="1819" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tree/problems/Solution.java</url>
+          <url>file://$PROJECT_DIR$/src/tree/problems/SubtreeOfAnothertree_20200630.java</url>
           <line>53</line>
           <option name="timeStamp" value="1835" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a15_islands/a12_numberOfIslands.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="1837" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a15_islands/a12_numberOfDistinctIslands.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1839" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursive/fibonacci/a15_islands/a12_numberOfDistinctIslands.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="1851" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

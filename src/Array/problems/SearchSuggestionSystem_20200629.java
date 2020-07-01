@@ -58,7 +58,6 @@ public class SearchSuggestionSystem_20200629 {
                 continue;
             }
 
-
             // Starting word that matches char ch
             int ceiling = map.get(ceilingKey);
 
@@ -91,7 +90,6 @@ public class SearchSuggestionSystem_20200629 {
         }
 
         return out;
-
 
     }
 
