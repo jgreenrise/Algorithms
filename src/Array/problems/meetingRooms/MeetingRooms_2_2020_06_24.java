@@ -1,7 +1,6 @@
-package Array.problems;
+package Array.problems.meetingRooms;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class MeetingRooms_2_2020_06_24 {
