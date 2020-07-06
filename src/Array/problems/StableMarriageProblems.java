@@ -4,7 +4,7 @@ package Array.problems;
  * Validation 
  * http://sephlietz.com/gale-shapley/
  */
-class StableMarriageProblem {
+class StableMarriageProblems {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

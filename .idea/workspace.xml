@@ -18,7 +18,8 @@
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/MeetingRooms_2_2020_06_24.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/meetingRooms/MeetingRooms_2_2020_06_24.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/problems/StableMarriageProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/StableMarriageProblems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/problems/meetingRooms/MergeIntervals_2020_07_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/meetingRooms/MergeIntervals_2020_07_01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/AppConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/SpringMvcInitializer.java" beforeDir="false" />
@@ -236,20 +237,46 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Array.problems.lruCache" />
       <recent name="Array.problems.meetingRooms" />
       <recent name="recursive.fibonacci.a15_islands" />
       <recent name="Array.problems" />
       <recent name="Array.problems.calculator" />
-      <recent name="Array.problems.wordbreak2" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="recursive.fibonacci.a15_islands" />
       <recent name="Pair" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MergeIntervals">
-    <configuration name="MergeIntervals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.meetingRooms.MergeIntervals" />
+  <component name="RunManager" selected="Application.KDistanceAway">
+    <configuration name="KDistanceAway" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.problems.KDistanceAway" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.lruCache.LRUCache" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Array.problems.lruCache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MergeIntervals_2020_07_01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.meetingRooms.MergeIntervals_2020_07_01" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
@@ -261,25 +288,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchSuggestionSystem_20200629" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.SearchSuggestionSystem_20200629" />
+    <configuration name="PrisonCellAfterNDays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.PrisonCellAfterNDays" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.problems.matrix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SubtreeOfAnothertree_20200630" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.problems.SubtreeOfAnothertree_20200630" />
-      <module name="Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tree.problems.*" />
+          <option name="PATTERN" value="Array.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -300,33 +314,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="a12_numberOfIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursive.fibonacci.a15_islands.a12_numberOfIslands" />
-      <module name="Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="recursive.fibonacci.a15_islands.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.SearchSuggestionSystem_20200629" />
-      <item itemvalue="Application.SubtreeOfAnothertree_20200630" />
-      <item itemvalue="Application.a12_numberOfIslands" />
       <item itemvalue="Application.a12_numberOfDistinctIslands" />
-      <item itemvalue="Application.MergeIntervals" />
+      <item itemvalue="Application.MergeIntervals_2020_07_01" />
+      <item itemvalue="Application.LRUCache" />
+      <item itemvalue="Application.PrisonCellAfterNDays" />
+      <item itemvalue="Application.KDistanceAway" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MergeIntervals" />
+        <item itemvalue="Application.KDistanceAway" />
+        <item itemvalue="Application.PrisonCellAfterNDays" />
+        <item itemvalue="Application.LRUCache" />
+        <item itemvalue="Application.MergeIntervals_2020_07_01" />
         <item itemvalue="Application.a12_numberOfDistinctIslands" />
-        <item itemvalue="Application.a12_numberOfIslands" />
-        <item itemvalue="Application.SubtreeOfAnothertree_20200630" />
-        <item itemvalue="Application.SearchSuggestionSystem_20200629" />
       </list>
     </recent_temporary>
   </component>
@@ -393,7 +394,7 @@
     <state x="625" y="276" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1680.947@0.23.1680.947" timestamp="1589955344454" />
     <state x="762" y="303" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1588211322613" />
     <state x="595" y="240" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592285747848" />
-    <state x="1797" y="1298" width="474" height="591" key="#xdebugger.evaluate" timestamp="1593667742146">
+    <state x="1797" y="1298" width="474" height="591" key="#xdebugger.evaluate" timestamp="1593891991156">
       <screen x="620" y="1175" width="1680" height="984" />
     </state>
     <state x="596" y="203" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1589002374748" />
@@ -407,7 +408,7 @@
     <state x="1034" y="451" width="618" height="398" key="#xdebugger.evaluate/0.23.2048.1049@0.23.2048.1049" timestamp="1589819364505" />
     <state x="1214" y="277" key="#xdebugger.evaluate/0.23.2048.1086@0.23.2048.1086" timestamp="1591931026104" />
     <state x="1029" y="175" key="#xdebugger.evaluate/620.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1592343449532" />
-    <state x="1797" y="1298" width="474" height="591" key="#xdebugger.evaluate/620.1175.1680.984/0.23.2048.1129@620.1175.1680.984" timestamp="1593667742146" />
+    <state x="1797" y="1298" width="474" height="591" key="#xdebugger.evaluate/620.1175.1680.984/0.23.2048.1129@620.1175.1680.984" timestamp="1593891991156" />
     <state x="1965" y="1317" key="#xdebugger.evaluate/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593666172207" />
     <state x="1286" y="219" key="#xdebugger.evaluate/620.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1592345779943" />
     <state x="1585" y="1635" width="474" height="681" key="#xdebugger.evaluate/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592446175388" />
@@ -436,8 +437,8 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state width="1878" height="434" key="GridCell.Tab.-1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1586551612059" />
-    <state width="1638" height="277" key="GridCell.Tab.0.bottom" timestamp="1593668129114">
-      <screen x="620" y="1175" width="1680" height="984" />
+    <state width="1878" height="437" key="GridCell.Tab.0.bottom" timestamp="1593993304308">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1592450507828">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -457,12 +458,12 @@
     <state width="1638" height="332" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1590547642631" />
     <state width="1638" height="223" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1591221847530" />
     <state width="1878" height="397" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217641" />
-    <state width="1878" height="523" key="GridCell.Tab.0.bottom/0.23.1920.1134@0.23.1920.1134" timestamp="1593580596843" />
+    <state width="1878" height="437" key="GridCell.Tab.0.bottom/0.23.1920.1134@0.23.1920.1134" timestamp="1593993304308" />
     <state width="1992" height="218" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.bottom/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147116" />
     <state width="2507" height="190" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
     <state width="692" height="1028" key="GridCell.Tab.0.bottom/620.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1592344145724" />
-    <state width="1638" height="277" key="GridCell.Tab.0.bottom/620.1175.1680.984/0.23.2048.1129@620.1175.1680.984" timestamp="1593668129114" />
+    <state width="1638" height="378" key="GridCell.Tab.0.bottom/620.1175.1680.984/0.23.2048.1129@620.1175.1680.984" timestamp="1593893363063" />
     <state width="1878" height="276" key="GridCell.Tab.0.bottom/620.1175.1920.1134/0.23.2048.1129@0.23.2048.1129" timestamp="1593579276145" />
     <state width="1878" height="523" key="GridCell.Tab.0.bottom/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593666498589" />
     <state width="2518" height="331" key="GridCell.Tab.0.bottom/620.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1592353834103" />
@@ -470,8 +471,8 @@
     <state width="811" height="331" key="GridCell.Tab.0.bottom/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328169" />
     <state width="1558" height="310" key="GridCell.Tab.0.bottom/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288287545" />
     <state width="1398" height="181" key="GridCell.Tab.0.bottom/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711257" />
-    <state width="1638" height="277" key="GridCell.Tab.0.center" timestamp="1593668129113">
-      <screen x="620" y="1175" width="1680" height="984" />
+    <state width="1878" height="437" key="GridCell.Tab.0.center" timestamp="1593993304307">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1592450507827">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -491,12 +492,12 @@
     <state width="1638" height="332" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1590547642630" />
     <state width="1638" height="223" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1591221847529" />
     <state width="1878" height="397" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
-    <state width="1878" height="523" key="GridCell.Tab.0.center/0.23.1920.1134@0.23.1920.1134" timestamp="1593580596842" />
+    <state width="1878" height="437" key="GridCell.Tab.0.center/0.23.1920.1134@0.23.1920.1134" timestamp="1593993304307" />
     <state width="1992" height="218" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.center/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147115" />
     <state width="2507" height="190" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306600" />
     <state width="692" height="1028" key="GridCell.Tab.0.center/620.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1592344145722" />
-    <state width="1638" height="277" key="GridCell.Tab.0.center/620.1175.1680.984/0.23.2048.1129@620.1175.1680.984" timestamp="1593668129113" />
+    <state width="1638" height="378" key="GridCell.Tab.0.center/620.1175.1680.984/0.23.2048.1129@620.1175.1680.984" timestamp="1593893363061" />
     <state width="1878" height="276" key="GridCell.Tab.0.center/620.1175.1920.1134/0.23.2048.1129@0.23.2048.1129" timestamp="1593579276144" />
     <state width="1878" height="523" key="GridCell.Tab.0.center/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593666498588" />
     <state width="2518" height="331" key="GridCell.Tab.0.center/620.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1592353834101" />
@@ -504,8 +505,8 @@
     <state width="811" height="331" key="GridCell.Tab.0.center/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328168" />
     <state width="1558" height="310" key="GridCell.Tab.0.center/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288287544" />
     <state width="1398" height="181" key="GridCell.Tab.0.center/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711256" />
-    <state width="1638" height="352" key="GridCell.Tab.0.left" timestamp="1593668129176">
-      <screen x="620" y="1175" width="1680" height="984" />
+    <state width="1878" height="437" key="GridCell.Tab.0.left" timestamp="1593993304307">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1592450507827">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -525,12 +526,12 @@
     <state width="1638" height="332" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1590547642630" />
     <state width="1638" height="223" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1591221847528" />
     <state width="1878" height="397" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217689" />
-    <state width="1878" height="523" key="GridCell.Tab.0.left/0.23.1920.1134@0.23.1920.1134" timestamp="1593580596841" />
+    <state width="1878" height="437" key="GridCell.Tab.0.left/0.23.1920.1134@0.23.1920.1134" timestamp="1593993304307" />
     <state width="1992" height="218" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.left/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147114" />
     <state width="2507" height="190" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306599" />
     <state width="692" height="1028" key="GridCell.Tab.0.left/620.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1592344145778" />
-    <state width="1638" height="352" key="GridCell.Tab.0.left/620.1175.1680.984/0.23.2048.1129@620.1175.1680.984" timestamp="1593668129176" />
+    <state width="1638" height="378" key="GridCell.Tab.0.left/620.1175.1680.984/0.23.2048.1129@620.1175.1680.984" timestamp="1593893363117" />
     <state width="1878" height="412" key="GridCell.Tab.0.left/620.1175.1920.1134/0.23.2048.1129@0.23.2048.1129" timestamp="1593579276191" />
     <state width="1878" height="523" key="GridCell.Tab.0.left/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593666498588" />
     <state width="2518" height="331" key="GridCell.Tab.0.left/620.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1592353834100" />
@@ -538,8 +539,8 @@
     <state width="811" height="331" key="GridCell.Tab.0.left/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328167" />
     <state width="635" height="776" key="GridCell.Tab.0.left/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592317825230" />
     <state width="1398" height="181" key="GridCell.Tab.0.left/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711255" />
-    <state width="1638" height="352" key="GridCell.Tab.0.right" timestamp="1593668129186">
-      <screen x="620" y="1175" width="1680" height="984" />
+    <state width="1878" height="437" key="GridCell.Tab.0.right" timestamp="1593993304307">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1592450507828">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -559,12 +560,12 @@
     <state width="1638" height="332" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1590547642630" />
     <state width="1638" height="223" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1591221847529" />
     <state width="1878" height="397" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
-    <state width="1878" height="523" key="GridCell.Tab.0.right/0.23.1920.1134@0.23.1920.1134" timestamp="1593580596842" />
+    <state width="1878" height="437" key="GridCell.Tab.0.right/0.23.1920.1134@0.23.1920.1134" timestamp="1593993304307" />
     <state width="1992" height="218" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.right/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147115" />
     <state width="2507" height="190" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
     <state width="692" height="1028" key="GridCell.Tab.0.right/620.1152.1440.900/0.0.2048.1152@0.0.2048.1152" timestamp="1592344145787" />
-    <state width="1638" height="352" key="GridCell.Tab.0.right/620.1175.1680.984/0.23.2048.1129@620.1175.1680.984" timestamp="1593668129186" />
+    <state width="1638" height="378" key="GridCell.Tab.0.right/620.1175.1680.984/0.23.2048.1129@620.1175.1680.984" timestamp="1593893363128" />
     <state width="1878" height="412" key="GridCell.Tab.0.right/620.1175.1920.1134/0.23.2048.1129@0.23.2048.1129" timestamp="1593579276199" />
     <state width="1878" height="523" key="GridCell.Tab.0.right/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593666498589" />
     <state width="2518" height="331" key="GridCell.Tab.0.right/620.1440.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1592353834102" />
@@ -620,12 +621,13 @@
     <state x="94" y="131" width="1733" height="918" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.1134@0.23.1920.1134" timestamp="1593381327424" />
     <state x="100" y="123" width="1848" height="849" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1589672047172" />
     <state x="714" y="1571" width="1733" height="918" key="com.intellij.history.integration.ui.views.FileHistoryDialog/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592447373083" />
-    <state x="486" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1591928611898">
-      <screen x="0" y="23" width="2048" height="1086" />
+    <state x="399" y="382" key="com.intellij.ide.util.TipDialog" timestamp="1593888723736">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state x="342" y="192" key="com.intellij.ide.util.TipDialog/0.23.1440.797@0.23.1440.797" timestamp="1588466391728" />
     <state x="380" y="192" key="com.intellij.ide.util.TipDialog/0.23.1600.797@0.23.1600.797" timestamp="1588802934668" />
     <state x="456" y="256" key="com.intellij.ide.util.TipDialog/0.23.1920.1097@0.23.1920.1097" timestamp="1587628794849" />
+    <state x="399" y="382" key="com.intellij.ide.util.TipDialog/0.23.1920.1134@0.23.1920.1134" timestamp="1593888723736" />
     <state x="486" y="246" key="com.intellij.ide.util.TipDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1589419820422" />
     <state x="486" y="254" key="com.intellij.ide.util.TipDialog/0.23.2048.1086@0.23.2048.1086" timestamp="1591928611898" />
     <state x="608" y="307" key="com.intellij.ide.util.TipDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1589651425553" />
@@ -647,8 +649,8 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state x="71" y="23" width="1849" height="283" key="dock-window-3/0.23.1920.1097@0.23.1920.1097" timestamp="1586551522093" />
-    <state x="933" y="1175" width="1158" height="974" key="find.popup" timestamp="1593666462385">
-      <screen x="620" y="1175" width="1920" height="1134" />
+    <state x="313" y="23" width="1158" height="974" key="find.popup" timestamp="1593900809869">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state x="393" y="0" width="1157" height="1029" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1592886603481" />
     <state x="525" y="0" width="1541" height="1233" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1589149868264" />
@@ -656,7 +658,7 @@
     <state x="328" y="23" width="963" height="682" key="find.popup/0.23.1600.797@0.23.1600.797" timestamp="1589933894590" />
     <state x="344" y="23" width="1012" height="811" key="find.popup/0.23.1680.947@0.23.1680.947" timestamp="1590112064435" />
     <state x="344" y="23" width="1012" height="843" key="find.popup/0.23.1680.984@0.23.1680.984" timestamp="1591221784049" />
-    <state x="313" y="23" width="1158" height="974" key="find.popup/0.23.1920.1134@0.23.1920.1134" timestamp="1593562268720" />
+    <state x="313" y="23" width="1158" height="974" key="find.popup/0.23.1920.1134@0.23.1920.1134" timestamp="1593900809869" />
     <state x="420" y="23" width="1232" height="897" key="find.popup/0.23.2048.1049@0.23.2048.1049" timestamp="1589677649934" />
     <state x="419" y="23" width="1235" height="932" key="find.popup/0.23.2048.1086@0.23.2048.1086" timestamp="1591928916997" />
     <state x="904" y="412" width="673" height="708" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1585371867654" />
@@ -666,8 +668,8 @@
     </state>
     <state x="332" y="148" key="new project wizard/0.0.1920.1200@0.0.1920.1200" timestamp="1591647670650" />
     <state x="354" y="152" key="new project wizard/0.23.2048.1049@0.23.2048.1049" timestamp="1585869615241" />
-    <state x="555" y="74" key="refactoring.ChangeSignatureDialog" timestamp="1592169604761">
-      <screen x="0" y="23" width="1600" height="834" />
+    <state x="1203" y="1235" key="refactoring.ChangeSignatureDialog" timestamp="1593820479609">
+      <screen x="620" y="1175" width="1680" height="984" />
     </state>
     <state x="889" y="228" key="refactoring.ChangeSignatureDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1589148306289" />
     <state x="555" y="72" key="refactoring.ChangeSignatureDialog/0.23.1600.797@0.23.1600.797" timestamp="1589933023917" />
@@ -675,6 +677,7 @@
     <state x="583" y="81" key="refactoring.ChangeSignatureDialog/0.23.1680.947@0.23.1680.947" timestamp="1590035856307" />
     <state x="667" y="197" key="refactoring.ChangeSignatureDialog/0.23.1920.1097@0.23.1920.1097" timestamp="1586548034411" />
     <state x="711" y="189" key="refactoring.ChangeSignatureDialog/0.23.2048.1049@0.23.2048.1049" timestamp="1589681620153" />
+    <state x="1203" y="1235" key="refactoring.ChangeSignatureDialog/620.1175.1680.984/0.23.2048.1129@620.1175.1680.984" timestamp="1593820479609" />
     <state x="521" y="209" width="745" height="516" key="search.everywhere.popup" timestamp="1592004474034">
       <screen x="0" y="23" width="1600" height="834" />
     </state>
@@ -1859,19 +1862,154 @@
           <option name="timeStamp" value="1851" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Array/problems/meetingRooms/MergeIntervals.java</url>
+          <url>file://$PROJECT_DIR$/src/Array/problems/meetingRooms/MergeIntervals_2020_07_01.java</url>
           <line>75</line>
           <option name="timeStamp" value="1869" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Array/problems/meetingRooms/MergeIntervals.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="1872" />
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="1900" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Array/problems/meetingRooms/MergeIntervals.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="1877" />
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="1901" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="1902" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="1903" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="1904" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="1905" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="1906" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="1907" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="1921" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="1923" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="1924" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="1925" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="1926" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="1927" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="1931" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1932" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1934" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="1938" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="1939" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="1940" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="1941" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="1942" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="1943" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="1944" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/lruCache/LRUCache.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="1946" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/PrisonCellAfterNDays.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="1952" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/PrisonCellAfterNDays.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="1953" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/PrisonCellAfterNDays.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1954" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/KDistanceAway.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1971" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

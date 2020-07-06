@@ -56,7 +56,7 @@ public class MergeIntervals_2020_07_01 {
                 }
             } else {
 
-                // Cannot merge, Add it to output arr
+                // Cannot merge, Add it to output arr 
                 res[k][0] = pq.poll();
                 res[k][1] = poll;
                 k++;
