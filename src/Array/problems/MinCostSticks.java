@@ -3,10 +3,13 @@ package Array.problems;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-public class Solution {
+/**
+ * https://leetcode.com/problems/minimum-cost-to-connect-sticks/
+ */
+public class MinCostSticks {
 
     public static void main(String[] args) {
-        Solution class1 = new Solution();
+        MinCostSticks class1 = new MinCostSticks();
         //int [] nums = {3354,4316,3259,4904,4598,474,3166,6322,8080,9009};
         int [] nums = {1,3,4,5,6,8};
         System.out.println(class1.connectSticks(nums));
