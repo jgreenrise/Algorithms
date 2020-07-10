@@ -13,7 +13,7 @@ public class SubarrayEqualsK {
         //int[] arr_i_input = {5,7};
 
         //System.out.printf("Sub array: " + class1.subarraySum(arr_i_input, 40));
-        System.out.printf("Sub array: " + class1.subarraySum(new int[]{1, 1, 1}, 2));
+        System.out.printf("Sub array: " + class1.usingMap(new int[]{1, 1, 1}, 2));
         //System.out.printf("Sub array: " + class1.subarraySum(new int[]{-1, -1, 1}, 1));
         //System.out.printf("Sub array: " + class1.subarraySum(new int[]{3, 4, 7, 2, -3, 1, 4, 2}, 7));
         //System.out.printf("Sub array: " + class1.subarraySum(new int[]{-624,-624,-624,-624,-624,-624,-624,-624,-624,-624},-624));
