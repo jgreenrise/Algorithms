@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * https://leetcode.com/problems/maximum-product-subarray/
+ */
 public class SubarrayMaximumProduct {
 
     public static void main(String[] args) {
