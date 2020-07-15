@@ -211,8 +211,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Array/problems/subarray/SubarrayMaximumProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+            <state relative-caret-position="90">
+              <caret line="9" column="3" selection-start-column="32" selection-end-line="9" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -238,17 +238,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/String/problems/DecodeString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
+            <state relative-caret-position="765">
               <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Array/problems/ValidSquare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="30">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Array/problems/LongestStringChain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -288,14 +297,16 @@
         <option value="$PROJECT_DIR$/src/Array/problems/subarray/SubarrayMaximumProduct.java" />
         <option value="$PROJECT_DIR$/src/String/problems/DecodeString.java" />
         <option value="$PROJECT_DIR$/src/Array/problems/ValidSquare.java" />
+        <option value="$PROJECT_DIR$/src/Array/problems/StringChain.java" />
+        <option value="$PROJECT_DIR$/src/Array/problems/LongestStringChain.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1053" />
-    <option name="y" value="295" />
-    <option name="width" value="1287" />
-    <option name="height" value="1107" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="208" />
+    <option name="y" value="23" />
+    <option name="width" value="1620" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectId" id="1Zk1vKqgarUkaPmbz2lvocjxrGK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -392,7 +403,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ValidSquare">
+  <component name="RunManager" selected="Application.LongestStringChain">
     <configuration name="DecodeString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="String.problems.DecodeString" />
       <module name="Algorithms" />
@@ -400,8 +411,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestSubStringWithoutRepeatingChars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="String.problems.LongestSubStringWithoutRepeatingChars" />
+    <configuration name="LongestStringChain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.LongestStringChain" />
       <module name="Algorithms" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -429,19 +440,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LongestSubStringWithoutRepeatingChars" />
       <item itemvalue="Application.SubarrayEqualsK" />
       <item itemvalue="Application.SubarrayMaximumProduct" />
       <item itemvalue="Application.DecodeString" />
       <item itemvalue="Application.ValidSquare" />
+      <item itemvalue="Application.LongestStringChain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongestStringChain" />
         <item itemvalue="Application.ValidSquare" />
         <item itemvalue="Application.DecodeString" />
         <item itemvalue="Application.SubarrayMaximumProduct" />
         <item itemvalue="Application.SubarrayEqualsK" />
-        <item itemvalue="Application.LongestSubStringWithoutRepeatingChars" />
       </list>
     </recent_temporary>
   </component>
@@ -468,11 +479,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1053" y="295" width="1287" height="1107" extended-state="0" />
+    <frame x="0" y="23" width="1600" height="840" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" anchor="top" id="Debug" order="0" sideWeight="0.498998" side_tool="true" visible="true" weight="0.17769003" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24475524" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24475524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -484,7 +494,7 @@
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" auto_hide="true" id="Event Log" order="6" sideWeight="0.501002" side_tool="true" weight="0.3296593" />
+      <window_info anchor="bottom" auto_hide="true" id="Event Log" order="6" sideWeight="0.501002" side_tool="true" weight="0.32841823" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32872656" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -494,7 +504,8 @@
       <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Run" order="7" weight="0.3659612" />
+      <window_info active="true" anchor="right" id="Debug" order="7" side_tool="true" visible="true" weight="0.411875" />
+      <window_info anchor="right" auto_hide="true" id="Run" order="8" side_tool="true" weight="0.16085792" />
     </layout>
   </component>
   <component name="WindowStateProjectService">
@@ -2540,6 +2551,16 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>currWord.substring(0, currWord.length()-1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>currWord.substring(0, currWord.length())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>nestedString.insert(0, tmpString)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -2571,16 +2592,6 @@
       </expression>
       <expression>
         <expression-string>tmp[tmp.length/2 + k]</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>tmp.length/2 + k</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>tmp.length/2 + num</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -2621,8 +2632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Array/problems/subarray/SubarrayMaximumProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        <state relative-caret-position="90">
+          <caret line="9" column="3" selection-start-column="32" selection-end-line="9" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -2642,15 +2653,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/String/problems/DecodeString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
+        <state relative-caret-position="765">
           <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Array/problems/ValidSquare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Array/problems/LongestStringChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
