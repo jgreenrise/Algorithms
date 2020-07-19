@@ -209,15 +209,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Array/problems/subarray/SubarrayMaximumProduct.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="3" selection-start-column="32" selection-end-line="9" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/String/problems/AlienDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -256,7 +247,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Array/problems/LongestStringChain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="270">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
@@ -265,7 +256,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graph/directed/A_AdjacencyList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-542">
+            <state relative-caret-position="780">
               <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
             </state>
           </provider>
@@ -280,14 +271,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graph/problems/EvaluateDivision.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+            <state relative-caret-position="510">
+              <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Array/problems/matrix/RotateMatrixBy90Degree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Array/problems/matrix/MaximalSquare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -303,19 +312,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Array</find>
-      <find>contin</find>
-      <find>suba</find>
-      <find>Given an array of integers and an integer k</find>
-      <find>decode</find>
-      <find>Square</find>
-      <find>dist</find>
-      <find>Dijkstra</find>
-      <find>Graph</find>
+      <find>Matrix</find>
     </findStrings>
-    <replaceStrings>
-      <replace>distance</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -323,24 +321,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/String/problems/LongestSubStringWithoutRepeatingChars.java" />
-        <option value="$PROJECT_DIR$/src/Array/problems/SubarrayEqualsK.java" />
-        <option value="$PROJECT_DIR$/src/Array/problems/subarray/SubarrayEqualsK.java" />
-        <option value="$PROJECT_DIR$/src/Array/problems/subarray/SubarrayMaximumProduct.java" />
-        <option value="$PROJECT_DIR$/src/String/problems/DecodeString.java" />
-        <option value="$PROJECT_DIR$/src/Array/problems/ValidSquare.java" />
-        <option value="$PROJECT_DIR$/src/Array/problems/StringChain.java" />
-        <option value="$PROJECT_DIR$/src/Array/problems/LongestStringChain.java" />
-        <option value="$PROJECT_DIR$/src/graph/directed/B_AdjacencyMatrix.java" />
-        <option value="$PROJECT_DIR$/src/graph/problems/EvaluateDivision.java" />
+        <option value="$PROJECT_DIR$/src/Array/problems/matrix/MaximalSquare.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="269" />
-    <option name="y" value="206" />
-    <option name="width" value="2259" />
-    <option name="height" value="1173" />
+    <option name="x" value="989" />
+    <option name="y" value="23" />
+    <option name="width" value="1059" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectId" id="1Zk1vKqgarUkaPmbz2lvocjxrGK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -364,6 +353,27 @@
               <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Array" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Array" type="462c0819:PsiDirectoryNode" />
+              <item name="problems" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Array" type="462c0819:PsiDirectoryNode" />
+              <item name="problems" type="462c0819:PsiDirectoryNode" />
+              <item name="matrix" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
@@ -421,11 +431,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Array.problems.matrix" />
       <recent name="Array.problems" />
       <recent name="String.problems" />
       <recent name="Array.problems.subarray" />
       <recent name="Array.problems.lruCache" />
-      <recent name="Array.problems.meetingRooms" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="recursive.fibonacci.a15_islands" />
@@ -444,14 +454,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EvaluateDivision">
-    <configuration name="DecodeString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="String.problems.DecodeString" />
-      <module name="Algorithms" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MaximalSquare">
     <configuration name="EvaluateDivision" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="graph.problems.EvaluateDivision" />
       <module name="Algorithms" />
@@ -466,9 +469,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubarrayMaximumProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.subarray.SubarrayMaximumProduct" />
+    <configuration name="MaximalSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.matrix.MaximalSquare" />
       <module name="Algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreeSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.threesum.ThreeSum" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Array.problems.threesum.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -481,19 +497,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SubarrayMaximumProduct" />
-      <item itemvalue="Application.DecodeString" />
       <item itemvalue="Application.ValidSquare" />
       <item itemvalue="Application.LongestStringChain" />
       <item itemvalue="Application.EvaluateDivision" />
+      <item itemvalue="Application.ThreeSum" />
+      <item itemvalue="Application.MaximalSquare" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MaximalSquare" />
+        <item itemvalue="Application.ThreeSum" />
         <item itemvalue="Application.EvaluateDivision" />
         <item itemvalue="Application.LongestStringChain" />
         <item itemvalue="Application.ValidSquare" />
-        <item itemvalue="Application.DecodeString" />
-        <item itemvalue="Application.SubarrayMaximumProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -520,10 +536,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="270" y="206" width="2259" height="1173" extended-state="0" />
+    <frame x="989" y="23" width="1059" height="1092" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17308544" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.35256988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -545,8 +561,8 @@
       <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Debug" order="7" side_tool="true" weight="0.31187886" />
-      <window_info active="true" anchor="right" auto_hide="true" id="Run" order="8" side_tool="true" visible="true" weight="0.33466136" />
+      <window_info anchor="right" id="Debug" order="7" side_tool="true" weight="0.39794922" />
+      <window_info anchor="right" auto_hide="true" id="Run" order="8" side_tool="true" weight="0.29367328" />
     </layout>
   </component>
   <component name="WindowStateProjectService">
@@ -564,11 +580,12 @@
     <state x="785" y="269" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1591251092083" />
     <state x="837" y="258" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1152@0.0.2048.1152" timestamp="1591751828154" />
     <state x="837" y="258" key="#com.intellij.ide.util.MemberChooser/0.23.2048.1049@0.23.2048.1049" timestamp="1588128667229" />
-    <state x="731" y="440" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1591221797424">
-      <screen x="0" y="23" width="1680" height="984" />
+    <state x="835" y="504" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1594865132472">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state x="731" y="424" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1680.947@0.23.1680.947" timestamp="1590545915476" />
     <state x="731" y="440" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1680.984@0.23.1680.984" timestamp="1591221797424" />
+    <state x="835" y="504" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1920.1134@0.23.1920.1134" timestamp="1594865132472" />
     <state x="518" y="149" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1587690365060">
       <screen x="0" y="23" width="1600" height="797" />
     </state>
@@ -633,8 +650,8 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state width="1878" height="434" key="GridCell.Tab.-1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1586551612059" />
-    <state width="2006" height="485" key="GridCell.Tab.0.bottom" timestamp="1594090108171">
-      <screen x="0" y="23" width="2048" height="1129" />
+    <state width="1878" height="269" key="GridCell.Tab.0.bottom" timestamp="1594866137408">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1592450507828">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -654,7 +671,7 @@
     <state width="1638" height="332" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1590547642631" />
     <state width="1638" height="223" key="GridCell.Tab.0.bottom/0.23.1680.984@0.23.1680.984" timestamp="1591221847530" />
     <state width="1878" height="397" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217641" />
-    <state width="1878" height="485" key="GridCell.Tab.0.bottom/0.23.1920.1134@0.23.1920.1134" timestamp="1593997891375" />
+    <state width="1878" height="269" key="GridCell.Tab.0.bottom/0.23.1920.1134@0.23.1920.1134" timestamp="1594866137408" />
     <state width="1992" height="218" key="GridCell.Tab.0.bottom/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.bottom/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147116" />
     <state width="2507" height="190" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
@@ -668,8 +685,8 @@
     <state width="811" height="331" key="GridCell.Tab.0.bottom/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328169" />
     <state width="1558" height="310" key="GridCell.Tab.0.bottom/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288287545" />
     <state width="1398" height="181" key="GridCell.Tab.0.bottom/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711257" />
-    <state width="2006" height="485" key="GridCell.Tab.0.center" timestamp="1594090108169">
-      <screen x="0" y="23" width="2048" height="1129" />
+    <state width="1878" height="269" key="GridCell.Tab.0.center" timestamp="1594866137407">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1592450507827">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -689,7 +706,7 @@
     <state width="1638" height="332" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1590547642630" />
     <state width="1638" height="223" key="GridCell.Tab.0.center/0.23.1680.984@0.23.1680.984" timestamp="1591221847529" />
     <state width="1878" height="397" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
-    <state width="1878" height="485" key="GridCell.Tab.0.center/0.23.1920.1134@0.23.1920.1134" timestamp="1593997891374" />
+    <state width="1878" height="269" key="GridCell.Tab.0.center/0.23.1920.1134@0.23.1920.1134" timestamp="1594866137407" />
     <state width="1992" height="218" key="GridCell.Tab.0.center/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.center/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147115" />
     <state width="2507" height="190" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306600" />
@@ -703,8 +720,8 @@
     <state width="811" height="331" key="GridCell.Tab.0.center/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328168" />
     <state width="1558" height="310" key="GridCell.Tab.0.center/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592288287544" />
     <state width="1398" height="181" key="GridCell.Tab.0.center/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711256" />
-    <state width="2006" height="485" key="GridCell.Tab.0.left" timestamp="1594090108169">
-      <screen x="0" y="23" width="2048" height="1129" />
+    <state width="1878" height="269" key="GridCell.Tab.0.left" timestamp="1594866137477">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1592450507827">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -724,7 +741,7 @@
     <state width="1638" height="332" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1590547642630" />
     <state width="1638" height="223" key="GridCell.Tab.0.left/0.23.1680.984@0.23.1680.984" timestamp="1591221847528" />
     <state width="1878" height="397" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217689" />
-    <state width="1878" height="485" key="GridCell.Tab.0.left/0.23.1920.1134@0.23.1920.1134" timestamp="1593997891373" />
+    <state width="1878" height="269" key="GridCell.Tab.0.left/0.23.1920.1134@0.23.1920.1134" timestamp="1594866137477" />
     <state width="1992" height="218" key="GridCell.Tab.0.left/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.left/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147114" />
     <state width="2507" height="190" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306599" />
@@ -738,8 +755,8 @@
     <state width="811" height="331" key="GridCell.Tab.0.left/620.1463.1920.1134/0.23.2560.1417@620.1463.1920.1134" timestamp="1592448328167" />
     <state width="635" height="776" key="GridCell.Tab.0.left/620.900.1440.900/0.0.1600.900@0.0.1600.900" timestamp="1592317825230" />
     <state width="1398" height="181" key="GridCell.Tab.0.left/620.923.1440.797/0.23.1600.877@620.923.1440.797" timestamp="1589923711255" />
-    <state width="2006" height="485" key="GridCell.Tab.0.right" timestamp="1594090108170">
-      <screen x="0" y="23" width="2048" height="1129" />
+    <state width="1878" height="269" key="GridCell.Tab.0.right" timestamp="1594866137491">
+      <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state width="811" height="1271" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1592450507828">
       <screen x="0" y="23" width="2560" height="1417" />
@@ -759,7 +776,7 @@
     <state width="1638" height="332" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1590547642630" />
     <state width="1638" height="223" key="GridCell.Tab.0.right/0.23.1680.984@0.23.1680.984" timestamp="1591221847529" />
     <state width="1878" height="397" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1587787217640" />
-    <state width="1878" height="485" key="GridCell.Tab.0.right/0.23.1920.1134@0.23.1920.1134" timestamp="1593997891374" />
+    <state width="1878" height="269" key="GridCell.Tab.0.right/0.23.1920.1134@0.23.1920.1134" timestamp="1594866137491" />
     <state width="1992" height="218" key="GridCell.Tab.0.right/0.23.2048.1049@0.23.2048.1049" timestamp="1590019770568" />
     <state width="1583" height="271" key="GridCell.Tab.0.right/0.23.2048.1086@0.23.2048.1086" timestamp="1591931147115" />
     <state width="2507" height="190" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1588987306601" />
@@ -849,7 +866,7 @@
       <screen x="0" y="23" width="1920" height="1097" />
     </state>
     <state x="71" y="23" width="1849" height="283" key="dock-window-3/0.23.1920.1097@0.23.1920.1097" timestamp="1586551522093" />
-    <state x="313" y="23" width="1158" height="974" key="find.popup" timestamp="1593900809869">
+    <state x="313" y="23" width="1158" height="974" key="find.popup" timestamp="1594865144064">
       <screen x="0" y="23" width="1920" height="1134" />
     </state>
     <state x="393" y="0" width="1157" height="1029" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1592886603481" />
@@ -858,16 +875,14 @@
     <state x="328" y="23" width="963" height="682" key="find.popup/0.23.1600.797@0.23.1600.797" timestamp="1589933894590" />
     <state x="344" y="23" width="1012" height="811" key="find.popup/0.23.1680.947@0.23.1680.947" timestamp="1590112064435" />
     <state x="344" y="23" width="1012" height="843" key="find.popup/0.23.1680.984@0.23.1680.984" timestamp="1591221784049" />
-    <state x="313" y="23" width="1158" height="974" key="find.popup/0.23.1920.1134@0.23.1920.1134" timestamp="1593900809869" />
+    <state x="313" y="23" width="1158" height="974" key="find.popup/0.23.1920.1134@0.23.1920.1134" timestamp="1594865144064" />
     <state x="420" y="23" width="1232" height="897" key="find.popup/0.23.2048.1049@0.23.2048.1049" timestamp="1589677649934" />
     <state x="419" y="23" width="1235" height="932" key="find.popup/0.23.2048.1086@0.23.2048.1086" timestamp="1591928916997" />
-    <state x="904" y="412" width="673" height="708" key="find.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1585371867654" />
     <state x="933" y="1175" width="1158" height="974" key="find.popup/620.1175.1920.1134/0.23.2048.1129@620.1175.1920.1134" timestamp="1593666462385" />
     <state x="332" y="148" key="new project wizard" timestamp="1591647670650">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="332" y="148" key="new project wizard/0.0.1920.1200@0.0.1920.1200" timestamp="1591647670650" />
-    <state x="354" y="152" key="new project wizard/0.23.2048.1049@0.23.2048.1049" timestamp="1585869615241" />
     <state x="1203" y="1235" key="refactoring.ChangeSignatureDialog" timestamp="1593820479609">
       <screen x="620" y="1175" width="1680" height="984" />
     </state>
@@ -2592,6 +2607,36 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>matrix[row][col] == '1'</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>matrix[row][col] == 1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Integer.valueOf(matrix[row][col])</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>matrix[row][col] - '0'</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>matrix[row][col] + '0'</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>matrix[row][col]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>left.neighbours.get(key)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -2606,71 +2651,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>nestedString.insert(0, tmpString)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>nestedString.insert('0', tmpString)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>s.indexOf('[', j+1) == -1 || s.indexOf('[', j+1) &gt;= rightIndex</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>s.indexOf('[', j+1) &gt;= rightIndex</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>s.indexOf('[', j+1)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>tmp.length/2 - num</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="1492" column="22" selection-start-line="1492" selection-start-column="22" selection-end-line="1492" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/problems/subArray.java" />
-    <entry file="file://$PROJECT_DIR$/src/String/problems/LongestSubStringWithoutRepeatingChars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/problems/MaxSubArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/problems/subarray/SubarrayEqualsK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Array/problems/subarray/SubarrayMaximumProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -2708,14 +2691,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Array/problems/LongestStringChain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="270">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/directed/A_AdjacencyList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-542">
+        <state relative-caret-position="780">
           <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
         </state>
       </provider>
@@ -2729,11 +2712,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/problems/EvaluateDivision.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        <state relative-caret-position="510">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Array/problems/matrix/RotateMatrixBy90Degree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Array/problems/matrix/MaximalSquare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
         </state>
       </provider>
     </entry>
