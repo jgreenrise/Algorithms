@@ -4,23 +4,29 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * 
+ * 1152
+ * https://leetcode.com/problems/analyze-user-website-visit-pattern/
  */
 public class H_AnalyzeWebsitesByUser {
 
     public static void main(String args[]) {
 
+        /**
+         * SKIP THIS PROBLEM: NOT WORTH IT
+         */
         H_AnalyzeWebsitesByUser class1 = new H_AnalyzeWebsitesByUser();
         String[] usernames = {"joe","joe","joe","james","james","james","james","mary","mary","mary"};
         int[] timestamps = {1,2,3,4,5,6,7,8,9,10};
         String[] websites = {"home","about","career","home","cart","maps","home","home","about","career"};
-        System.out.println(class1.mostVisitedPattern(usernames, timestamps, websites));
+        System.out.println(class1.mostVisitedPattern_usingTrie(usernames, timestamps, websites));
     }
 
+    /**
+         * TRIE
+         */
     public class TrieNode{
         Map<String, TrieNode> map;
         boolean isEndOfWord;
-
         public TrieNode(){
             map = new HashMap();
         }
@@ -32,7 +38,7 @@ public class H_AnalyzeWebsitesByUser {
         root = new TrieNode();
     }
 
-    public List<String> mostVisitedPattern(String[] username, int[] timestamp, String[] website) {
+    public List<String> mostVisitedPattern_usingTrie(String[] username, int[] timestamp, String[] website) {
 
         Set<String> users = Arrays.stream(username).collect(Collectors.toSet());
         H_AnalyzeWebsitesByUser class1 = new H_AnalyzeWebsitesByUser();
@@ -78,8 +84,6 @@ public class H_AnalyzeWebsitesByUser {
         curr.isEndOfWord = true;
 
     }
-
-
 
     public List<String> getWebsitesByUser(String user, String[] username, int[] timestamp, String[] website){
 

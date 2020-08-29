@@ -1,78 +1,64 @@
-package sort.quicksort;
+package Sort.quicksort;
 
 import java.util.Arrays;
 
 public class QuickSort {
 
-	public static void main(String[] args) {
-		// int[] x = { 9, 2, 4, 7, 3, 7, 10 };
-		//int[] x = { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3 };
-		int[] x = { 40, 2, 7, 50, 30};
 
-		int low = 0;
-		int high = x.length - 1;
+    public static void main(String[] args) {
 
-		recursiveQuickSort(x, low, high);
-		
-		 System.out.println("After sorting : " + Arrays.toString(x));
-	}
+        QuickSort class1 = new QuickSort();
+        //a = new int[] { 50, 40, 60, 30, 10, 20 };
+        int [] a = new int[]{10, 16, 8, 12, 15, 6, 3, 9, 5};
+        class1.sort(a, 0, a.length-1);
 
-	/**
-     * Recursive quicksort logic
-     *
-     * @param array input array
-     * @param startIdx start index of the array
-     * @param endIdx end index of the array
-     */
-    public static void recursiveQuickSort(int[] array, int startIdx, int endIdx) {
-     
-        int idx = partition(array, startIdx, endIdx);
-
-        // Recursively call quicksort with left part of the partitioned array
-        if (startIdx < idx - 1) {
-            recursiveQuickSort(array, startIdx, idx - 1);
-        }
-
-        // Recursively call quick sort with right part of the partitioned array
-        if (endIdx > idx) {
-            recursiveQuickSort(array, idx, endIdx);
-        }
     }
 
-    /**
-     * Divides array from pivot, left side contains elements less than
-     * Pivot while right side contains elements greater than pivot.
-     *
-     * @param array array to partitioned
-     * @param left lower bound of the array
-     * @param right upper bound of the array
-     * @return the partition index
-     */
-    public static int partition(int[] array, int left, int right) {
-        int pivot = array[left]; // taking first element as pivot
+    private void sort(int [] arr, int left, int right) {
 
-        while (left <= right) {
-            //searching number which is greater than pivot, bottom up
-            while (array[left] < pivot) {
-                left++;
-            }
-            //searching number which is less than pivot, top down
-            while (array[right] > pivot) {
-                right--;
-            }
+        if(left < right){
 
-            // swap the values
-            if (left <= right) {
-                int tmp = array[left];
-                array[left] = array[right];
-                array[right] = tmp;
+            int partition = quickSort(arr, left, right);
 
-                //increment left index and decrement right index
-                left++;
-                right--;
-            }
+            sort(arr, left, partition-1);   // Sort left partition
+            sort(arr, partition+1, right);   // Sort right partition
         }
-        return left;
+
     }
+
+    private int quickSort(int[] arr, final int inputLeft, final int inputRight) {
+
+        int pivotVal = arr[inputLeft];
+        int pivotIndex = inputLeft;
+        int left = inputLeft;
+        int right = inputRight;
+
+        while(left < right){
+
+            while(arr[left] <= pivotVal && left < inputRight)
+                left++;
+            while(arr[right] > pivotVal && right > inputLeft)
+                right--;
+
+            if(left < right){
+                swap(arr, left, right);
+            }else{
+                if(pivotIndex != right)
+                    swap(arr, pivotIndex, right);
+            }
+
+            System.out.println(Arrays.toString(arr));
+        }
+
+        return right;
+
+    }
+
+    private void swap(int[] a, int left, int right) {
+        int temp = a[left];
+        a[left] = a[right];
+        a[right] = temp;
+    }
+
 
 }

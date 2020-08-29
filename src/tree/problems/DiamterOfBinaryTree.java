@@ -46,7 +46,7 @@ public class DiamterOfBinaryTree {
 		}
 	}
 
-	public TreeNode fromArray(Integer[] tree) {
+	public static TreeNode fromArray(Integer[] tree) {
 		if (tree.length == 0) return null;
 		TreeNode root = new TreeNode(tree[0]);
 		Queue<TreeNode> q = new LinkedList<>();

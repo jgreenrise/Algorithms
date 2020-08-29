@@ -13,19 +13,19 @@ public class MinHeap {
 
 	private static void buildHeap(int[] arr_i_input) {
 
-		int []  oArr = new int [arr_i_input.length];
+		int []  outArr = new int [arr_i_input.length];
 		for (int i = 0; i< arr_i_input.length; i++){
-			oArr = buildMinHeap(arr_i_input[i], oArr, i);
+			outArr = buildMinHeap(arr_i_input[i], outArr, i);
 		}
-		System.out.println(Arrays.toString(oArr));
+		System.out.println(Arrays.toString(outArr));
 	}
 
-	private static int[] buildMinHeap(int i, int[] oArr, int currIndex) {
+	private static int[] buildMinHeap(int inArrVal, int[] oArr, int currIndex) {
 		if(currIndex == 0){
-			oArr[currIndex] = i;
+			oArr[currIndex] = inArrVal;
 			return oArr;
 		}else{
-			oArr[currIndex] = i;
+			oArr[currIndex] = inArrVal;
 			if(oArr[currIndex] < oArr[(currIndex-1)/2])
 				oArr = percolateUp(currIndex, oArr);
 			return oArr;
