@@ -30,8 +30,13 @@ public class WordBreakUsingBackTracking {
             return wordDict;
         }
 
+        // Sort by length
         wordDict.sort(Comparator.comparingInt(String::length));
+
+        // Max length
         int maxLen = wordDict.stream().reduce((f,se) -> se).get().length();
+
+        // Set
         Set<String> set = new HashSet(wordDict);
         Map<String, List<String>> memo = new HashMap<>();
         List<String> out = new ArrayList<>();

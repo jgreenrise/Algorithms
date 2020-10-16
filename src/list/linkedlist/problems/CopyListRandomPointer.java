@@ -126,22 +126,22 @@ public class CopyListRandomPointer {
     /**
      * RECURSIVE
      */
-    public Node copyRandomListRecursive(Node head) {
+    public Node copyRandomListRecursive(Node node) {
 
-        if (head == null) {
+        if (node == null) {
             return null;
         }
 
-        if (hashMap.containsKey(head)) {
-            return hashMap.get(head);
+        if (hashMap.containsKey(node)) {
+            return hashMap.get(node);
         }
 
 
-        Node nn = new Node(head.val);
-        hashMap.put(head, nn);
+        Node nn = new Node(node.val);
+        hashMap.put(node, nn);
 
-        nn.next = copyRandomList(head.next);
-        nn.random = copyRandomList(head.random);
+        nn.next = copyRandomListRecursive(node.next);
+        nn.random = copyRandomListRecursive(node.random);
 
         return nn;
 
@@ -159,18 +159,15 @@ public class CopyListRandomPointer {
     }
 
     /**
-     * HASHMAP AND ITERATION
+     * HASH TABLE
      */
-    public Node iteration(Node head) {
+    public Node usingHashTable(Node head) {
 
         Node orig = head;
-        int size = getLLSize(head);
-        int[] nums = fillIntArrayWithRandomPointers(head, size);
         Map<Node, Node> map = new HashMap();
 
         Node out = null;
         Node origOut = null;
-        int counter = 0;
 
         while (head != null) {
             if (out == null) {
@@ -192,7 +189,6 @@ public class CopyListRandomPointer {
         out = origOut;
         origOut = out;
 
-        counter = 0;
         while (head != null && out != null) {
             if (head.random != null) {
                 Node childNode = map.get(head.random);
@@ -200,40 +196,10 @@ public class CopyListRandomPointer {
             }
             head = head.next;
             out = out.next;
-            counter++;
         }
 
         return origOut;
-
     }
-
-    int[] fillIntArrayWithRandomPointers(Node head, int length) {
-
-        Node slow = head;
-        int[] out = new int[length];
-        int j = 0;
-
-        while (slow != null) {
-            out[j++] = slow.val;
-            slow = slow.next;
-        }
-        return out;
-    }
-
-    int getLLSize(Node head) {
-
-        Node slow = head;
-        int counter = 0;
-
-        while (slow.next != null) {
-            slow = slow.next;
-            counter++;
-        }
-
-        return counter + 1;
-
-    }
-
 
     public static class Node {
 

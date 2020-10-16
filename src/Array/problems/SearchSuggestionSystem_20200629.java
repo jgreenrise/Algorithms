@@ -79,6 +79,8 @@ public class SearchSuggestionSystem_20200629 {
 
         List<List<String>> out = new ArrayList();
         SearchSuggestionSystem_20200629 solution = new SearchSuggestionSystem_20200629();
+
+        // Build Trie from Strings
         for (int j = 0; j < products.length; j++) {
             solution.buildTri(products[j], j);
         }

@@ -17,7 +17,7 @@ public class WordSearch_20200604 {
 
         WordSearch_20200604 class1 = new WordSearch_20200604();
 
-        System.out.println("\n*****ABCCED*******\n" + class1.exist(matrix, "ABCCED"));
+        //System.out.println("\n*****ABCCED*******\n" + class1.exist(matrix, "ABCCED"));
         //System.out.println("\n*****ABCCED*******\n" + class1.existDFS(matrix, "ABCCED"));
 
         matrix = new char[][]{
@@ -26,18 +26,19 @@ public class WordSearch_20200604 {
                 {'A', 'D', 'E', 'E'}
         };
 
-        //System.out.println("\n*****SEE*******\n" + class1.existDFS(matrix, "SEE"));
-        System.out.println("\n*****SEE*******\n" + class1.exist(matrix, "SEE"));
+        System.out.println("\n*****SEE*******\n" + class1.existDFS(matrix, "SEE"));
+        System.out.println("\n*****SEED*******\n" + class1.existDFS(matrix, "SEED"));
+        //System.out.println("\n*****SEE*******\n" + class1.exist(matrix, "SEE"));
 
         //System.out.println("\n*****ABCB*******\n" + class1.existDFS(matrix, "ABCB"));
         //System.out.println("\n*****ABCB*******\n" + class1.exist(matrix, "ABCB"));
 
         matrix = new char[][]{{'A'}};
         //System.out.println("\n*****ABCB*******\n" + class1.existDFS(matrix, "A"));
-        System.out.println("\n*****A*******\n" + class1.exist(matrix, "A"));
+       /* System.out.println("\n*****A*******\n" + class1.exist(matrix, "A"));
 
         matrix = new char[][]{{'A', 'A'}};
-        System.out.println("\n*****aa, a*******\n" + class1.existDFS(matrix, "A"));
+        System.out.println("\n*****aa, a*******\n" + class1.existDFS(matrix, "A"));*/
 
     }
 
@@ -98,6 +99,8 @@ public class WordSearch_20200604 {
 
         int rows = board.length;
         int cols = board[0].length;
+
+        // 1: GET LOCATIONS OF FIRST CHAR
         List<Integer> locations = getFirstCharLocations(board, word);
         Set<Integer> set = null;
 
@@ -110,6 +113,7 @@ public class WordSearch_20200604 {
             return String.valueOf(board[0][0]).equalsIgnoreCase(word);
         }
 
+        // 2 lOOP THROUGH LOCATIONS
         for (int location : locations) {
 
             set = new HashSet();

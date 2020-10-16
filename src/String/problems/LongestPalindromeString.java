@@ -15,7 +15,12 @@ public class LongestPalindromeString {
        // String arr_str_input[] = {"babad", "cbbd", "cdefaba", "aaabadd", "a", "abcda"};
 
         for (String input : arr_str_input) {
+            /**
+             * BRUTE FORCE: O(N3)
+             */
             //System.out.println("Bruteforce: " + class1.bruteforce(input));
+
+
             System.out.println("Longest palindrome: " + class1.longestPalindrome(input));
         }
 
