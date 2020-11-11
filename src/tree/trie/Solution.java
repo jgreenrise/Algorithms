@@ -5,121 +5,83 @@ import java.util.*;
 /**
  *
  */
-public class Solution {
+class Solution {
+    public static void main(String[] args) {
+        ArrayList<String> strings = new ArrayList<String>();
+        strings.add("Hello, World!");
+        strings.add("Welcome to CoderPad.");
+        strings.add("This pad is running Java " + Runtime.version().feature());
 
-    public static void main(String args[]) {
-
-        String str = "catsanddog";
-        List<String> words = Arrays.asList("cat", "cats", "and", "sand", "dog");
-        Solution class1 = new Solution();
-        System.out.println(class1.wordBreak(str, words));
-    }
-
-    public TrieNode root;
-
-    public Solution() {
-        root = new TrieNode();
-    }
-
-    public List<String> wordBreak(String s, List<String> wordDict) {
-
-        Solution class1 = new Solution();
-        TrieNode curr = class1.root;
-        int index = 0;
-        List<String> out = new ArrayList<>();
-
-        // INSERT IN TRIE
-        for (int j = 0; j < wordDict.size(); j++) {
-            insertWord(wordDict.get(j), curr, index++);
+        String  [] strs = {"abc3[cd]xyz", "3[a]2[bc]", "2[abc]3[cd]ef", "3[a2[c]]"};
+        //String  [] strs = {"3[a2[c]]"};
+        for (int i = 0; i < strs.length; i++) {
+            System.out.println("String "+strs[i]+", Decoded string: "+decodeString(strs[i]));
         }
-
-        // SEARCH IN TRIE
-        searchWordsInTrie(s, wordDict, curr, out, "", 0, s.length());
-
-        return out;
-
     }
 
-    private String searchWordsInTrie(String word, List<String> list, TrieNode node, List<String> out, String currOutputStr, int start, int end) {
+    // 3[a]2[bc]
+    public static String decodeString(String s){
 
-        TrieNode curr = node;
-        for (int j = start; j < end; j++) {
+        Stack<Integer> stackCount = new Stack<>();
+        Stack<StringBuilder> stackChars = new Stack<>();
+        StringBuilder out = new StringBuilder();
+        char [] chars = s.toCharArray();
+        int k = 0;
+        StringBuilder currStr = new StringBuilder();
 
-            if(curr.isEndOfWord){
-                String wordAtNode = list.get(curr.index);
-                String currWord = currOutputStr.isEmpty() ? wordAtNode : currOutputStr + " "+ wordAtNode;
-                searchWordsInTrie(word, list, node, out, currWord, j, end);
-            }
+        for(int j = 0; j < chars.length; j++){
 
-            char ch = word.charAt(j);
-            TrieNode newNode = new TrieNode();
-            if (curr.map.containsKey(ch)) {
-                newNode = curr.map.get(ch);
-            } else {
-                return "";
-            }
-            curr = newNode;
-        }
+            char ch = chars[j];
 
-        if(curr.isEndOfWord){
-            String wordAtNode = list.get(curr.index);
-            String currWord = currOutputStr.isEmpty() ? wordAtNode : currOutputStr + " "+ wordAtNode;
-            out.add(currWord);
-        }
+            if(Character.isDigit(ch)){
+                k = k * 10 + ch - '0';
+            }else{
+                if(ch == ']'){
 
-        return "";
+                    int count = stackCount.pop();
+                    boolean shouldAppend = false;
 
-    }
+                    if(currStr.length() == 0) {
+                        currStr = stackChars.pop();
+                        shouldAppend = true;
+                    }
 
-    public void insertWord(String word, TrieNode node, int index) {
+                    for(int l=0; l < count; l++){
+                        if(shouldAppend)
+                            out.insert(0, currStr);
+                        else
+                            out.append(currStr);
+                    }
 
-        TrieNode curr = node;
-        for (int j = 0; j < word.length(); j++) {
-            char ch = word.charAt(j);
-            TrieNode newNode = new TrieNode();
-            if (curr.map.containsKey(ch)) {
-                newNode = curr.map.get(ch);
-            } else {
-                curr.map.put(ch, newNode);
-            }
-            curr = newNode;
-        }
-        curr.isEndOfWord = true;
-        curr.index = index;
+                    // Create String
+                    currStr = new StringBuilder();
 
-    }
+                }else if(ch == '['){
 
-    public boolean searchInSet(int index, String[] words, String word, TrieNode node) {
+                    // Save count
+                    stackCount.push(k);
+                    k = 0;
 
-        TrieNode curr = node;
-        for (int j = 0; j < word.length(); j++) {
-            char ch = word.charAt(j);
-            TrieNode newNode = new TrieNode();
+                    // Save string
+                    stackChars.push(currStr);
 
-            if (curr.map.containsKey(ch)) {
-                newNode = curr.map.get(ch);
-            } else {
+                    currStr = new StringBuilder();
 
-                if (curr.isEndOfWord) {
-                    return searchInSet(curr.index, words, word.substring(words[curr.index].length()), node);
+                }else{
+
+                    if(stackCount.isEmpty()){
+                        // Helps when string starts with character
+                        out.append(ch);
+                    }else{
+                        currStr.append(ch);
+                    }
                 }
-                return false;
             }
-            curr = newNode;
-        }
-        return true;
-
-    }
-
-    public class TrieNode {
-        Map<Character, TrieNode> map;
-        boolean isEndOfWord;
-        int index;
-
-        public TrieNode() {
-            map = new HashMap();
         }
 
+        return out.toString();
     }
 
 }
+
+
