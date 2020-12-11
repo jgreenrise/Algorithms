@@ -1,15 +1,21 @@
 package recursive.fibonacci;
 
+/**
+ * https://leetcode.com/problems/climbing-stairs/submissions/
+ */
 public class a2_ClimbingStairs {
 
     public static void main(String[] args) {
 
-        for (int i = 4; i < 20; i++) {
-            System.out.println("Stairs combination: " + i + ": " + climbStairsRec(i) + " Memo: " + climbStairsMemo(i) + ", BottomUp: " + bottomUp(i) + ", Great: " + bottomUpSpaceEff(i));
+        for (int i = 3; i < 10; i++) {
+            System.out.println("\nRecursive: " + i + ": \t" + recursive(i, 0) );
+            System.out.println("Recursive - Memo: " + i + ": \t" + recWithMemo(i) );
+            System.out.println("Dynamic Prog " + i + ": \t" + dynamicProg(i) );
+            System.out.println("Dynamic Prog (Space efficient): " + i + ": \t" + dynamicProgSpaceEff(i) );
         }
     }
 
-    public static int bottomUpSpaceEff(int n) {
+    public static int dynamicProgSpaceEff(int n) {
 
         if (n == 0)
             return 0;
@@ -20,18 +26,12 @@ public class a2_ClimbingStairs {
         if (n == 2)
             return 2;
 
-        int greatGrandParent = 0;
         int grandParent = 1;
         int parent = 2;
         int out = 0;
 
         for (int j = 3; j <= n; j++) {
-            if (j == 3) {
-                out = 1 + parent + grandParent + greatGrandParent;
-            } else {
-                out = parent + grandParent + greatGrandParent;
-            }
-            greatGrandParent = grandParent;
+            out = parent + grandParent;
             grandParent = parent;
             parent = out;
         }
@@ -40,7 +40,7 @@ public class a2_ClimbingStairs {
 
     }
 
-    public static int bottomUp(int n) {
+    public static int dynamicProg(int n) {
 
         if (n == 0)
             return 0;
@@ -53,95 +53,58 @@ public class a2_ClimbingStairs {
         dp[0] = 0;
         dp[1] = 1; // 1 step only
         dp[2] = 2; // {1,1}, {2} > 2 steps only
-        dp[3] = 4; // {1,1,1}, {2,1}, {1,2}, {3} > 4 steps only
 
-        for (int j = 4; j <= n; j++) {
-            dp[j] = dp[j - 1] + dp[j - 2] + dp[j - 3];
+        for (int j = 3; j <= n; j++) {
+            dp[j] = dp[j - 1] + dp[j - 2];
         }
 
         return dp[n];
 
     }
 
-    public static int climbStairsRec(int n) {
-        if (n == 0)
-            return n;
-        return getStairSteps(0, n);
+    public static int recursive(int n, int currTot) {
+
+        int left = 0;
+        int right = 0;
+
+        if(currTot == n)
+            return 1;
+
+        if(currTot+1 <= n)
+            left = recursive(n,currTot +1);
+
+        if(currTot+2 <= n)
+            right = recursive(n,currTot +2);
+
+        return left + right;
+
     }
 
-    public static int getStairSteps(int tot, int n) {
+    public static int recWithMemo(int n) {
 
-        int left = 0, middle = 0, right = 0;
-
-        if (tot + 1 <= n) {
-            if (tot + 1 == n) {
-                left = 1;
-            } else {
-                left = getStairSteps(tot + 1, n);
-            }
-        }
-
-        if (tot + 2 <= n) {
-            if (tot + 2 == n) {
-                middle = 1;
-            } else {
-                middle = getStairSteps(tot + 2, n);
-            }
-        }
-
-        if (tot + 3 <= n) {
-            if (tot + 3 == n) {
-                right = 1;
-            } else {
-                right = getStairSteps(tot + 3, n);
-            }
-        }
-
-        return left + middle + right;
+        int memo [] = new int [n+1];
+        return recursive(n,0, memo);
     }
 
-    public static int climbStairsMemo(int n) {
-        if (n == 0)
-            return n;
-        return getStairSteps(0, n, new int[n + 1]);
-    }
+    public static int recursive(int n, int currTot, int[] memo) {
 
-    public static int getStairSteps(int tot, int n, int[] memo) {
+        if(memo[currTot] != 0)
+            return memo[currTot];
 
-        if (memo[tot] != 0) {
-            return memo[tot];
-        }
+        int left = 0;
+        int right = 0;
+        if(currTot == n)
+            return 1;
 
-        int left = 0, middle = 0, right = 0;
+        if(currTot+1 <= n)
+            left = recursive(n,currTot +1, memo);
 
-        if (tot + 1 <= n) {
-            if (tot + 1 == n) {
-                left = 1;
-            } else {
-                memo[tot + 1] = getStairSteps(tot + 1, n, memo);
-                left = memo[tot + 1];
-            }
-        }
+        if(currTot+2 <= n)
+            right = recursive(n,currTot +2, memo);
 
-        if (tot + 2 <= n) {
-            if (tot + 2 == n) {
-                middle = 1;
-            } else {
-                memo[tot + 2] = getStairSteps(tot + 2, n, memo);
-                middle = memo[tot + 2];
-            }
-        }
+        memo[currTot] = left+right;
+        return left+right;
 
-        if (tot + 3 <= n) {
-            if (tot + 3 == n) {
-                right = 1;
-            } else {
-                memo[tot + 3] = getStairSteps(tot + 3, n, memo);
-                right = memo[tot + 3];
-            }
-        }
-
-        return left + middle + right;
     }
 
 }

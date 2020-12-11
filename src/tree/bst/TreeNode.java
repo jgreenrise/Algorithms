@@ -5,6 +5,7 @@ public class TreeNode {
 	public Comparable value;
 	public TreeNode left, right;
     public boolean isVisited;
+	public int val;
 
 	public TreeNode(Comparable value) {
 		super();
@@ -20,4 +21,10 @@ public class TreeNode {
 		this.right = right;
 	}
 
+	public TreeNode(int val, TreeNode left, TreeNode right) {
+		super();
+		this.val = val;
+		this.left = left;
+		this.right = right;
+	}
 }

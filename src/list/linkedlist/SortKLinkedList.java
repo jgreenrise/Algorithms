@@ -35,7 +35,22 @@ public class SortKLinkedList {
         lists[2] = node3.start;
 
         SortKLinkedList class1 = new SortKLinkedList();
-        ListNode out = class1.usingPriorityQueu(lists);
+
+        /**
+         * Approach 1: Combine all list into single list and then do Merge sort
+         */
+        ListNode out = class1.mergeAllListNodes(lists);
+
+        /**
+         * Approach 2: Merge sort {0,1} > out, then ms{out,2}, ms{out,3} etc
+         */
+        out = class1.mergeOneListAtATime(lists);
+
+        /**
+         * 3: Using p1
+         */
+        out = class1.usingPriorityQueu(lists);
+
         System.out.println(out.val);
 
 
@@ -63,6 +78,9 @@ public class SortKLinkedList {
 
 	}
 
+    /**
+     * Approach 1: Combine all lists into a single list and then do merge Sort
+     */
     public ListNode mergeAllListNodes(ListNode[] lists) {
 
         if (lists.length == 0)
@@ -150,6 +168,44 @@ public class SortKLinkedList {
         } else {
             left.next = mergeLinkedList(left.next, right);
             return left;
+        }
+
+    }
+
+    public ListNode mergeOneListAtATime(ListNode[] lists) {
+
+        ListNode out = lists[0];
+
+        for(int j=1; j< lists.length; j++){
+            out = merge(out, lists[j]);
+        }
+
+        return out;
+
+    }
+
+    public ListNode merge(ListNode left, ListNode right){
+
+        if(left == null && right == null){
+            return null;
+        }else if(left == null){
+            return right;
+        }else if(right == null){
+            return left;
+        }else{
+            int out = 0;
+            ListNode node = null;
+
+            if(left.val <= right.val){
+                node = new ListNode(left.val);
+                node.next = merge(left.next, right);
+            }else{
+                node = new ListNode(right.val);
+                node.next = merge(left, right.next);
+            }
+
+            return node;
+
         }
 
     }

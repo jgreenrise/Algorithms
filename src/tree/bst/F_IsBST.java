@@ -86,6 +86,61 @@ public class F_IsBST {
         return false;
     }
 
+    public boolean isValidBST(TreeNode node) {
+        WrapperTreeNode response = isValid(node);
+        return response == null ? false:true;
+    }
+
+    public WrapperTreeNode isValid(TreeNode node){ // 50 , 25, 12, 26
+
+        if(node.left == null && node.right == null){
+            return new WrapperTreeNode(node.val, node.val);
+        }else if(node.left == null && node.right != null){
+            WrapperTreeNode rightNode = isValid(node.right);
+
+            if(rightNode != null){
+                if(node.val < node.right.val && node.val > rightNode.max){
+                    return rightNode;
+                }
+                return null;
+            }
+
+            return rightNode;
+
+
+        }else if(node.right == null && node.left != null){
+
+            WrapperTreeNode leftNode = isValid(node.left);
+
+            if(leftNode != null){
+                if(node.val >= node.left.val && node.val >= leftNode.min){
+                    return leftNode;
+                }
+                return null;
+            }
+
+            return leftNode;
+
+        }else{
+
+            if(node.val < node.right.val && node.val >= node.left.val){
+                WrapperTreeNode leftNode = isValid(node.left); // 25, 12 <
+                WrapperTreeNode rightNode = isValid(node.right); // 26
+
+                if(node.val >= leftNode.max && node.val < rightNode.min){
+                    return new WrapperTreeNode(rightNode.min, leftNode.max);
+                }
+
+            }
+
+            return null;
+
+        }
+
+
+    }
+
+
     public void printBST() {
 
         System.out.println("Root node value: " + rootNode.value);
@@ -114,4 +169,15 @@ public class F_IsBST {
         }
     }
 
+    private class WrapperTreeNode {
+
+        int min;
+        int max;
+
+        public WrapperTreeNode(int min, int max) {
+            this.min = min;
+            this.max = max;
+        }
+
+    }
 }

@@ -75,9 +75,6 @@ public class CopyListRandomPointer {
             newList.next = (newList.next != null) ? newList.next.next : null;
             oldList  = oldList.next;
             newList = newList.next;
-
-
-
         }
 
         return out;
