@@ -1,0 +1,59 @@
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<style>
+#show,#content{display:none;}
+#show:checked~#content{display:block;}
+
+#show1,#content1{display:none;}
+#show1:checked~#content1{display:block;}
+
+#show2,#content2{display:none;}
+#show2:checked~#content2{display:block;}
+
+#show3,#content3{display:none;}
+#show3:checked~#content3{display:block;}
+
+#show4,#content4{display:none;}
+#show4:checked~#content4{display:block;}
+
+#showSolution,#contentSolution{display:none;}
+#showSolution:checked~#contentSolution{display:block;}
+
+.mydiv {
+  padding: 5px;
+  border: 2px solid grey;
+  min-height: 1.25em;
+  line-height: 1.25;
+  margin-top: 50px;
+}
+
+
+</style>
+<div class="mydiv">
+    <input id="show" type="checkbox">
+    <label for="show">Q. Ways to Solve ?</label>
+    <span id="content">1</span>
+</div>
+<div class="mydiv">
+    <input id="show2" type="checkbox">
+    <label for="show2">Does it Work for ?</label>
+    <span id="content2">Does your solution work for {1 3 3 5 8} OR {3,5,6,7}</span>
+</div>
+
+<div class="mydiv">
+    <input id="show3" type="checkbox">
+    <label for="show3">Hint</label>
+    <span id="content3">Which DS maintains sorted data ?</span>
+</div>
+
+<div class="mydiv">
+    <input id="show4" type="checkbox">
+    <label for="show4">Hint</label>
+    <span id="content4">PQ</span>
+</div>
+
+<div class="mydiv">
+    <input id="showSolution" type="checkbox">
+    <label for="showSolution">Q. Solution</label><span id="contentSolution">
+    <p>1. <a href="https://leetcode.com/submissions/detail/432704540/">Solution</a></p>
+</span>
+</div><br>

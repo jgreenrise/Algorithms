@@ -162,7 +162,6 @@ public class SinglyLinkedList {
 			System.out.print(node.val + ", ");
 			node = node.next;
 		}
-		System.out.println("Size: " + size);
 
 		System.out.println("\n");
 

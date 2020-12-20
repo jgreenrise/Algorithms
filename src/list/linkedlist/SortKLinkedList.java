@@ -43,15 +43,22 @@ public class SortKLinkedList {
 
         /**
          * Approach 2: Merge sort {0,1} > out, then ms{out,2}, ms{out,3} etc
-         */
         out = class1.mergeOneListAtATime(lists);
 
         /**
          * 3: Using p1
-         */
         out = class1.usingPriorityQueu(lists);
+        */
 
         System.out.println(out.val);
+
+        ListNode output = out;
+
+        System.out.println("Output");
+        while (output != null) {
+            System.out.print(output.val + ", ");
+            output = output.next;
+        }
 
 
     }
@@ -83,73 +90,45 @@ public class SortKLinkedList {
      */
     public ListNode mergeAllListNodes(ListNode[] lists) {
 
-        if (lists.length == 0)
-            return null;
+            ListNode orig = lists[0];
+            ListNode node = orig;
 
-        ListNode combined = null;
-        ListNode orig = null;
-        boolean matchFound = false;
-        for (ListNode node : lists) {
-            if (node == null) {
-                continue;
-            } else {
-                matchFound = true;
-                if (combined == null) {
-                    combined = node;
-                    orig = combined;
-                } else {
-                    combined.next = node;
-                }
+            for(int j=1; j < lists.length ; j++){
+                while(node.next != null)
+                    node = node.next;
 
-                while (combined.next != null) {
-                    combined = combined.next;
-                }
+                node.next = lists[j];
             }
-        }
 
-        if (!matchFound) {
-            return null;
-        }
-
-        if (orig.next == null) {
-            return combined;
-        }
-
-        System.out.println(orig);
-        return mergeSort(orig);
+            return mergeSort(orig);
 
 
     }
 
-    public static ListNode mergeSort(ListNode node) {
+    public static ListNode mergeSort(ListNode node){
 
-        if (node == null || node.next == null) {
+        if(node == null || node.next == null){
             return node;
         }
 
-        ListNode middle = getMiddle(node);
-        ListNode right = middle.next;
+        ListNode slowPtr = node;
+        ListNode orig = slowPtr;	// Keep reference of left pointer
+        ListNode fastPtr = node;
 
-        // Do this to make sure that left list only travels till midpoint
-        middle.next = null;
-
-        return mergeLinkedList(mergeSort(node), mergeSort(right));
-    }
-
-    public static ListNode getMiddle(ListNode node) {
-
-        if (node == null || node.next == null)
-            return node;
-
-        ListNode slow, fast = null;
-        slow = fast = node;
-
-        while (fast.next != null && fast.next.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
+        while(slowPtr != null && fastPtr != null && slowPtr.next != null && fastPtr.next != null && fastPtr.next.next != null){
+            slowPtr = slowPtr.next;
+            fastPtr = fastPtr.next.next;
         }
 
-        return slow;
+        ListNode left = orig;			// Left List
+        ListNode right = slowPtr.next;	// Right list
+        slowPtr.next = null;			// middle.next == null;
+
+        left = mergeSort(left);
+        right = mergeSort(right);
+
+        return mergeLinkedList(left, right);
+
     }
 
     private static ListNode mergeLinkedList(ListNode left, ListNode right) {

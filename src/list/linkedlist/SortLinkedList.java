@@ -4,12 +4,8 @@ import list.linkedlist.single.SinglyLinkedList;
 import list.linkedlist.single.ListNode;
 
 /**
- * Input
-6, 1, 1, 2, 0, Size: 5
-
-
-Output
-0, 1, 1, 2, 6, 
+ Input
+ 1, 7, 6, 6, 1, 1, 2, 0, Size: 8
  * 
  */
 public class SortLinkedList {
@@ -25,9 +21,9 @@ public class SortLinkedList {
 		list.addFirst(1);
 		list.addFirst(1);
 		list.addFirst(6);
-		// list.addFirst(7);
-		// list.addFirst(5);
-		// list.addFirst(4);
+		list.addFirst(6);
+		list.addFirst(7);
+		list.addFirst(1);
 
 		System.out.println("Input");
 		list.printList();
@@ -46,7 +42,7 @@ public class SortLinkedList {
 	 * SORT A LINKED LIST
 	 ***********************************************************/
 
-	public static ListNode mergeSort(ListNode node) {
+	public static ListNode mergeSort2(ListNode node) {
 
 		if (node == null || node.next == null) {
 			return node;
@@ -59,6 +55,32 @@ public class SortLinkedList {
 		middle.next = null;
 		
 		return mergeLinkedList(mergeSort(node), mergeSort(right));
+	}
+
+	public static ListNode mergeSort(ListNode node){
+
+		if(node == null || node.next == null){
+			return node;
+		}
+
+		ListNode slowPtr = node;
+		ListNode orig = slowPtr;	// Keep reference of left pointer
+		ListNode fastPtr = node;
+
+		while(slowPtr != null && fastPtr != null && slowPtr.next != null && fastPtr.next != null && fastPtr.next.next != null){
+			slowPtr = slowPtr.next;
+			fastPtr = fastPtr.next.next;
+		}
+
+		ListNode left = orig;			// Left List
+		ListNode right = slowPtr.next;	// Right list
+		slowPtr.next = null;			// middle.next == null;
+
+		mergeSort(left);
+		mergeSort(right);
+
+		return mergeLinkedList(left, right);
+
 	}
 
 	public static ListNode getMiddle(ListNode node) {

@@ -18,6 +18,10 @@ public class MinCostSticks {
     }
 
     /**
+     * Bruteforce Solution
+     *  Is not efficient at all
+     *  Sorrting required after every for loop
+     *
      * Throws Time limit exception, since sorting required inside for loop.
      */
     private int connectSticks(int[] sticks) {
@@ -29,6 +33,7 @@ public class MinCostSticks {
             out += currOut;
             sticks[i] = currOut;
             System.out.println("Out: "+out);
+
             Arrays.sort(sticks);
         }
 

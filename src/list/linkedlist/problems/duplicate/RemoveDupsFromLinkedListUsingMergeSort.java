@@ -50,7 +50,33 @@ public class RemoveDupsFromLinkedListUsingMergeSort {
 	 * SORT A LINKED LIST
 	 ***********************************************************/
 
-	public static ListNode mergeSort(ListNode node) {
+	public static ListNode mergeSort(ListNode node){
+
+		if(node == null || node.next == null){
+			return node;
+		}
+
+		ListNode slowPtr = node;
+		ListNode orig = slowPtr;
+		ListNode fastPtr = node;
+
+		while(slowPtr != null && fastPtr != null && slowPtr.next != null && fastPtr.next.next != null){
+			slowPtr = slowPtr.next;
+			fastPtr = fastPtr.next.next;
+		}
+
+		ListNode left = orig;
+		ListNode right = slowPtr.next;
+		slowPtr.next = null;
+
+		mergeSort(left);
+		mergeSort(right);
+
+		return mergeLinkedList(left, right);
+
+	}
+
+	public static ListNode mergeSort2(ListNode node) {
 
 		if (node == null || node.next == null) {
 			return node;
