@@ -6,173 +6,86 @@ public class OneAwayCheckIfHasEdits {
         String input1 = "pale";
         String input2 = "ple";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEdits_recursive(input1, input2));
 
         input1 = "ple";
         input2 = "pale";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        // Input2 length > Input 1 length
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input2, input1, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEdits_recursive(input2, input1));
 
         input1 = "pales";
         input2 = "pale";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input2, input1, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEdits_recursive(input2, input1));
 
         input1 = "pale";
         input2 = "bale";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEdits_recursive(input1, input2));
 
         input1 = "pale";
         input2 = "bake";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEdits_recursive(input1, input2));
 
         input1 = "ppalem";
         input2 = "palem";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEdits_recursive(input1, input2));
 
         input1 = "palem";
         input2 = "ppalem";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
 
-        // Input 2 lenght > input 1 length
-        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input2, input1, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEdits_recursive(input2, input1));
 
         input1 = "apple";
         input2 = "aple";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEdits_recursive(input1, input2));
 
         input1 = "ab";
         input2 = "b";
         System.out.println("\n" + input1 + " : " + input2 + " = " + hasEditsUsingCounter(input1, input2));
-        System.out.println("Approach 2 2: " + input1 + " : " + input2 + " = " + hasEditsRecursively(input1, input2, 0, input1.length() > input2.length(), input1.length() == input2.length()));
-        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEditsRecursivelyConcise(input1, input2, 0, input1.length() == input2.length()));
+        System.out.println("Approach 2 *: " + input1 + " : " + input2 + " = " + hasEdits_recursive(input1, input2));
 
     }
 
-    // Left string length >= right string length
-    private static boolean hasEditsRecursivelyConcise(String left, String right, int counter, boolean isLengthEqual) {
+    /**
+     * @Todo: handle string with equal length
+     */
+    public static boolean hasEdits_recursive(String s, String t) {
 
-        // Diff between length > 1
-        if (Math.abs(left.length() - right.length()) > 1) return false;
+        // Negative
+        //	If both of them are null
+        //	If either of string is Null
+        //	If both.lenght == 1
 
-        // Compare if everything is already equal
-        if (isLengthEqual && left.equals(right))
-            return true;
-
-        if (left.length() == 0 && (right.length() == 1 && counter == 0))
-            return true;
-
-        if (right.length() == 0 && (left.length() == 1 && counter == 0))
-            return true;
-
-        if (left.charAt(0) == (right.charAt(0))) {
-
-            if (isLengthEqual && left.length() == 1)
-                return true;
-            return hasEditsRecursivelyConcise(left.substring(1), right.substring(1), counter, left.length() == right.length());
-
-        } else {
-
-            counter = counter + 1;
-
-            if (counter > 1)    // More than 1 edits is found
-                return false;
-
-            if (isLengthEqual) {
-                return hasEditsRecursivelyConcise(left.substring(1), right.substring(1), counter, left.length() == right.length());
-            }
-            return hasEditsRecursivelyConcise(left.substring(1), right, counter, left.length() == right.length());
+        // Positive
+        if(s.length() >= t.length()){
+            return isOneAwayFromAnother(s, t, 0);
         }
+        return isOneAwayFromAnother(t, s, 0);
 
     }
 
-    private static boolean hasEditsRecursively(
-            String left, String right, int counter, boolean isInput1BiggerThanInput2, boolean isLengthEqual) {
+    public static boolean isOneAwayFromAnother(String s, String t, int count){
 
-        // Diff between length > 1
-        if (Math.abs(left.length() - right.length()) > 1) return false;
-
-        if (isLengthEqual && left.equals(right))
-            return true;
-
-        if (left.length() == 0) {
-            if (right.length() == 1 && counter == 0)
-                return true;
+        if(s.isEmpty() && t.isEmpty()){
+            return count < 2;
         }
 
-        if (right.length() == 0) {
-            if (left.length() == 1 && counter == 0)
-                return true;
+        if(t.isEmpty() && !s.isEmpty() && s.length() == 1){
+            return count < 2;
         }
 
-        if (left.charAt(0) == (right.charAt(0))) {
-
-            if (isLengthEqual && left.length() == 1)
-                return true;
-
-            left = left.substring(1);
-            right = right.substring(1);
-
-            return
-                    hasEditsRecursively(
-                            left,
-                            right,
-                            counter,
-                            left.length() > right.length(),
-                            left.length() == right.length());
-        } else {
-
-            counter = counter + 1;
-
-            if (counter > 1)
-                // More than 1 edits is found
+        if(s.charAt(0) == t.charAt(0)){
+            return isOneAwayFromAnother(s.substring(1), t.substring(1), count);
+        }else{
+            if(count  == 1){
                 return false;
-
-            if (isLengthEqual) {
-
-                left = left.substring(1);
-                right = right.substring(1);
-
-                return
-                        hasEditsRecursively(
-                                left,
-                                right,
-                                counter,
-                                left.length() > right.length(),
-                                left.length() == right.length());
-            }
-
-            if (isInput1BiggerThanInput2) {
-                left = left.substring(1);
-                return
-                        hasEditsRecursively(
-                                left,
-                                right,
-                                counter,
-                                left.length() > right.length(),
-                                left.length() == right.length());
-            } else {
-                right = right.substring(1);
-                return
-                        hasEditsRecursively(
-                                left,
-                                right,
-                                counter,
-                                left.length() > right.length(),
-                                left.length() == right.length());
+            }else{
+                return isOneAwayFromAnother(s.substring(1), t, count + 1);
             }
         }
 
@@ -186,9 +99,6 @@ public class OneAwayCheckIfHasEdits {
 
     }
 
-    /**
-     * Left length > Right length
-     */
     private static boolean usingCounter(String left, String right) {
 
         char[] leftArr = left.toCharArray();
