@@ -1,0 +1,47 @@
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<style>
+#show,#content{display:none;}
+#show:checked~#content{display:block;}
+
+#show1,#content1{display:none;}
+#show1:checked~#content1{display:block;}
+
+#show2,#content2{display:none;}
+#show2:checked~#content2{display:block;}
+
+#show3,#content3{display:none;}
+#show3:checked~#content3{display:block;}
+
+.mydiv {
+  padding: 5px;
+  border: 2px solid grey;
+  min-height: 1.25em;
+  line-height: 1.25;
+  margin-top: 50px;
+}
+
+
+</style>
+<div class="mydiv">
+    <input id="show" type="checkbox">
+    <label for="show">Q. Ways to Solve ?</label>
+    <span id="content">4</span>
+</div>
+<div class="mydiv">
+    <input id="show3" type="checkbox">
+    <label for="show3">Q. Solution</label><span id="content3">
+    <p><a>XOR</a></p>
+    <p><a>Set</a></p>
+    <p><a>ASCII</a></p>
+    <p><a>Sort</a></p>
+
+</span>
+</div><br>
+
+
+4 ways
+XOR
+Hashset & HashMap
+char array and count
+Sort and check the count
+https://github.com/jgreenrise/Algorithms/blob/master/src/String/problems/PalindromePermutation.java

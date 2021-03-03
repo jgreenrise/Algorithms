@@ -14,7 +14,7 @@ public class PalindromePermutation {
         System.out.println(usingHashSet(str_input));
         System.out.println(usingASCIIIntArray(str_input));
         System.out.println(usingSort(str_input));
-        System.out.println(fetchAscii(str_input));
+        System.out.println(usingXOR(str_input));
 
         // Using HashMap not coded
 
@@ -22,7 +22,7 @@ public class PalindromePermutation {
 
     }
 
-    private static boolean fetchAscii(String str_input){
+    private static boolean usingXOR(String str_input){
 
         str_input  = str_input.toUpperCase();
         char[] chars = str_input.toCharArray();
