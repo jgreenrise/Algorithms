@@ -20,51 +20,8 @@
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/classes/com/example/demo/b_SemaphoreKafka_WhenLoadIncreases.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/KLargest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/KLargest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/NumberToWords_2020_06_05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/NumberToWords_2020_06_05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/RomanToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/RomanToInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/StockSellAndBuy122.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/StockSellAndBuy122.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/WordSearch_20200604.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/meetingRooms/MeetingRooms_2_2020_06_24.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/meetingRooms/MeetingRooms_2_2020_06_24.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sandbox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/String/cci/IsUnique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/cci/IsUnique.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/String/problems/PalindromePermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/problems/PalindromePermutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/String/problems/StringCompression1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/String/problems/StringCompression1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/anki1_3hints.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/anki1_3hints.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/anki1_3hints_v2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/anki1_3hints_v2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/directed/C_bfs/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/directed/C_bfs/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/directed/C_bfs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/directed/C_bfs/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/directed/C_bfs/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/directed/C_bfs/CustomTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/directed/D_dfs/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/directed/D_dfs/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/directed/D_dfs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/directed/D_dfs/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/directed/D_dfs/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/directed/D_dfs/CustomNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/undirected/bfs/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/undirected/bfs/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/undirected/bfs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/undirected/bfs/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/undirected/bfs/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/undirected/bfs/CustomNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/undirected/dfs/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/undirected/dfs/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/undirected/dfs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/undirected/dfs/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/undirected/dfs/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/undirected/dfs/CustomNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/list/linkedlist/problems/PartitionLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/PartitionLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/list/linkedlist/problems/Sandbox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/list/linkedlist/problems/duplicate/RemoveDupsFromLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/duplicate/RemoveDupsFromLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/list/linkedlist/problems/palindrome/IsPalindromeByReverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/palindrome/CreateRotatedListAndCompareTillMidway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/bst/F_IsBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/bst/F_IsBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/findMaxLengthBetweenNodes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/findMaxLengthBetweenNodes/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/findMaxLengthBetweenNodes/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/findMaxLengthBetweenNodes/CustomNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/problems/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/printPaths/PrintAllPathsWhichSumToEqualValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/trie/A_Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/trie/A_Insert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/trie/B_CheckWordWithPrefixExists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/trie/B_CheckWordWithPrefixExists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/trie/C_CheckWordExists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/trie/C_CheckWordExists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/trie/D_DeleteWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/trie/D_DeleteWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/trie/G_ConcatenatedWords_20200613.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/trie/G_ConcatenatedWords_20200613.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/trie/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/trie/I_DecodeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/trie/TrieNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/trie/CustomTrieNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/problems/a77_Combinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/a77_Combinations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/AppConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/SpringMvcInitializer.java" beforeDir="false" />
