@@ -5,10 +5,10 @@ import java.util.Queue;
 
 public class Graph {
 
-	public void breadthFirstSearch(Node rootNode, Node nodeToBeFound) {
+	public void breadthFirstSearch(CustomNode rootNode, CustomNode nodeToBeFound) {
 
 		System.out.println("Root node: "+rootNode.value);
-		Queue<Node> q = new LinkedList<Node>();
+		Queue<CustomNode> q = new LinkedList<CustomNode>();
 		
 		System.out.println("Adding root node to queue");
 		q.add(rootNode);
@@ -17,9 +17,9 @@ public class Graph {
 		while (!q.isEmpty()) {
 			
 			System.out.println("Removing node from queue: "+(q.peek()).value);
-			Node node = q.poll();
+			CustomNode node = q.poll();
 
-			for (Node adjNode : node.adjacentNodes) {
+			for (CustomNode adjNode : node.adjacentNodes) {
 				
 				if(adjNode == nodeToBeFound){
 					System.out.println("Node is found");

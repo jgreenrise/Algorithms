@@ -2,29 +2,29 @@ package tree.trie;
 
 import java.util.HashMap;
 
-public class TrieNode {
+public class CustomTrieNode {
 
-    HashMap<Character, TrieNode> map;
+    HashMap<Character, CustomTrieNode> map;
     boolean isCompleted;
 
-    public TrieNode(HashMap<Character, TrieNode> map) {
+    public CustomTrieNode(HashMap<Character, CustomTrieNode> map) {
         this.map = map;
     }
 
-    public TrieNode() {
+    public CustomTrieNode() {
         this.map = new HashMap<>();
         this.isCompleted = false;
     }
 
-    public TrieNode(boolean isCompleted) {
+    public CustomTrieNode(boolean isCompleted) {
         this.isCompleted = isCompleted;
     }
 
-    public void setMap(HashMap<Character, TrieNode> map) {
+    public void setMap(HashMap<Character, CustomTrieNode> map) {
         this.map = map;
     }
 
-    public HashMap<Character, TrieNode> getMap() {
+    public HashMap<Character, CustomTrieNode> getMap() {
         return map;
     }
 

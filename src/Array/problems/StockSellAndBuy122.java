@@ -6,11 +6,41 @@ package Array.problems;
 public class StockSellAndBuy122 {
     public static void main(String[] args) {
 
-        int[] arr_i_input = {7, 1, 5, 3, 6, 4};
-        //int[] arr_i_input = { 1,2,3,4,5};
+        //int[] arr_i_input = {7, 1, 5, 3, 6, 4};
+        int[] arr_i_input = { 1,2,3,4,5};
 
-        System.out.println(usingValleyPeakApproach(arr_i_input));
-        System.out.println(usingRecursion(arr_i_input, 0));
+        //System.out.println(usingValleyPeakApproach(arr_i_input));
+        //System.out.println(usingRecursion(arr_i_input, 0));
+        System.out.println(maxProfit(arr_i_input));
+    }
+
+    public static int maxProfit(int[] prices) {
+
+        int [] max_so_far = new int [prices.length];
+        int [] min_so_far = new int [prices.length];
+
+        int min = prices[0];
+        min_so_far[0] = min;
+        for(int j = 1; j < prices.length; j++){
+            min = Math.min(min, prices[j]);
+            min_so_far[j] = min;
+        }
+
+        int max = prices[prices.length-1];
+        max_so_far[prices.length-1] = max;
+        for(int j = prices.length-2; j >= 0; j--){
+            max = Math.max(max, prices[j]);
+            max_so_far[j] = max;
+        }
+
+        int maxProfitSoFar = 0;
+        for(int k = 1; k < prices.length-1; k++){
+            maxProfitSoFar = Math.max(maxProfitSoFar,
+                    (prices[k] - min_so_far[k-1]) +
+                            (max_so_far[k+1] - prices[k+1]) );
+        }
+
+        return maxProfitSoFar;
     }
 
     /**

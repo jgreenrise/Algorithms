@@ -4,10 +4,12 @@ import java.util.Arrays;
 
 public class StringCompression1 {
 
+    private char[] numChars;
+
     public static void main(String[] args) {
         //String input = "aabbccc";
-        //String input = "abbbbbbbbbbbb";
-        String input = "aaabbaaa";
+        String input = "abbbbbbbbbbbb";
+        //String input = "aaabbaaa";
 
         // Approach String Builder or String
         //System.out.println(usingStringBuilder(input));
@@ -15,7 +17,7 @@ public class StringCompression1 {
         System.out.println(usingStringBuilder("aabBBcccccAaa"));
 
         // Approach 2
-        System.out.println("\n In Place" + inPlace(input.toCharArray()));
+        //System.out.println("\n In Place" + inPlace(input.toCharArray()));
 
         // Approach 3: Intialized String builder
         // Not coded
@@ -25,61 +27,60 @@ public class StringCompression1 {
          * 3.3 Append to String builder
          */
 
+        // Approach 4
+        System.out.println("\n In Place" + compress(input.toCharArray()));
+
     }
 
-    public static int inPlace(char[] chars) {
+    public static int compress(char[] chars) {
 
-        int len = chars.length;
+        if (chars == null || chars.length == 0)
+            return 0;
 
-        if(len == 1){
-            return len;
-        }
+        if(chars.length == 1)
+            return 1;
 
-        int counter = 0;
-        char currChar = ' ';
-        int jumpTo = 0;
+        int i = 0; // Current Index
+        int n = chars.length;
+        int currIndex = 0;
 
-        for(int j = 0; j< chars.length; j++){
+        while(i < n){
 
-            counter = 0;
-            currChar = chars[j];
 
-            for(int k = j+1; k< chars.length; k++){
-                if(currChar == chars[k]){
-                    chars[k] = ' ';
-                    counter++;
-                }else{
-                    break;
-                }
+            // Get frequency
+            int frequency = 0;
+            int left_index = i;
+            int right_index = i+1;
+            char currCh = chars[i];
+            while(right_index < n && chars[right_index] == currCh ){
+                right_index++;
+                i++;
             }
+            frequency = right_index - left_index;
 
-            if(counter > 0){
-                if(1+counter > 9){
-                    chars[j+1] = (char)((1+counter)/10 + '0');
-                    chars[j+2] = (char)((1+counter)%10 + '0');
-                }else{
-                    chars[j+1] = (char)(1+counter + '0');
-                }
-
-                j = (j+counter);
-            }
-        }
-
-        System.out.println(Arrays.toString(chars));
-
-        counter = 0;
-        for(int j = 0; j< chars.length; j++){
-            if(chars[j] != ' '){
-                counter++;
+            // Add in place
+            chars[currIndex++] = currCh;
+            if(frequency == 1){
+                // Dont do anything
+                i++;
+            }else if(frequency < 10){
+                System.out.println("Cuu Index: "+currIndex+", frequency: "+frequency+", "+Arrays.toString(chars));
+                chars[currIndex++] = (char)(frequency + '0');
+                i++;
             }else{
-                for(int k =j+1; k <chars.length; k++){
-                    chars[k-1] = chars[k];
+
+                char [] numChars = (String.valueOf(frequency)).toCharArray();
+                for(int j=0; j < numChars.length; j++){
+                    chars[currIndex++] = numChars[j];
+                    i++;
                 }
+
             }
+
         }
 
-        return counter;
-
+        System.out.println(chars);
+        return currIndex;
     }
 
     private static String usingStringBuilder(String input) {

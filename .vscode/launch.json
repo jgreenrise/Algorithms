@@ -1,0 +1,1687 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MaxHeap2023",
+            "request": "launch",
+            "mainClass": "Array.heap.MaxHeap2023",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "TextPad",
+            "request": "launch",
+            "mainClass": "Array.TextPad",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Hashtable",
+            "request": "launch",
+            "mainClass": "Array.hashtable.Hashtable",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "HeapSort",
+            "request": "launch",
+            "mainClass": "Array.heap.HeapSort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MaxHeap",
+            "request": "launch",
+            "mainClass": "Array.heap.MaxHeap",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MinHeap",
+            "request": "launch",
+            "mainClass": "Array.heap.MinHeap",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MinHeapRemoveMin",
+            "request": "launch",
+            "mainClass": "Array.heap.MinHeapRemoveMin",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "FindNumberOccuringOddNumberOfTimes",
+            "request": "launch",
+            "mainClass": "Array.problems.FindNumberOccuringOddNumberOfTimes",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "KLargest",
+            "request": "launch",
+            "mainClass": "Array.problems.KLargest",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "LongestStringChain",
+            "request": "launch",
+            "mainClass": "Array.problems.LongestStringChain",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "LongestStringChain_Empty",
+            "request": "launch",
+            "mainClass": "Array.problems.LongestStringChain_Empty",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "LongestTower",
+            "request": "launch",
+            "mainClass": "Array.problems.ManTowerOrBoxStacking.LongestTower",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MaxSubArray",
+            "request": "launch",
+            "mainClass": "Array.problems.MaxSubArray",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MergeSortedArray",
+            "request": "launch",
+            "mainClass": "Array.problems.MergeSortedArray",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MinCostSticks",
+            "request": "launch",
+            "mainClass": "Array.problems.MinCostSticks",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MinStepsToMakeTwoStringsAnagram",
+            "request": "launch",
+            "mainClass": "Array.problems.MinStepsToMakeTwoStringsAnagram",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MissingNumber",
+            "request": "launch",
+            "mainClass": "Array.problems.MissingNumber",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MostFrequentNumberInArray",
+            "request": "launch",
+            "mainClass": "Array.problems.MostFrequentNumberInArray",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "NextPermutation",
+            "request": "launch",
+            "mainClass": "Array.problems.NextPermutation",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "NumberToWords_2020_06_05",
+            "request": "launch",
+            "mainClass": "Array.problems.NumberToWords_2020_06_05",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "NumberToWords_Empty",
+            "request": "launch",
+            "mainClass": "Array.problems.NumberToWords_Empty",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PartitionLabels_2020_06_20",
+            "request": "launch",
+            "mainClass": "Array.problems.PartitionLabels_2020_06_20",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PrintAllCombinationsFromNArrayLists",
+            "request": "launch",
+            "mainClass": "Array.problems.PrintAllCombinationsFromNArrayLists",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PrisonCellAfterNDays",
+            "request": "launch",
+            "mainClass": "Array.problems.PrisonCellAfterNDays",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ProductOfArrayExceptSelf_2020_06_18",
+            "request": "launch",
+            "mainClass": "Array.problems.ProductOfArrayExceptSelf_2020_06_18",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "RemoveDuplicatesFromIntegerArray",
+            "request": "launch",
+            "mainClass": "Array.problems.RemoveDuplicatesFromIntegerArray",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ReverseInteger",
+            "request": "launch",
+            "mainClass": "Array.problems.ReverseInteger",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "RomanToInteger",
+            "request": "launch",
+            "mainClass": "Array.problems.RomanToInteger",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "RomanToIntegerEmpty",
+            "request": "launch",
+            "mainClass": "Array.problems.RomanToIntegerEmpty",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SearchA2DMatrix_2_June_22_2020",
+            "request": "launch",
+            "mainClass": "Array.problems.SearchA2DMatrix_2_June_22_2020",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SearchSuggestionSystem_20200629",
+            "request": "launch",
+            "mainClass": "Array.problems.SearchSuggestionSystem_20200629",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SecondMostRepeatingNumberInArray",
+            "request": "launch",
+            "mainClass": "Array.problems.SecondMostRepeatingNumberInArray",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SpiralMaTRIX_June_24_2020",
+            "request": "launch",
+            "mainClass": "Array.problems.SpiralMaTRIX_June_24_2020",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SpiralMaTRIX_eMPTY",
+            "request": "launch",
+            "mainClass": "Array.problems.SpiralMaTRIX_eMPTY",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "StableMarriageProblems",
+            "request": "launch",
+            "mainClass": "Array.problems.StableMarriageProblems",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "StockSellAndBuy121",
+            "request": "launch",
+            "mainClass": "Array.problems.StockSellAndBuy121",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "StockSellAndBuy122",
+            "request": "launch",
+            "mainClass": "Array.problems.StockSellAndBuy122",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "TrappingRainWater",
+            "request": "launch",
+            "mainClass": "Array.problems.TrappingRainWater",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ValidSquare",
+            "request": "launch",
+            "mainClass": "Array.problems.ValidSquare",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "WordSearchEmpty",
+            "request": "launch",
+            "mainClass": "Array.problems.WordSearchEmpty",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "WordSearch_20200604",
+            "request": "launch",
+            "mainClass": "Array.problems.WordSearch_20200604",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ZeroMatrix",
+            "request": "launch",
+            "mainClass": "Array.problems.ZeroMatrix",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "A_BasicCalculator2_II_UsiingForLoop",
+            "request": "launch",
+            "mainClass": "Array.problems.calculator.A_BasicCalculator2_II_UsiingForLoop",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "B_BasicCalculator2_II_UsingStack",
+            "request": "launch",
+            "mainClass": "Array.problems.calculator.B_BasicCalculator2_II_UsingStack",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Hindex",
+            "request": "launch",
+            "mainClass": "Array.problems.hIndex.Hindex",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "HindexUsingBucketSort",
+            "request": "launch",
+            "mainClass": "Array.problems.hIndex.HindexUsingBucketSort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "NthMostFrequentNumberInArray",
+            "request": "launch",
+            "mainClass": "Array.problems.kMostFrequent.NthMostFrequentNumberInArray",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "TopKFrequentWords",
+            "request": "launch",
+            "mainClass": "Array.problems.kMostFrequent.TopKFrequentWords",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "FindLargestSum",
+            "request": "launch",
+            "mainClass": "Array.problems.kandanesAlgo.FindLargestSum",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MaximumSumTwoNonOverlappingSubArray",
+            "request": "launch",
+            "mainClass": "Array.problems.kandanesAlgo.MaximumSumTwoNonOverlappingSubArray",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "LRUCache",
+            "request": "launch",
+            "mainClass": "Array.problems.lruCache.LRUCache",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "LRUCacheLinkedHashMap",
+            "request": "launch",
+            "mainClass": "Array.problems.lruCache.LRUCacheLinkedHashMap",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "AndroidUnlockPatterns",
+            "request": "launch",
+            "mainClass": "Array.problems.matrix.AndroidUnlockPatterns",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IntervalListIntersection",
+            "request": "launch",
+            "mainClass": "Array.problems.matrix.IntervalListIntersection",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MaximalSquare",
+            "request": "launch",
+            "mainClass": "Array.problems.matrix.MaximalSquare",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "RotateMatrixBy90Degree",
+            "request": "launch",
+            "mainClass": "Array.problems.matrix.RotateMatrixBy90Degree",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MeetingRooms_2_2020_06_24",
+            "request": "launch",
+            "mainClass": "Array.problems.meetingRooms.MeetingRooms_2_2020_06_24",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MergeIntervals_2020_07_01",
+            "request": "launch",
+            "mainClass": "Array.problems.meetingRooms.MergeIntervals_2020_07_01",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "FindIndexOfTwoNumbersFromArrayWhichMatchesSum",
+            "request": "launch",
+            "mainClass": "Array.problems.pair.FindIndexOfTwoNumbersFromArrayWhichMatchesSum",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "FindTwoNumbersFromArrayWhichMatchesSum",
+            "request": "launch",
+            "mainClass": "Array.problems.pair.FindTwoNumbersFromArrayWhichMatchesSum",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IsPrime",
+            "request": "launch",
+            "mainClass": "Array.problems.prime.IsPrime",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PrimeSieve",
+            "request": "launch",
+            "mainClass": "Array.problems.prime.PrimeSieve",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PrintCombinationsOfKLength",
+            "request": "launch",
+            "mainClass": "Array.problems.printCombinations.PrintCombinationsOfKLength",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "RetrieveAllPossibleCombinationsOfString",
+            "request": "launch",
+            "mainClass": "Array.problems.printCombinations.RetrieveAllPossibleCombinationsOfString",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SubarrayEqualsK",
+            "request": "launch",
+            "mainClass": "Array.problems.subarray.SubarrayEqualsK",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SubarrayMaximumProduct",
+            "request": "launch",
+            "mainClass": "Array.problems.subarray.SubarrayMaximumProduct",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ThreeSum",
+            "request": "launch",
+            "mainClass": "Array.problems.threesum.ThreeSum",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "WordBreak",
+            "request": "launch",
+            "mainClass": "Array.problems.wordbreak1.WordBreak",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "WordBreakUsingBackTracking",
+            "request": "launch",
+            "mainClass": "Array.problems.wordbreak2.WordBreakUsingBackTracking",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "WordBreakUsingBackTracking_NavigateFromLeft",
+            "request": "launch",
+            "mainClass": "Array.problems.wordbreak2.WordBreakUsingBackTracking_NavigateFromLeft",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "WordBreakUsingTrie",
+            "request": "launch",
+            "mainClass": "Array.problems.wordbreak2.WordBreakUsingTrie",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "BucketSort",
+            "request": "launch",
+            "mainClass": "Sort.BucketSort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "BasicInsertionSort",
+            "request": "launch",
+            "mainClass": "Sort.InsertionSort.BasicInsertionSort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "BubbleSort",
+            "request": "launch",
+            "mainClass": "Sort.bubbleSort.BubbleSort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "CountingSort",
+            "request": "launch",
+            "mainClass": "Sort.countingSort.CountingSort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "HeapSort(1)",
+            "request": "launch",
+            "mainClass": "Sort.heapSort.HeapSort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MergeSort",
+            "request": "launch",
+            "mainClass": "Sort.mergeSort.MergeSort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "Sort.quicksort.QuickSort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SelectionSort",
+            "request": "launch",
+            "mainClass": "Sort.selectionSort.SelectionSort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "StackMainApp",
+            "request": "launch",
+            "mainClass": "Stack.implementStack.StackMainApp",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "AnimalShelter",
+            "request": "launch",
+            "mainClass": "Stack.problems.AnimalShelter",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ComputeNumbersInString",
+            "request": "launch",
+            "mainClass": "Stack.problems.ComputeNumbersInString",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SingleArrayForKStacks",
+            "request": "launch",
+            "mainClass": "Stack.problems.SingleArrayForKStacks",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "Stack.problems.queueFrom2stacks.Client",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Client(1)",
+            "request": "launch",
+            "mainClass": "Stack.problems.queueFromSingleStack.Client",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MinStack",
+            "request": "launch",
+            "mainClass": "Stack.problems.returnMin.MinStack",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ReturnMinElementWithoutSorting",
+            "request": "launch",
+            "mainClass": "Stack.problems.returnMin.ReturnMinElementWithoutSorting",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SortStack",
+            "request": "launch",
+            "mainClass": "Stack.problems.sort.SortStack",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SortStackUsing2Stacks",
+            "request": "launch",
+            "mainClass": "Stack.problems.sort.SortStackUsing2Stacks",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SortStackUsingRecurcsion",
+            "request": "launch",
+            "mainClass": "Stack.problems.sort.SortStackUsingRecurcsion",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "UsingVector",
+            "request": "launch",
+            "mainClass": "Stack.problems.stackOfStacks.UsingVector",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "UsingArrayList",
+            "request": "launch",
+            "mainClass": "Stack.problems.stackOfStacks.usingArrayList.UsingArrayList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "LinkedQueue",
+            "request": "launch",
+            "mainClass": "Stack.queue.LinkedQueue",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "LinkedQueueUsingTwoNodes",
+            "request": "launch",
+            "mainClass": "Stack.queue.LinkedQueueUsingTwoNodes",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "AddBinaryString",
+            "request": "launch",
+            "mainClass": "String.binary.AddBinaryString",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IsUnique",
+            "request": "launch",
+            "mainClass": "String.cci.IsUnique",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IsUniqueEmpty",
+            "request": "launch",
+            "mainClass": "String.cci.IsUniqueEmpty",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ReplaceAllSpaceByPercent20",
+            "request": "launch",
+            "mainClass": "String.empty.ReplaceAllSpaceByPercent20",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "GroupStringsBasedUponLength",
+            "request": "launch",
+            "mainClass": "String.group.GroupStringsBasedUponLength",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "AddStrings",
+            "request": "launch",
+            "mainClass": "String.problems.AddStrings",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "AlienDictionary",
+            "request": "launch",
+            "mainClass": "String.problems.AlienDictionary",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "CheckIfStringExistsInDictionary",
+            "request": "launch",
+            "mainClass": "String.problems.CheckIfStringExistsInDictionary",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "CheckIfStringsAreRotatedVersionOfEachOther",
+            "request": "launch",
+            "mainClass": "String.problems.CheckIfStringsAreRotatedVersionOfEachOther",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "DecodeString",
+            "request": "launch",
+            "mainClass": "String.problems.DecodeString",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "LetterCombinations_2020_06_04",
+            "request": "launch",
+            "mainClass": "String.problems.LetterCombinations_2020_06_04",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "LongestCommonPrefix",
+            "request": "launch",
+            "mainClass": "String.problems.LongestCommonPrefix",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "LongestPalindromeString",
+            "request": "launch",
+            "mainClass": "String.problems.LongestPalindromeString",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "LongestSubStringWithoutRepeatingChars",
+            "request": "launch",
+            "mainClass": "String.problems.LongestSubStringWithoutRepeatingChars",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MostCommonWord",
+            "request": "launch",
+            "mainClass": "String.problems.MostCommonWord",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "OneAwayCheckIfHasEdits",
+            "request": "launch",
+            "mainClass": "String.problems.OneAwayCheckIfHasEdits",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PalindromeDeleteOneChar",
+            "request": "launch",
+            "mainClass": "String.problems.PalindromeDeleteOneChar",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PalindromePermutation",
+            "request": "launch",
+            "mainClass": "String.problems.PalindromePermutation",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PrintAllCommonWordsBetween2Input",
+            "request": "launch",
+            "mainClass": "String.problems.PrintAllCommonWordsBetween2Input",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ReorderDataLogs",
+            "request": "launch",
+            "mainClass": "String.problems.ReorderDataLogs",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ReplaceAllSpaceByPercent20(1)",
+            "request": "launch",
+            "mainClass": "String.problems.ReplaceAllSpaceByPercent20",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "StringCompression1",
+            "request": "launch",
+            "mainClass": "String.problems.StringCompression1",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "CheckIfTwoStringsAreAnagramsOrNot",
+            "request": "launch",
+            "mainClass": "String.problems.anagrams.CheckIfTwoStringsAreAnagramsOrNot",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "GroupAnagrams_2020_06_04",
+            "request": "launch",
+            "mainClass": "String.problems.anagrams.GroupAnagrams_2020_06_04",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IsPalindrom",
+            "request": "launch",
+            "mainClass": "String.problems.palindrome.IsPalindrom",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IsPalindromeAfterRemovingOneCharacter",
+            "request": "launch",
+            "mainClass": "String.problems.palindrome.IsPalindromeAfterRemovingOneCharacter",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "aWordBreak",
+            "request": "launch",
+            "mainClass": "String.problems.wordbreak.aWordBreak",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "bWordBreak",
+            "request": "launch",
+            "mainClass": "String.problems.wordbreak.bWordBreak",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "cWordBreak_DFS",
+            "request": "launch",
+            "mainClass": "String.problems.wordbreak.cWordBreak_DFS",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ReverseSentence",
+            "request": "launch",
+            "mainClass": "String.reverse.ReverseSentence",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ReverseString",
+            "request": "launch",
+            "mainClass": "String.reverse.ReverseString",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ReverseStringUsingCharArray",
+            "request": "launch",
+            "mainClass": "String.reverse.ReverseStringUsingCharArray",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "inBuiltFunctions",
+            "request": "launch",
+            "mainClass": "String.reverse.inBuiltFunctions",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "CommonBitTasks",
+            "request": "launch",
+            "mainClass": "bit.CommonBitTasks",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "A_AdjacencyList",
+            "request": "launch",
+            "mainClass": "graph.directed.A_AdjacencyList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "B_AdjacencyMatrix",
+            "request": "launch",
+            "mainClass": "graph.directed.B_AdjacencyMatrix",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Application",
+            "request": "launch",
+            "mainClass": "graph.directed.C_bfs.Application",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Application(1)",
+            "request": "launch",
+            "mainClass": "graph.directed.D_dfs.Application",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "EvaluateDivision",
+            "request": "launch",
+            "mainClass": "graph.problems.EvaluateDivision",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "AdjacencyList",
+            "request": "launch",
+            "mainClass": "graph.undirected.adjacencyList.AdjacencyList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Application(2)",
+            "request": "launch",
+            "mainClass": "graph.undirected.bfs.Application",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Application(3)",
+            "request": "launch",
+            "mainClass": "graph.undirected.dfs.Application",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "GraphAdjacencyMatrix",
+            "request": "launch",
+            "mainClass": "graph.undirected.matrix.GraphAdjacencyMatrix",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SortKLinkedList",
+            "request": "launch",
+            "mainClass": "list.linkedlist.SortKLinkedList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SortLinkedList",
+            "request": "launch",
+            "mainClass": "list.linkedlist.SortLinkedList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SortTwoLinkedList",
+            "request": "launch",
+            "mainClass": "list.linkedlist.SortTwoLinkedList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Application(4)",
+            "request": "launch",
+            "mainClass": "list.linkedlist.circular.Application",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Application(5)",
+            "request": "launch",
+            "mainClass": "list.linkedlist.clone.randomPointer.Application",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Application(6)",
+            "request": "launch",
+            "mainClass": "list.linkedlist.doubly.Application",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "AddSingleDigitLinkedList",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.AddSingleDigitLinkedList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "CopyListRandomPointer",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.CopyListRandomPointer",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "DeleteNodeFromCenterOfLinkedList",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.DeleteNodeFromCenterOfLinkedList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "DetectHeadLoopInCircularLinkedList",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.DetectHeadLoopInCircularLinkedList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "FindKthToLastElementOfSinglyLinkedList",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.FindKthToLastElementOfSinglyLinkedList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MiddleOfLinkedList",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.MiddleOfLinkedList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PartitionLinkedList",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.PartitionLinkedList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PartitionLinkedListEmpty",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.PartitionLinkedListEmpty",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ReturnCorruptedNodeInCircularlist",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.ReturnCorruptedNodeInCircularlist",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "ReverseLinkedList",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.ReverseLinkedList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SwapNodes",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.SwapNodes",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IsAdjacentUsingLength",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.adjacent.IsAdjacentUsingLength",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IsAdjacentUsingRecursion",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.adjacent.IsAdjacentUsingRecursion",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IsAdjacentUsingStack",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.adjacent.IsAdjacentUsingStack",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "EmptyRemoveDupsFromLinkedList",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.duplicate.EmptyRemoveDupsFromLinkedList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "RemoveDupsFromLinkedList",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.duplicate.RemoveDupsFromLinkedList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "RemoveDupsFromLinkedListUsingMergeSort",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.duplicate.RemoveDupsFromLinkedListUsingMergeSort",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IsPalindromeByReverse",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.palindrome.IsPalindromeByReverse",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IsPalindromeRecursionAndLength",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.palindrome.IsPalindromeRecursionAndLength",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "QuestionIsLLPalindrome",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.palindrome.QuestionIsLLPalindrome",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "UsingStack",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.palindrome.UsingStack",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SumLists",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.sumList.SumLists",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SumListsReverse",
+            "request": "launch",
+            "mainClass": "list.linkedlist.problems.sumList.SumListsReverse",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Application(7)",
+            "request": "launch",
+            "mainClass": "list.linkedlist.single.Application",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a_Parens",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a10_parens.a_Parens",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a_Parens_UsingCounter",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a10_parens.a_Parens_UsingCounter",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a11_paintfill",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a11_paintfill",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a_coins_recursive",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a12_coins.a_coins_recursive",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "b_coins_matrix",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a12_coins.b_coins_matrix",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "c_coins_dp",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a12_coins.c_coins_dp",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a14_rottenOrange_WithMultipleRottenOranges",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a14RottenOranges.a14_rottenOrange_WithMultipleRottenOranges",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a14_rottenOrange_WithOnly1RottenOrange",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a14RottenOranges.a14_rottenOrange_WithOnly1RottenOrange",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a12_numberOfDistinctIslands",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a15_islands.a12_numberOfDistinctIslands",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a12_numberOfIslands",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a15_islands.a12_numberOfIslands",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a1_Fibonacci",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a1_Fibonacci",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a2_ClimbingStairs",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a2_ClimbingStairs",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a2_ClimbingStairs_Empty",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a2_ClimbingStairs_Empty",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a3_RobotInGrid_getPathsInList",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a3_robotIngrid.a3_RobotInGrid_getPathsInList",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a3_RobotInGrid_getTotalPaths",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a3_robotIngrid.a3_RobotInGrid_getTotalPaths",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MagicIndex",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a4_magicIndex.MagicIndex",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a5_SubSetOfStrings",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a5_SubSetOfStrings",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a_RecursiveMultiply",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a7_recursiveMultiply.a_RecursiveMultiply",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "b_RecursiveMultiply_Addition",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a7_recursiveMultiply.b_RecursiveMultiply_Addition",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "b_RecursiveMultiply_Addition_Memo",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a7_recursiveMultiply.b_RecursiveMultiply_Addition_Memo",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "c_RecursiveMultiply_Smart",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a7_recursiveMultiply.c_RecursiveMultiply_Smart",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "NumberOfMovesRequired",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a8_towerOfHanoi.NumberOfMovesRequired",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "TOHUsingStack",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a8_towerOfHanoi.TOHUsingStack",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "a_StringPermutations",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a9_StringIntPermutations.a_StringPermutations",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "b_StringPermutationsWithDups",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a9_StringIntPermutations.b_StringPermutationsWithDups",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "c_IntegerPermutationsWithDups",
+            "request": "launch",
+            "mainClass": "recursive.fibonacci.a9_StringIntPermutations.c_IntegerPermutationsWithDups",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "A_Insert",
+            "request": "launch",
+            "mainClass": "tree.bst.A_Insert",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "B_Print",
+            "request": "launch",
+            "mainClass": "tree.bst.B_Print",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "C_RemoveLeafNode",
+            "request": "launch",
+            "mainClass": "tree.bst.C_RemoveLeafNode",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "D_RemoveAnyNode",
+            "request": "launch",
+            "mainClass": "tree.bst.D_RemoveAnyNode",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "E_Height",
+            "request": "launch",
+            "mainClass": "tree.bst.E_Height",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "F_IsBST",
+            "request": "launch",
+            "mainClass": "tree.bst.F_IsBST",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "F_IsBST_Empty",
+            "request": "launch",
+            "mainClass": "tree.bst.F_IsBST_Empty",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "G_InOrderPrint",
+            "request": "launch",
+            "mainClass": "tree.bst.G_InOrderPrint",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "G_PreOrderPrint",
+            "request": "launch",
+            "mainClass": "tree.bst.G_PreOrderPrint",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "H_PostOrderPrint",
+            "request": "launch",
+            "mainClass": "tree.bst.H_PostOrderPrint",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "tree.findMaxLengthBetweenNodes.Main",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreeRightSideView",
+            "request": "launch",
+            "mainClass": "tree.problems.BinaryTreeRightSideView",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "DiamterOfBinaryTree",
+            "request": "launch",
+            "mainClass": "tree.problems.DiamterOfBinaryTree",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "FindUnlockPatterns",
+            "request": "launch",
+            "mainClass": "tree.problems.FindUnlockPatterns",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "HeightOfBinaryTree",
+            "request": "launch",
+            "mainClass": "tree.problems.HeightOfBinaryTree",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "KDistanceAway",
+            "request": "launch",
+            "mainClass": "tree.problems.KDistanceAway",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "MaxPathSum",
+            "request": "launch",
+            "mainClass": "tree.problems.MaxPathSum",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "RandomTree",
+            "request": "launch",
+            "mainClass": "tree.problems.RandomTree",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SizeOfBinaryTree",
+            "request": "launch",
+            "mainClass": "tree.problems.SizeOfBinaryTree",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "tree.problems.Solution",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SortedArrayToBinaryTreeOfMinimumHeight",
+            "request": "launch",
+            "mainClass": "tree.problems.SortedArrayToBinaryTreeOfMinimumHeight",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SubtreeOfAnothertree_20200630",
+            "request": "launch",
+            "mainClass": "tree.problems.SubtreeOfAnothertree_20200630",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "SubtreeOfAnothertree_Empty",
+            "request": "launch",
+            "mainClass": "tree.problems.SubtreeOfAnothertree_Empty",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PrintDFSTree",
+            "request": "launch",
+            "mainClass": "tree.problems.dfs.PrintDFSTree",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IsABalancedBinaryTreeUsingHeight",
+            "request": "launch",
+            "mainClass": "tree.problems.isBalanced.IsABalancedBinaryTreeUsingHeight",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "IsABalancedBinaryTreeUsingRecursion",
+            "request": "launch",
+            "mainClass": "tree.problems.isBalanced.IsABalancedBinaryTreeUsingRecursion",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "LargestBSTinaBinaryTree",
+            "request": "launch",
+            "mainClass": "tree.problems.largestBSTinBnaryTree.LargestBSTinaBinaryTree",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PrintAllPathsOfBinaryTree",
+            "request": "launch",
+            "mainClass": "tree.problems.printPaths.PrintAllPathsOfBinaryTree",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PrintAllPathsWhichSumToEqualUsingRecurcsion",
+            "request": "launch",
+            "mainClass": "tree.problems.printPaths.PrintAllPathsWhichSumToEqualUsingRecurcsion",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PrintAllPathsWhichSumToEqualValue",
+            "request": "launch",
+            "mainClass": "tree.problems.printPaths.PrintAllPathsWhichSumToEqualValue",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "PrintProjectDependencies",
+            "request": "launch",
+            "mainClass": "tree.problems.projectDependencies.PrintProjectDependencies",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "FindSuccessorUsingParentLink",
+            "request": "launch",
+            "mainClass": "tree.problems.successor.FindSuccessorUsingParentLink",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "QuestionFindSuccessorUsingParentLink",
+            "request": "launch",
+            "mainClass": "tree.problems.successor.QuestionFindSuccessorUsingParentLink",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "AlienDictionaryOrder_20200608",
+            "request": "launch",
+            "mainClass": "tree.problems.topologicalSort.AlienDictionaryOrder_20200608",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "BuildOrder_20200608",
+            "request": "launch",
+            "mainClass": "tree.problems.topologicalSort.BuildOrder_20200608",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "CourseSchedule_II_bfs_20200608",
+            "request": "launch",
+            "mainClass": "tree.problems.topologicalSort.CourseSchedule_II_bfs_20200608",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "CourseSchedule_bfs_20200608",
+            "request": "launch",
+            "mainClass": "tree.problems.topologicalSort.CourseSchedule_bfs_20200608",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "CourseSchedule_dfs_20200608",
+            "request": "launch",
+            "mainClass": "tree.problems.topologicalSort.CourseSchedule_dfs_20200608",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "A_Insert(1)",
+            "request": "launch",
+            "mainClass": "tree.trie.A_Insert",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "B_CheckWordWithPrefixExists",
+            "request": "launch",
+            "mainClass": "tree.trie.B_CheckWordWithPrefixExists",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "C_CheckWordExists",
+            "request": "launch",
+            "mainClass": "tree.trie.C_CheckWordExists",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "D_DeleteWord",
+            "request": "launch",
+            "mainClass": "tree.trie.D_DeleteWord",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "E_LongestWordInDictionary",
+            "request": "launch",
+            "mainClass": "tree.trie.E_LongestWordInDictionary",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "F_WordSearch2_20200612",
+            "request": "launch",
+            "mainClass": "tree.trie.F_WordSearch2_20200612",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "G_ConcatenatedWords_20200613",
+            "request": "launch",
+            "mainClass": "tree.trie.G_ConcatenatedWords_20200613",
+            "projectName": "Algorithms"
+        },
+        {
+            "type": "java",
+            "name": "H_AnalyzeWebsitesByUser",
+            "request": "launch",
+            "mainClass": "tree.trie.H_AnalyzeWebsitesByUser",
+            "projectName": "Algorithms"
+        }
+    ]
+}

@@ -6,7 +6,7 @@ import list.linkedlist.single.SinglyLinkedList;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class IsPalindromeByReverse {
+class IsPalindromeByReverse {
 
     public static void main(String[] args) {
 

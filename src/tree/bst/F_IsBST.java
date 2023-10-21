@@ -50,94 +50,61 @@ public class F_IsBST {
         // Print BST
         binarySearchTree.printBST();
 
-        System.out.println("Is BST: " + isBinarySearchTree());
+        System.out.println("Is BST: " + isValidBST(rootNode));
     }
 
-    private static boolean isBinarySearchTree() {
-        return isBinarySearchTree(rootNode);
+    public static boolean isValidBST(TreeNode root) {
+
+        return isValidBSTUsingMinMaxApproach(root, null, null);
+
     }
 
-    private static boolean isBinarySearchTree(TreeNode node) {
+    private static boolean isValidBSTUsingMinMaxApproach(TreeNode node, Integer min, Integer max) {
 
-        if (node.right == null && node.left == null) {
-            return true;
-        }
+        if(node != null){
 
-        if (node.left == null) {
-            // Node < Node.right
-            if (node.value.compareTo(node.right.value) < 0) {
-                return isBinarySearchTree(node.right);
-            }
-            return false;
-        }
+            if(node.left != null){
+                if(node.left.val < node.val){
+                    // Great
 
-        if (node.right == null) {
-            // Node > Node.left
-            if (node.value.compareTo(node.left.value) > 0) {
-                return isBinarySearchTree(node.left);
-            }
-            return false;
-        }
+                    if(min != null){
+                        if(node.left.val >= min){
+                            // Great
+                        }else{
+                            return false;
+                        }
+                    }
 
-        // If left and right both are available
-        // Node > node.left_node && Node < node.right
-        if (node.right.value.compareTo(node.value) > 0 && node.left.value.compareTo(node.value) < 0)
-            return isBinarySearchTree(node.left) && isBinarySearchTree(node.right);
-        return false;
-    }
-
-    public boolean isValidBST(TreeNode node) {
-        WrapperTreeNode response = isValid(node);
-        return response == null ? false:true;
-    }
-
-    public WrapperTreeNode isValid(TreeNode node){ // 50 , 25, 12, 26
-
-        if(node.left == null && node.right == null){
-            return new WrapperTreeNode(node.val, node.val);
-        }else if(node.left == null && node.right != null){
-            WrapperTreeNode rightNode = isValid(node.right);
-
-            if(rightNode != null){
-                if(node.val < node.right.val && node.val > rightNode.max){
-                    return rightNode;
+                }else{
+                    return false;
                 }
-                return null;
+
             }
 
-            return rightNode;
+            if(node.right != null){
+                if(node.right.val > node.val){
+                    // Great
 
+                    if(max != null){
+                        if(node.right.val < max){
+                            // Great
+                        }else{
+                            return false;
+                        }
+                    }
 
-        }else if(node.right == null && node.left != null){
-
-            WrapperTreeNode leftNode = isValid(node.left);
-
-            if(leftNode != null){
-                if(node.val >= node.left.val && node.val >= leftNode.min){
-                    return leftNode;
+                }else{
+                    return false;
                 }
-                return null;
             }
 
-            return leftNode;
+            return isValidBSTUsingMinMaxApproach(node.right, node.val, max) &&
+                    isValidBSTUsingMinMaxApproach(node.left, min, node.val);
+
 
         }else{
-
-            if(node.val < node.right.val && node.val >= node.left.val){
-                WrapperTreeNode leftNode = isValid(node.left); // 25, 12 <
-                WrapperTreeNode rightNode = isValid(node.right); // 26
-
-                if(node.val >= leftNode.max && node.val < rightNode.min){
-                    return new WrapperTreeNode(rightNode.min, leftNode.max);
-                }
-
-            }
-
-            return null;
-
+            return true;
         }
-
-
     }
 
 
@@ -169,15 +136,4 @@ public class F_IsBST {
         }
     }
 
-    private class WrapperTreeNode {
-
-        int min;
-        int max;
-
-        public WrapperTreeNode(int min, int max) {
-            this.min = min;
-            this.max = max;
-        }
-
-    }
 }

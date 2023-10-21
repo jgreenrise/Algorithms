@@ -31,83 +31,36 @@ public class PartitionLinkedList {
         list.addFirst(8);
         list.addFirst(5);
         list.addFirst(3);
-        node = partitionLinkedListUsingWhileAndIfLoop(list.start, 5);
-        //ListNode node = partitionLinkedListUsingRecursion(list.start, 5);
+        node = partitionLinkedListUsingRecursion(list.start, 5);
         System.out.println("Approach 2: Create LowLL and HighLL and combine");
         printLL(node);
     }
 
-    private static ListNode partitionLinkedListUsingWhileAndIfLoop(ListNode node, int partition) {
-
-        ListNode lowNode = null;
-        ListNode highNode = null;
-
-        while (node != null) {
-            ListNode nodeToBeAdded = new ListNode();
-            nodeToBeAdded.val = node.val;
-
-            if (node.val < partition) {
-                if (lowNode == null) {
-                    lowNode = nodeToBeAdded;
-                } else {
-                    nodeToBeAdded.next = lowNode;
-                    lowNode = nodeToBeAdded;
-                }
-            } else {
-                if (highNode == null) {
-                    highNode = nodeToBeAdded;
-                } else {
-                    nodeToBeAdded.next = highNode;
-                    highNode = nodeToBeAdded;
-                }
-            }
-            node = node.next;
-        }
-
-        ListNode original = lowNode;
-
-        while (lowNode.next != null) {
-            lowNode = lowNode.next;
-        }
-        lowNode.next = highNode;
-
-        return original;
-    }
 
     private static ListNode partitionLinkedListUsingHeadAndTailPointers(ListNode node, int partition) {
 
-        ListNode tail = null;
-        ListNode head = null;
-        ListNode startLowNode = null;
+            ListNode root_head = new ListNode(-1);
+            ListNode root_tail = new ListNode(-1);
+            ListNode head = root_head;
+            ListNode tail = root_tail;
 
-        while (node != null) {
+            while(node != null){
 
-            ListNode newNode = new ListNode();
-            newNode.val = node.val;
-
-            if (node.val < partition) {
-                if (tail == null) {
-                    tail = newNode;
-                    startLowNode = tail;
-                } else {
-                    tail.next = newNode;
-                    tail = newNode;
+                if(node.val < partition){
+                    head.next = new ListNode(node.val);
+                    head = head.next;
+                }else{
+                    tail.next = new ListNode(node.val);
+                    tail = tail.next;
                 }
-            } else {
-                if (head == null) {
-                    head = newNode;
-                } else {
-                    newNode.next = head;
-                    head = newNode;
-                }
+
+                node = node.next;
             }
-            node = node.next;
+
+            head.next = root_tail.next;
+            return root_head.next;
+
         }
-
-        tail.next = head;
-        return startLowNode;
-
-    }
 
     private static ListNode partitionLinkedListUsingRecursion(ListNode node, int partition) {
         ListNode tail = null;

@@ -3,18 +3,18 @@ package graph.directed.D_dfs;
 public class Application {
 
 	public static void main(String args[]) {
-		Node n1 = new Node(1);
-		Node n2 = new Node(2);
-		Node n3 = new Node(3);
-		Node n4 = new Node(4);
-		Node n5 = new Node(5);
-		Node n6 = new Node(6);
-		Node n7 = new Node(7);
-		Node n8 = new Node(8);
-		Node n9 = new Node(9);
-		Node n10 = new Node(10);
-		Node n11 = new Node(11);
-		Node n12 = new Node(12);
+		CustomNode n1 = new CustomNode(1);
+		CustomNode n2 = new CustomNode(2);
+		CustomNode n3 = new CustomNode(3);
+		CustomNode n4 = new CustomNode(4);
+		CustomNode n5 = new CustomNode(5);
+		CustomNode n6 = new CustomNode(6);
+		CustomNode n7 = new CustomNode(7);
+		CustomNode n8 = new CustomNode(8);
+		CustomNode n9 = new CustomNode(9);
+		CustomNode n10 = new CustomNode(10);
+		CustomNode n11 = new CustomNode(11);
+		CustomNode n12 = new CustomNode(12);
 
 		n1.addAssosciatedNodes(n2);
 		n1.addAssosciatedNodes(n3);

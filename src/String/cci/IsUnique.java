@@ -41,6 +41,7 @@ public class IsUnique {
             return true;
 
         char[] chars = str.toCharArray();
+        str.charAt(0);
         Arrays.sort(chars);
 
         for(int j=1; j < chars.length; j++){

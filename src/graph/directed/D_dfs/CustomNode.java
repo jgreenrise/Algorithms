@@ -3,17 +3,17 @@ package graph.directed.D_dfs;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Node {
+public class CustomNode {
 	
 	public int value;
 	public boolean isVisited = false;
-	public List<Node> adjacentNodes = new LinkedList<Node>(); 
+	public List<CustomNode> adjacentNodes = new LinkedList<CustomNode>();
 	
-	public Node(int value){
+	public CustomNode(int value){
 		this.value = value;
 	}
 	
-	public void addAssosciatedNodes(Node node){
+	public void addAssosciatedNodes(CustomNode node){
 		adjacentNodes.add(node);
 	}
 

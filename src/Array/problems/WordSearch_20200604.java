@@ -87,8 +87,6 @@ public class WordSearch_20200604 {
 
             mat[row][col] = orig;
 
-
-
         }
 
         return false;

@@ -2,7 +2,7 @@ package tree.findMaxLengthBetweenNodes;
 
 import java.util.LinkedList;
 
-public class Node {
+public class CustomNode {
 
 	/**
 	 * Stores node values
@@ -12,9 +12,9 @@ public class Node {
 	/**
 	 * Stores child nodes
 	 */
-	private LinkedList<Node> childNodes;
+	private LinkedList<CustomNode> childNodes;
 
-	public Node(int value) {
+	public CustomNode(int value) {
 		// TODO Auto-generated constructor stub
 		this.value = value;
 	}
@@ -27,11 +27,11 @@ public class Node {
 		this.value = value;
 	}
 
-	public LinkedList<Node> getChildNodes() {
+	public LinkedList<CustomNode> getChildNodes() {
 		return childNodes;
 	}
 
-	public void setChildNodes(LinkedList<Node> childNodes) {
+	public void setChildNodes(LinkedList<CustomNode> childNodes) {
 		this.childNodes = childNodes;
 	}
 
