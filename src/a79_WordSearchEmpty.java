@@ -1,5 +1,3 @@
-package Array.problems;
-
 import java.util.*;
 
 /**
