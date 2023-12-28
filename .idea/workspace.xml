@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf3ea153-809c-4382-89db-85a4f9de2a98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Array/problems/a79_WordSearchEmpty.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/classes/META-INF/semaphore_kafka.main.kotlin_module" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/classes/com/example/demo/a_SemaphoreKafkaApplication$CellPhone.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/classes/com/example/demo/a_SemaphoreKafkaApplication$ConsumerSemaphore.class" afterDir="false" />
@@ -21,7 +22,10 @@
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../system_design/semaphore_kafka/out/production/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Array/problems/a77_Combinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/problems/a77_Combinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/problems/WordSearchEmpty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/list/linkedlist/problems/CopyListRandomPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/list/linkedlist/problems/a_138_CopyListRandomPointer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/AppConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/java/mb/SpringMvcInitializer.java" beforeDir="false" />
@@ -212,6 +216,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -238,11 +243,15 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/jatinpatel/Library/Mobile Documents/com~apple~CloudDocs/Documents/code/Algorithms&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
@@ -259,17 +268,36 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Array.problems" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Array.problems" />
+      <recent name="tree.problems" />
       <recent name="Array.problems.subarray" />
       <recent name="list.linkedlist.problems" />
       <recent name="list.linkedlist.problems.duplicate" />
-      <recent name="tree.problems" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.a77_Combinations">
-    <configuration name="CombinationSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.CombinationSum" />
+  <component name="RunManager" selected="Application.DeckOfCards">
+    <configuration name="DeckOfCards" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.problems.DeckOfCards" />
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="String.problems.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetMaximumIlluminanceValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.problems.GetMaximumIlluminanceValue" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
@@ -281,12 +309,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StockSellAndBuy122" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.StockSellAndBuy122" />
+    <configuration name="a_1628_DesignExpressionTreeWithEvaluateFunction (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.problems.a_1628_DesignExpressionTreeWithEvaluateFunction" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.problems.*" />
+          <option name="PATTERN" value="tree.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -294,12 +322,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="a2014_SumOfSubarrayRanges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.subarray.a2014_SumOfSubarrayRanges" />
+    <configuration name="a_1628_DesignExpressionTreeWithEvaluateFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.problems.a_1628_DesignExpressionTreeWithEvaluateFunction" />
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.problems.subarray.*" />
+          <option name="PATTERN" value="tree.problems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -307,21 +335,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="a64MinimumPathSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.a64MinimumPathSum" />
+    <configuration name="GetMaximumIlluminanceValueTest" type="JUnit" factoryName="JUnit">
       <module name="Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Array.problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="20" />
+      <option name="PACKAGE_NAME" value="String.group" />
+      <option name="MAIN_CLASS_NAME" value="String.group.ApplicationSBTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="a77_Combinations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.problems.a77_Combinations" />
+    <configuration name="GetMaximumIlluminanceValueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
@@ -329,24 +355,28 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Array.problems" />
+      <option name="MAIN_CLASS_NAME" value="Array.problems.GetMaximumIlluminanceValueTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.a77_Combinations" />
-      <item itemvalue="Application.a2014_SumOfSubarrayRanges" />
-      <item itemvalue="Application.CombinationSum" />
-      <item itemvalue="Application.StockSellAndBuy122" />
-      <item itemvalue="Application.a64MinimumPathSum" />
+      <item itemvalue="Application.DeckOfCards" />
+      <item itemvalue="Application.GetMaximumIlluminanceValue" />
+      <item itemvalue="Application.a_1628_DesignExpressionTreeWithEvaluateFunction" />
+      <item itemvalue="Application.a_1628_DesignExpressionTreeWithEvaluateFunction (2)" />
+      <item itemvalue="JUnit.GetMaximumIlluminanceValueTest" />
+      <item itemvalue="JUnit.GetMaximumIlluminanceValueTest (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.a77_Combinations" />
-        <item itemvalue="Application.a2014_SumOfSubarrayRanges" />
-        <item itemvalue="Application.a64MinimumPathSum" />
-        <item itemvalue="Application.CombinationSum" />
-        <item itemvalue="Application.StockSellAndBuy122" />
+        <item itemvalue="Application.DeckOfCards" />
+        <item itemvalue="JUnit.GetMaximumIlluminanceValueTest (1)" />
+        <item itemvalue="Application.GetMaximumIlluminanceValue" />
+        <item itemvalue="Application.a_1628_DesignExpressionTreeWithEvaluateFunction" />
+        <item itemvalue="Application.a_1628_DesignExpressionTreeWithEvaluateFunction (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -366,6 +396,14 @@
       <workItem from="1696528254409" duration="66000" />
       <workItem from="1696528342092" duration="74000" />
       <workItem from="1696528420501" duration="119000" />
+      <workItem from="1698856509735" duration="1559000" />
+      <workItem from="1699371517281" duration="33000" />
+      <workItem from="1699548964306" duration="339000" />
+      <workItem from="1699901828937" duration="184000" />
+      <workItem from="1699906397127" duration="660000" />
+      <workItem from="1700160900830" duration="918000" />
+      <workItem from="1700584875431" duration="606000" />
+      <workItem from="1701983730516" duration="13000" />
     </task>
     <servers />
   </component>
@@ -835,19 +873,9 @@
           <option name="timeStamp" value="975" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/CopyListRandomPointer.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="1034" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/CopyListRandomPointer.java</url>
+          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/a_138_CopyListRandomPointer.java</url>
           <line>101</line>
           <option name="timeStamp" value="1044" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/CopyListRandomPointer.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="1052" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy121.java</url>
@@ -1031,51 +1059,6 @@
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/BuildOrder_20200608.java</url>
           <line>68</line>
           <option name="timeStamp" value="1364" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="1378" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="1380" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="1381" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="1386" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="1387" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="1394" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="1401" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="1402" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="1403" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_dfs_20200608.java</url>
@@ -1557,7 +1540,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/KLargest.java</url>
-          <line>46</line>
+          <line>45</line>
           <option name="timeStamp" value="2113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1669,21 +1652,6 @@
           <url>file://$PROJECT_DIR$/src/Array/problems/wordbreak2/WordBreakUsingBackTracking.java</url>
           <line>51</line>
           <option name="timeStamp" value="2206" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/CopyListRandomPointer.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="2223" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/CopyListRandomPointer.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="2224" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/list/linkedlist/problems/CopyListRandomPointer.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="2225" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/list/linkedlist/SortTwoLinkedList.java</url>
@@ -1866,11 +1834,6 @@
           <option name="timeStamp" value="2464" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Array/problems/WordSearchEmpty.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="2467" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/NumberToWords_Empty.java</url>
           <line>25</line>
           <option name="timeStamp" value="2474" />
@@ -1912,7 +1875,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/KLargest.java</url>
-          <line>40</line>
+          <line>42</line>
           <option name="timeStamp" value="2498" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1927,7 +1890,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Array/problems/StockSellAndBuy122.java</url>
-          <line>35</line>
+          <line>65</line>
           <option name="timeStamp" value="2505" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -2005,8 +1968,128 @@
           <line>17</line>
           <option name="timeStamp" value="2535" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Orienteering.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="2541" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Orienteering.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="2542" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Orienteering.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="2546" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Orienteering.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="2547" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/a_863_AllNodesDistanceKAwayBinaryTree.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2548" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/a_863_AllNodesDistanceKAwayBinaryTree.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="2549" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/a_863_AllNodesDistanceKAwayBinaryTree.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2550" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/a_863_AllNodesDistanceKAwayBinaryTree.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="2554" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/topologicalSort/CourseSchedule_bfs_20200608.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="2560" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/a_1628_DesignExpressionTreeWithEvaluateFunction.java</url>
+          <line>172</line>
+          <option name="timeStamp" value="2563" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/a_1628_DesignExpressionTreeWithEvaluateFunction.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="2570" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/a_1628_DesignExpressionTreeWithEvaluateFunction.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="2572" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/a_1628_DesignExpressionTreeWithEvaluateFunction.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="2573" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tree/problems/a_1628_DesignExpressionTreeWithEvaluateFunction.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="2574" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/GetMaximumIlluminanceValue.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="2577" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/GetMaximumIlluminanceValue.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="2578" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/GetMaximumIlluminanceValue.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="2579" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/GetMaximumIlluminanceValue.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="2580" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/GetMaximumIlluminanceValue.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="2581" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/GetMaximumIlluminanceValue.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="2582" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/GetMaximumIlluminanceValue.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="2583" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Array/problems/GetMaximumIlluminanceValue.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="2584" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pullModelMetrics.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="2555" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="tree.problems.a_1628_DesignExpressionTreeWithEvaluateFunction$SubNode" memberName="right" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
