@@ -2,7 +2,6 @@ import Array.problems.meetingRooms.MergeIntervals_2020_07_01;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
-import java.util.stream.Stream;
 
 public class a_0056_MergeIntervals {
 
@@ -49,14 +48,14 @@ public class a_0056_MergeIntervals {
             prevItem[1] = newItem[1];
             left[left.length - 1] = prevItem;
             int[][] right2 = Arrays.copyOfRange(right, 1, right.length - 1);
-            return Stream.concat(Arrays.stream(left), Arrays.stream(right2))
-                    .toArray(Integer[]::new);
         } else if (newItem[0] <= prevItem[1] && prevItem[1] > newItem[1]) {
             // Do nothing
         } else {
             out[currSize] = newItem;
             currSize++;
         }
+
+        return null;
 
     }
 
