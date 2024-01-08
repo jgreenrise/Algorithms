@@ -1,11 +1,10 @@
 import Array.problems.meetingRooms.MergeIntervals_2020_07_01;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.stream.Stream;
 
-public class a_56_MergeIntervals {
+public class a_0056_MergeIntervals {
 
     public static void main(String[] args) {
 
@@ -24,13 +23,14 @@ public class a_56_MergeIntervals {
 
     /**
      * Using Merge sort
+     *
      * @param intervals
      * @return
      */
     public int[][] merge(int[][] intervals) {
-        if(intervals.length > 1){
-            int [][] left = Arrays.copyOfRange(intervals, 0, intervals.length/2-1);
-            int [][] right = Arrays.copyOfRange(intervals, intervals.length/2, intervals.length-1);
+        if (intervals.length > 1) {
+            int[][] left = Arrays.copyOfRange(intervals, 0, intervals.length / 2 - 1);
+            int[][] right = Arrays.copyOfRange(intervals, intervals.length / 2, intervals.length - 1);
             merge(left);
             merge(right);
             intervals = mergeSort(left, right, intervals);
@@ -38,23 +38,22 @@ public class a_56_MergeIntervals {
         return intervals;
     }
 
-    public int [][] mergeSort(int [][] left, int [][] right, int[][] intervals){
+    public int[][] mergeSort(int[][] left, int[][] right, int[][] intervals) {
 
-        int [][] out = new int [intervals.length][intervals.length] ;
+        int[][] out = new int[intervals.length][intervals.length];
         int currSize = 0;
-        int [] prevItem = left[left.length-1];
-        int [] newItem = right[right.length-1];
+        int[] prevItem = left[left.length - 1];
+        int[] newItem = right[right.length - 1];
 
-        if(newItem[0] <= prevItem[1] && prevItem[1] <= newItem[1]){
+        if (newItem[0] <= prevItem[1] && prevItem[1] <= newItem[1]) {
             prevItem[1] = newItem[1];
-            left[left.length-1] = prevItem;
-            int [][] right2 = Arrays.copyOfRange(right, 1, right.length-1);
+            left[left.length - 1] = prevItem;
+            int[][] right2 = Arrays.copyOfRange(right, 1, right.length - 1);
             return Stream.concat(Arrays.stream(left), Arrays.stream(right2))
                     .toArray(Integer[]::new);
-        }else if(newItem[0] <= prevItem[1] && prevItem[1] > newItem[1]){
+        } else if (newItem[0] <= prevItem[1] && prevItem[1] > newItem[1]) {
             // Do nothing
-        }
-        else{
+        } else {
             out[currSize] = newItem;
             currSize++;
         }
@@ -67,26 +66,25 @@ public class a_56_MergeIntervals {
      */
     public int[][] mergeUsingPQ(int[][] intervals) {
 
-        int[][] out = new int [intervals.length][intervals.length];
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> Integer.compare(a[0], b[0]));
+        int[][] out = new int[intervals.length][intervals.length];
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
         pq.addAll(Arrays.asList(intervals));
 
         int currSize = 0;
-        while(!pq.isEmpty()){
+        while (!pq.isEmpty()) {
 
-            if(currSize ==0){
+            if (currSize == 0) {
                 out[currSize] = pq.poll();
                 currSize++;
-            }else{
-                int [] currItem = pq.poll();
-                int [] prevItem = out[currSize-1];
-                if(currItem[0] <= prevItem[1] && prevItem[1] <= currItem[1]){
+            } else {
+                int[] currItem = pq.poll();
+                int[] prevItem = out[currSize - 1];
+                if (currItem[0] <= prevItem[1] && prevItem[1] <= currItem[1]) {
                     prevItem[1] = currItem[1];
-                    out[currSize-1] = prevItem;
-                }else if(currItem[0] <= prevItem[1] && prevItem[1] > currItem[1]){
+                    out[currSize - 1] = prevItem;
+                } else if (currItem[0] <= prevItem[1] && prevItem[1] > currItem[1]) {
                     continue;
-                }
-                else{
+                } else {
                     out[currSize] = currItem;
                     currSize++;
                 }
@@ -104,22 +102,21 @@ public class a_56_MergeIntervals {
     public int[][] mergeUsingArrays(int[][] intervals) {
 
         Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
-        int[][] out = new int [intervals.length][intervals.length];
+        int[][] out = new int[intervals.length][intervals.length];
         int currSize = 0;
         out[currSize++] = intervals[0];
 
-        for(int j = 1; j < intervals.length; j ++){
+        for (int j = 1; j < intervals.length; j++) {
 
-            int [] prevItem = out[currSize-1];
-            int [] newItem = intervals[j];
+            int[] prevItem = out[currSize - 1];
+            int[] newItem = intervals[j];
 
-            if(newItem[0] <= prevItem[1] && prevItem[1] <= newItem[1]){
+            if (newItem[0] <= prevItem[1] && prevItem[1] <= newItem[1]) {
                 prevItem[1] = newItem[1];
-                out[currSize-1] = prevItem;
-            }else if(newItem[0] <= prevItem[1] && prevItem[1] > newItem[1]){
+                out[currSize - 1] = prevItem;
+            } else if (newItem[0] <= prevItem[1] && prevItem[1] > newItem[1]) {
                 continue;
-            }
-            else{
+            } else {
                 out[currSize] = newItem;
                 currSize++;
             }
