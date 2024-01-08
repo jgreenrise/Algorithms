@@ -61,7 +61,7 @@ public class a_0056_MergeIntervals {
     }
 
     /**
-     * USING PRIORiTY QUEUE
+     * 2. USING PRIORiTY QUEUE
      * Memory Limit Exceeded
      */
     public int[][] mergeUsingPQ(int[][] intervals) {
@@ -96,7 +96,7 @@ public class a_0056_MergeIntervals {
     }
 
     /**
-     * Using ARRAYS ONLY
+     * 3. Using ARRAYS ONLY
      * Memory Limit Exceeded
      */
     public int[][] mergeUsingArrays(int[][] intervals) {
