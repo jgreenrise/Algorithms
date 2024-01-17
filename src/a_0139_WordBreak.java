@@ -12,13 +12,16 @@ public class a_0139_WordBreak {
         str = "leetcode";
         words = Arrays.asList("leet", "code");
 
+        str = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab";
+        words = Arrays.asList("a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa");
+
         a_0139_WordBreak class1 = new a_0139_WordBreak();
 
         // Using boolean array - dynamic programming
         System.out.println(class1.wordBreak(str, words));
     }
 
-    public boolean wordBreak(String s, List<String> wordDict) {
+    public boolean wordBreakV1(String s, List<String> wordDict) {
 
         Set<String> set = new HashSet<>(wordDict);
         boolean[] dp = new boolean[s.length() + 1];
@@ -49,6 +52,41 @@ public class a_0139_WordBreak {
 
         }
         return false;
+    }
+
+    public boolean wordBreak(String s, List<String> wordDict) {
+
+        Set<String> set = new HashSet<>(wordDict);
+        char[] chars = s.toCharArray();
+        return wordBreak(0, 0, chars, set, s, null);
+    }
+
+    // 0, 0, {l,e,e,t,c,o,d,e}, {leet, code}, leetcode
+    public boolean wordBreak(int startIdx, int endIdx, char[] chars, Set<String> set, String s, String prevWord) {
+
+        if (startIdx >= chars.length) {
+            return true;
+        }
+
+        if (endIdx == chars.length) {
+            return set.contains(s.substring(startIdx, endIdx));
+        }
+
+        System.out.println("String: " + s + ", Start Idx: " + startIdx + ", End Idx: " + endIdx + ", " + s.substring(startIdx, endIdx));
+        String word = s.substring(startIdx, endIdx);
+
+        boolean isSegmented = false;
+
+        if (set.contains(word)) {
+            isSegmented = wordBreak(endIdx, endIdx, chars, set, s, word);
+            if (!isSegmented) {
+                return wordBreak(endIdx - (word.length()), endIdx + 1, chars, set, s, word);
+            } else {
+                return isSegmented;
+            }
+        } else {
+            return wordBreak(startIdx, endIdx + 1, chars, set, s, prevWord);
+        }
     }
 
 }
