@@ -39,5 +39,3 @@ public static Stack<Integer> sort(Stack<Integer> s) {
 ```
 
 This solution effectively uses the `bufferStack` to sort the elements in ascending order. The time complexity is O(n^2) in the worst case, where n is the number of elements in the stack. The space complexity is O(n) due to the use of the buffer stack.
-
-Feel free to test the function with various input scenarios to ensure its correctness and efficiency.
