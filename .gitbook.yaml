@@ -1,6 +1,5 @@
 # gitbook.yaml
-
-root: ./Algorithms
+root: ./
 structure:
   summary: "Table of Contents"
   chapters:
