@@ -2,6 +2,7 @@
 
 ## Question
 
+![Rendered Image](https://i.stack.imgur.com/jOxKl.png)
 Given a stack `s`, implement a function to sort the elements of the stack in ascending order using only one additional stack as a buffer.
 
 ## Analysis
