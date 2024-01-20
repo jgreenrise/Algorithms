@@ -1,1 +1,7 @@
-root: ./src/
+# gitbook.yaml
+
+root: ./src
+structure:
+  summary: "Table of Contents"
+  chapters:
+    - "*.java"
