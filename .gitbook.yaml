@@ -1,5 +1,1 @@
-root: ./
-structure:
-  summary: "Table of Contents"
-  chapters:
-    - "src-markdown/*.md"
+root: ./src-markdown/
