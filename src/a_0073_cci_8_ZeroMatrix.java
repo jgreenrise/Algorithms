@@ -1,6 +1,4 @@
-package Array.problems;
-
-public class ZeroMatrix {
+public class a_0073_cci_8_ZeroMatrix {
 
     public static void main(String args[]) {
 
@@ -8,7 +6,7 @@ public class ZeroMatrix {
         //int[][] matrix = {{0, 1, 2, 0}, {3, 4, 5, 2}, {1, 3, 1, 5}};
         int[][] matrix = {{1, 0, 3}};
         setZeroes_Oh1_space_complexitu(matrix);
-        //mark1stRowIndexAndIstColumnIndexZero(matrix, 3, 4);
+        //setZeroes(matrix, 3, 4);
         //modifyMatrixByMakingAllRowsAndColumnsZero_method2(matrix, 3, 4);
 
         int[][] matrix1 = {{7, 1, 2}, {5, 4, 9}, {7, 0, 3}, {1, 8, 5}};
@@ -27,7 +25,7 @@ public class ZeroMatrix {
         int[][] matrix4 = {{0, 1, 1, 0}, {0, 1, 1, 1}, {0, 1, 1, 1}};
 
         int[][] matrix5 = {{0, 1, 1}, {1, 1, 1}, {0, 1, 1}};
-        setZeroesUsingBooleanArrays(matrix5);
+        setZeroes(matrix5);
 
     }
 
@@ -98,15 +96,50 @@ public class ZeroMatrix {
         }
     }
 
+    public static void setZeroes(int[][] mat) {
+
+        int rows = mat.length;
+        int cols = mat[0].length;
+
+        boolean[] buffer_rows = new boolean[rows];
+        boolean[] buffer_cols = new boolean[cols];
+
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
+                if (mat[row][col] == 0) {
+                    buffer_rows[row] = true;
+                    buffer_cols[col] = true;
+                }
+            }
+        }
+
+        for (int row = 0; row < rows; row++) {
+            if (buffer_rows[row]) {
+                for (int col = 0; col < cols; col++) {
+                    mat[row][col] = 0;
+                }
+            }
+        }
+
+        for (int col = 0; col < cols; col++) {
+            if (buffer_cols[col]) {
+                for (int row = 0; row < rows; row++) {
+                    mat[row][col] = 0;
+                }
+            }
+        }
+
+    }
+
     public void setZeroesUsing1BooleanArray(int[][] matrix) {
 
         int rows = matrix.length;
         int cols = matrix[0].length;
-        boolean [] bcols = new boolean [cols];
+        boolean[] bcols = new boolean[cols];
 
-        for(int row = 0; row < rows ; row++){
-            for(int col =0 ; col < cols; col++){
-                if(matrix[row][col] == 0){
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
+                if (matrix[row][col] == 0) {
 
                     matrix[row][0] = 0;
                     bcols[col] = true;
@@ -116,59 +149,24 @@ public class ZeroMatrix {
 
         printMatrix(matrix, rows, cols);
 
-        for(int row =0 ; row < rows; row++){
-            if(matrix[row][0] == 0){
-                for(int col =0 ; col < cols; col++){
+        for (int row = 0; row < rows; row++) {
+            if (matrix[row][0] == 0) {
+                for (int col = 0; col < cols; col++) {
                     matrix[row][col] = 0;
                 }
             }
         }
 
-        for(int col =0 ; col < cols; col++){
-            if(bcols[col]){
-                for(int row = 0; row < rows ; row++){
+        for (int col = 0; col < cols; col++) {
+            if (bcols[col]) {
+                for (int row = 0; row < rows; row++) {
                     matrix[row][col] = 0;
                 }
             }
         }
-
 
 
     }
 
-    public static void setZeroesUsingBooleanArrays(int[][] matrix) {
-
-        int rows = matrix.length;
-        int cols = matrix[0].length;
-
-        boolean [] brows = new boolean [rows];
-        boolean [] bcols = new boolean [cols];
-
-        for(int row = 0; row < rows ; row++){
-            for(int col =0 ; col < cols; col++){
-                if(matrix[row][col] == 0){
-                    brows[row] = true;
-                    bcols[col] = true;
-                }
-            }
-        }
-
-        for(int row=0; row < brows.length; row++){
-            if(brows[row]){
-                for(int col = 0; col < cols; col++){
-                    matrix[row][col] = 0;
-                }
-            }
-        }
-
-        for(int col=0; col < bcols.length; col++){
-            if(bcols[col]){
-                for(int row = 0; row < rows; row++){
-                    matrix[row][col] = 0;
-                }
-            }
-        }
-
-    }
 
 }
