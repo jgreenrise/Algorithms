@@ -1,7 +1,7 @@
 # gitbook.yaml
 
-root: ./src
+root: ./Algorithms
 structure:
   summary: "Table of Contents"
   chapters:
-    - "*.java"
+    - "src/*.java"
