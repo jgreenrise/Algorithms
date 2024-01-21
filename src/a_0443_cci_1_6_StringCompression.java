@@ -1,8 +1,6 @@
-package String.problems;
-
 import java.util.Arrays;
 
-public class StringCompression1 {
+public class a_0443_cci_1_6_StringCompression {
 
     private char[] numChars;
 
@@ -19,10 +17,10 @@ public class StringCompression1 {
         // Approach 2
         //System.out.println("\n In Place" + inPlace(input.toCharArray()));
 
-        // Approach 3: Intialized String builder
+        // Approach 3: Initialized String builder
         // Not coded
         /**
-         * 3.1: Find out the final string lenght
+         * 3.1: Find out the final string length
          * 3.2 Intialize String builder with (final string lenght)
          * 3.3 Append to String builder
          */
@@ -33,6 +31,50 @@ public class StringCompression1 {
     }
 
     public static int compress(char[] chars) {
+
+        if (chars.length == 1)
+            return 1;
+
+        char ch = chars[0];
+        int counter = 1;
+        int endRange = 1;
+        for (int j = 1; j < chars.length; j++) {
+            if (chars[j] == ch) {
+                counter++;
+            } else {
+                if (counter > 9) {
+                    String str = String.valueOf(counter);
+                    char[] nums = str.toCharArray();
+                    for (int num = 0; num < nums.length; num++) {
+                        chars[endRange++] = nums[num];
+                    }
+                } else if (counter > 1) {
+                    chars[endRange] = (char) (counter + '0');
+                    endRange++;
+                }
+                ch = chars[j];
+                counter = 1;
+                chars[endRange] = ch;
+                endRange++;
+            }
+        }
+
+        if (counter > 9) {
+            String str = String.valueOf(counter);
+            char[] nums = str.toCharArray();
+            for (int num = 0; num < nums.length; num++) {
+                chars[endRange++] = nums[num];
+            }
+        } else if (counter > 1) {
+            chars[endRange] = (char) (counter + '0');
+            endRange++;
+        }
+
+        return endRange;
+
+    }
+
+    public static int compressUsingWhileLoop(char[] chars) {
 
         if (chars == null || chars.length == 0)
             return 0;
