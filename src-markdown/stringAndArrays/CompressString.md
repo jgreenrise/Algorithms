@@ -1,6 +1,4 @@
-```
 # Compress String
-```
 
 Begin with an empty string `s`. For each group of consecutive repeating characters in `chars`:
 
