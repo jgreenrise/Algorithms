@@ -64,7 +64,8 @@ public static int compress(char[] chars) {
 
         return endRange;
 
-    }span
+    }
 ```
+
 
 This solution iterates through the array, counts consecutive repeating characters, and modifies the array in-place to represent the compressed string. The `handleGroup` method is used to handle each group of characters based on the specified algorithm.
