@@ -9,10 +9,17 @@ Implement the Tower of Hanoi algorithm to solve the puzzle for a given number of
 The Tower of Hanoi algorithm is a classic recursive puzzle that involves moving a stack of disks from one rod to another, subject to the constraint that only one disk can be moved at a time, and no disk can be placed on top of a smaller disk. The algorithm follows a recursive approach to break down the problem into smaller subproblems.
 ![Tower of Hanoi Animation](https://math.ucdavis.edu/~romik/data/uploads/misc/th/hanoi-anim.gif)
 
+## Base Conditions
+
+- If there is only 1(n=1) disk, move from source to destination
+- If n > 1, 
+  - Move n-1 disks from source to aux
+  - Move 1 disk from source to destination
+  - Move n-1 disks from aux to destination
 
 ## Challenges
 
-The challenges associated with the Tower of Hanoi problem include:
+The challenges associated with the Tower    of Hanoi problem include:
 
 - Understanding the recursive nature of the algorithm.
 - Optimizing the algorithm for larger inputs.
