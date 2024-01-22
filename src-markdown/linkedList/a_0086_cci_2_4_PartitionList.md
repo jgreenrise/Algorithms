@@ -67,3 +67,10 @@ The time complexity of the solution is O(n),
 where n is the length of the linked list. 
 
 The algorithm traverses the entire linked list once.
+
+## Space Complexity
+The space complexity of the provided solution is O(n), where n is the length of the linked list. This is because the algorithm maintains two separate linked lists (lessThanX and moreOrEqualToX) to store nodes based on the given condition. The space required for these two lists is directly proportional to the number of nodes in the original linked list.
+
+Additionally, the algorithm uses constant space for other variables (like pointers and temporary nodes), and the space required for these remains constant regardless of the input size.
+
+Therefore, the overall space complexity is O(n).
