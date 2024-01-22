@@ -3,7 +3,7 @@
 TreeNode(int val) { this.val = val; } \* TreeNode(int val, TreeNode
 left, TreeNode right) { \* this.val = val; \* this.left = left; \*
 this.right = right; \* } \* } \*/ public class
-a_104_MaxDepthOfBinaryTree {
+a_0104_MaxDepthOfBinaryTree {
 
     public int maxDepth(TreeNode node) {
 

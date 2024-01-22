@@ -14,7 +14,7 @@
  *     }
  * }
  */
-public class a_104_MaxDepthOfBinaryTree {
+public class a_0104_MaxDepthOfBinaryTree {
 
     public int maxDepth(TreeNode node) {
 
