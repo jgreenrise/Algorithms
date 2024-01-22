@@ -1,4 +1,6 @@
-# Determine if a String has All Unique Characters
+# Is Unique
+
+Determine if a String has All Unique Characters
 
 ## Problem Statement
 
