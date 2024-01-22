@@ -4,10 +4,10 @@ public class a_0236_lowestCommonAncestor {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 
         boolean isMatchFound = false;
-        Node left = buidLL(root, p, isMatchFound);
+        Node left = buildLL(root, p, isMatchFound);
 
         isMatchFound = false;
-        Node right = buidLL(root, q, isMatchFound);
+        Node right = buildLL(root, q, isMatchFound);
 
         int prevCA = 0;
         while (left != null && right != null && left.val == right.val) {
@@ -19,7 +19,7 @@ public class a_0236_lowestCommonAncestor {
 
     }
 
-    public Node buidLL(TreeNode node, TreeNode r, boolean isMatchFound) {
+    public Node buildLL(TreeNode node, TreeNode r, boolean isMatchFound) {
 
         if (node == null || isMatchFound)
             return null;
@@ -29,8 +29,8 @@ public class a_0236_lowestCommonAncestor {
             return new Node(node.val);
         } else {
 
-            Node left = buidLL(node.left, r, isMatchFound);
-            Node right = buidLL(node.right, r, isMatchFound);
+            Node left = buildLL(node.left, r, isMatchFound);
+            Node right = buildLL(node.right, r, isMatchFound);
 
             if (left != null) {
                 Node newNode = new Node(node.val);
