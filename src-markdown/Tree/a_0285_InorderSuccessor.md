@@ -22,7 +22,13 @@ Explanation: There is no in-order successor of the current node, so the answer i
 Input: root = [5,3,6,2,4,null,null,1], p = 2
 Output: 3
 
-**Hints:**
+## Hints
+
+### 1: Successor Node
+
+### 2. Potential Successor Node
+
+### 3. Replace Successor Node at each level
 
 - **BST Properties:** Recall that in a BST, each node's left subtree contains nodes with smaller values, and its right
   subtree contains nodes with larger values.
