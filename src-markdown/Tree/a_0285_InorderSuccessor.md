@@ -24,11 +24,9 @@ Output: 3
 
 ## Hints
 
-### 1: Successor Node
-
-### 2. Potential Successor Node
-
-### 3. Replace Successor Node at each level
+1. Successor Node
+2. Potential Successor Node
+4. Replace Successor Node at each level
 
 - **BST Properties:** Recall that in a BST, each node's left subtree contains nodes with smaller values, and its right
   subtree contains nodes with larger values.
