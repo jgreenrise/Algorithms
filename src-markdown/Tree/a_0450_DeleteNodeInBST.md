@@ -5,6 +5,8 @@
 Given a Binary Search Tree (BST) and a key, implement a method `deleteNode` to delete the node with the given key from
 the BST. Also, provide a method `printTree` to print the BST in-order.
 
+![BST Deletion](https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg)
+
 ## Hints
 
 - In a Binary Search Tree (BST), to delete a node with a given key:
@@ -12,8 +14,6 @@ the BST. Also, provide a method `printTree` to print the BST in-order.
     - If the node has one child, replace the node with its child.
     - If the node has two children, find the minimum node in its right subtree, replace the node's value with the
       minimum node's value, and then delete the minimum node.
-
-![BST Deletion](https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg)
 
 ## Time Complexity
 
@@ -31,7 +31,6 @@ The space complexity is O(1) since no additional space is used other than the in
 public TreeNode deleteNode(TreeNode node,int key){
         if(node==null)return node;
         if(node.val==key){
-
         if(node.left==null&&node.right==null){
         return null;
         }else if(node.left==null){
@@ -44,12 +43,12 @@ public TreeNode deleteNode(TreeNode node,int key){
         node.right=deleteNode(node.right,node.val);
         return node;
         }
-        }else{
+        }
+        else{
         node.left=deleteNode(node.left,key);
         node.right=deleteNode(node.right,key);
         return node;
         }
-
         }
 
 private TreeNode findMin(TreeNode node){
@@ -58,5 +57,4 @@ private TreeNode findMin(TreeNode node){
         }
         return node;
         }
-
 ```
