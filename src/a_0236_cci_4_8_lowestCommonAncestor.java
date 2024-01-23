@@ -1,6 +1,6 @@
 import tree.bst.TreeNode;
 
-public class a_0236_lowestCommonAncestor {
+public class a_0236_cci_4_8_lowestCommonAncestor {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 
         boolean isMatchFound = false;

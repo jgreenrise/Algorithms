@@ -1,16 +1,16 @@
-package tree.bst;
+package tree;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import tree.bst.MyDuplicateItemException;
+import tree.bst.TreeNode;
 
-public class A_Insert {
+public class foundation_PreOrder_PostOrder_InOrder_Print {
 
-    TreeNode rootNode;
+    static TreeNode rootNode;
 
     public static void main(String args[]) throws MyDuplicateItemException {
 
         // Adding node to bst
-        A_Insert binarySearchTree = new A_Insert();
+        foundation_PreOrder_PostOrder_InOrder_Print binarySearchTree = new foundation_PreOrder_PostOrder_InOrder_Print();
         binarySearchTree.insert(11);
         binarySearchTree.insert(6);
         binarySearchTree.insert(8);
@@ -22,10 +22,11 @@ public class A_Insert {
         binarySearchTree.insert(43);
         binarySearchTree.insert(49);
         binarySearchTree.insert(31);
+        System.out.println("Printing In order: ");
 
-        // Print BST
-        binarySearchTree.printBST();
-
+        binarySearchTree.printPreOrder(rootNode);
+        binarySearchTree.printPostOrder(rootNode);
+        binarySearchTree.printInOrder(rootNode);
     }
 
     public void insert(int value) throws MyDuplicateItemException {
@@ -37,6 +38,7 @@ public class A_Insert {
     }
 
     public TreeNode insert(int value, TreeNode node) {
+
         if (node == null) {
             return new TreeNode(value);
         } else {
@@ -50,29 +52,25 @@ public class A_Insert {
         }
     }
 
-    public void printBST() {
+    private void printPreOrder(TreeNode node) {
+        if (node == null) return;
+        System.out.println(node.value);
+        printPreOrder(node.left);
+        printPreOrder(node.right);
+    }
 
-        System.out.println("Root node value: " + rootNode.value);
+    private void printPostOrder(TreeNode node) {
+        if (node == null) return;
+        printPostOrder(node.left);
+        printPostOrder(node.right);
+        System.out.println(node.value);
+    }
 
-        Queue<TreeNode> currentLevel = new LinkedList<TreeNode>();
-        Queue<TreeNode> nextLevel = new LinkedList<TreeNode>();
-        currentLevel.add(rootNode);
-
-        while (!currentLevel.isEmpty()) {
-
-            System.out.print((currentLevel.peek()).value + " ");
-            TreeNode node = currentLevel.poll();
-
-            if (node.left != null) nextLevel.add(node.left);
-
-            if (node.right != null) nextLevel.add(node.right);
-
-            if (currentLevel.isEmpty()) {
-                System.out.println();
-
-                while (!nextLevel.isEmpty()) currentLevel.add(nextLevel.poll());
-            }
-        }
+    private void printInOrder(TreeNode node) {
+        if (node == null) return;
+        printPostOrder(node.left);
+        System.out.println(node.value);
+        printPostOrder(node.right);
     }
 
 }
