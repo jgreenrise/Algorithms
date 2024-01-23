@@ -26,7 +26,7 @@ Output: 3
 
 1. Successor Node
 2. Potential Successor Node
-4. Replace Successor Node at each level
+3. Replace Successor Node at each level
 
 - **BST Properties:** Recall that in a BST, each node's left subtree contains nodes with smaller values, and its right
   subtree contains nodes with larger values.
@@ -82,23 +82,24 @@ If `p` is node 5, its inorder successor would be node 6. Let's trace the steps o
 **Steps:**
 
 ```java
-    public TreeNode inorderSuccessor(TreeNode root,TreeNode p){
-        TreeNode successor=null;
-        TreeNode current=root;
+public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
+        TreeNode successor = null;
+        TreeNode current = root;
 
-        while(current!=null){
-        if(p.val<current.val){
-        // Potential successor found, keep track and explore left subtree
-        successor=current;
-        current=current.left;
-        }else{
-        // Move to the right subtree as potential successors will be there
-        current=current.right;
-        }
+        while (current != null) {
+            if (p.val < current.val) {
+                // Potential successor found, keep track and explore left subtree
+                successor = current;
+                current = current.left;
+            } else {
+                // Move to the right subtree as potential successors will be there
+                current = current.right;
+            }
         }
 
         return successor;
-        }
+    }
+   
 ```
 
 **Additional Notes:**
