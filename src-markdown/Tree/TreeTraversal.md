@@ -1,4 +1,4 @@
-# Understanding Tree Traversal Orders
+# Traversal Orders
 
 Binary Search Trees (BSTs) are hierarchical data structures that organize data in a way that allows for efficient
 search, insertion, and deletion operations. Tree traversal is the process of visiting each node in the tree exactly

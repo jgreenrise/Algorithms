@@ -1,4 +1,4 @@
-# Deleting a Node in a Binary Search Tree
+# Delete node
 
 ## Question
 
