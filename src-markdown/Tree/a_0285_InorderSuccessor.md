@@ -5,6 +5,23 @@
 Given a node `p` in a binary search tree (BST), find its inorder successor, which is the node with the next greater
 value in the inorder traversal. If no such node exists, return `null`.
 
+```agsl
+        5
+      / \
+     3   6
+    / \   \
+   2   4   null
+  /
+ 1
+```
+
+Input: root = [5,3,6,2,4,null,null,1], p = 6
+Output: null
+Explanation: There is no in-order successor of the current node, so the answer is null.
+
+Input: root = [5,3,6,2,4,null,null,1], p = 2
+Output: 3
+
 **Hints:**
 
 - **BST Properties:** Recall that in a BST, each node's left subtree contains nodes with smaller values, and its right
