@@ -4,8 +4,8 @@ public class a_0049_GroupAnagram {
 
     public List<List<String>> groupAnagrams(String[] strs) {
 
-        List<List<String>> out = new ArrayList();
-        Map<String, List<String>> map = new HashMap();
+        List<List<String>> out = new ArrayList<>();
+        Map<String, List<String>> map = new HashMap<>();
 
         for (String str : strs) {
             char[] chars = str.toCharArray();
@@ -25,7 +25,7 @@ public class a_0049_GroupAnagram {
 
         int index = 0;
         for (String key : map.keySet()) {
-            List currList = map.get(key);
+            List<String> currList = map.get(key);
             out.add(index++, currList);
         }
 
