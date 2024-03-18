@@ -39,70 +39,47 @@ public class a_0086_cci_2_4_PartitionList {
         printLL(node);
     }
 
-    public static ListNode partition(ListNode head, int x) {
-
-        if (head == null) return head;
-        if (head.next == null) return head;
-        ListNode lessThenX = null;
-        ListNode moreOrEqualThenX = null;
-
-        ListNode headLessThenX = null;
-        ListNode headMoreOrequalThenX = null;
-
-        while (head != null) {
-            if (head.val < x) {
-                if (lessThenX == null) {
-                    lessThenX = new ListNode(head.val);
-                    headLessThenX = lessThenX;
-                } else {
-                    lessThenX.next = new ListNode(head.val);
-                    lessThenX = lessThenX.next;
-                }
-            } else {
-                if (moreOrEqualThenX == null) {
-                    moreOrEqualThenX = new ListNode(head.val);
-                    headMoreOrequalThenX = moreOrEqualThenX;
-                } else {
-                    moreOrEqualThenX.next = new ListNode(head.val);
-                    moreOrEqualThenX = moreOrEqualThenX.next;
-                }
-            }
-            head = head.next;
-        }
-        if (lessThenX == null) return headMoreOrequalThenX;
-        lessThenX.next = headMoreOrequalThenX;
-        return headLessThenX;
-    }
-
-    private static ListNode partitionLinkedListUsingRecursion(ListNode node, int partition) {
-        ListNode tail = null;
-        ListNode head = null;
-        ListNode out = null;
-        return partition(node, tail, head, partition, out);
-    }
-
-    private static ListNode partition(ListNode node, ListNode tail, ListNode head, int partition, ListNode out) {
-        if (node == null) {
-            tail.next = head;
-            return out;
-        }
+    public static ListNode partition(ListNode node, int x) {
+        if (node == null) return node;
         ListNode tmp = new ListNode(node.val);
-        if (node.val >= partition) {
-            if (tail == null) {
-                tail = tmp;
-            } else {
-                tail.next = tmp;
-                tail = tmp;
-            }
-            tmp.next = partition(node.next, tail, head, partition, out);
-            return tmp;
+        if (node.val < x) {
+            return partition(node.next, x, tmp, tmp, null, null);
         } else {
-            if (head == null)
-                out = tmp;
-            tmp.next = head;
-            head = tmp;
-            return partition(node.next, tail, head, partition, out);
+            return partition(node.next, x, null, null, tmp, tmp);
         }
+    }
+
+    public static ListNode partition(ListNode node, int x,
+                                     ListNode headHead,
+                                     ListNode headTail,
+                                     ListNode tailHead,
+                                     ListNode tailTail) {
+        if (node == null) {
+            if (headTail != null) {
+                headTail.next = tailHead;
+                return headHead;
+            } else {
+                return tailHead;
+            }
+        }
+
+        ListNode tmp = new ListNode(node.val);
+        if (node.val < x) {
+            if (headHead == null) {
+                return partition(node.next, x, tmp, tmp, tailHead, tailTail);
+            } else {
+                headTail.next = tmp;
+                return partition(node.next, x, headHead, headTail.next, tailHead, tailTail);
+            }
+        } else {
+            if (tailHead == null) {
+                return partition(node.next, x, headHead, headTail, tmp, tmp);
+            } else {
+                tailTail.next = tmp;
+                return partition(node.next, x, headHead, headTail, tailHead, tailTail.next);
+            }
+        }
+
     }
 
 }
