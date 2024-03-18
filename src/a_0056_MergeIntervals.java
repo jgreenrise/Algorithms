@@ -1,4 +1,3 @@
-import Array.problems.meetingRooms.MergeIntervals_2020_07_01;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -7,16 +6,17 @@ public class a_0056_MergeIntervals {
 
     public static void main(String[] args) {
 
-        MergeIntervals_2020_07_01 class1 = new MergeIntervals_2020_07_01();
+        a_0056_MergeIntervals class1 = new a_0056_MergeIntervals();
 
         // 4 by 4
         int[][] matrix = {{15, 18}, {2, 6}, {8, 10}, {1, 3}};
         matrix = new int[][]{{1, 4}, {2, 3}};
         //matrix = new int[][] {{0, 30},{5, 10},{15, 20}};
         //System.out.println(Arrays.toString(class1.merge_usingStartAndEndArray(matrix)));
+        System.out.println(Arrays.toString(class1.mergeUsingPQ(matrix)));
 
-        Arrays.sort(matrix, Comparator.comparingInt(a -> a[0]));
-        System.out.println(Arrays.toString(class1.merge(matrix)));
+        //Arrays.sort(matrix, Comparator.comparingInt(a -> a[0]));
+        //System.out.println(Arrays.toString(class1.merge(matrix)));
 
     }
 
@@ -47,12 +47,10 @@ public class a_0056_MergeIntervals {
         if (newItem[0] <= prevItem[1] && prevItem[1] <= newItem[1]) {
             prevItem[1] = newItem[1];
             left[left.length - 1] = prevItem;
-            int[][] right2 = Arrays.copyOfRange(right, 1, right.length - 1);
         } else if (newItem[0] <= prevItem[1] && prevItem[1] > newItem[1]) {
             // Do nothing
         } else {
             out[currSize] = newItem;
-            currSize++;
         }
 
         return null;
@@ -66,7 +64,7 @@ public class a_0056_MergeIntervals {
     public int[][] mergeUsingPQ(int[][] intervals) {
 
         int[][] out = new int[intervals.length][intervals.length];
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
         pq.addAll(Arrays.asList(intervals));
 
         int currSize = 0;

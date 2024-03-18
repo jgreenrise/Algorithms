@@ -5,7 +5,7 @@ import list.linkedlist.single.SinglyLinkedList;
  * Input
  * 1, 7, 6, 6, 1, 1, 2, 0, Size: 8
  */
-public class a_0048_SortLinkedList {
+public class a_0148_SortLinkedList {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
