@@ -1,21 +1,19 @@
-package tree.problems;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
 /**
- * https://leetcode.com/problems/binary-tree-right-side-view/
+ * https://leetcode.com/problems/binary-tree-right-side-view/?envType=study-plan-v2&envId=top-interview-150
  */
 
-public class BinaryTreeRightSideView {
+public class a_0199_BinaryTreeRightSideView {
 
     public static void main(String[] args) {
 
         //Integer[] tree = new Integer[]{1,2,3,null,5,null,4};
         Integer[] tree = new Integer[]{1, 2, 3, 7, null, 4, 5, 8, 9, null, null, null, null, null, 6, 9, null, null, 11};
-        BinaryTreeRightSideView tr = new BinaryTreeRightSideView();
+        a_0199_BinaryTreeRightSideView tr = new a_0199_BinaryTreeRightSideView();
 
 
         TreeNode node11 = new TreeNode(11);
@@ -41,63 +39,52 @@ public class BinaryTreeRightSideView {
         node1.left = node2;
         node1.right = node3;
 
-        System.out.println(tr.rightSideViewUsingCount(node1));
-
+        System.out.println(tr.rightSideViewDFS(node1));
         System.out.println(tr.rightSideViewUsingRecursion(node1));
     }
 
-    private List<Integer> rightSideViewUsingRecursion(TreeNode node){
-
+    private List<Integer> rightSideViewUsingRecursion(TreeNode node) {
         List<Integer> out = new ArrayList();
         return helper(node, out, 0);
     }
 
     private List<Integer> helper(TreeNode node, List<Integer> out, int level) {
 
-        if(out.size() == level){
+        if (out.size() == level)
             out.add(node.val);
-        }
 
-        if(node.right != null)
-            helper(node.right, out, level+1);
+        if (node.right != null)
+            helper(node.right, out, level + 1);
 
-        if(node.left != null)
-            helper(node.left, out, level+1);
+        if (node.left != null)
+            helper(node.left, out, level + 1);
 
         return out;
     }
 
-    private List<Integer> rightSideViewUsingCount(TreeNode node) {
+    public List<Integer> rightSideViewDFS(TreeNode root) {
 
-        Queue<TreeNode> queue = new LinkedList();
+        Queue<TreeNode> queue = new LinkedList<>();
         List<Integer> out = new ArrayList();
-        if(node == null){
-            return out;
-        }
-
-        queue.add(node);
-        int count = 1;
+        queue.offer(root);
 
         while (!queue.isEmpty()) {
 
-            TreeNode poll = queue.poll();
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode curr = queue.poll();
+                if (curr != null) {
+                    if (i == size - 1)
+                        out.add(curr.val);
+                    if (curr.left != null)
+                        queue.offer(curr.left);
+                    if (curr.right != null)
+                        queue.offer(curr.right);
+                }
 
-            if (count == 1) {
-                out.add(poll.val);
             }
 
-            count--;
-
-            if (poll.left != null)
-                queue.add(poll.left);
-
-            if (poll.right != null)
-                queue.add(poll.right);
-
-            if (count == 0)
-                count = queue.size();
         }
-
         return out;
 
     }
