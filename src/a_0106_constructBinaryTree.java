@@ -7,7 +7,6 @@ import java.util.Map;
 public class a_0106_constructBinaryTree {
 
     public static Integer postorderv2 = 0;
-    public static Integer postorderv2 = 0;
 
     public static void main(String[] args) {
         int[] inorder = {1, 2, 3, 4, 5};
