@@ -12,11 +12,11 @@ public class a_2038_RemoveColoredPieces {
 
             // Check if Alice can make a move here
             if (currentColor == 'A' && prevColor == 'A' && nextColor == 'A')
-                aliceScore++; // Alice can remove 'A'
+                aliceScore++;
 
                 // Check if Bob can make a move here
             else if (currentColor == 'B' && prevColor == 'B' && nextColor == 'B')
-                bobScore++; // Bob can remove 'B'
+                bobScore++;
         }
 
         // Determine the winner based on the scores
