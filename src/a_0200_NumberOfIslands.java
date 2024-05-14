@@ -1,5 +1,3 @@
-package graph.undirected.bfs;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -57,7 +55,7 @@ Node is not found
 
  * 
  **/
-public class BreadthFirstSearch_Graph {
+public class a_0200_NumberOfIslands {
 
     public static void main(String args[]) {
         CustomNode n1 = new CustomNode(1);
@@ -89,7 +87,7 @@ public class BreadthFirstSearch_Graph {
         n7.addAssosciatedNodes(n11);
         n7.addAssosciatedNodes(n12);
 
-        BreadthFirstSearch_Graph graph = new BreadthFirstSearch_Graph();
+        a_0200_NumberOfIslands graph = new a_0200_NumberOfIslands();
         graph.breadthFirstSearch(n1, n7);
         CustomNode n50 = new CustomNode(50);
         graph.breadthFirstSearch(n1, n50);
