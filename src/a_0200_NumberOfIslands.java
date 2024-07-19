@@ -2,59 +2,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-/*-
-* *** OUTPUT ***
-
-Root node: 1
-Adding root node to queue
-Removing node from queue: 1
-Child node: 2
-Child node: 3
-Child node: 4
-Removing node from queue: 2
-Child node: 5
-Child node: 6
-Removing node from queue: 3
-Removing node from queue: 4
-Node is found
-Removing node from queue: 5
-Child node: 9
-Child node: 10
-Removing node from queue: 6
-Removing node from queue: 9
-Removing node from queue: 10
-Node is not found
-
-
-Root node: 1
-Adding root node to queue
-Removing node from queue: 1
-Child node: 2
-Child node: 3
-Child node: 4
-Removing node from queue: 2
-Child node: 5
-Child node: 6
-Removing node from queue: 3
-Removing node from queue: 4
-Child node: 7
-Child node: 8
-Removing node from queue: 5
-Child node: 9
-Child node: 10
-Removing node from queue: 6
-Removing node from queue: 7
-Child node: 11
-Child node: 12
-Removing node from queue: 8
-Removing node from queue: 9
-Removing node from queue: 10
-Removing node from queue: 11
-Removing node from queue: 12
-Node is not found
-
- * 
- **/
 public class a_0200_NumberOfIslands {
 
     public static void main(String args[]) {
