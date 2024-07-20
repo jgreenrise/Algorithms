@@ -61,18 +61,18 @@ public class PalindromePermutation {
 
     private static boolean usingASCIIIntArray(String str_input) {
 
-        str_input  = str_input.toUpperCase();
-        int[] ints = new int[128];
+        str_input  = str_input.toLowerCase();
+        int[] ints = new int[26];
         char[] chars = str_input.toCharArray();
         for (char c : chars) {
 
             if(c == ' ')
                 continue;
 
-            if (ints[c] == 0) {
-                ints[c]++;
+            if (ints[c - 'a'] == 0) {
+                ints[c - 'a']++;
             } else {
-                ints[c]--;
+                ints[c- 'a']--;
             }
 
         }
