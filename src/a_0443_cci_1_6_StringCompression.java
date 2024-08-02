@@ -32,45 +32,53 @@ public class a_0443_cci_1_6_StringCompression {
 
     public static int compress(char[] chars) {
 
-        if (chars.length == 1)
-            return 1;
+        if(chars.length == 1) return 1;
 
+        int globalIndex = 1;
         char ch = chars[0];
         int counter = 1;
-        int endRange = 1;
-        for (int j = 1; j < chars.length; j++) {
-            if (chars[j] == ch) {
-                counter++;
-            } else {
-                if (counter > 9) {
-                    String str = String.valueOf(counter);
-                    char[] nums = str.toCharArray();
-                    for (int num = 0; num < nums.length; num++) {
-                        chars[endRange++] = nums[num];
-                    }
-                } else if (counter > 1) {
-                    chars[endRange] = (char) (counter + '0');
-                    endRange++;
+        //System.out.println("input char length: "+chars.length+"\t Chars: "+Arrays.toString(chars));
+
+        for(int j = 1; j <= chars.length; j++){
+
+            if(j == chars.length){
+                if(counter == 1){
+
+                }else if(counter < 9){
+                    chars[globalIndex++] = (char)(counter + '0');
+                }else{
+                    String counter2 = String.valueOf(counter);
+                    char [] newCh = counter2.toCharArray();
+                    for(char ch1: newCh)
+                        chars[globalIndex++] = ch1;
                 }
-                ch = chars[j];
-                counter = 1;
-                chars[endRange] = ch;
-                endRange++;
+
+            }else{
+                if(chars[j] == ch){
+                    counter++;
+                }else{
+                    if(counter == 1){
+
+                    }else if(counter < 9){
+                        chars[globalIndex++] = (char)(counter + '0') ;
+                    }else{
+                        // counter = 523
+                        String counter2 = String.valueOf(counter);
+                        char [] newCh = counter2.toCharArray();
+                        for(char ch1: newCh)
+                            chars[globalIndex++] = ch1;
+
+                    }
+
+                    ch = chars[j];
+                    chars[globalIndex++] = ch ;
+                    counter = 1;
+                }
             }
         }
 
-        if (counter > 9) {
-            String str = String.valueOf(counter);
-            char[] nums = str.toCharArray();
-            for (int num = 0; num < nums.length; num++) {
-                chars[endRange++] = nums[num];
-            }
-        } else if (counter > 1) {
-            chars[endRange] = (char) (counter + '0');
-            endRange++;
-        }
-
-        return endRange;
+        //System.out.println("charss: "+Arrays.toString(chars));
+        return globalIndex;
 
     }
 

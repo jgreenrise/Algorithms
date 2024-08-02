@@ -2,6 +2,15 @@
 // https://leetcode.com/problems/zigzag-conversion/description/?envType=study-plan-v2&envId=top-interview-150
 public class a_0006_zigZagConversion {
 
+    public static void main(String[] args) {
+        a_0006_zigZagConversion converter = new a_0006_zigZagConversion();
+        String testString = "PAYPALISHIRING";
+        int numRows = 3;
+
+        String result = converter.convert(testString, numRows);
+        System.out.println("Converted String: " + result); // Expected output: "PAHNAPLSIIGYIR"
+    }
+
     public String convert(String s, int numRows) {
 
         if (numRows == 1) return s;

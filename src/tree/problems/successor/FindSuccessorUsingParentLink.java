@@ -2,27 +2,6 @@ package tree.problems.successor;
 
 public class FindSuccessorUsingParentLink {
 
-    static PreviousIntValue previousIntValue = null;
-
-    public static class PreviousIntValue {
-        int val;
-
-        public PreviousIntValue(int val) {
-            this.val = val;
-        }
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode parent;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
     public static void main(String args[]) {
 
         TreeNode node20 = new TreeNode(20);
@@ -53,10 +32,10 @@ public class FindSuccessorUsingParentLink {
 
     }
 
-    private static int nextSuccessor(TreeNode node, TreeNode parent) {
+    private static TreeNode nextSuccessor(TreeNode node, TreeNode parent) {
 
         // ROOT NODE
-        if(node.parent == null)
+        if (node.parent == null)
             return findMin(node.right);
 
         // LEAF NODE
@@ -70,19 +49,27 @@ public class FindSuccessorUsingParentLink {
         }
 
         if (parent.val > node.val)
-            return parent.val;
+            return parent;
         else
             return nextSuccessor(node, parent.parent);
 
     }
 
-    private static int findMin(TreeNode node) {
-
+    private static TreeNode findMin(TreeNode node) {
         if (node.left != null)
             return findMin(node.left);
+        return node;
+    }
 
-        return node.val;
+    public static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode parent;
 
+        TreeNode(int x) {
+            val = x;
+        }
     }
 
 }

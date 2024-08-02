@@ -36,9 +36,9 @@ public class MeetingRooms_2_2020_06_24 {
         // Sort by Start value, then by end value
         Arrays.sort(intervals, (left, right) -> {
             if (left[0] == right[0]) {
-                return ((Integer) (left[1])).compareTo(right[1]);
+                return Integer.compare((left[1]), right[1]);
             }
-            return ((Integer) (left[0])).compareTo(right[0]);
+            return Integer.compare((left[0]), right[0]);
         });
 
 

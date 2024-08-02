@@ -17,6 +17,7 @@ public class A_Insert {
         System.out.println("alpha bets");
     }
 
+
     // Iterative
     private void insertWord(String word) {
         CustomTrieNode curr = root;
@@ -41,15 +42,13 @@ public class A_Insert {
         if (index == word.length()) {
             node.isCompleted = true;
         } else {
-
             char ch = word.charAt(index);
             CustomTrieNode curr = node.getMap().get(ch);
             if (curr == null) {
                 curr = new CustomTrieNode();
                 node.getMap().put(ch, curr);
             }
-
-            insertRecursiveWord(word, index+1, curr);
+            insertRecursiveWord(word, index + 1, curr);
         }
     }
 
