@@ -53,7 +53,9 @@ public class a_0234_cci_2_6_IsPalindrome {
 
     public boolean isPalindromeReverseSecondHalf(ListNode head) {
 
-        // 1. Reach to the center of node
+        /**
+         * 1. Reach to the center of node
+         */
         ListNode slow = head;
         ListNode fast = head;
         ListNode right;
@@ -63,14 +65,12 @@ public class a_0234_cci_2_6_IsPalindrome {
             fast = fast.next.next;
         }
 
-        // 2. Assign Second Half list
         right = slow.next;
         slow.next = null;
 
-        // 3. Reverse Second Half list
         ListNode secondHalfStart = reverseList(right);
 
-        // 4. Compare the first and second half nodes
+        // Compare the first and second half nodes
         ListNode p1 = head;
         ListNode p2 = secondHalfStart;
         while (p2 != null) {
@@ -81,6 +81,7 @@ public class a_0234_cci_2_6_IsPalindrome {
             p2 = p2.next;
         }
         return true;
+
     }
 
     public ListNode reverseList(ListNode node) {

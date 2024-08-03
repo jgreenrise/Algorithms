@@ -28,95 +28,69 @@ public class a_0210_CourseSchedule_II {
 
     public int[] findOrder(int numCourses, int[][] prerequisites) {
 
-        int[] ascii = new int[numCourses];
+        Map<Integer, List<Integer>> map = new HashMap();
+        int[] outgoing = new int[numCourses];
+        Stack<Integer> stack = new Stack<>();
+        int[] out = new int[numCourses];
+        int outCounter = 0;
+        int visitedCount = 0;
 
-        // From Node > Parent nodes
-        Map<Integer, Set<Integer>> graph = new HashMap();
+        for (int k = 0; k < prerequisites.length; k++) {
+            int[] record = prerequisites[k];
+            int from = record[1];
+            int to = record[0];
 
-        // 1: Create Graph
-        buildGraph(graph, numCourses, prerequisites, ascii);
+            map.putIfAbsent(from, new ArrayList<>());
+            map.get(from).add(to);
+            outgoing[to]++;
 
-        // 2: BFS
-        return bfs(graph, numCourses, prerequisites, ascii);
-
-    }
-
-    private int[] bfs(Map<Integer, Set<Integer>> graph, int projects, int[][] dependencies, int[] ascii) {
-
-        int[] out = new int[graph.size()];
-        int j = 0;
-        Queue<Integer> q = new LinkedList();
-
-        if (graph.size() == 0) {
-            // Invalid combination found {2,0} {0,2}
-            return new int[0];
-        }
-
-        for (Integer key : graph.keySet()) {
-
-            // Loop though parent-less nodes (Nodes with no parent)
-            if (ascii[key] == 0) {
-                q.offer(key);
-                out[j++] = key;
-                ascii[key]--;
-
-                while (!q.isEmpty()) {
-                    Integer curr = q.poll();
-
-                    // Add child nodes to Queue, if exist
-                    if (graph.get(curr) == null || graph.get(curr).size() == 0) {
-                        continue;
-                    }
-
-                    for (Integer neighbour : graph.get(curr)) {
-                        ascii[neighbour]--;
-
-                        if (ascii[neighbour] == 0) {
-                            ascii[neighbour]--;
-                            q.offer(neighbour);
-                            out[j++] = neighbour;
-                        }
-
+            // {0,4} - {4,0}
+            if (map.containsKey(to)) {
+                List<Integer> list = map.get(to);
+                for (int l = 0; l < list.size(); l++) {
+                    if (list.get(l) == from) {
+                        out = new int[0];
+                        return out;
                     }
 
                 }
-
             }
         }
 
-        if (j == 0) {
-            return new int[0];
-        }
-
- /*       for (int j =0 ; j< ascii.length; j++){
-            if(ascii[j] > 0){
-                return "";
+        for (int k = 0; k < numCourses; k++) {
+            if (outgoing[k] == 0) {
+                stack.push(k);
             }
-        }*/
-
-        return j == graph.size() ? out : new int[0];
-    }
-
-    private void buildGraph(Map<Integer, Set<Integer>> graph, int numCourses, int[][] prerequisites, int[] ascii) {
-
-        // 1.1 CREATE EMPTY GRAPH
-        for (int j = 0; j < numCourses; j++) {
-            graph.putIfAbsent(j, new HashSet());
         }
 
-        for (int j = 0; j < prerequisites.length; j++) {
-            int fifthStd = prerequisites[j][1];
-            int sixthStd = prerequisites[j][0];
-            graph.get(fifthStd).add(sixthStd);
+        if (stack.size() == 0) {
+            out = new int[0];
+            return out;
+        }
 
-            if (graph.get(sixthStd).contains(fifthStd) && graph.get(fifthStd).contains(sixthStd)) {
-                graph.clear();
-                break;
+        while (!stack.isEmpty()) {
+            int poll = stack.pop();
+            out[outCounter++] = poll;
+            visitedCount++;
+            List<Integer> neighbours = map.get(poll);
+            if (neighbours == null || neighbours.size() == 0) continue;
+            for (int neighbour : neighbours) {
+                outgoing[neighbour]--;
+                if (outgoing[neighbour] == 0) {
+                    stack.push(neighbour);
+                }
             }
-
-            // Child Nodes ++
-            ascii[sixthStd]++;
         }
+
+        boolean inValidMatchFound = visitedCount == numCourses;
+        //System.out.println("Invalid match found ?:"+inValidMatchFound);
+
+        if (!inValidMatchFound) {
+            out = new int[0];
+            return out;
+        }
+
+        return out;
 
     }
 

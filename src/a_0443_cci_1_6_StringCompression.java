@@ -32,53 +32,45 @@ public class a_0443_cci_1_6_StringCompression {
 
     public static int compress(char[] chars) {
 
-        if(chars.length == 1) return 1;
+        if (chars.length == 1)
+            return 1;
 
-        int globalIndex = 1;
         char ch = chars[0];
         int counter = 1;
-        //System.out.println("input char length: "+chars.length+"\t Chars: "+Arrays.toString(chars));
-
-        for(int j = 1; j <= chars.length; j++){
-
-            if(j == chars.length){
-                if(counter == 1){
-
-                }else if(counter < 9){
-                    chars[globalIndex++] = (char)(counter + '0');
-                }else{
-                    String counter2 = String.valueOf(counter);
-                    char [] newCh = counter2.toCharArray();
-                    for(char ch1: newCh)
-                        chars[globalIndex++] = ch1;
-                }
-
-            }else{
-                if(chars[j] == ch){
-                    counter++;
-                }else{
-                    if(counter == 1){
-
-                    }else if(counter < 9){
-                        chars[globalIndex++] = (char)(counter + '0') ;
-                    }else{
-                        // counter = 523
-                        String counter2 = String.valueOf(counter);
-                        char [] newCh = counter2.toCharArray();
-                        for(char ch1: newCh)
-                            chars[globalIndex++] = ch1;
-
+        int endRange = 1;
+        for (int j = 1; j < chars.length; j++) {
+            if (chars[j] == ch) {
+                counter++;
+            } else {
+                if (counter > 9) {
+                    String str = String.valueOf(counter);
+                    char[] nums = str.toCharArray();
+                    for (int num = 0; num < nums.length; num++) {
+                        chars[endRange++] = nums[num];
                     }
-
-                    ch = chars[j];
-                    chars[globalIndex++] = ch ;
-                    counter = 1;
+                } else if (counter > 1) {
+                    chars[endRange] = (char) (counter + '0');
+                    endRange++;
                 }
+                ch = chars[j];
+                counter = 1;
+                chars[endRange] = ch;
+                endRange++;
             }
         }
 
-        //System.out.println("charss: "+Arrays.toString(chars));
-        return globalIndex;
+        if (counter > 9) {
+            String str = String.valueOf(counter);
+            char[] nums = str.toCharArray();
+            for (int num = 0; num < nums.length; num++) {
+                chars[endRange++] = nums[num];
+            }
+        } else if (counter > 1) {
+            chars[endRange] = (char) (counter + '0');
+            endRange++;
+        }
+
+        return endRange;
 
     }
 
@@ -87,22 +79,22 @@ public class a_0443_cci_1_6_StringCompression {
         if (chars == null || chars.length == 0)
             return 0;
 
-        if(chars.length == 1)
+        if (chars.length == 1)
             return 1;
 
         int i = 0; // Current Index
         int n = chars.length;
         int currIndex = 0;
 
-        while(i < n){
+        while (i < n) {
 
 
             // Get frequency
             int frequency = 0;
             int left_index = i;
-            int right_index = i+1;
+            int right_index = i + 1;
             char currCh = chars[i];
-            while(right_index < n && chars[right_index] == currCh ){
+            while (right_index < n && chars[right_index] == currCh) {
                 right_index++;
                 i++;
             }
@@ -110,17 +102,17 @@ public class a_0443_cci_1_6_StringCompression {
 
             // Add in place
             chars[currIndex++] = currCh;
-            if(frequency == 1){
+            if (frequency == 1) {
                 // Dont do anything
                 i++;
-            }else if(frequency < 10){
-                System.out.println("Cuu Index: "+currIndex+", frequency: "+frequency+", "+Arrays.toString(chars));
-                chars[currIndex++] = (char)(frequency + '0');
+            } else if (frequency < 10) {
+                System.out.println("Cuu Index: " + currIndex + ", frequency: " + frequency + ", " + Arrays.toString(chars));
+                chars[currIndex++] = (char) (frequency + '0');
                 i++;
-            }else{
+            } else {
 
-                char [] numChars = (String.valueOf(frequency)).toCharArray();
-                for(int j=0; j < numChars.length; j++){
+                char[] numChars = (String.valueOf(frequency)).toCharArray();
+                for (int j = 0; j < numChars.length; j++) {
                     chars[currIndex++] = numChars[j];
                     i++;
                 }

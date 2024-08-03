@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer App</title>
+    <style>
+        #timers {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .timer {
+          margin: 10px;
+          border: 1px solid #ccc;
+          padding: 10px;
+          width: 200px;
+        }
+    </style>
+</head>
+<body>
+<h1>Timer App</h1>
+<div>
+    <label for="duration">Select Timer Duration:</label>
+    <select id="duration">
+        <option value="5">5 seconds</option>
+        <option value="10">10 seconds</option>
+        <option value="15">15 seconds</option>
+        <option value="1800">30 minutes</option>
+    </select>
+    <button onclick="createTimer()">Create Timer</button>
+</div>
+<div id="timers">
+    <!-- Timers will be displayed here -->
+</div>
+<script>
+    function createTimer() {
+      const duration = parseInt(document.getElementById("duration").value);
+      const timerElement = document.createElement("div");
+      timerElement.className = "timer";
+      document.getElementById("timers").appendChild(timerElement);
+
+      let seconds = duration;
+      timerElement.innerText = `${seconds} seconds`;
+
+      const intervalId = setInterval(() => {
+        seconds--;
+        timerElement.innerText = `${seconds} seconds`;
+
+        if (seconds <= 0) {
+          clearInterval(intervalId);
+          timerElement.innerText = "Time's up!";
+          timerElement.style.backgroundColor = "red";
+          setTimeout(() => {
+            timerElement.remove();
+          }, 2000); // Remove the timer element after 2 seconds
+        }
+      }, 1000);
+    }
+</script>
+</body>
+</html>
