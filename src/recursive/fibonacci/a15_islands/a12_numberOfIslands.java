@@ -94,11 +94,8 @@ public class a12_numberOfIslands {
             for (int col = 0; col < cols; col++) {
                 System.out.println(grid[row][col] == 1);
                 if (grid[row][col] == '1') {
-                    // increase islands
                     ++islands;
-                    // change any connected land value to zero
                     dfs(grid, row, col, rows, cols);
-                    System.out.println(islands);
                 }
             }
         }
@@ -107,24 +104,13 @@ public class a12_numberOfIslands {
     }
 
     public void dfs(char[][] grid, int sr, int sc, int totRows, int totCols) {
-
-        /**
-         * 1. row greater than tot rows
-         * 2. col greater than tot cols
-         * 3. row less than 0
-         * 4. col less than 0
-         * 5. if cell = 0, its not an island
-         */
-        if (sr >= totRows || sc >= totCols || sr < 0 || sc < 0 || grid[sr][sc] == '0') {
+        if (sr >= totRows || sc >= totCols || sr < 0 || sc < 0 || grid[sr][sc] == '0')
             return;
-        }
-
         grid[sr][sc] = '0';
         dfs(grid, sr + 1, sc, totRows, totCols);
         dfs(grid, sr - 1, sc, totRows, totCols);
         dfs(grid, sr, sc + 1, totRows, totCols);
         dfs(grid, sr, sc - 1, totRows, totCols);
-
     }
 
 }

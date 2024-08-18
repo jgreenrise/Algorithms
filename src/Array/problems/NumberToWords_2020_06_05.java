@@ -1,6 +1,7 @@
 package Array.problems;
 
 import java.util.HashMap;
+import java.util.Stack;
 
 public class NumberToWords_2020_06_05 {
 
@@ -62,87 +63,53 @@ public class NumberToWords_2020_06_05 {
                 " Nineteen"
         };
 
-        String[] quantities = {"", " Thousand", " Million", " Billion"};
+        String[] quantities = {"", " Thousand", " Million", " Billion", "Trillion"};
 
-        String number = String.valueOf(num);
-        int counter = number.length();
-        StringBuilder sbr = new StringBuilder();
+        Stack<Integer> stack = new Stack();
+        buildStack(num, stack);
 
-        if (num < 20) {
-            return numNames[num].trim();
+        return recursiveBuildString(stack, quantities, numNames, tensNames);
+
+    }
+
+    private String recursiveBuildString(Stack<Integer> stack, String[] quantities, String[] numNames, String[] tensNames) {
+
+        if(stack.isEmpty())
+            return "";
+
+        int size = stack.size();
+        String currQuantity = quantities[size-1]; // Billion
+
+        Integer currVal = stack.pop();
+        String currStackStringVAL = getCurrentStringVal(currVal, numNames, tensNames);
+
+        return currVal == 0 ? " " : currStackStringVAL + " " + currQuantity + " " + recursiveBuildString(stack, quantities, numNames, tensNames);
+
+    }
+
+    private String getCurrentStringVal(Integer currVal, String[] numNames, String[] tensNames) {
+
+        if(currVal < 20){
+            return numNames[currVal];
+        }else if(currVal > 99){
+            int rem = currVal / 100;
+            return numNames[rem] + " Hundred " + getCurrentStringVal(currVal % 100, numNames, tensNames);
+        }else{
+            int rem = currVal / 10;
+            return tensNames[rem] + " " +getCurrentStringVal(currVal % 10, numNames, tensNames);
         }
 
-        int left = 0;
-        int right = number.length();
-        int k = 0;    // holds quantity
+    }
 
-        while (right > 0) {
+    private void buildStack(int num, Stack<Integer> stack) {
 
-            if (right - 3 >= 0) {
-
-                if(sbr.length() > 1){
-                    sbr.insert(0, quantities[k]);
-                }
-
-                // We have 3 chars
-                String nestedNumber = number.substring(right - 3, right);
-
-                if (Integer.valueOf(number.substring(right - 2, right)) < 20) {
-                    // Less than 20
-                    sbr.insert(0, numNames[Integer.valueOf(number.substring(right - 2, right))]);
-                } else if (Integer.valueOf(number.substring(right - 2, right)) % 10 == 0) {
-                    // Multiplier of 10
-                    sbr.insert(0, tensNames[(Integer.parseInt(number.substring(right - 2, right))) / 10]);
-                } else {
-                    sbr.insert(0, numNames[Integer.parseInt(number.substring(right - 1, right))]);
-                    sbr.insert(0, tensNames[Integer.parseInt(number.substring(right - 2, right - 1))]);
-                }
-
-
-
-                if (Integer.parseInt(number.substring(right - 3, right - 2)) != 0){
-                    // 000
-                    sbr.insert(0, " Hundred");
-                }
-
-                sbr.insert(0, numNames[Integer.parseInt(number.substring(right - 3, right - 2))]);
-
-
-                right = right - 3;
-                k++;
-            } else if (right - 2 >= 0) {
-
-                sbr.insert(0, quantities[k]);
-
-                if (Integer.valueOf(number.substring(right - 2, right)) < 20) {
-                    // Less than 20
-                    sbr.insert(0, numNames[Integer.parseInt(number.substring(right - 2, right))]);
-                } else if (Integer.valueOf(number.substring(right - 2, right)) % 10 == 0) {
-                    // Multiplier of 10
-                    sbr.insert(0, tensNames[(Integer.parseInt(number.substring(right - 2, right))) / 10]);
-                } else {
-                    sbr.insert(0, numNames[Integer.parseInt(number.substring(right - 1, right))]);
-                    sbr.insert(0, tensNames[Integer.parseInt(number.substring(right - 2, right - 1))]);
-                }
-
-
-                right = right - 2;
-                k++;
-
-            } else if (right - 1 >= 0) {
-
-                sbr.insert(0, quantities[k]);
-                sbr.insert(0, numNames[Integer.parseInt(number.substring(right - 1, right))]);
-
-
-                right = right - 1;
-                k++;
-
-            }
-
+        if(num > 999){
+            int val = num % 1000;
+            int rem = num / 1000;
+            stack.add(val);
+            buildStack(rem, stack);
+        }else{
+            stack.add(num);
         }
-
-        return sbr.toString().trim();
-
     }
 }

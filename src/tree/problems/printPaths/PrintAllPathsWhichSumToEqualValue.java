@@ -1,6 +1,6 @@
 package tree.problems.printPaths;
 
-import graph.directed.C_bfs.Node;
+import graph.directed.C_bfs.CustomTreeNode;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -19,17 +19,17 @@ public class PrintAllPathsWhichSumToEqualValue {
 
 	public static void main(String[] args) {
 
-		Node n1 = new Node(1);
-		Node n2 = new Node(2);
-		Node n4 = new Node(4);
-		Node n5 = new Node(5);
-		Node n6 = new Node(6);
-		Node n7 = new Node(7);
-		Node n8 = new Node(8);
-		Node n9 = new Node(9);
-		Node n10 = new Node(10);
-		Node n11 = new Node(11);
-		Node n12 = new Node(12);
+		CustomTreeNode n1 = new CustomTreeNode(1);
+		CustomTreeNode n2 = new CustomTreeNode(2);
+		CustomTreeNode n4 = new CustomTreeNode(4);
+		CustomTreeNode n5 = new CustomTreeNode(5);
+		CustomTreeNode n6 = new CustomTreeNode(6);
+		CustomTreeNode n7 = new CustomTreeNode(7);
+		CustomTreeNode n8 = new CustomTreeNode(8);
+		CustomTreeNode n9 = new CustomTreeNode(9);
+		CustomTreeNode n10 = new CustomTreeNode(10);
+		CustomTreeNode n11 = new CustomTreeNode(11);
+		CustomTreeNode n12 = new CustomTreeNode(12);
 
 		n1.addAssosciatedNodes(n2);
 		n1.addAssosciatedNodes(n4);
@@ -52,7 +52,7 @@ public class PrintAllPathsWhichSumToEqualValue {
 
 	}
 
-	public static Node printPaths(Node node, int sum) {
+	public static CustomTreeNode printPaths(CustomTreeNode node, int sum) {
 
 		/**
 		 * Stores Node, assosciated paths
@@ -60,7 +60,7 @@ public class PrintAllPathsWhichSumToEqualValue {
 		HashMap<Integer, LinkedList<String>> map = new HashMap<>();
 		LinkedList<String> child_paths = null;
 		StringBuilder sbr = new StringBuilder();
-		Stack<Node> stack = new Stack<Node>();
+		Stack<CustomTreeNode> stack = new Stack<CustomTreeNode>();
 
 		if (node == null)
 			return null;
@@ -76,9 +76,9 @@ public class PrintAllPathsWhichSumToEqualValue {
 
 		while (!stack.isEmpty()) {
 
-			node = (Node) stack.pop();
+			node = (CustomTreeNode) stack.pop();
 
-			for (Node tmp : node.adjacentNodes) {
+			for (CustomTreeNode tmp : node.adjacentNodes) {
 				stack.add(tmp);
 
 				child_paths = new LinkedList<>();

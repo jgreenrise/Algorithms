@@ -17,22 +17,22 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Node n1 = new Node(1);
-		Node n17 = new Node(17);
-		Node n4 = new Node(4);
-		Node n20 = new Node(20);
-		Node n40 = new Node(40);
+		CustomNode n1 = new CustomNode(1);
+		CustomNode n17 = new CustomNode(17);
+		CustomNode n4 = new CustomNode(4);
+		CustomNode n20 = new CustomNode(20);
+		CustomNode n40 = new CustomNode(40);
 
-		LinkedList<Node> childNodes = new LinkedList<Node>();
+		LinkedList<CustomNode> childNodes = new LinkedList<CustomNode>();
 		childNodes.add(n4);
 		childNodes.add(n17);
 		n1.setChildNodes(childNodes);
 
-		childNodes = new LinkedList<Node>();
+		childNodes = new LinkedList<CustomNode>();
 		childNodes.add(n20);
 		n4.setChildNodes(childNodes);
 
-		childNodes = new LinkedList<Node>();
+		childNodes = new LinkedList<CustomNode>();
 		childNodes.add(n40);
 		n20.setChildNodes(childNodes);
 
@@ -40,7 +40,7 @@ public class Main {
 
 	}
 
-	private static int findMaxLengthBetweenNodes(Node nodeA, Node nodeB, int i_numberOfNodesVisited) {
+	private static int findMaxLengthBetweenNodes(CustomNode nodeA, CustomNode nodeB, int i_numberOfNodesVisited) {
 
 		int max = 0;
 		int base = 0;
@@ -48,10 +48,10 @@ public class Main {
 		if (nodeA != null && nodeB != null) {
 			
 			if(nodeA.getChildNodes() != null){
-				ListIterator<Node> nodes = nodeA.getChildNodes().listIterator();
+				ListIterator<CustomNode> nodes = nodeA.getChildNodes().listIterator();
 
 				while (nodes.hasNext()) {
-					Node node = nodes.next();
+					CustomNode node = nodes.next();
 					if (node == nodeB) {
 						base = i_numberOfNodesVisited;
 						System.out.println(base);

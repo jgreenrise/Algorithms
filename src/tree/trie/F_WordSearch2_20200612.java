@@ -8,16 +8,22 @@ import java.util.stream.Collectors;
  */
 public class F_WordSearch2_20200612 {
 
+    public final TrieNode root;
+
+    public F_WordSearch2_20200612() {
+        root = new TrieNode();
+    }
+
     public static void main(String args[]) {
 
         char[][] board = {
-                {'o','a','a','n'},
-                {'e','t','a','e'},
-                {'i','h','k','r'},
-                {'i','f','l','v'}
+                {'o', 'a', 'a', 'n'},
+                {'e', 't', 'a', 'e'},
+                {'i', 'h', 'k', 'r'},
+                {'i', 'f', 'l', 'v'}
         };
 
-        String [] words = {"oath","pea","eat","rain"};
+        String[] words = {"oath", "pea", "eat", "rain"};
 
         // eg 2
         board = new char[][]{{'a'}};
@@ -42,17 +48,11 @@ public class F_WordSearch2_20200612 {
 
     }
 
-    public final TrieNode root;
-
-    public F_WordSearch2_20200612(){
-        root = new TrieNode();
-    }
-
     public List<String> findWords(char[][] board, String[] words) {
 
         F_WordSearch2_20200612 class1 = new F_WordSearch2_20200612();
         int index = 0;
-        for(String word: words){
+        for (String word : words) {
             class1.insert(word, index++);
         }
 
@@ -63,14 +63,14 @@ public class F_WordSearch2_20200612 {
 
     }
 
-    public List<String> findWordsInMat(char[][] board, String[] words, int rows, int cols, TrieNode root){
+    public List<String> findWordsInMat(char[][] board, String[] words, int rows, int cols, TrieNode root) {
 
         Set<String> out = new HashSet<>();
         TrieNode curr = root;
         Set<String> set = new HashSet<>();
 
-        for(int row =0; row< rows; row++){
-            for(int col=0; col < cols; col++){
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
                 findWordsAtCell(row, col, board, words, rows, cols, curr, set);
             }
         }
@@ -78,36 +78,36 @@ public class F_WordSearch2_20200612 {
 
     }
 
-    public void findWordsAtCell(int currR, int currC, char[][] board, String[] words, int rows, int cols, TrieNode node, Set<String> set){
+    public void findWordsAtCell(int currR, int currC, char[][] board, String[] words, int rows, int cols, TrieNode node, Set<String> set) {
 
         String currOut = "";
         // Check if currR and currC within range
-        if(currR < 0 || currR >= rows || currC < 0 || currC >= cols){
+        if (currR < 0 || currR >= rows || currC < 0 || currC >= cols) {
             return;
         }
 
-        if(rows == 1 && cols == 1){
-            if(node.map.containsKey(board[currR][currC]) && words[0].length() == 1) {
+        if (rows == 1 && cols == 1) {
+            if (node.map.containsKey(board[currR][currC]) && words[0].length() == 1) {
                 set.add(words[0]);
             }
         }
 
-        if(node.isEndOfWord){
+        if (node.isEndOfWord) {
             set.add(words[node.index]);
         }
 
         // If current cell exists in Parent TRI node
         char ch = board[currR][currC];
-        if(node.map.containsKey(ch)){
+        if (node.map.containsKey(ch)) {
 
-            int [] dr = {-1, 0, 0, 1};
-            int [] dc = {0, -1, 1, 0};
+            int[] dr = {-1, 0, 0, 1};
+            int[] dc = {0, -1, 1, 0};
 
-            for(int direction = 0; direction<4; direction ++){
+            for (int direction = 0; direction < 4; direction++) {
 
                 char tmp = board[currR][currC];
                 board[currR][currC] = '0';
-                findWordsAtCell(currR+dr[direction], currC+dc[direction], board, words, rows, cols, node.map.get(ch), set);
+                findWordsAtCell(currR + dr[direction], currC + dc[direction], board, words, rows, cols, node.map.get(ch), set);
                 board[currR][currC] = tmp;
 
             }
@@ -116,31 +116,31 @@ public class F_WordSearch2_20200612 {
 
     }
 
-    public void insert(String word, int index){
+    public void insert(String word, int index) {
 
         TrieNode curr = root;
-        for(int j=0; j<word.length(); j++){
+        for (int j = 0; j < word.length(); j++) {
             char ch = word.charAt(j);
             TrieNode node = curr.map.get(ch);
-            if(node == null){
+            if (node == null) {
                 node = new TrieNode();
                 curr.map.putIfAbsent(ch, node);
             }
 
             curr = curr.map.get(ch);
         }
-        curr.isEndOfWord=true;
+        curr.isEndOfWord = true;
         curr.index = index;
 
     }
 
-    public static class TrieNode{
+    public static class TrieNode {
         Map<Character, TrieNode> map;
         boolean isEndOfWord;
         int index;
 
-        public TrieNode(){
-            map = new HashMap();
+        public TrieNode() {
+            map = new HashMap<>();
         }
 
     }

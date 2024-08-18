@@ -1,5 +1,0 @@
-1. http://www.cs.cmu.edu/~adamchik/15-121/lectures/Trees/trees.html
-2. Inorder
-3. Preorder
-4. post  order
-5. 

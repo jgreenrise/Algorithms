@@ -4,10 +4,10 @@ import java.util.Stack;
 
 public class Graph {
 
-	public void depthFirstSearch(Node sourceNode, Node destinationNode) {
+	public void depthFirstSearch(CustomNode sourceNode, CustomNode destinationNode) {
 
 		System.out.println();
-		Stack<Node> stack = new Stack<Node>();
+		Stack<CustomNode> stack = new Stack<CustomNode>();
 		boolean isDestNodeFound = false;
 
 		System.out.println("Adding root node to stack: " + sourceNode.value);
@@ -18,9 +18,9 @@ public class Graph {
 
 			System.out.println("Node which will be removed from stack: "
 					+ (stack.peek()).value);
-			Node node = stack.pop();
+			CustomNode node = stack.pop();
 
-			for (Node adjNode : node.adjacentNodes) {
+			for (CustomNode adjNode : node.adjacentNodes) {
 
 				System.out.println("Examining node: " + adjNode.value);
 

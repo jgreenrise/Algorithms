@@ -3,35 +3,9 @@ package tree.bst;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class  A_Insert {
+public class A_Insert {
 
     TreeNode rootNode;
-
-    public void insert(int value) throws MyDuplicateItemException {
-        if (rootNode == null) {
-            rootNode = new TreeNode(value);
-        } else {
-            rootNode = insert(value, rootNode);
-        }
-
-
-    }
-
-    public TreeNode insert(int value, TreeNode node) {
-
-        if (node == null) {
-            return new TreeNode(value);
-        } else {
-            if (node.value.compareTo(value) > 0) {
-                node.left = insert(value, node.left);
-                return node;
-            } else {
-                node.right = insert(value, node.right);
-                return node;
-            }
-        }
-    }
-
 
     public static void main(String args[]) throws MyDuplicateItemException {
 
@@ -54,6 +28,28 @@ public class  A_Insert {
 
     }
 
+    public void insert(int value) throws MyDuplicateItemException {
+        if (rootNode == null) {
+            rootNode = new TreeNode(value);
+        } else {
+            rootNode = insert(value, rootNode);
+        }
+    }
+
+    public TreeNode insert(int value, TreeNode node) {
+        if (node == null) {
+            return new TreeNode(value);
+        } else {
+            if (node.value.compareTo(value) > 0) {
+                node.left = insert(value, node.left);
+                return node;
+            } else {
+                node.right = insert(value, node.right);
+                return node;
+            }
+        }
+    }
+
     public void printBST() {
 
         System.out.println("Root node value: " + rootNode.value);
@@ -67,17 +63,14 @@ public class  A_Insert {
             System.out.print((currentLevel.peek()).value + " ");
             TreeNode node = currentLevel.poll();
 
-            if (node.left != null)
-                nextLevel.add(node.left);
+            if (node.left != null) nextLevel.add(node.left);
 
-            if (node.right != null)
-                nextLevel.add(node.right);
+            if (node.right != null) nextLevel.add(node.right);
 
             if (currentLevel.isEmpty()) {
                 System.out.println();
 
-                while (!nextLevel.isEmpty())
-                    currentLevel.add(nextLevel.poll());
+                while (!nextLevel.isEmpty()) currentLevel.add(nextLevel.poll());
             }
         }
     }
