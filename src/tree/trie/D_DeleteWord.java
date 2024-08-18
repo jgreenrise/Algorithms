@@ -1,13 +1,11 @@
 package tree.trie;
 
-import java.util.HashMap;
-
 public class D_DeleteWord {
 
-    private final TrieNode root;
+    private final CustomTrieNode root;
 
     public D_DeleteWord() {
-        root = new TrieNode();
+        root = new CustomTrieNode();
     }
 
     public static void main(String args[]) {
@@ -29,7 +27,7 @@ public class D_DeleteWord {
         deleteWord(word, 0, root);
     }
 
-    private boolean deleteWord(String word, int index, TrieNode node) {
+    private boolean deleteWord(String word, int index, CustomTrieNode node) {
 
         if (index == word.length()) {
             if (node.getMap().size() == 0) {
@@ -40,7 +38,7 @@ public class D_DeleteWord {
             }
         }
 
-        TrieNode newnode = node.getMap().get(word.charAt(index));
+        CustomTrieNode newnode = node.getMap().get(word.charAt(index));
         if (newnode == null) {
             return false;
         }
@@ -61,15 +59,15 @@ public class D_DeleteWord {
         insertRecursiveWord(word, 0, root);
     }
 
-    private void insertRecursiveWord(String word, int index, TrieNode node) {
+    private void insertRecursiveWord(String word, int index, CustomTrieNode node) {
         if (index == word.length()) {
             node.isCompleted = true;
         } else {
 
             char ch = word.charAt(index);
-            TrieNode curr = node.getMap().get(ch);
+            CustomTrieNode curr = node.getMap().get(ch);
             if (curr == null) {
-                curr = new TrieNode();
+                curr = new CustomTrieNode();
                 node.getMap().put(ch, curr);
             }
 

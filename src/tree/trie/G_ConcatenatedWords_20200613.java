@@ -2,12 +2,9 @@ package tree.trie;
 
 import java.util.*;
 
-/**
- *
- */
 public class G_ConcatenatedWords_20200613 {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         String[] words = {"cat","cats","catsdogcats","dog","dogcatsdog","hippopotamuses","rat","ratcatdogcat"};
         G_ConcatenatedWords_20200613 class1 = new G_ConcatenatedWords_20200613();
@@ -16,86 +13,81 @@ public class G_ConcatenatedWords_20200613 {
         System.out.println(class1.findAllConcatenatedWordsInADict(words));
     }
 
-    public TrieNode root;
-
-    public G_ConcatenatedWords_20200613() {
-        root = new TrieNode();
-    }
-
     public List<String> findAllConcatenatedWordsInADict(String[] words) {
 
-        G_ConcatenatedWords_20200613 class1 = new G_ConcatenatedWords_20200613();
-        TrieNode curr = class1.root;
-        List<String> out = new ArrayList();
-        Arrays.sort(words, (a, b) -> Integer.compare(a.length(), b.length()));
-
-        int index = 0;
-        for (int j = 0; j < words.length; j++) {
-            insertWord(words[j], curr, index++, words, out);
+        CustomNode rootNode = new CustomNode();
+        for(String word:words){
+            buildTrie(word, 0, rootNode);
         }
 
-        return out;
-
-    }
-
-    public void insertWord(String word, TrieNode node, int index, String[] words, List<String> out) {
-
-        TrieNode curr = node;
-        for (int j = 0; j < word.length(); j++) {
-            char ch = word.charAt(j);
-            TrieNode newNode = new TrieNode();
-
-            if (curr.isEndOfWord) {
-                boolean matchFound = searchInSet(curr.index,words, word.substring(words[curr.index].length()), node);
-                if (matchFound) {
-                    out.add(word);
-                    return;
-                }
-            }
-
-            if (curr.map.containsKey(ch)) {
-                newNode = curr.map.get(ch);
-            } else {
-                curr.map.put(ch, newNode);
-            }
-            curr = newNode;
+        Set<String> cache = new HashSet<>();
+        List<String> result = new LinkedList<>();
+        for (String word : words) {
+            if (isConcatenated(rootNode, word, 0, 0, cache))
+                result.add(word);
         }
-        curr.isEndOfWord = true;
-        curr.index = index;
-
+        return result;
     }
 
-    public boolean searchInSet(int index, String[] words, String word, TrieNode node) {
 
-        TrieNode curr = node;
-        for (int j = 0; j < word.length(); j++) {
-            char ch = word.charAt(j);
-            TrieNode newNode = new TrieNode();
+    boolean isConcatenated(CustomNode rootNode, String word, int index, int totalWordsAdded, Set<String> cache) {
 
-            if (curr.map.containsKey(ch)) {
-                newNode = curr.map.get(ch);
-            } else {
+        // Is concatenated, if formed using 2 or more words (totalWordsAdded)
+        if(index >= word.length() && totalWordsAdded >= 2)
+            return true;
 
-                if (curr.isEndOfWord) {
-                    return searchInSet(curr.index, words, word.substring(words[curr.index].length()), node);
-                }
+        System.out.println("Check  if word exist: "+word.substring(index));
+
+        CustomNode ptr = rootNode;
+        for (int i = index; i < word.length(); i++) {
+            if (ptr == null || ptr.map.isEmpty() || !ptr.map.containsKey(word.charAt(i)))
                 return false;
-            }
-            curr = newNode;
-        }
-        return true;
 
+            ptr = ptr.map.get(word.charAt(i));
+
+            if (ptr.isLastCustomNode)
+
+                if(cache.contains(word.substring(i + 1)) && totalWordsAdded + 1 >= 2){
+                    return true;
+                }
+
+                if (isConcatenated(rootNode, word, i + 1, totalWordsAdded + 1, cache)){
+                    cache.add(word.substring(i + 1));
+                    return true;
+                }
+
+        }
+
+        return false;
     }
 
-    public class TrieNode {
-        Map<Character, TrieNode> map;
-        boolean isEndOfWord;
-        int index;
+    public CustomNode buildTrie(String str, int index, CustomNode node){
 
-        public TrieNode() {
-            map = new HashMap();
+        if(index >= str.length()){
+            node.isLastCustomNode = true;
+            return node;
         }
 
+        if(node.map.containsKey(str.charAt(index))){
+            return buildTrie(str, index+1, node.map.get(str.charAt(index)));
+        }else{
+            CustomNode childCustomNode = buildTrie(str, index+1, new CustomNode());
+            node.map.put(str.charAt(index), childCustomNode);
+            return node;
+        }
+
+    }
+}
+
+
+class CustomNode{
+
+    public Map<Character, CustomNode> map;
+    public boolean isLastCustomNode;
+
+    public CustomNode(){
+        map = new HashMap();
+        isLastCustomNode = false;
     }
 
 }

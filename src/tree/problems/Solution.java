@@ -1,6 +1,5 @@
 package tree.problems;
 
-import java.io.*;
 import java.util.*;
 
 /*
@@ -11,122 +10,84 @@ import java.util.*;
  */
 
 class Solution {
-	public static void main(String[] args) {
-		ArrayList<String> strings = new ArrayList<String>();
-		strings.add("Hello, World!");
-		strings.add("Welcome to CoderPad.");
-		strings.add("This pad is running Java " + Runtime.version().feature());
+    public static void main(String[] args) {
+        String start = "hit";
+        String end = "cog";
+        List<String> words = Arrays.asList("hot","dot","dog","lot","log","cog");
 
-		//int [][] schedules = {{1,4}, {5,6}, {8,9}, {2,6}};
-/*		System.out.println("0 Positive test case "+returnMinSchedules(new int [][]{{0,30}, {5,10}, {15,20}}));
-		System.out.println("1 Positive test case "+returnMinSchedules(new int [][]{{1,4}, {5,6}, {8,9}, {2,6}}));
-		System.out.println("2 Positive test case "+returnMinSchedules(new int [][]{{1,4},{8,9}}));
-		System.out.println("3 Positive test case "+returnMinSchedules(new int [][]{{1,4}}));*/
-		//System.out.println("4 Positive test case "+returnMinSchedules(new int [][]{{1,2}, {2,3}, {3,4}, {4,5}, {5,6}}));
-		System.out.println("5 Positive test case "+returnMinSchedules(new int [][]{{1,2}, {4,5}, {3,4}, {2,7}}));
-		System.out.println("1 Negative test case "+returnMinSchedules(null));
-		System.out.println("2 Negative test case "+returnMinSchedules(new int [][]{}));
+		start = "red";
+		end = "tax";
+		words = Arrays.asList("ted","tex","red","tax","tad","den","rex","pee");
+
+        Solution class1 = new Solution();
+        System.out.println(class1.ladderLength(start, end, words));
+
+    }
+
+	public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+    	Queue<String> q = new LinkedList<>();
+    	q.add("1-"+beginWord);
+    	Set<String> excludeList = new HashSet<>();
+    	excludeList.add(beginWord);
+
+    	while(!q.isEmpty()){
+
+    		String pop = q.poll();
+    		List<String> childrens = getChildrens(pop, wordList, excludeList);
+
+    		if(childrens.isEmpty())
+    			continue;
+    		else{
+    			boolean isEndWord = isEndWord(childrens, endWord, q);
+    			if(isEndWord)
+    				return Integer.parseInt(pop.split("-")[0]) + 1;
+			}
+		}
+
+    	return 0;
+
+    }
+
+	private boolean isEndWord(List<String> children, String endWord, Queue<String> q) {
+
+    	for(String str: children){
+    		if((str.split("-")[1]).equalsIgnoreCase(endWord))
+    			return true;
+    		else
+    			q.add(str);
+		}
+
+    	return false;
 
 	}
 
-	// 1. Two pointers
-	// 2. PQ
+	private List<String> getChildrens(String stringWithTreeLevel, List<String> wordList, Set<String> excludeList) {
 
-	public static int returnMinSchedules(int [][] schedules){
+    	String[] strArr = stringWithTreeLevel.split("-");
+    	String str = strArr[1];
 
-		if(schedules == null || schedules.length == 0){
-			return 0;
-		}
+    	List<String> out = new ArrayList<>();
+    	Set<String> set = new HashSet<>(wordList);
 
-		if(schedules.length == 1){
-			return 1;
-		}
+    	for(int j =0 ; j < str.length(); j++){
 
-		// Ignoring negative case
-		int minSchedules = 0;
-		int ignoreIndex = -1;
+			String right = "";
+			String left = "";
 
-		// 1. Sort Schedules by start time
-		//(1, 4), (1, 6)
-		// (1, 4), (2, 6)
-		// (2, 4), (1, 6)
-		// Sort intervals by start time
-		Arrays.sort(schedules, (left, right) -> left[0] - right[0]);
-
-		// Create Max heap
-		PriorityQueue<Integer> pq = new PriorityQueue<Integer>((a, b) -> b - a);
-
-		// Adding first entry
-		pq.add(schedules[0][0]); // 1
-		pq.add(schedules[0][1]); // 4
-
-		for(int j=1; j< schedules.length; j++){
-
-			if(schedules[j][0] != -1) {
-
-				int currStart = schedules[j][0]; // 8
-				int currEnd = schedules[j][1]; // 9
-
-				Integer top = null;
-				if (!pq.isEmpty()) {
-					top = pq.remove();  // 6
-				} else {
-					System.out.println("PQ is empty");
-					continue;
-				}
-
-				// 4 > 2 , 4 > 5, 6 > 8
-				if (top > currStart) {
-					if(ignoreIndex < 0)
-						ignoreIndex = j;
-
-					pq.offer(top); // 4
-
-					if(j+1 == schedules.length && ignoreIndex > -1) {
-						pq.remove();
-						pq.remove();
-						pq.add(schedules[ignoreIndex][0]); //1
-						pq.add(schedules[ignoreIndex][1]); // 4
-						j = ignoreIndex;
-						ignoreIndex = -1;
-						continue;
-					}
-
-				} else {
-					if(minSchedules == 0){
-						minSchedules ++;
-					}
-					//pq.remove(); // 1
-					pq.offer(currEnd);
-
-					// Ignore this schedule
-					schedules[j][0] = -1;
-
-					if(j+1 == schedules.length && ignoreIndex != -1) {
-						pq.remove();
-						pq.remove();
-						pq.add(schedules[ignoreIndex][0]); //1
-						pq.add(schedules[ignoreIndex][1]); // 4
-						j = ignoreIndex;
-						ignoreIndex = -1;
-						continue;
-					}
-
-					// All schedules are considered
-					if(j+1 == schedules.length && ignoreIndex == -1){
-						pq.remove();
-						pq.remove();
-					}
-
-				}
+    		if(j == 0){
+    			right = str.substring(1);
+    			left = "";
+			}else{
+    			left = str.substring(0, j);
+    			right = j+1 < str.length()  ? str.substring(j+1) : right;
 			}
 
+			for (char ch = 'a';  ch <= 'z' ; ++ch)
+				if(set.contains(left + ch +right) && !excludeList.contains(left + ch +right)){
+					out.add((Integer.parseInt(strArr[0]) + 1)+ "-"+left + ch +right);
+					excludeList.add(left+ch+right);
+				}
 		}
-
-		if(!pq.isEmpty()){
-			minSchedules++;
-		}
-
-		return minSchedules;
+    	return out;
 	}
 }

@@ -1,6 +1,7 @@
 package Array.problems;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
@@ -32,16 +33,14 @@ public class KLargest {
 
     private int findKthLargestUsingPQ(int[] a, int k) {
 
+        System.out.println("Input array: "+Arrays.toString(a));
 
-         PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>((a1, a2) -> a1.compareTo(a2));
+         PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>((c,d) -> d-c);
 
         for (int i = 0; i < a.length; i++) {
             minHeap.offer(a[i]);
 
-            if(minHeap.size() > k){
-                // Remove top element
-                minHeap.poll();
-            }
+            System.out.println(minHeap);
 
         }
 

@@ -4,8 +4,6 @@ import list.linkedlist.single.ListNode;
 import list.linkedlist.single.SinglyLinkedList;
 
 import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class RemoveDupsFromLinkedList {
