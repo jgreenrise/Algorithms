@@ -1,7 +1,6 @@
 package Array.problems;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
@@ -14,7 +13,7 @@ public class KLargest {
 
         KLargest class1 = new KLargest();
         //a = new int[] { 50, 40, 60, 30, 10, 20 };
-        int [] a = new int[]{3,2,3,1,2,4,5,5,6};
+        int[] a = new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6};
 
         /**
          * Using Quick Sort
@@ -33,45 +32,40 @@ public class KLargest {
 
     private int findKthLargestUsingPQ(int[] a, int k) {
 
-        System.out.println("Input array: "+Arrays.toString(a));
+        System.out.println("Input array: " + Arrays.toString(a));
+        PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>((c, d) -> d - c);
 
-         PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>((c,d) -> d-c);
-
-        for (int i = 0; i < a.length; i++) {
-            minHeap.offer(a[i]);
-
+        for (int j : a) {
+            minHeap.offer(j);
             System.out.println(minHeap);
-
         }
-
         return minHeap.poll();
-
 
     }
 
     public int findKthLargest(int[] nums, int k) {
-        return sort(nums, 0, nums.length-1, k);
+        return sort(nums, 0, nums.length - 1, k);
     }
 
     private int sort(int[] arr, int left, int right, int k) {
 
-        if(left < right){
+        if (left < right) {
 
             int partition = quickSort(arr, left, right);
             int length = arr.length;
-            int largestK = length-partition;
+            int largestK = length - partition;
 
-            if(largestK == k){
+            if (largestK == k) {
                 return arr[partition];
             }
 
-            if(partition > length - k)
-                return sort(arr, left, partition-1, k);   // Sort left partition
+            if (partition > length - k)
+                return sort(arr, left, partition - 1, k);   // Sort left partition
             else
-                return sort(arr, partition+1, right, k);   // Sort right partition
+                return sort(arr, partition + 1, right, k);   // Sort right partition
         }
 
-        if(left == right && k == 1){
+        if (left == right && k == 1) {
             return arr[left];
         }
 
@@ -86,17 +80,17 @@ public class KLargest {
         int left = inputLeft;
         int right = inputRight;
 
-        while(left < right){
+        while (left < right) {
 
-            while(arr[left] <= pivotVal && left < inputRight)
+            while (arr[left] <= pivotVal && left < inputRight)
                 left++;
-            while(arr[right] > pivotVal && right > inputLeft)
+            while (arr[right] > pivotVal && right > inputLeft)
                 right--;
 
-            if(left < right){
+            if (left < right) {
                 swap(arr, left, right);
-            }else{
-                if(pivotIndex != right)
+            } else {
+                if (pivotIndex != right)
                     swap(arr, pivotIndex, right);
             }
 

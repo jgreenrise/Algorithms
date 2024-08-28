@@ -76,3 +76,21 @@ a_0148_SortLinkedList {
     }
 
 }
+
+
+Example
+For a BST like this:
+markdown
+Copy code
+4
+/ \
+2   6
+/ \
+1   3
+Traversal Order: 1, 2, 3, 4, 6
+Differences:
+|2 - 1| = 1
+|3 - 2| = 1
+|4 - 3| = 1
+|6 - 4| = 2
+Minimum Difference: 1

@@ -1,81 +1,49 @@
 import list.linkedlist.single.ListNode;
-import list.linkedlist.single.SinglyLinkedList;
 
-/**
- * Input
- * 1, 7, 6, 6, 1, 1, 2, 0, Size: 8
- */
 public class a_0148_SortLinkedList {
 
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
+    public ListNode sortList(ListNode head) {
 
-        SinglyLinkedList list = new SinglyLinkedList();
-
-        // Add FIRST
-        list.addFirst(3);
-        list.addFirst(1);
-        list.addFirst(2);
-        list.addFirst(4);
-
-        System.out.println("Input");
-        list.printList();
-
-        ListNode output = sortList(list.start);
-
-        System.out.println("Output");
-        while (output != null) {
-            System.out.print(output.val + ", ");
-            output = output.next;
-        }
-
-    }
-
-    public static ListNode sortList(ListNode head) {
-
-        if (head.next == null) {
+        if (head == null)
             return head;
-        }
-        ListNode out = null;
+        if (head.next == null)
+            return head;
 
-        if (head != null && head.next != null) {
-            ListNode slowPtr = head;
-            ListNode leftPtr = slowPtr;
-            ListNode fastPtr = head;
-            ListNode left, right = null;
-
-            while (fastPtr.next != null && fastPtr.next.next != null) {
-                slowPtr = slowPtr.next;
-                fastPtr = fastPtr.next.next;
+        if (head.next != null) {
+            ListNode slow = head, fast = head;
+            ListNode out = slow;
+            while (fast.next != null && fast.next.next != null) {
+                slow = slow.next;
+                fast = fast.next.next;
             }
 
-            right = slowPtr.next;
-            slowPtr.next = null;
-            left = leftPtr;
+            ListNode left;
+            ListNode right;
+            right = slow.next;
+            slow.next = null;
+            left = out;
 
-            ListNode leftList = sortList(left);
-            ListNode rightList = sortList(right);
-
-            out = sortTwoListNode(leftList, rightList);
+            left = sortList(left);
+            right = sortList(right);
+            return merge(left, right);
         }
-
-        return out;
-
+        return head;
     }
 
-    public static ListNode sortTwoListNode(ListNode left, ListNode right) {
-
-        if (left == null) return right;
-        else if (right == null) return left;
-
-        if (left.val <= right.val) {
-            left.next = sortTwoListNode(left.next, right);
+    public ListNode merge(ListNode left, ListNode right) {
+        if (left == null) {
+            return right;
+        } else if (right == null) {
             return left;
         } else {
-            right.next = sortTwoListNode(left, right.next);
-            return right;
+            if (left.val <= right.val) {
+                left.next = merge(left.next, right);
+                return left;
+            } else {
+                right.next = merge(left, right.next);
+                return right;
+            }
         }
-
     }
 
 }

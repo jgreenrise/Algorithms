@@ -1,11 +1,9 @@
-package tree.problems;
-
 import java.util.*;
 
 /**
  * https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/solution/
  */
-class a_863_AllNodesDistanceKAwayBinaryTree {
+class a_0863_AllNodesDistanceKAwayBinaryTree {
 
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
 
@@ -21,10 +19,10 @@ class a_863_AllNodesDistanceKAwayBinaryTree {
 
     }
 
-    public void findChildNodesKDistanceAwayFromParents(TreeNode node, int k, Set<Integer> isVisited, List<Integer> out, Map<TreeNode, TreeNode> map){
+    public void findChildNodesKDistanceAwayFromParents(TreeNode node, int k, Set<Integer> isVisited, List<Integer> out, Map<TreeNode, TreeNode> map) {
 
         int counter = k;
-        while(map.get(node) != null){
+        while (map.get(node) != null) {
             counter--;
             TreeNode parent = map.get(node);
             findChildNodesKDistanceAway(parent, counter, isVisited, out);
@@ -33,19 +31,19 @@ class a_863_AllNodesDistanceKAwayBinaryTree {
 
     }
 
-    public void findChildNodesKDistanceAway(TreeNode node, int k, Set<Integer> isVisited, List<Integer> out){
+    public void findChildNodesKDistanceAway(TreeNode node, int k, Set<Integer> isVisited, List<Integer> out) {
 
-        if(node == null || isVisited.contains(node.val))
+        if (node == null || isVisited.contains(node.val))
             return;
 
-        if(k == 0){
+        if (k == 0) {
             out.add(node.val);
             return;
         }
 
         isVisited.add(node.val);
-        findChildNodesKDistanceAway(node.left, k-1, isVisited, out);
-        findChildNodesKDistanceAway(node.right, k-1, isVisited, out);
+        findChildNodesKDistanceAway(node.left, k - 1, isVisited, out);
+        findChildNodesKDistanceAway(node.right, k - 1, isVisited, out);
 
     }
 
@@ -55,12 +53,12 @@ class a_863_AllNodesDistanceKAwayBinaryTree {
     //          map, 6, 5, 2, f > {3:null, 5:3, 6:5}
     //              map, 10, 6, 2, f > {3:null, 5:3, 6:5, 10:6}
     //          map, 2, 5, 2, f > {3:null, 5:3, 6:5, 2:5}
-    public void buildMap(Map<TreeNode, TreeNode> map, TreeNode node, TreeNode parentNode, TreeNode target, Boolean isMatchFound){
+    public void buildMap(Map<TreeNode, TreeNode> map, TreeNode node, TreeNode parentNode, TreeNode target, Boolean isMatchFound) {
 
-        if(node == null || isMatchFound)
+        if (node == null || isMatchFound)
             return;
 
-        if(node.val == target.val)
+        if (node.val == target.val)
             isMatchFound = true;
 
         map.put(node, parentNode);
@@ -82,7 +80,7 @@ class a_863_AllNodesDistanceKAwayBinaryTree {
 
     public static void main(String args[]) {
 
-        a_863_AllNodesDistanceKAwayBinaryTree class1 = new a_863_AllNodesDistanceKAwayBinaryTree();
+        a_0863_AllNodesDistanceKAwayBinaryTree class1 = new a_0863_AllNodesDistanceKAwayBinaryTree();
         TreeNode node0 = new TreeNode(0);
         TreeNode node1 = new TreeNode(1);
         TreeNode node2 = new TreeNode(2);
@@ -124,7 +122,6 @@ class a_863_AllNodesDistanceKAwayBinaryTree {
         node0.right= node2;
         System.out.println(class1.distanceK(node0, node3, 3));
         */
-
 
 
     }
