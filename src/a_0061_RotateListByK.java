@@ -74,4 +74,50 @@ public class a_0061_RotateListByK {
         return out;
 
     }
+
+    public ListNode rotateRight(ListNode head, int k) {
+
+        if (head == null || head.next == null) return head;
+
+        int totNodes = 0;
+        ListNode node = head;
+        while (node != null) {
+            totNodes++;
+            node = node.next;
+        }
+        //System.out.println("Total Nodes: "+totNodes);
+        if (totNodes == k) {
+            return head;
+        } else if (totNodes < k) {
+            k = k % totNodes;
+            //System.out.println("Revised k: "+k);
+        }
+
+        if (k == 0) return head;
+
+        int navigateToNode = totNodes - k;
+        int counter = 0;
+
+        ListNode origHead = head;
+        ListNode newHead = null;
+        ListNode newTail = null;
+        node = origHead;
+        while (node != null) {
+            counter++;
+            if (counter == navigateToNode) {
+                newHead = node.next;
+                newTail = node.next;
+                node.next = null;
+                while (newTail.next != null) {
+                    newTail = newTail.next;
+                }
+                newTail.next = origHead;
+                break;
+            }
+            node = node.next;
+        }
+
+        return newHead;
+
+    }
 }

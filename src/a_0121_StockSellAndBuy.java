@@ -1,67 +1,54 @@
 public class a_0121_StockSellAndBuy {
-    public static void main(String[] args) {
-
-        int[] arr_i_input = {7, 1, 5, 3, 6, 4};
-        //int[] arr_i_input = {2,1,2,1,0,1,2};
-        //int[] arr_i_input = {2,1,4};
-        //int[] arr_i_input = { 1,2,3,4,5};
-
-    }
 
     /**
-     * Find Max on the right Hand side: max_so_far
-     *
-     * 1. Initialize: Set maxprofit to 0 and max_so_far to the last price in the array.
-     * 2. Iterate: Traverse the prices from right to left, updating max_so_far if a higher price is found. Compute potential profit and update maxprofit if it's higher than the current maxprofit.
-     * 3. Return: Output the maximum profit found.
-     *
+     * 7   1   5   3   6   4
+     * 7   6   6   6   6   4
+     * 0   1   2   3   4   5
      */
     public int maxProfit(int[] prices) {
+        int n = prices.length;
+        if (n == 1) return 0;
+        int max_so_far = prices[n - 1];
+        int ans = -1;
 
-        int maxprofit = 0;
-        int max_so_far = prices[prices.length-1]; // 4
-        for(int j = prices.length-2; j >= 0; j--){
-            //System.out.println("Compare: "+profit+"\t prices[j]: "+prices[j]);
-            if(max_so_far > prices[j]){
-                maxprofit = Math.max(max_so_far - prices[j], maxprofit);
-                //System.out.println("\tProfit: "+profit+"\t maxProfit: "+maxprofit);
-            }else{
-                max_so_far = prices[j];
-                //System.out.println("\tProfit updated: "+profit+"\t maxProfit: "+maxprofit);
+        for (int k = n - 2; k >= 0; k--) {
+            if (prices[k] > max_so_far) {
+                max_so_far = prices[k];
+            } else {
+                ans = Math.max(ans, max_so_far - prices[k]);
             }
         }
-        return maxprofit;
+        return ans == -1 ? 0 : ans;
     }
 
-
     /**
-     * Right Sum / prefix approach: Store maxSoFar in rightSum array
-     *
-     * 1. Create right Array: Populate it with the maximum future prices from each day.
-     * 2. Compute Profit: Calculate the maximum profit by comparing each day's price with the future maximum price.
-     * 3. Return Result: Return the highest profit obtained.
-     *
+     * 7   1   5   3   6   4
+     * 7   6   6   6   6   4
      */
-    public int maxProfitUsingleftPrefix(int[] prices) {
+    public int maxProfitUsingLeftSumArray(int[] prices) {
 
-        int [] right = new int [prices.length];
-        int max = prices[prices.length-1];
-        right[prices.length-1] = max;
-        for(int j = prices.length-2; j >= 0; j--){
-            max = Math.max(prices[j], max);
-            right[j] = max;
-        }
-        //System.out.println(Arrays.toString(right));
+        int n = prices.length;
+        if (n == 1) return 0;
 
-        int maxProfit = 0;
-        for(int j = 0; j< prices.length-1; j++){
-            if(prices[j] <= right[j+1]){
-                maxProfit = Math.max(maxProfit, right[j+1]- prices[j]);
+        int[] right_sum = new int[prices.length];
+        right_sum[n - 1] = prices[n - 1];
+        int max_so_far = prices[n - 1];
+
+        for (int k = n - 2; k >= 0; k--) {
+            if (prices[k] > max_so_far) {
+                right_sum[k] = prices[k];
+                max_so_far = right_sum[k];
+            } else {
+                right_sum[k] = max_so_far;
             }
         }
 
-        return maxProfit;
+        int ans = Integer.MIN_VALUE;
+        for (int k = 0; k < n - 1; k++) {
+            ans = Math.max(ans, right_sum[k + 1] - prices[k]);
+        }
 
+        return ans == -1 ? 0 : ans;
     }
 
 }

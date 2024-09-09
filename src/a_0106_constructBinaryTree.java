@@ -4,32 +4,36 @@ import tree.bst.TreeNode;
 
 public class a_0106_constructBinaryTree {
 
-    public int currindex = 0;
+    int globalIndex = 0;
 
     public TreeNode buildTree(int[] inorder, int[] postorder) {
 
-        currindex = postorder.length - 1;
-        int n = inorder.length;
-
         Map<Integer, Integer> map = new HashMap<>();
-        for (int k = 0; k < inorder.length; k++)
-            map.put(inorder[k], k);
+        for (int i = 0; i < inorder.length; i++) {
+            map.put(inorder[i], i);
+        }
+        globalIndex = inorder.length - 1;
 
-        return buildTree(inorder, postorder, map, 0, inorder.length - 1);
+        return buildTreeNodeByRange(map, inorder, postorder, 0, inorder.length - 1);
     }
 
-    public TreeNode buildTree(int[] inorder, int[] postorder, Map<Integer, Integer> map, int start, int end) {
+    /**
+     * 9,  3,  15,     20,     7
+     * 0,  1,  2,      3,      4
+     * <p>
+     * Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]
+     * Output: [3,9,20,null,null,15,7]
+     */
+    public TreeNode buildTreeNodeByRange(Map<Integer, Integer> map, int[] inorder, int[] postorder, int left, int right) {
 
-        if (currindex < 0) return null;
-        TreeNode node = new TreeNode(postorder[currindex--]);
-        if (start >= end) return node;
+        TreeNode node = new TreeNode(postorder[globalIndex--]);
+        Integer nodeIndex = map.get(node.val);
 
-        int index = map.get(node.val);
-        if (index != end) node.right = buildTree(inorder, postorder, map, index + 1, end); // Node with no right elems
-        if (index != start) node.left = buildTree(inorder, postorder, map, start, index - 1); // Node with no left elems
+        if (nodeIndex < right) node.right = buildTreeNodeByRange(map, inorder, postorder, nodeIndex + 1, right);
+        if (nodeIndex > left) node.left = buildTreeNodeByRange(map, inorder, postorder, left, nodeIndex - 1);
+
         return node;
     }
-
 
 }
 
