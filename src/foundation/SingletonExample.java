@@ -1,5 +1,7 @@
 package foundation;
 
+import java.io.Serializable;
+
 public class SingletonExample {
 
     // Factory class to manage the singleton instance creation

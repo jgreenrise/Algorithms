@@ -3,7 +3,7 @@ import list.linkedlist.single.ListNode;
 // https://leetcode.com/problems/rotate-list/?envType=study-plan-v2&envId=top-interview-150
 public class a_0061_RotateListByK {
 
-    public ListNode rotateRight(ListNode head, int k) {
+    public ListNode rotateRightv1(ListNode head, int k) {
 
         if (head == null) return head;
         if (head.next == null) return head;
@@ -75,7 +75,7 @@ public class a_0061_RotateListByK {
 
     }
 
-    public ListNode rotateRight(ListNode head, int k) {
+    public static ListNode rotateRight(ListNode head, int k) {
 
         if (head == null || head.next == null) return head;
 

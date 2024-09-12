@@ -10,7 +10,4 @@ public class IndexOf {
         System.out.println(str2.indexOf(str1)); // Output: 7
     }
 
-    a79_WordSearchEmpty
-
-
 }

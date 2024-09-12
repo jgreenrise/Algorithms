@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class CustomTrieNode {
 
+    public boolean isEndOfWord;
     HashMap<Character, CustomTrieNode> map;
     boolean isCompleted;
 

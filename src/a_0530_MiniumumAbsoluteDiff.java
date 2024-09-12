@@ -1,3 +1,5 @@
+import tree.bst.TreeNode;
+
 public class a_0530_MiniumumAbsoluteDiff {
 
     TreeNode prev = null;

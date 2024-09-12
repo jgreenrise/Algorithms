@@ -25,7 +25,7 @@ public class SubStringProblemsTemplate {
 
         // Step 2 - optional
         char[] chS = s.toCharArray();
-        for {   /* initilize the hash map here */   }
+        for (int k = 0; k < 99; k++) {   /* initilize the hash map here */ }
 
         while (r < n) {
             // Step 3: EXPAND
