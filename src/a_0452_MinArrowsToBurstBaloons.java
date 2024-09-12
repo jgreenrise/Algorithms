@@ -2,7 +2,6 @@ import java.util.Arrays;
 
 public class a_0452_MinArrowsToBurstBaloons {
     // [[10,16],[2,8],[1,6],[7,12]]
-
     public int findMinArrowShots(int[][] points) {
 
         //Arrays.sort(points, (a,b) -> a[0]-b[0]);    // After sorting: 1,6   2,8     7,12    10,16
@@ -45,5 +44,17 @@ public class a_0452_MinArrowsToBurstBaloons {
 
         }
         return arrows;
+    }
+
+    public int findMinArrowShotsV2(int[][] segments) {
+        Arrays.sort(segments, (a, b) -> Integer.compare(a[1], b[1]));
+        int ans = 0, arrow = 0;
+        for (int i = 0; i < segments.length; i++) {
+            if (ans == 0 || segments[i][0] > arrow) {
+                ans++;
+                arrow = segments[i][1];
+            }
+        }
+        return ans;
     }
 }

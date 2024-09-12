@@ -1,28 +1,42 @@
+import java.util.Arrays;
+
 public class a_0033_SearchInRotatedArray {
 
     public int search(int[] nums, int target) {
-        return search(nums, target, 0, nums.length - 1);
-    }
+        int left = 0;
+        int right = nums.length - 1;
+        int n = nums.length;
 
-    // 4,5,6,7,0,1,2        t = 0, 0, 6
-    public int search(int[] nums, int target, int left, int right) {
+        if (n == 1)
+            return nums[0] == target ? 0 : -1;
+        System.out.println("nums: " + Arrays.toString(nums) + ", target: " + target);
 
-        int leftVal = nums[left]; // 4
-        int rightVal = nums[right]; // 2
+        while (left <= right && right < n) {
 
-        if (leftVal == target) {
-            return left;
-        } else if (rightVal == target) {
-            return right;
-        } else if (left + 1 == right || left == right) {
-            return -1;
+            if (target == nums[left]) return left;
+            if (target == nums[right]) return right;
+            if (left == right) return -1;
+            if (right + 1 == right) return -1;
+            int mid = left + (right - left) / 2;    // 0 + 6/2: 3   4 + (2/2): 5    4
+            if (nums[mid] == target) return mid;
+
+            // 4 5 6 7* 0 1 2
+            if (nums[mid] > nums[left]) {
+                if (target >= nums[left] && target < nums[mid]) {
+                    right = mid - 1;
+                } else {
+                    left = mid + 1;
+                }
+            } else {
+                if (target > nums[mid] && target <= nums[right]) {
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
+                }
+            }
+
         }
 
-        int resp = search(nums, target, left, (left + right) / 2);
-        if (resp == -1) {
-            resp = search(nums, target, (left + right) / 2 + 1, right);
-        }
-        return resp;
-
+        return -1;
     }
 }
