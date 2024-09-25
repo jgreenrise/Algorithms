@@ -1,142 +1,165 @@
-
----
-
-### Story: The Reliable Notification System
-
-**Title: "The Tale of the Reliable Notification System"**
-
----
-
-Once upon a time in a bustling tech town, there was a company named **TechTales** that wanted to send notifications to their customers via email. They had a simple plan: create a notification service that would send emails and ensure that every customer got their message. But, as the company grew, they realized that their notification system needed to be more robust.
-
-**1. The Basic Email Service**
-
-In the early days, TechTales had a straightforward service called **EmailNotificationService**. This service was responsible for sending out emails:
+In this example, you have an `AreaCalculator` class that calculates the area of a rectangle. The current implementation only works for rectangles:
 
 ```java
-public class EmailNotificationService implements NotificationService {
+class Rectangle {
+    private double length;
+    private double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+}
+
+class AreaCalculator {
+    public double calculateArea(Rectangle rectangle) {
+        return rectangle.getLength() * rectangle.getWidth();
+    }
+}
+```
+
+Here, the `calculateArea` method is designed specifically for the `Rectangle` class. If you want to add support for another shape, like a **circle**, you would need to modify the `AreaCalculator` class to include logic for the new shape. For example:
+
+### Modifying `AreaCalculator` for a Circle:
+```java
+class Circle {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+}
+
+class AreaCalculator {
+    // Now it has to handle both rectangles and circles
+    public double calculateArea(Rectangle rectangle) {
+        return rectangle.getLength() * rectangle.getWidth();
+    }
+
+    public double calculateArea(Circle circle) {
+        return Math.PI * circle.getRadius() * circle.getRadius();
+    }
+}
+```
+
+By modifying `AreaCalculator` to add support for a circle, we are violating the **Open/Closed Principle** because we **modified** the existing class to handle new shapes.
+
+### Problems with This Approach:
+1. **Code Duplication**: If we add more shapes (e.g., triangles, hexagons), the `AreaCalculator` class will keep growing in size with duplicated logic for area calculations.
+2. **Difficult to Maintain**: Every time a new shape is introduced, we need to modify the `AreaCalculator` class, which increases the risk of bugs.
+3. **Violation of Open/Closed Principle**: The `AreaCalculator` class is not **closed** for modification, since we have to change it whenever we add a new shape.
+
+### Solution Using the Open/Closed Principle:
+To adhere to the Open/Closed Principle, we can design the system so that new shapes can be added without modifying the `AreaCalculator` class. We can achieve this by using **polymorphism** through interfaces or abstract classes.
+
+Here's how we can refactor the code:
+
+### Refactored Design Using the Open/Closed Principle:
+
+1. **Create a `Shape` Interface**:
+    - This interface will define a contract for any shape to implement the `calculateArea` method.
+
+2. **Implement `Shape` for Each Shape Class**:
+    - Each shape (e.g., `Rectangle`, `Circle`) will implement the `Shape` interface and provide its own logic for calculating the area.
+
+3. **Refactor `AreaCalculator`**:
+    - The `AreaCalculator` class will now only interact with the `Shape` interface, without needing to know the specific type of shape.
+
+```java
+// Step 1: Define the Shape interface
+interface Shape {
+    double calculateArea();
+}
+
+// Step 2: Implement Shape interface for Rectangle
+class Rectangle implements Shape {
+    private double length;
+    private double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
     @Override
-    public void sendNotification(String message) {
-        System.out.println("Sending email: " + message);
+    public double calculateArea() {
+        return length * width;
     }
 }
-```
 
-Everything worked fine, but as the volume of emails increased, so did the number of issues—sometimes emails failed to send, and customers were left in the dark.
+// Step 3: Implement Shape interface for Circle
+class Circle implements Shape {
+    private double radius;
 
-**2. The Logging Hero**
-
-To tackle this, TechTales hired **LoggingNotificationServiceDecorator** to keep track of every notification:
-
-```java
-public class LoggingNotificationServiceDecorator implements NotificationService {
-    private final NotificationService decoratedService;
-
-    public LoggingNotificationServiceDecorator(NotificationService decoratedService) {
-        this.decoratedService = decoratedService;
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
     @Override
-    public void sendNotification(String message) {
-        System.out.println("Logging notification: " + message);
-        decoratedService.sendNotification(message);
+    public double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
+// Step 4: Refactor AreaCalculator to work with the Shape interface
+class AreaCalculator {
+    public double calculateArea(Shape shape) {
+        return shape.calculateArea();
     }
 }
 ```
 
-The **LoggingDecorator** was like a diligent scribe, noting every message sent and making sure that no detail was missed. It was a great addition, but TechTales still faced occasional problems where notifications failed to be delivered.
+### Advantages of This Approach:
+- **Closed for Modification**: The `AreaCalculator` class is now closed for modification. You no longer need to modify it to add support for new shapes.
+- **Open for Extension**: If you want to add a new shape (e.g., triangle), you simply create a new class that implements the `Shape` interface and define its area calculation logic.
 
-**3. The Retry Champion**
-
-To handle the failures, they introduced **RetryNotificationServiceDecorator**, a true champion of reliability:
+For example, adding a triangle:
 
 ```java
-public class RetryNotificationServiceDecorator implements NotificationService {
-    private static final int MAX_RETRIES = 3;
-    private final NotificationService decoratedService;
+class Triangle implements Shape {
+    private double base;
+    private double height;
 
-    public RetryNotificationServiceDecorator(NotificationService decoratedService) {
-        this.decoratedService = decoratedService;
+    public Triangle(double base, double height) {
+        this.base = base;
+        this.height = height;
     }
 
     @Override
-    public void sendNotification(String message) {
-        int attempts = 0;
-        while (attempts < MAX_RETRIES) {
-            try {
-                System.out.println("Retrying... Attempt " + (attempts + 1));
-                decoratedService.sendNotification(message);
-                break;
-            } catch (Exception e) {
-                attempts++;
-                if (attempts >= MAX_RETRIES) {
-                    throw new RuntimeException("Failed after retries", e);
-                }
-            }
-        }
+    public double calculateArea() {
+        return 0.5 * base * height;
     }
 }
 ```
 
-The **RetryDecorator** was like a tenacious guardian, retrying to send the notification multiple times if the first attempt failed. It ensured that every notification was eventually delivered, even in the face of intermittent problems.
-
-**4. The Heroic Ensemble**
-
-TechTales then combined all these services in their Spring Boot application, creating a powerful notification system:
+Now you can calculate the area of any shape without changing the `AreaCalculator` class:
 
 ```java
-@Configuration
-public class AppConfig {
-    @Bean
-    public NotificationService emailNotificationService() {
-        return new EmailNotificationService();
-    }
+class Main {
+    public static void main(String[] args) {
+        Shape rectangle = new Rectangle(10, 20);
+        Shape circle = new Circle(5);
+        Shape triangle = new Triangle(10, 5);
 
-    @Bean
-    public NotificationService loggingNotificationService(NotificationService emailNotificationService) {
-        return new LoggingNotificationServiceDecorator(emailNotificationService);
-    }
+        AreaCalculator calculator = new AreaCalculator();
 
-    @Bean
-    public NotificationService retryNotificationService(NotificationService loggingNotificationService) {
-        return new RetryNotificationServiceDecorator(loggingNotificationService);
+        System.out.println("Rectangle Area: " + calculator.calculateArea(rectangle));
+        System.out.println("Circle Area: " + calculator.calculateArea(circle));
+        System.out.println("Triangle Area: " + calculator.calculateArea(triangle));
     }
 }
 ```
 
-In this setup, the **RetryDecorator** wrapped around the **LoggingDecorator**, which in turn wrapped around the core **EmailNotificationService**. This setup ensured that every email was sent, logged, and retried if needed.
-
-**5. The Controller**
-
-Lastly, TechTales had a **NotificationController** to trigger this robust notification system:
-
-```java
-@RestController
-public class NotificationController {
-    private final NotificationService notificationService;
-
-    @Autowired
-    public NotificationController(NotificationService notificationService) {
-        this.notificationService = notificationService;
-    }
-
-    @PostMapping("/send")
-    public ResponseEntity<String> sendNotification(@RequestBody String message) {
-        notificationService.sendNotification(message);
-        return ResponseEntity.ok("Notification sent!");
-    }
-}
-```
-
-The **NotificationController** was like the manager, calling upon the combined power of the decorators to ensure that every customer received their notification.
-
----
-
-And so, TechTales enjoyed a reliable and efficient notification system that combined logging, retry logic, and core email sending functionality—all thanks to the Decorator Pattern!
-
-**[Fade Out]**
-
-**Host (Voiceover):**
-Thanks for joining us in this tale of notification reliability. If you enjoyed this story and want more tech insights, don’t forget to like, subscribe, and hit the bell icon for updates!
-
----
+This design adheres to the **Open/Closed Principle** and makes the system more scalable and easier to maintain.

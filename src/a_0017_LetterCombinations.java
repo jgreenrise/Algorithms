@@ -3,83 +3,85 @@ import java.util.List;
 
 public class a_0017_LetterCombinations {
 
-    // This method generates all possible letter combinations for the given digit string
+    // Using For Loop
     public List<String> letterCombinations(String digits) {
 
-        // If the input is empty or contains only whitespace, return an empty list
-        if ((digits.trim()).length() == 0) {
-            return List.of();
-        }
-
-        // Mapping of digits to corresponding letters on a phone keypad
-        String digitletter[] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        char[] charDigitis = digits.toCharArray();
+        int n = digits.length();
+        String[] mapping = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         List<String> out = new ArrayList<>();
-        StringBuilder sbr = new StringBuilder();
+        if (n == 0) return List.of();
 
-        // Start generating combinations from index 0
-        generateCombinations(0, digits, digitletter, out, sbr);
+        int[] intDigits = new int[digits.length()];
+        int counter = 0;
+        for (char ch : charDigitis) {
+            intDigits[counter++] = (int) (ch - '0');
+        }
+        combineForloop(0, intDigits, out, mapping, new StringBuilder());
         return out;
     }
 
-    // Recursive helper method to generate letter combinations
-    public void generateCombinations(int idx, String digits, String[] digitletter, List<String> list, StringBuilder sbr) {
-
-        // If we've reached the end of the input digits, add the current combination to the list
-        if (idx == digits.length()) {
-            list.add(sbr.toString());
-            return;
-        }
-
-        // Get the letters corresponding to the current digit
-        String alphabets = digitletter[digits.charAt(idx) - '0'];
-
-        // Loop through each letter and recursively generate combinations for the next digit
-        for (int k = 0; k < alphabets.length(); k++) {
-            sbr.append(alphabets.charAt(k)); // Add letter to the current combination
-            generateCombinations(idx + 1, digits, digitletter, list, sbr); // Recur for the next digit
-            sbr.deleteCharAt(sbr.length() - 1); // Remove last letter to backtrack
-        }
-    }
-
-    // This method generates all possible letter combinations for the given digit string without recursion
-    public List<String> letterCombinationsNoRecursive(String digits) {
-
-        // If the input is empty or contains only whitespace, return an empty list
-        if ((digits.trim()).length() == 0) {
-            return List.of();
-        }
-
-        // Mapping of digits to corresponding letters on a phone keypad
-        String digitletter[] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-        List<String> out = new ArrayList<>();
-
-        // Iterate through each digit and combine with current results
-        for (int j = 0; j < digits.length(); j++)
-            out = combine(digitletter[digits.charAt(j) - '0'], out);
-
-        return out;
-    }
-
-    // Helper method to combine existing results with new letters
-    public List<String> combine(String alphabets, List<String> out) {
-
-        List<String> result = new ArrayList<>();
-
-        // If out is empty, initialize result with single-letter combinations
-        if (out.isEmpty()) {
-            for (int k = 0; k < alphabets.length(); k++)
-                result.add(String.valueOf(alphabets.charAt(k)));
-            return result;
-        }
-
-        // Combine each letter with each existing result
-        for (int k = 0; k < alphabets.length(); k++) {
-            for (String x : out) {
-                result.add(x + alphabets.charAt(k));
+    /**
+     * 2 3 4
+     * Abc def ghi
+     * 0, 234, {}, mapping, ""
+     * 1, 234, {}, mapping, "a"
+     * 2, 234, {}, mapping, "ad"
+     * 2, 234, {}, mapping, "ae"
+     * 2, 234, {}, mapping, "af"
+     */
+    public void combineForloop(int index, int[] digits, List<String> out, String[] mapping, StringBuilder sbr) {
+        if (index == digits.length) {
+            out.add(sbr.toString()); // adg, adh adi, aeg..., aei
+        } else {
+            String mappedChars = mapping[digits[index]]; // abc def ghi
+            for (char ch : mappedChars.toCharArray()) {
+                sbr.insert(index, ch); // ad ae af
+                combineForloop(index + 1, digits, out, mapping, sbr);
+                sbr.deleteCharAt(index); // a, a
             }
         }
 
-        return result;
+    }
+
+    /**
+     * Using Combine Method
+     *
+     * @param digits
+     * @return
+     */
+    public List<String> letterCombinationsUsingCombinemethod(String digits) {
+
+        char[] charDigitis = digits.toCharArray();
+        String[] mapping = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        List<String> out = new ArrayList<>();
+
+        for (char digit : charDigitis) {
+            out = combine(digit, out, mapping);
+        }
+
+        return out;
+    }
+
+    // 46 - ghi, mno
+    public List<String> combine(char digit, List<String> list, String[] mapping) {
+        String mappedChars = mapping[(int) (digit - '0')];
+        if (list.isEmpty()) {
+            for (char ch : mappedChars.toCharArray()) {
+                list.add(String.valueOf(ch)); // [g, h, i]
+            }
+            return list;
+        } else {
+            // mappedChars = mapping[digit]; - [mno]
+            // List: [g, h, i]
+            List<String> out = new ArrayList<>();
+            for (char ch : mappedChars.toCharArray()) { // m n o
+                for (String str : list) { // g
+                    out.add(str + ch); // mg, mh, mi ng, nh, ni
+                }
+            }
+            return out;
+        }
     }
 
 }
