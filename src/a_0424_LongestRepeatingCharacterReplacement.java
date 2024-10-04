@@ -2,34 +2,37 @@ public class a_0424_LongestRepeatingCharacterReplacement {
 
     public int characterReplacement(String s, int k) {
 
-        int l = 0, r = 0, winLen = 0, n = s.length(), ans = Integer.MIN_VALUE, maxlen = 0;
-        int[] map = new int[26]; // Freq map
+        int left = 0, right = 0, winLen = 0, maxlen = Integer.MIN_VALUE, ans = 0, n = s.length();
+        int[] freqMap = new int[26];
         boolean matchFound = false;
 
-        while (r < n) {
+        while (right < n) {
 
-            char chAtR = s.charAt(r);
-            map[chAtR - 'A']++;
-            winLen = r - l + 1;
-            maxlen = Integer.max(maxlen, map[chAtR - 'A']);
+            char currChar = s.charAt(right);
+            freqMap[currChar - 'A']++;
+            maxlen = Integer.max(maxlen, freqMap[currChar - 'A']);
+            winLen = right - left + 1;
 
-            while (l < n && (winLen - maxlen) > k) {
-                ans = Math.max(ans, r - l);
-                map[s.charAt(l) - 'A']--;
-                l++;
-                winLen = r - l + 1;
+            if (winLen - maxlen > k) {
+                //System.out.println("left: "+left+", right: "+right+", maxLen: "+maxlen+", winLen: "+winLen);
+                ans = Math.max(ans, right - left);
+                char leftChar = s.charAt(left);
+                if (left < n && s.charAt(left) == leftChar) {
+                    freqMap[leftChar - 'A']--;
+                    left++;
+                }
                 matchFound = true;
             }
-            r++;
+
+            right++;
         }
 
-        if (!matchFound)
-            return winLen;                  // AABB, k = 2
-
-        if (r - l > ans)
-            ans = Math.max(ans, r - l);     // ABAA, k = 0
+        if (!matchFound) {
+            return s.length();
+        } else {
+            ans = Math.max(ans, right - left);
+        }
 
         return ans;
-
     }
 }

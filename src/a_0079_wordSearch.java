@@ -1,92 +1,57 @@
-/**
- * https://leetcode.com/problems/word-search/
- */
+import java.util.HashSet;
+import java.util.Set;
+
 public class a_0079_wordSearch {
 
-    public static void main(String args[]) {
-
-        char[][] matrix = {
-                {'A', 'B', 'C', 'E'},
-                {'S', 'F', 'C', 'S'},
-                {'A', 'D', 'E', 'E'}
-        };
-
-        a_0079_wordSearch class1 = new a_0079_wordSearch();
-
-        //System.out.println("\n*****ABCCED*******\n" + class1.exist(matrix, "ABCCED"));
-        //System.out.println("\n*****ABCCED*******\n" + class1.existDFS(matrix, "ABCCED"));
-
-        matrix = new char[][]{
-                {'A', 'B', 'C', 'E'},
-                {'S', 'F', 'C', 'S'},
-                {'A', 'D', 'E', 'E'}
-        };
-
-        System.out.println("\n*****SEE*******\n" + class1.exist(matrix, "SEE"));
-        System.out.println("\n*****SEED*******\n" + class1.exist(matrix, "SEED"));
-        //System.out.println("\n*****SEE*******\n" + class1.exist(matrix, "SEE"));
-
-        //System.out.println("\n*****ABCB*******\n" + class1.existDFS(matrix, "ABCB"));
-        //System.out.println("\n*****ABCB*******\n" + class1.exist(matrix, "ABCB"));
-
-        matrix = new char[][]{{'A'}};
-        //System.out.println("\n*****ABCB*******\n" + class1.existDFS(matrix, "A"));
-       /* System.out.println("\n*****A*******\n" + class1.exist(matrix, "A"));
-
-        matrix = new char[][]{{'A', 'A'}};
-        System.out.println("\n*****aa, a*******\n" + class1.existDFS(matrix, "A"));*/
-
-    }
-
     public boolean exist(char[][] board, String word) {
+
         int rows = board.length;
         int cols = board[0].length;
-        boolean[][] isVisited = new boolean[rows][cols];
-        boolean response = false;
+        Set<Integer> visited = null;
+
+        if (rows == 1 && cols == 1 && word.length() == 1) {
+            return board[0][0] == word.charAt(0);
+        }
+
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
                 if (board[row][col] == word.charAt(0)) {
-                    isVisited = new boolean[rows][cols];
-                    isVisited[row][col] = true;
-                    if (1 == word.length())
+                    visited = new HashSet<>();
+                    boolean resp = dfs(row, col, rows, cols, 0, word, visited, board);
+                    if (resp) {
                         return true;
-
-                    //System.out.println("at "+row+", col: "+col);
-                    response = dfs(row + 1, col, board, 1, word, rows, cols, isVisited)
-                            || dfs(row, col + 1, board, 1, word, rows, cols, isVisited)
-                            || dfs(row - 1, col, board, 1, word, rows, cols, isVisited)
-                            || dfs(row, col - 1, board, 1, word, rows, cols, isVisited);
-                    if (response)
-                        return response;
-
+                    }
                 }
             }
         }
+
         return false;
     }
 
-    public boolean dfs(int row, int col, char[][] board, int idx, String word, int rows, int cols, boolean[][] isVisited) {
-        //System.out.println("\tat "+row+", col: "+col);
-        if (row < 0 || row >= rows || col < 0 || col >= cols || isVisited[row][col])
-            return false;
+    public boolean dfs(int row, int col, int rows, int cols, int index, String word, Set<Integer> visited, char[][] board) {
 
-        if (board[row][col] == word.charAt(idx)) {
-            boolean response = false;
-            isVisited[row][col] = true;
-            if (idx == word.length() - 1) {
-                //System.out.println("\t\tat "+row+", col: "+col+", idx: "+idx);
-                return true;
-            } else
-                response = dfs(row + 1, col, board, idx + 1, word, rows, cols, isVisited)
-                        || dfs(row, col + 1, board, idx + 1, word, rows, cols, isVisited)
-                        || dfs(row - 1, col, board, idx + 1, word, rows, cols, isVisited)
-                        || dfs(row, col - 1, board, idx + 1, word, rows, cols, isVisited);
-            if (response) return response;
-            isVisited[row][col] = false;
-            return response;
-        } else {
-            return false;
+        if (row < 0 || row >= rows || col < 0 || col >= cols) return false;
+        if (index == word.length()) return true;
+        if (visited.contains(row * cols + col)) return false;
+        if (board[row][col] != word.charAt(index)) return false;
+        if (index == word.length() - 1) return true;
+
+        //System.out.println("Row : "+(row)+", col: "+(col)+" > Match found and added to IVisited: "+index);
+        visited.add(row * cols + col);
+        int[] drows = {-1, 1, 0, 0};
+        int[] dcols = {0, 0, -1, 1};
+
+        for (int d = 0; d < 4; d++) {
+            if (!visited.contains((row + drows[d]) * cols + (col + dcols[d]))) {
+                boolean resp = dfs(row + drows[d], col + dcols[d], rows, cols, index + 1, word, visited, board);
+                if (resp) {
+                    return true;
+                }
+                visited.remove((row + drows[d]) * cols + (col + dcols[d]));
+            }
         }
+        return false;
+
     }
 
 

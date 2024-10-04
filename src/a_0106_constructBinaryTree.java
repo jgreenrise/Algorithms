@@ -24,13 +24,15 @@ public class a_0106_constructBinaryTree {
      * Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]
      * Output: [3,9,20,null,null,15,7]
      */
-    public TreeNode buildTreeNodeByRange(Map<Integer, Integer> map, int[] inorder, int[] postorder, int left, int right) {
+    public TreeNode buildTreeNodeByRange(Map<Integer, Integer> map, int[] inorder, int[] postorder, int inorderStartIndex, int inorderEndIndex) {
 
         TreeNode node = new TreeNode(postorder[globalIndex--]);
-        Integer nodeIndex = map.get(node.val);
+        Integer inorderIndex = map.get(node.val);
 
-        if (nodeIndex < right) node.right = buildTreeNodeByRange(map, inorder, postorder, nodeIndex + 1, right);
-        if (nodeIndex > left) node.left = buildTreeNodeByRange(map, inorder, postorder, left, nodeIndex - 1);
+        if (inorderIndex < inorderEndIndex)
+            node.right = buildTreeNodeByRange(map, inorder, postorder, inorderIndex + 1, inorderEndIndex);
+        if (inorderIndex > inorderStartIndex)
+            node.left = buildTreeNodeByRange(map, inorder, postorder, inorderStartIndex, inorderIndex - 1);
 
         return node;
     }
