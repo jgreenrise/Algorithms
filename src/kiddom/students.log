@@ -1,0 +1,81 @@
+{"timestamp": 1719817215, "userId": "9931e720-d34a-4011-96a9-7463de886234", "pageId": "d416b62f-dbbb-413a-ab9b-73e1fbb735a7", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719817221, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "de7934e8-cc3a-4c49-b105-8c7d5f7058e2", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719817258, "userId": "159d7a13-2145-449a-ae1f-a229f489c81d", "pageId": "d416b62f-dbbb-413a-ab9b-73e1fbb735a7", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719817283, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "d416b62f-dbbb-413a-ab9b-73e1fbb735a7", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719817343, "userId": "159d7a13-2145-449a-ae1f-a229f489c81d", "pageId": "b49381c6-8db7-4d88-85ea-23d63b2dd35a", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719817414, "userId": "159d7a13-2145-449a-ae1f-a229f489c81d", "pageId": "b49381c6-8db7-4d88-85ea-23d63b2dd35a", "pageType": "ASSIGNMENT", "action": "END", "grade": 0.6}
+{"timestamp": 1719817446, "userId": "9931e720-d34a-4011-96a9-7463de886234", "pageId": "13a624dd-d873-47f7-b563-c7605d1ca2d8", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719817487, "userId": "9931e720-d34a-4011-96a9-7463de886234", "pageId": "b49381c6-8db7-4d88-85ea-23d63b2dd35a", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719817542, "userId": "52c71336-7094-471a-8454-028f89aec49d", "pageId": "3713ce26-272d-4e6d-aa5d-92a5dfef0302", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719817559, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "13a624dd-d873-47f7-b563-c7605d1ca2d8", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719817649, "userId": "159d7a13-2145-449a-ae1f-a229f489c81d", "pageId": "a63783f2-c339-48c2-8555-6aab01c56d01", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719817702, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "92a3e5d3-7daf-43eb-aeb1-b3b6224e6991", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719817710, "userId": "9931e720-d34a-4011-96a9-7463de886234", "pageId": "b49381c6-8db7-4d88-85ea-23d63b2dd35a", "pageType": "ASSIGNMENT", "action": "END", "grade": 0.7}
+{"timestamp": 1719817802, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "b49381c6-8db7-4d88-85ea-23d63b2dd35a", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719817811, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "b49381c6-8db7-4d88-85ea-23d63b2dd35a", "pageType": "ASSIGNMENT", "action": "END", "grade": 0.7}
+{"timestamp": 1719817868, "userId": "58a380cf-d512-43b8-a527-7228a7c41434", "pageId": "d9d78c52-47b6-48a5-ba6b-252d4fe58f54", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719817930, "userId": "58a380cf-d512-43b8-a527-7228a7c41434", "pageId": "d9d78c52-47b6-48a5-ba6b-252d4fe58f54", "pageType": "ASSIGNMENT", "action": "END", "grade": 0.0}
+{"timestamp": 1719817987, "userId": "159d7a13-2145-449a-ae1f-a229f489c81d", "pageId": "7b542c1d-8644-4bf9-85ee-5629de4a16aa", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719818063, "userId": "52c71336-7094-471a-8454-028f89aec49d", "pageId": "bee13afe-b915-4acd-97fb-3ab1310beb98", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719818140, "userId": "52c71336-7094-471a-8454-028f89aec49d", "pageId": "7b542c1d-8644-4bf9-85ee-5629de4a16aa", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719818220, "userId": "03aff598-dfb5-46f3-83cd-e3270c9fb2d3", "pageId": "d9d78c52-47b6-48a5-ba6b-252d4fe58f54", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719818227, "userId": "69330cf3-44da-437b-b377-47a80e571f81", "pageId": "7dc3b3c9-aa15-4cb5-b5b5-b96e38910d78", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719818284, "userId": "3b8abc12-7b34-4865-b707-be73357a6204", "pageId": "92a3e5d3-7daf-43eb-aeb1-b3b6224e6991", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719818356, "userId": "03aff598-dfb5-46f3-83cd-e3270c9fb2d3", "pageId": "d9d78c52-47b6-48a5-ba6b-252d4fe58f54", "pageType": "ASSIGNMENT", "action": "END", "grade": 0.0}
+{"timestamp": 1719818402, "userId": "69330cf3-44da-437b-b377-47a80e571f81", "pageId": "a63783f2-c339-48c2-8555-6aab01c56d01", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719818428, "userId": "69330cf3-44da-437b-b377-47a80e571f81", "pageId": "7906f406-0e84-44c2-b682-247b85a96e09", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719818507, "userId": "159d7a13-2145-449a-ae1f-a229f489c81d", "pageId": "a63783f2-c339-48c2-8555-6aab01c56d01", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719818602, "userId": "69330cf3-44da-437b-b377-47a80e571f81", "pageId": "bee13afe-b915-4acd-97fb-3ab1310beb98", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719818691, "userId": "e6e08cd0-abee-412f-8342-e9f895fe0649", "pageId": "589e6566-de91-494b-9dc9-266371a065c8", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719818757, "userId": "e6e08cd0-abee-412f-8342-e9f895fe0649", "pageId": "589e6566-de91-494b-9dc9-266371a065c8", "pageType": "ASSIGNMENT", "action": "END", "grade": 0.4}
+{"timestamp": 1719818839, "userId": "e6e08cd0-abee-412f-8342-e9f895fe0649", "pageId": "d64fd11f-490d-4a93-9462-c6aeadd7d978", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719818916, "userId": "e6e08cd0-abee-412f-8342-e9f895fe0649", "pageId": "3713ce26-272d-4e6d-aa5d-92a5dfef0302", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719818994, "userId": "159d7a13-2145-449a-ae1f-a229f489c81d", "pageId": "af85ea53-c35d-4e7d-b62c-086b7438cf9f", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719819048, "userId": "110a05c1-209c-42a6-b3ad-de3c6aad2511", "pageId": "3894a6c2-887a-4092-be09-14b0bf8df2bd", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719819095, "userId": "e6e08cd0-abee-412f-8342-e9f895fe0649", "pageId": "d64fd11f-490d-4a93-9462-c6aeadd7d978", "pageType": "ASSIGNMENT", "action": "END", "grade": 1.0}
+{"timestamp": 1719819181, "userId": "e6e08cd0-abee-412f-8342-e9f895fe0649", "pageId": "af85ea53-c35d-4e7d-b62c-086b7438cf9f", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719819217, "userId": "110a05c1-209c-42a6-b3ad-de3c6aad2511", "pageId": "2ece22ed-3ad8-4fdf-97ae-824da8ebec8d", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719819267, "userId": "9931e720-d34a-4011-96a9-7463de886234", "pageId": "af85ea53-c35d-4e7d-b62c-086b7438cf9f", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719819279, "userId": "58a380cf-d512-43b8-a527-7228a7c41434", "pageId": "3713ce26-272d-4e6d-aa5d-92a5dfef0302", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719819309, "userId": "110a05c1-209c-42a6-b3ad-de3c6aad2511", "pageId": "589e6566-de91-494b-9dc9-266371a065c8", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719819343, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "3713ce26-272d-4e6d-aa5d-92a5dfef0302", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719819351, "userId": "69330cf3-44da-437b-b377-47a80e571f81", "pageId": "7906f406-0e84-44c2-b682-247b85a96e09", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719819408, "userId": "110a05c1-209c-42a6-b3ad-de3c6aad2511", "pageId": "589e6566-de91-494b-9dc9-266371a065c8", "pageType": "ASSIGNMENT", "action": "END", "grade": 1.0}
+{"timestamp": 1719819432, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "e8907e2b-795c-4cb3-9eab-600827addf8e", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719819519, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "5a34bfd4-e273-4596-bab7-5aa1b1c8fd2e", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719819528, "userId": "110a05c1-209c-42a6-b3ad-de3c6aad2511", "pageId": "d64fd11f-490d-4a93-9462-c6aeadd7d978", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719819570, "userId": "3b8abc12-7b34-4865-b707-be73357a6204", "pageId": "7906f406-0e84-44c2-b682-247b85a96e09", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719819652, "userId": "110a05c1-209c-42a6-b3ad-de3c6aad2511", "pageId": "d64fd11f-490d-4a93-9462-c6aeadd7d978", "pageType": "ASSIGNMENT", "action": "END", "grade": 0.4}
+{"timestamp": 1719903619, "userId": "58a380cf-d512-43b8-a527-7228a7c41434", "pageId": "7dc3b3c9-aa15-4cb5-b5b5-b96e38910d78", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719903679, "userId": "3b8abc12-7b34-4865-b707-be73357a6204", "pageId": "3713ce26-272d-4e6d-aa5d-92a5dfef0302", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719903740, "userId": "52c71336-7094-471a-8454-028f89aec49d", "pageId": "13a624dd-d873-47f7-b563-c7605d1ca2d8", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719903816, "userId": "159d7a13-2145-449a-ae1f-a229f489c81d", "pageId": "3eeda386-d630-4d7a-8270-9b0dee6b6837", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719903878, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "92a3e5d3-7daf-43eb-aeb1-b3b6224e6991", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719903926, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "bee13afe-b915-4acd-97fb-3ab1310beb98", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719903992, "userId": "159d7a13-2145-449a-ae1f-a229f489c81d", "pageId": "3eeda386-d630-4d7a-8270-9b0dee6b6837", "pageType": "ASSIGNMENT", "action": "END", "grade": 0.7}
+{"timestamp": 1719903996, "userId": "159d7a13-2145-449a-ae1f-a229f489c81d", "pageId": "3da04fa3-0f1d-4bae-8cbe-839d43c8e540", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904037, "userId": "52c71336-7094-471a-8454-028f89aec49d", "pageId": "13a624dd-d873-47f7-b563-c7605d1ca2d8", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904056, "userId": "e6e08cd0-abee-412f-8342-e9f895fe0649", "pageId": "13a624dd-d873-47f7-b563-c7605d1ca2d8", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904058, "userId": "58a380cf-d512-43b8-a527-7228a7c41434", "pageId": "34bb614a-6f5d-4def-be70-6da5c1c1f26b", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904154, "userId": "9931e720-d34a-4011-96a9-7463de886234", "pageId": "3eeda386-d630-4d7a-8270-9b0dee6b6837", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719904175, "userId": "9931e720-d34a-4011-96a9-7463de886234", "pageId": "3eeda386-d630-4d7a-8270-9b0dee6b6837", "pageType": "ASSIGNMENT", "action": "END", "grade": 0.6}
+{"timestamp": 1719904244, "userId": "52c71336-7094-471a-8454-028f89aec49d", "pageId": "20ae5032-5195-4e58-81ae-3ee65ff47f85", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904336, "userId": "52c71336-7094-471a-8454-028f89aec49d", "pageId": "d416b62f-dbbb-413a-ab9b-73e1fbb735a7", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904404, "userId": "159d7a13-2145-449a-ae1f-a229f489c81d", "pageId": "92a3e5d3-7daf-43eb-aeb1-b3b6224e6991", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904406, "userId": "3b8abc12-7b34-4865-b707-be73357a6204", "pageId": "3da04fa3-0f1d-4bae-8cbe-839d43c8e540", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904437, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "3eeda386-d630-4d7a-8270-9b0dee6b6837", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719904490, "userId": "9931e720-d34a-4011-96a9-7463de886234", "pageId": "7b542c1d-8644-4bf9-85ee-5629de4a16aa", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904539, "userId": "9931e720-d34a-4011-96a9-7463de886234", "pageId": "7dc3b3c9-aa15-4cb5-b5b5-b96e38910d78", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904545, "userId": "c6f5b612-2d14-405d-864f-a0816fb99609", "pageId": "3eeda386-d630-4d7a-8270-9b0dee6b6837", "pageType": "ASSIGNMENT", "action": "END", "grade": 1.0}
+{"timestamp": 1719904556, "userId": "52c71336-7094-471a-8454-028f89aec49d", "pageId": "a63783f2-c339-48c2-8555-6aab01c56d01", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904564, "userId": "e6e08cd0-abee-412f-8342-e9f895fe0649", "pageId": "5a34bfd4-e273-4596-bab7-5aa1b1c8fd2e", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904599, "userId": "58a380cf-d512-43b8-a527-7228a7c41434", "pageId": "d9d78c52-47b6-48a5-ba6b-252d4fe58f54", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719904665, "userId": "58a380cf-d512-43b8-a527-7228a7c41434", "pageId": "d9d78c52-47b6-48a5-ba6b-252d4fe58f54", "pageType": "ASSIGNMENT", "action": "END", "grade": 0.5}
+{"timestamp": 1719904760, "userId": "58a380cf-d512-43b8-a527-7228a7c41434", "pageId": "5a34bfd4-e273-4596-bab7-5aa1b1c8fd2e", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904770, "userId": "9931e720-d34a-4011-96a9-7463de886234", "pageId": "5a34bfd4-e273-4596-bab7-5aa1b1c8fd2e", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904823, "userId": "58a380cf-d512-43b8-a527-7228a7c41434", "pageId": "7b542c1d-8644-4bf9-85ee-5629de4a16aa", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904828, "userId": "03aff598-dfb5-46f3-83cd-e3270c9fb2d3", "pageId": "d9d78c52-47b6-48a5-ba6b-252d4fe58f54", "pageType": "ASSIGNMENT", "action": "BEGIN"}
+{"timestamp": 1719904922, "userId": "9931e720-d34a-4011-96a9-7463de886234", "pageId": "3713ce26-272d-4e6d-aa5d-92a5dfef0302", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719904983, "userId": "e6e08cd0-abee-412f-8342-e9f895fe0649", "pageId": "34bb614a-6f5d-4def-be70-6da5c1c1f26b", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719905074, "userId": "e6e08cd0-abee-412f-8342-e9f895fe0649", "pageId": "7dc3b3c9-aa15-4cb5-b5b5-b96e38910d78", "pageType": "LESSON", "action": "BEGIN"}
+{"timestamp": 1719905125, "userId": "03aff598-dfb5-46f3-83cd-e3270c9fb2d3", "pageId": "d9d78c52-47b6-48a5-ba6b-252d4fe58f54", "pageType": "ASSIGNMENT", "action": "END", "grade": 0.8}
