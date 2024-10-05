@@ -1,55 +1,31 @@
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.PriorityQueue;
-
 public class a_0055_JumpGame {
 
-
     /**
-     *
-     * 1. Iterate backwards from the second-to-last element.
-     * 2. jump_reqd: Track the minimum jumps needed to reach the end.
-     *     We need -1 jump to reach to the next location
-     * 3. If you can jump from the current position to cover the required jumps,
-     *      reset the requirement;
-     *          jump_reqd = -1;
-     *      otherwise,
-     *          increment the requirement.
-     *              jump_reqd --;
-     *
-     * return jump_reqd == -1
-     *
-     * @param nums
-     * @return
+     * 2   3   1   1   4
+     * 0   1   2   3   4
+     * -1    -1    -1    -1    -1    jumpRequired
+     * <p>
+     * 3   2   1   0   4
+     * 0   1   2   3   4
+     * -5  -4  -3  -2  -1  jumpRequired
+     * <p>
+     * <p>
+     * 6   0   0   0   0   0   7
+     * 0   1   2   3   4   5   6
+     * -1   -6  -5  -4  -3  -2  -1
      */
+
     public boolean canJump(int[] nums) {
 
-        if(nums.length == 1)    return true;
-
-        if(nums[0] == 0)
-            return false;
-
-        if(nums.length == 2){
-            return nums[0] > 0;
-        }
-
-        int jump_req = -1;
-
-        for(int k = nums.length-2; k >= 0; k--){
-            if(nums[k] > 0){
-                if(nums[k] + jump_req >= 0){
-                    jump_req = -1;
-                }else{
-                    jump_req--;
-                }
-                //System.out.println("1 Jump reqd: "+jump_req);
-            }else{
-                jump_req--;
-                //System.out.println("2 Jump reqd: "+jump_req+", k: "+k);
+        int jumpRequired = -1;
+        for (int j = nums.length - 2; j >= 0; j--) {
+            if (nums[j] + jumpRequired >= 0) {
+                jumpRequired = -1;
+            } else {
+                jumpRequired--;
             }
         }
-
-        return jump_req == -1;
+        return jumpRequired == -1 ? true : false;
 
     }
 
