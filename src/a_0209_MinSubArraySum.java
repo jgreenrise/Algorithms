@@ -2,23 +2,24 @@ public class a_0209_MinSubArraySum {
 
     public int minSubArrayLen(int target, int[] nums) {
 
-        int l = 0, r = 0, ans = Integer.MAX_VALUE, curr = 0, n = nums.length;
+        int left = 0, right = 0, n = nums.length, ans = Integer.MAX_VALUE, currAns = 0;
         boolean matchFound = false;
 
-        while (r < n) {
-            curr += nums[r];
+        while (right < n) {
 
-            while (curr >= target) {
-                ans = Math.min(ans, r - l + 1);
-                curr = curr - nums[l];
-                l++;
+            currAns += nums[right];
+
+            while (left < n && currAns >= target) {
+                ans = Math.min(ans, right - left + 1);
+                currAns = currAns - nums[left];
+                left++;
                 matchFound = true;
             }
 
-            r++;
+            right++;
         }
 
-        return !matchFound ? 0 : ans;
+        return matchFound ? ans : 0;
 
     }
 
