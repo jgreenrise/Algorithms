@@ -1,32 +1,36 @@
 public class a_0200_NumberOfIslands {
 
-    public int numIslands(char[][] grid) {
+    public int numIslands(char[][] mat) {
 
-        int rows = grid.length;
-        int cols = grid[0].length;
-        int out = 0;
+        int rows = mat.length;
+        int cols = mat[0].length;
+        int islands = 0;
 
-        for (int row = 0; row < rows; row++) {
-            for (int col = 0; col < cols; col++) {
-                if (grid[row][col] == '1') {
-                    markNeighBoursZero(row, col, rows, cols, grid);
-                    out++;
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                if (mat[r][c] == '1') {
+                    dfs(r, c, mat, rows, cols);
+                    islands++;
                 }
             }
         }
-        return out;
+        return islands;
     }
 
-    public void markNeighBoursZero(int row, int col, int rows, int cols, char[][] grid) {
-        if (row < 0 || col < 0 || row >= rows || col >= cols || grid[row][col] == '0') {
+    public void dfs(int row, int col, char[][] mat, int rows, int cols) {
+        if (row < 0 || row >= rows || col < 0 || col >= cols) {
             return;
         }
+        if (mat[row][col] == '0') {
+            return;
+        }
+        mat[row][col] = '0';
+        int[] dRows = {-1, 1, 0, 0};
+        int[] dCols = {0, 0, -1, 1};
 
-        grid[row][col] = '0';
-        markNeighBoursZero(row + 1, col, rows, cols, grid);
-        markNeighBoursZero(row - 1, col, rows, cols, grid);
-        markNeighBoursZero(row, col + 1, rows, cols, grid);
-        markNeighBoursZero(row, col - 1, rows, cols, grid);
+        for (int d = 0; d < 4; d++) {
+            dfs(row + dRows[d], col + dCols[d], mat, rows, cols);
+        }
 
     }
 
