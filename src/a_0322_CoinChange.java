@@ -1,30 +1,31 @@
 public class a_0322_CoinChange {
 
     public int coinChange(int[] coins, int amount) {
-        int[] dp = new int[amount + 1];
 
-        // Initialize dp array to a large value for all indices except dp[0]
+        // Handle base case when amount is 0
+        if (amount == 0) return 0;
+
+        // Create dp array and initialize with a large value (amount + 1)
+        int[] dp = new int[amount + 1];
         for (int i = 1; i <= amount; i++) {
-            dp[i] = Integer.MAX_VALUE;
+            dp[i] = amount + 1;  // large value, assuming no solution initially
         }
+
+        // Initialize dp[0] = 0 because 0 coins are needed to make amount 0
         dp[0] = 0;
 
-        for (int k = 1; k <= amount; k++) {
-            int minCoinsReqd = Integer.MAX_VALUE;  // Reset for each new amount k
-
-            for (int coinChoice : coins) {
-                if (coinChoice <= k) {              // Select eligible coin from coins
-                    int remainder = k - coinChoice; // Remainder, after selecting coin
-                    if (dp[remainder] != Integer.MAX_VALUE) {
-                        minCoinsReqd = Math.min(minCoinsReqd, dp[remainder] + 1);
-                    }
+        // Fill dp array
+        for (int i = 1; i <= amount; i++) {
+            for (int coin : coins) {
+                if (i >= coin) {
+                    int remainder = i - coin; // Remainder, after selecting coin
+                    dp[i] = Math.min(dp[i], dp[remainder] + 1);
                 }
             }
-
-            dp[k] = minCoinsReqd;
         }
 
-        return dp[amount] == Integer.MAX_VALUE ? -1 : dp[amount]; // Handle unreachable amount case
+        // Return the result, check if it's valid
+        return dp[amount] > amount ? -1 : dp[amount];
     }
 
 }
