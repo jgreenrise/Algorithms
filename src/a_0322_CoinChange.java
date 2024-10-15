@@ -14,7 +14,6 @@ public class a_0322_CoinChange {
         // Initialize dp[0] = 0 because 0 coins are needed to make amount 0
         dp[0] = 0;
 
-        // Fill dp array
         for (int i = 1; i <= amount; i++) {
             for (int coin : coins) {
                 if (i >= coin) {
